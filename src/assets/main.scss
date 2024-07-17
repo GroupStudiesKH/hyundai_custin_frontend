@@ -9,9 +9,18 @@ html, body{
   overflow: hidden;
   height: 100%;
   overscroll-behavior: none;
+  background-color: #bdd6e4 !important;
 }
 
-
 main{
-    
+    #banner_pc{
+        margin-top: 60px;
+        height: 900px;
+        width: 100%;
+        background: rgb(204,223,232);
+        background: -moz-linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ccdfe8",endColorstr="#ffffff",GradientType=1);
+    }
 }

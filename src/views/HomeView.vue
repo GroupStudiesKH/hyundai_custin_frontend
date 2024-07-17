@@ -27,6 +27,10 @@ export default {
 
 <template>
   <main>
-    123
+    <section id="banner_pc">
+      <div class="container">
+        123
+      </div>
+    </section>
   </main>
 </template>
