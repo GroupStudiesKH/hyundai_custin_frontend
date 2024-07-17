@@ -32,5 +32,11 @@ export default {
         123
       </div>
     </section>
+
+    <section id="page_intro_pc">
+      <div class="container">
+        123
+      </div>
+    </section>
   </main>
 </template>

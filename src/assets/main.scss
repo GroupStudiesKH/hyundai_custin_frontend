@@ -6,9 +6,6 @@ html, body{
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif !important;
   padding: 0;
   margin: 0;
-  overflow: hidden;
-  height: 100%;
-  overscroll-behavior: none;
   background-color: #bdd6e4 !important;
 }
 
@@ -22,5 +19,15 @@ main{
         background: -webkit-linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
         background: linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ccdfe8",endColorstr="#ffffff",GradientType=1);
+    }
+
+    #page_intro_pc{
+        height: 960px;
+        width: 100%;
+        background: rgb(176,208,236);
+        background: -moz-linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
+        background: linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0d0ec",endColorstr="#e4eef7",GradientType=1);
     }
 }
