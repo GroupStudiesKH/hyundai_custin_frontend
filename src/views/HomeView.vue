@@ -29,7 +29,12 @@ export default {
   <main>
     <section id="banner_pc">
       <div class="container">
-        123
+        <div class="logo col-12">
+          <img src="/assets/img/banner_logo.png" alt="logo" />
+        </div>
+        <div class="car col-12">
+          <img src="/assets/img/banner_car.png" alt="logo" />
+        </div>
       </div>
     </section>
 

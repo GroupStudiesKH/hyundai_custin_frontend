@@ -14,11 +14,29 @@ main{
         margin-top: 60px;
         height: 900px;
         width: 100%;
-        background: rgb(204,223,232);
-        background: -moz-linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
-        background: linear-gradient(0deg, rgba(204,223,232,1) 0%, rgba(255,255,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ccdfe8",endColorstr="#ffffff",GradientType=1);
+        background-image: url('../assets/img/banner_bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .container{
+            height: 100%;
+            background-image: url('../assets/img/banner_deco.png');
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .logo{
+            text-align: right;
+        }
+
+        .car{
+            text-align: center;
+            img{
+                margin-left: 80px;
+            }
+        }
     }
 
     #page_intro_pc{
