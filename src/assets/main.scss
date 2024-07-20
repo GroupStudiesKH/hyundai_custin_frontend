@@ -146,6 +146,12 @@ main{
         background-repeat: no-repeat;
 
         .story-wall{
+            animation-play-state: running !important;
+            -webkit-animation-play-state:running !important;
+            &.pause{
+                animation-play-state: paused !important;
+                -webkit-animation-play-state:paused !important;
+            }
             &.left{
                 animation: scroll 60s linear infinite;
             }

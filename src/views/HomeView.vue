@@ -1,14 +1,12 @@
 <script>
+import { ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
 
 export default {
   setup() {
     const router = useRouter();
-
-    // const toLastPage = () => {
-    //   router.push({ name: "final" });
-    //   playBackgroundMusic()
-    // };
+    const animateClassLeft = ref('')
+    const animateClassRight = ref('')
 
     // const toNextPage = () => {
     //   router.push({ name: "intro_2" });
@@ -16,8 +14,8 @@ export default {
     // };
 
     return {
-      // toNextPage,
-      // toLastPage
+      animateClassLeft,
+      animateClassRight,
     };
   },
 };
@@ -164,7 +162,7 @@ export default {
     <section id="story_wall">
       <div class="container">
         <div class="row">
-          <div class="col-6 story-wall left">
+          <div class="col-6 story-wall left" :class="animateClassLeft" @mouseover="animateClassLeft = 'pause'" @mouseout="animateClassLeft = ''">
             <div class="row">
               <div class="col-6 story-wall-left left">
                 <div class="row">
@@ -232,7 +230,7 @@ export default {
               </div>
             </div>
           </div>
-          <div class="col-6 story-wall right">
+          <div class="col-6 story-wall right" :class="animateClassRight" @mouseover="animateClassRight = 'pause'" @mouseout="animateClassRight = ''">
             <div class="row">
               <div class="col-6 story-wall-left left">
                 <div class="row">
