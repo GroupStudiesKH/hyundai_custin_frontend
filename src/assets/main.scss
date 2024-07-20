@@ -42,10 +42,26 @@ main{
     #page_intro_pc{
         height: 960px;
         width: 100%;
-        background: rgb(176,208,236);
-        background: -moz-linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
-        background: linear-gradient(0deg, rgba(176,208,236,1) 0%, rgba(228,238,247,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0d0ec",endColorstr="#e4eef7",GradientType=1);
+        background-image: url('../assets/img/post_bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .container{
+            height: 100%;
+            background-image: url('../assets/img/post_content_bg.png');
+            background-size: contain;
+            background-position: top center;
+            background-repeat: no-repeat;
+
+            .link{
+                padding: 10px 15px;
+                margin: 0 3px;
+                background-color: #5d7b97;
+                display: inline-block;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
     }
 }
