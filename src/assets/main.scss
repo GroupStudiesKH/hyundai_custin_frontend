@@ -138,9 +138,48 @@ main{
     #story_wall{
         height: 970px;
         width: 100%;
+        padding: 25px 0;
+        overflow: hidden;
         background-image: url('../assets/img/wall_bg.png');
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;
+
+        .story-wall{
+            &.left{
+                animation: scroll 60s linear infinite;
+            }
+            &.right{
+                animation: scroll 120s linear infinite;
+            }
+            @keyframes scroll {
+                0% {
+                    transform: translateY(-50%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
+            }
+            .story-wall-left, .story-wall-right{
+
+
+                &.right{
+                    margin: 100px 0 0 0;
+                }
+                .story{
+                    background-color: #fff;
+                    padding: 15px;
+                    margin: 20px 0 0 10px;
+                    box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.2);
+                    .story-body{
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

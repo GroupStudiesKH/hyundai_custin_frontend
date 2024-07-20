@@ -164,8 +164,142 @@ export default {
     <section id="story_wall">
       <div class="container">
         <div class="row">
-          <div class="col-6 story-wall left">123</div>
-          <div class="col-6 story-wall right">123</div>
+          <div class="col-6 story-wall left">
+            <div class="row">
+              <div class="col-6 story-wall-left left">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 story-wall-left right">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 story-wall right">
+            <div class="row">
+              <div class="col-6 story-wall-left left">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 story-wall-right right">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
