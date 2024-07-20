@@ -68,8 +68,8 @@ export default {
                       <div class="story">
                         <img src="https://picsum.photos/537/352" class="story-img" alt="..." />
                         <div class="story-body">
-                          <h5 class="story-title">Title 1</h5>
-                          <p class="story-text">Description 1</p>
+                          <h5 class="story-title">陪伴我們全家的最佳神隊友</h5>
+                          <p class="story-content">人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。</p>
                         </div>
                       </div>
                     </div>
@@ -77,8 +77,8 @@ export default {
                       <div class="story">
                         <img src="https://picsum.photos/537/352" class="story-img" alt="..." />
                         <div class="story-body">
-                          <h5 class="story-title">Title 1</h5>
-                          <p class="story-text">Description 1</p>
+                          <h5 class="story-title">七人座MPV Custin A款交車，滿意!!</h5>
+                          <p class="story-content">Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!</p>
                         </div>
                       </div>
                     </div>
@@ -96,7 +96,6 @@ export default {
                   class="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="sr-only">Previous</span>
               </a>
               <a
                 class="carousel-control-next"
@@ -108,7 +107,6 @@ export default {
                   class="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="sr-only">Next</span>
               </a>
             </div>
           </div>
