@@ -9,59 +9,58 @@ export default {
     const animateClassRight = ref("");
     const animatedNumber = ref(0);
 
-
     const animateNum = () => {
       const targetNumber = 10000;
       const duration = 2000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
 
       const timer = setInterval(() => {
-          animatedNumber.value += 100;
-          if (animatedNumber.value === targetNumber) {
-            clearInterval(timer);
-          }
-        }, stepTime);
-      };
+        animatedNumber.value += 100;
+        if (animatedNumber.value === targetNumber) {
+          clearInterval(timer);
+        }
+      }, stepTime);
+    };
 
     onMounted(() => {
-      animateNum()
+      animateNum();
 
-      const scrollContainer = document.querySelector('.story_share_container');
+      const scrollContainer = document.querySelector(".story_share_container");
 
       let isDown = false;
       let startX;
       let scrollLeft;
 
-      scrollContainer.addEventListener('mousedown', (e) => {
-          isDown = true;
-          scrollContainer.classList.add('active');
-          startX = e.pageX - scrollContainer.offsetLeft;
-          scrollLeft = scrollContainer.scrollLeft;
+      scrollContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollContainer.classList.add("active");
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
       });
 
-      scrollContainer.addEventListener('mouseleave', () => {
-          isDown = false;
-          scrollContainer.classList.remove('active');
+      scrollContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
       });
 
-      scrollContainer.addEventListener('mouseup', () => {
-          isDown = false;
-          scrollContainer.classList.remove('active');
+      scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
       });
 
-      scrollContainer.addEventListener('mousemove', (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - scrollContainer.offsetLeft;
-          const walk = (x - startX) * 2; //scroll-fast
-          scrollContainer.scrollLeft = scrollLeft - walk;
+      scrollContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2; //scroll-fast
+        scrollContainer.scrollLeft = scrollLeft - walk;
       });
     });
 
     return {
       animateClassLeft,
       animateClassRight,
-      animatedNumber
+      animatedNumber,
     };
   },
 };
@@ -111,8 +110,7 @@ export default {
       </div>
     </section>
     <section id="page_intro_mobile">
-      <div class="container">
-      </div>
+      <div class="container"></div>
       <div class="text-center post_btn">
         <a href="#">
           <img src="/assets/img/post_btn.png" alt="enter" />
@@ -236,7 +234,7 @@ export default {
               <img src="/assets/img/story_title_mobile.png" alt="title" />
             </div>
             <div
-              id="story_carousel"
+              id="story_carousel_mobile_container"
               class="carousel slide"
               data-ride="carousel"
             >
@@ -284,22 +282,22 @@ export default {
                   </div>
                 </div>
               </div>
-              <a
-                class="carousel-control-prev"
-                data-bs-target="#story_carousel"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <img src="/assets/img/story_arrow_left.png" />
-              </a>
-              <a
-                class="carousel-control-next"
-                data-bs-target="#story_carousel"
-                role="button"
-                data-bs-slide="next"
-              >
-                <img src="/assets/img/story_arrow_right.png" />
-              </a>
+              <div class="carousel-controls">
+                <a
+                  data-bs-target="#story_carousel_mobile_container"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <img src="/assets/img/story_arrow_left.png" />
+                </a>
+                <a
+                  data-bs-target="#story_carousel_mobile_container"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <img src="/assets/img/story_arrow_right.png" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -545,43 +543,63 @@ export default {
         <div class="story_share_row">
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
-            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_title">
+              <a href="https://google.com" target="_blank">冠儀試車</a>
+            </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span><a href="https://google.com" target="_blank">[More]</a></span>
+              <span
+                ><a href="https://google.com" target="_blank">[More]</a></span
+              >
             </p>
           </div>
 
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
-            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_title">
+              <a href="https://google.com" target="_blank">冠儀試車</a>
+            </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span><a href="https://google.com" target="_blank">[More]</a></span>
+              <span
+                ><a href="https://google.com" target="_blank">[More]</a></span
+              >
             </p>
           </div>
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
-            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_title">
+              <a href="https://google.com" target="_blank">冠儀試車</a>
+            </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span><a href="https://google.com" target="_blank">[More]</a></span>
+              <span
+                ><a href="https://google.com" target="_blank">[More]</a></span
+              >
             </p>
           </div>
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
-            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_title">
+              <a href="https://google.com" target="_blank">冠儀試車</a>
+            </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span><a href="https://google.com" target="_blank">[More]</a></span>
+              <span
+                ><a href="https://google.com" target="_blank">[More]</a></span
+              >
             </p>
           </div>
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
-            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_title">
+              <a href="https://google.com" target="_blank">冠儀試車</a>
+            </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span><a href="https://google.com" target="_blank">[More]</a></span>
+              <span
+                ><a href="https://google.com" target="_blank">[More]</a></span
+              >
             </p>
           </div>
         </div>
@@ -591,24 +609,35 @@ export default {
     <section id="champion_pc">
       <div class="row">
         <div class="col-7 champion_left">
-          <img src="/assets/img/champion_title.png" class="champion_title">
-          <img src="/assets/img/champion_car_left.png" class="champion_car">
+          <img src="/assets/img/champion_title.png" class="champion_title" />
+          <img src="/assets/img/champion_car_left.png" class="champion_car" />
           <div class="champion-action-list">
-            <a><img src="/assets/img/champion_testdrive.png" class="champion-action testdrive"></a>
-            <a><img src="/assets/img/champion_order.png" class="champion-action order"></a>
-            <a><img src="/assets/img/champion_more.png" class="champion-action more"></a>
+            <a
+              ><img
+                src="/assets/img/champion_testdrive.png"
+                class="champion-action testdrive"
+            /></a>
+            <a
+              ><img
+                src="/assets/img/champion_order.png"
+                class="champion-action order"
+            /></a>
+            <a
+              ><img
+                src="/assets/img/champion_more.png"
+                class="champion-action more"
+            /></a>
           </div>
         </div>
         <div class="col-5 champion_right">
-          <img src="/assets/img/champion_right_1.png">
+          <img src="/assets/img/champion_right_1.png" />
           <p>前衛科技座艙</p>
-          <img src="/assets/img/champion_right_2.png">
+          <img src="/assets/img/champion_right_2.png" />
           <p>感應式電動側滑門</p>
-          <img src="/assets/img/champion_right_3.png">
+          <img src="/assets/img/champion_right_3.png" />
           <p>正七人座寬敞空間</p>
-          <img src="/assets/img/champion_right_4.png">
+          <img src="/assets/img/champion_right_4.png" />
           <p>第二排VIP皇家座椅</p>
-
         </div>
       </div>
     </section>
