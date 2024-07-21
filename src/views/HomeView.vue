@@ -80,6 +80,18 @@ export default {
         </div>
       </div>
     </section>
+    <section id="banner_mobile">
+      <div class="container">
+        <div class="logo col-12">
+          <img src="/assets/img/banner_logo_mobile.png" alt="logo" />
+        </div>
+        <div class="car col-12">
+          <img src="/assets/img/banner_car.png" alt="logo" />
+          <span class="animatedNumber">{{ animatedNumber }}</span>
+
+        </div>
+      </div>
+    </section>
 
     <section id="page_intro_pc">
       <div class="container">
@@ -206,7 +218,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_wall">
+    <section id="story_wall_pc">
       <div class="container">
         <div class="row">
           <div
@@ -359,7 +371,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_share">
+    <section id="story_share_pc">
       <p class="text-center"><img src="/assets/img/wall_title.png" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
@@ -408,7 +420,7 @@ export default {
       </div>
     </section>
 
-    <section id="champion">
+    <section id="champion_pc">
       <div class="row">
         <div class="col-7 champion_left">
           <img src="/assets/img/champion_title.png" class="champion_title">
