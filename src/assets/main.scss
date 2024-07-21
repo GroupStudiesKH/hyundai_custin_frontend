@@ -15,10 +15,22 @@ main{
         #banner_pc{
             display: none;
         }
+
+        #page_intro_pc{
+            display: none;
+        }
+
+        #story_carousel_pc{
+            display: none;
+        }
     }
 
     @media (min-width: 1280px) {
         #banner_mobile{
+            display: none;
+        }
+
+        #page_intro_mobile{
             display: none;
         }
     }
@@ -83,17 +95,12 @@ main{
 
     #banner_mobile{
         margin-top: 30px;
-        height: 1760px;
+        height: 1500px;
         width: 100%;
         background-image: url('../assets/img/banner_deco_mobile.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-
-        @media (max-width: 1280px){
-            background-size: contain;
-            height: 1500px;
-        }
 
         @media (max-width: 991px){
             height: 1280px;
@@ -107,18 +114,16 @@ main{
             height: 750px;
         }
 
+        @media (max-width: 400px){
+            height: 680px;
+        }
+
         .logo{
             text-align: center;
             img{
                 margin-top: 50px;
-                max-width: 750px;
+                max-width: 600px;
                 width: 100%;
-
-                @media (max-width: 1280px){
-                    margin-top: 50px;
-                    max-width: 600px;
-                    width: 100%;
-                }
         
                 @media (max-width: 991px){
                     margin-top: 50px;
@@ -143,28 +148,10 @@ main{
 
         .car{
             text-align: center;
-            .animatedNumber{
-                font-size: 60px;
-                color: #f75a53;
-                font-weight: 600;
-                position: absolute;
-                bottom: 30px;
-                left: calc(50% - 80px);
-
-                @media (max-width: 768px){
-                    bottom: 0px;
-
-                }
-            }
             img{
                 max-width: 900px;
                 width: 100%;
                 margin-top: 160px;
-                @media (max-width: 1280px){
-                    max-width: 900px;
-                    width: 100%;
-                    margin-top: 160px;
-                }
         
                 @media (max-width: 991px){
                     max-width: 900px;
@@ -183,6 +170,40 @@ main{
                     width: 100%;
                     margin-top: 80px;
                 }
+            }
+        }
+
+        .animatedNumber{
+            color: #f75a53;
+            font-weight: 600;
+            position: relative;
+            font-size: 50px;
+            left: calc(50% - 55px);
+            top: 230px;
+
+    
+            @media (max-width: 991px){
+                font-size: 45px;
+                left: calc(50% - 55px);
+                top: 240px;
+            }
+    
+            @media (max-width: 768px){
+                font-size: 35px;
+                left: calc(50% - 40px);
+                top: 200px;
+            }
+    
+            @media (max-width: 576px){
+                font-size: 25px;
+                left: calc(50% - 30px);
+                top: 150px;
+            }
+
+            @media (max-width: 400px){
+                font-size: 25px;
+                left: calc(50% - 30px);
+                top: 110px;
             }
         }
     }
@@ -215,6 +236,75 @@ main{
 
         .post_btn{
             margin-top: -185px;
+        }
+    }
+
+    #page_intro_mobile{
+        height: 1500px;
+        width: 100%;
+        background-image: url('../assets/img/post_bg_mobile.png');
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        .container{
+            height: 100%;
+            background-image: url('../assets/img/post_content_bg_mobile.png');
+            background-size: contain;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 991px){
+            height: 1300px;
+        }
+
+        @media (max-width: 768px){
+            height: 1000px;
+        }
+
+        @media (max-width: 576px){
+            height: 780px;
+        }
+
+        @media (max-width: 400px){
+            height: 700px;
+        }
+
+        .post_btn{
+            margin-top: -200px;
+
+            @media (max-width: 991px){
+                margin-top: -200px;
+            }
+    
+            @media (max-width: 768px){
+                margin-top: -150px;
+            }
+    
+            @media (max-width: 576px){
+                margin-top: -110px;
+            }
+    
+            @media (max-width: 400px){
+                margin-top: -100px;
+            }
+            
+            img{
+                width: 100%;
+                max-width: 300px;
+
+                @media (max-width: 768px){
+                    max-width: 250px;
+                }
+
+                @media (max-width: 576px){
+                    max-width: 220px;
+                }
+
+                @media (max-width: 400px){
+                    max-width: 200px;
+                }
+            }
         }
     }
 

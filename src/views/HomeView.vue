@@ -87,8 +87,9 @@ export default {
         </div>
         <div class="car col-12">
           <img src="/assets/img/banner_car.png" alt="logo" />
+        </div>
+        <div class="col-12">
           <span class="animatedNumber">{{ animatedNumber }}</span>
-
         </div>
       </div>
     </section>
@@ -102,6 +103,15 @@ export default {
             <div class="link">名人車主故事&體驗分享</div>
           </div>
         </div>
+      </div>
+      <div class="text-center post_btn">
+        <a href="#">
+          <img src="/assets/img/post_btn.png" alt="enter" />
+        </a>
+      </div>
+    </section>
+    <section id="page_intro_mobile">
+      <div class="container">
       </div>
       <div class="text-center post_btn">
         <a href="#">
