@@ -248,4 +248,29 @@ main{
 
         }
     }
+
+    #champion{
+        height: 1300px;
+        width: 100%;
+        overflow: hidden;
+        background-image: url('../assets/img/champion_bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .champion_left{
+            img.champion_title{
+                margin-top: -40px;
+                width: 100%;
+                max-width: 900px;
+                float: right;
+            }
+
+            img.champion_car{
+                width: 100%;
+                max-width: 1150px;
+                margin: 20px 0;
+            }
+        }
+    }
 }

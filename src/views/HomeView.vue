@@ -394,5 +394,17 @@ export default {
         </div>
       </div>
     </section>
+
+    <section id="champion">
+      <div class="row">
+        <div class="col-7 champion_left">
+          <img src="/assets/img/champion_title.png" class="champion_title">
+          <img src="/assets/img/champion_car_left.png" class="champion_car">
+
+        </div>
+        <div class="col-5">
+        </div>
+      </div>
+    </section>
   </main>
 </template>
