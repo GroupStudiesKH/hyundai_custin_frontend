@@ -1,17 +1,51 @@
 <script>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
 
 export default {
   setup() {
     const router = useRouter();
-    const animateClassLeft = ref('')
-    const animateClassRight = ref('')
+    const animateClassLeft = ref("");
+    const animateClassRight = ref("");
 
     // const toNextPage = () => {
     //   router.push({ name: "intro_2" });
     //   playBackgroundMusic()
     // };
+
+
+    onMounted(() => {
+      const scrollContainer = document.querySelector('.story_share_container');
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      scrollContainer.addEventListener('mousedown', (e) => {
+          isDown = true;
+          scrollContainer.classList.add('active');
+          startX = e.pageX - scrollContainer.offsetLeft;
+          scrollLeft = scrollContainer.scrollLeft;
+      });
+
+      scrollContainer.addEventListener('mouseleave', () => {
+          isDown = false;
+          scrollContainer.classList.remove('active');
+      });
+
+      scrollContainer.addEventListener('mouseup', () => {
+          isDown = false;
+          scrollContainer.classList.remove('active');
+      });
+
+      scrollContainer.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - scrollContainer.offsetLeft;
+          const walk = (x - startX) * 2; //scroll-fast
+          scrollContainer.scrollLeft = scrollLeft - walk;
+      });
+    });
 
     return {
       animateClassLeft,
@@ -162,7 +196,12 @@ export default {
     <section id="story_wall">
       <div class="container">
         <div class="row">
-          <div class="col-6 story-wall left" :class="animateClassLeft" @mouseover="animateClassLeft = 'pause'" @mouseout="animateClassLeft = ''">
+          <div
+            class="col-6 story-wall left"
+            :class="animateClassLeft"
+            @mouseover="animateClassLeft = 'pause'"
+            @mouseout="animateClassLeft = ''"
+          >
             <div class="row">
               <div class="col-6 story-wall-left left">
                 <div class="row">
@@ -230,7 +269,12 @@ export default {
               </div>
             </div>
           </div>
-          <div class="col-6 story-wall right" :class="animateClassRight" @mouseover="animateClassRight = 'pause'" @mouseout="animateClassRight = ''">
+          <div
+            class="col-6 story-wall right"
+            :class="animateClassRight"
+            @mouseover="animateClassRight = 'pause'"
+            @mouseout="animateClassRight = ''"
+          >
             <div class="row">
               <div class="col-6 story-wall-left left">
                 <div class="row">
@@ -297,6 +341,55 @@ export default {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story_share">
+      <p class="text-center"><img src="/assets/img/wall_title.png" /></p>
+      <div class="story_share_container">
+        <div class="story_share_row">
+          <div class="story_share_col">
+            <img src="https://picsum.photos/579/322" alt="..." />
+            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_content">
+              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              <span><a href="https://google.com" target="_blank">[More]</a></span>
+            </p>
+          </div>
+
+          <div class="story_share_col">
+            <img src="https://picsum.photos/579/322" alt="..." />
+            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_content">
+              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              <span><a href="https://google.com" target="_blank">[More]</a></span>
+            </p>
+          </div>
+          <div class="story_share_col">
+            <img src="https://picsum.photos/579/322" alt="..." />
+            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_content">
+              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              <span><a href="https://google.com" target="_blank">[More]</a></span>
+            </p>
+          </div>
+          <div class="story_share_col">
+            <img src="https://picsum.photos/579/322" alt="..." />
+            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_content">
+              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              <span><a href="https://google.com" target="_blank">[More]</a></span>
+            </p>
+          </div>
+          <div class="story_share_col">
+            <img src="https://picsum.photos/579/322" alt="..." />
+            <p class="story_share_title"><a href="https://google.com" target="_blank">冠儀試車</a></p>
+            <p class="story_share_content">
+              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              <span><a href="https://google.com" target="_blank">[More]</a></span>
+            </p>
           </div>
         </div>
       </div>
