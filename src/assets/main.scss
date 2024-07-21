@@ -29,12 +29,27 @@ main{
 
         .logo{
             text-align: right;
+            img{
+                max-width: 600px;
+                width: 100%;
+                @media (max-width: 1400px){
+                    margin-top: 50px;
+                    max-width: 550px;
+                }
+            }
         }
 
         .car{
             text-align: center;
             img{
                 margin-left: 80px;
+                max-width: 1000px;
+                width: 100%;
+                @media (max-width: 1400px){
+                    max-width: 900px;
+                    margin-top: 35px;
+
+                }
             }
         }
     }
