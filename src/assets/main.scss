@@ -31,6 +31,10 @@ main{
         #story_share_pc{
             display: none;
         }
+
+        #champion_pc{
+            display: none;
+        }
     }
 
     @media (min-width: 1280px) {
@@ -51,6 +55,10 @@ main{
         }
 
         #story_share_mobile{
+            display: none;
+        }
+
+        #champion_mobile{
             display: none;
         }
     }
@@ -818,6 +826,64 @@ main{
                 font-size: 24px;
                 color: #666;
                 margin: 0 0 10px 0;
+            }
+        }
+    }
+
+    #champion_mobile{
+        width: 100%;
+        overflow: hidden;
+        background-image: url('../assets/img/champion_bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .champion_left{
+            text-align: center;
+            img.champion_title{
+                margin-top: -40px;
+                width: 100%;
+                max-width: 900px;
+                padding: 0 10px;
+            }
+
+            img.champion_car{
+                width: 100%;
+                max-width: 1150px;
+                margin: 20px 0 0 -20px;
+            }
+        }
+
+        .champion_right{
+            padding: 35px 50px 100px 50px;
+            img{
+                width: 100%;
+                max-width: 440px;
+            }
+            p{
+                font-size: 20px;
+                color: #666;
+                margin: 0 0 10px 0;
+            }
+
+            .champion-action-list{
+                position: relative;
+                margin: 30px auto 0 auto;
+                width: 100%;
+                img.testdrive{
+                    width: 32%;
+                    max-width: 237px;
+                    transform: translateX(2px);
+                }
+                img.more{
+                    width: 32%;
+                    max-width: 225px;
+                    transform: translateX(-2px) translateY(-1px);
+                }
+                img.order{
+                    width: 32%;
+                    max-width: 240px;
+                }
             }
         }
     }

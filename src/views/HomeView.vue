@@ -713,5 +713,42 @@ export default {
         </div>
       </div>
     </section>
+
+    <section id="champion_mobile">
+      <div class="row">
+        <div class="col-12 champion_left">
+          <img src="/assets/img/champion_title.png" class="champion_title" />
+          <img src="/assets/img/champion_car_left.png" class="champion_car" />
+        </div>
+        <div class="col-12 champion_right">
+          <img src="/assets/img/champion_right_1.png" />
+          <p>前衛科技座艙</p>
+          <img src="/assets/img/champion_right_2.png" />
+          <p>感應式電動側滑門</p>
+          <img src="/assets/img/champion_right_3.png" />
+          <p>正七人座寬敞空間</p>
+          <img src="/assets/img/champion_right_4.png" />
+          <p>第二排VIP皇家座椅</p>
+
+          <div class="champion-action-list">
+            <a
+              ><img
+                src="/assets/img/champion_testdrive.png"
+                class="champion-action testdrive"
+            /></a>
+            <a
+              ><img
+                src="/assets/img/champion_order.png"
+                class="champion-action order"
+            /></a>
+            <a
+              ><img
+                src="/assets/img/champion_more.png"
+                class="champion-action more"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
