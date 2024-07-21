@@ -607,7 +607,7 @@ export default {
     </section>
 
     <section id="story_share_mobile">
-      <p class="text-center" id="story_share_mobile_title"><img src="/assets/img/wall_title.png" /></p>
+      <p class="text-center" id="story_share_mobile_title"><img src="/assets/img/wall_title_mobile.png" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
@@ -617,10 +617,10 @@ export default {
             </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
+            </p>
+            <span class="story_share_link"
                 ><a href="https://google.com" target="_blank">[More]</a></span
               >
-            </p>
           </div>
 
           <div class="story_share_col">
@@ -630,11 +630,12 @@ export default {
             </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
+            </p>
+            <span class="story_share_link"
                 ><a href="https://google.com" target="_blank">[More]</a></span
               >
-            </p>
           </div>
+
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
             <p class="story_share_title">
@@ -642,11 +643,12 @@ export default {
             </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
+            </p>
+            <span class="story_share_link"
                 ><a href="https://google.com" target="_blank">[More]</a></span
               >
-            </p>
           </div>
+
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
             <p class="story_share_title">
@@ -654,11 +656,12 @@ export default {
             </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
+            </p>
+            <span class="story_share_link"
                 ><a href="https://google.com" target="_blank">[More]</a></span
               >
-            </p>
           </div>
+
           <div class="story_share_col">
             <img src="https://picsum.photos/579/322" alt="..." />
             <p class="story_share_title">
@@ -666,10 +669,10 @@ export default {
             </p>
             <p class="story_share_content">
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
+            </p>
+            <span class="story_share_link"
                 ><a href="https://google.com" target="_blank">[More]</a></span
               >
-            </p>
           </div>
         </div>
       </div>
