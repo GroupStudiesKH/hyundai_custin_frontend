@@ -23,6 +23,10 @@ main{
         #story_carousel_pc{
             display: none;
         }
+
+        #story_wall_pc{
+            display: none;
+        }
     }
 
     @media (min-width: 1280px) {
@@ -31,6 +35,10 @@ main{
         }
 
         #page_intro_mobile{
+            display: none;
+        }
+
+        #story_carousel_mobile{
             display: none;
         }
     }
@@ -460,6 +468,60 @@ main{
     }
 
     #story_wall_pc{
+        height: 970px;
+        width: 100%;
+        padding: 25px 0;
+        overflow: hidden;
+        background-image: url('../assets/img/wall_bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .story-wall{
+            animation-play-state: running !important;
+            -webkit-animation-play-state:running !important;
+            &.pause{
+                animation-play-state: paused !important;
+                -webkit-animation-play-state:paused !important;
+            }
+            &.left{
+                animation: scroll 60s linear infinite;
+            }
+            &.right{
+                animation: scroll 120s linear infinite;
+            }
+            @keyframes scroll {
+                0% {
+                    transform: translateY(-50%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
+            }
+            .story-wall-left, .story-wall-right{
+
+
+                &.right{
+                    margin: 100px 0 0 0;
+                }
+                .story{
+                    background-color: #fff;
+                    padding: 15px;
+                    margin: 20px 0 0 10px;
+                    box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.2);
+                    .story-body{
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #story_wall_mobile{
         height: 970px;
         width: 100%;
         padding: 25px 0;

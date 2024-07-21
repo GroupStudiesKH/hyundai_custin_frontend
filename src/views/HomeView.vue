@@ -459,6 +459,86 @@ export default {
       </div>
     </section>
 
+    <section id="story_wall_mobile">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 story-wall left"
+            :class="animateClassLeft"
+            @mouseover="animateClassLeft = 'pause'"
+            @mouseout="animateClassLeft = ''"
+          >
+            <div class="row">
+              <div class="col-6 story-wall-left left">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 story-wall-left right">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+
+                    <div class="story">
+                      <img
+                        src="https://picsum.photos/352/352"
+                        class="story-img"
+                        alt="..."
+                      />
+                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="story_share_pc">
       <p class="text-center"><img src="/assets/img/wall_title.png" /></p>
       <div class="story_share_container">
