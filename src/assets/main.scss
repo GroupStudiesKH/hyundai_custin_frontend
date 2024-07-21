@@ -271,6 +271,41 @@ main{
                 max-width: 1150px;
                 margin: 20px 0;
             }
+
+            .champion-action-list{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 705px;
+                img.testdrive{
+                    width: 100%;
+                    max-width: 237px;
+                    transform: translateX(2px);
+                }
+                img.more{
+                    width: 100%;
+                    max-width: 225px;
+                    transform: translateX(-2px) translateY(-3px);
+                }
+                img.order{
+                    width: 100%;
+                    max-width: 240px;
+                }
+            }
+        }
+
+        .champion_right{
+            text-align: left;
+            padding-left: 80px;
+            padding-top: 35px;
+            img{
+                width: 100%;
+                max-width: 440px;
+            }
+            p{
+                font-size: 24px;
+                color: #666;
+                margin: 0 0 10px 0;
+            }
         }
     }
 }
