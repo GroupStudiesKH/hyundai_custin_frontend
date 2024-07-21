@@ -374,6 +374,91 @@ main{
 
     }
 
+    #story_carousel_mobile{
+        height: 1024px;
+        width: 100%;
+        background-image: url('../assets/img/story_bg_mobile.png');
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;        
+
+        @media (max-width: 991px){
+            height: 900px;
+        }
+
+        @media (max-width: 768px){
+            height: 700px;
+        }
+
+        @media (max-width: 576px){
+            height: 600px;
+        }
+
+        @media (max-width: 400px){
+            height: 500px;
+        }
+
+        #story_carousel_title{
+            position: relative;
+            z-index: 1;
+            margin-top: -50px;
+            text-align: center;
+            img{
+                width: 70%;
+            }
+        }
+
+        #story_carousel{
+            margin-top: -30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .carousel-control-prev{
+
+        }
+
+        .carousel-control-next{
+
+        }
+
+        .col-story{
+            .story{
+                width: 80%;
+                border: 15px solid #ccc;
+                background-color: #fff;
+                box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.2);
+                padding: 22px 25px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .story-title{
+                    font-size: 24px;
+                    color: #5d7b97;
+                    font-weight: 600;
+                }
+
+                .story-content{
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+
+            &:first-child{
+                padding-right: 25px;
+            }
+
+            &:last-child{
+                padding-left: 25px;
+            }
+        }
+
+
+    }
+
     #story_wall_pc{
         height: 970px;
         width: 100%;
