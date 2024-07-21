@@ -7,14 +7,25 @@ export default {
     const router = useRouter();
     const animateClassLeft = ref("");
     const animateClassRight = ref("");
+    const animatedNumber = ref(0);
 
-    // const toNextPage = () => {
-    //   router.push({ name: "intro_2" });
-    //   playBackgroundMusic()
-    // };
 
+    const animateNum = () => {
+      const targetNumber = 10000;
+      const duration = 2000;
+      const stepTime = Math.abs(Math.floor(duration / targetNumber));
+
+      const timer = setInterval(() => {
+          animatedNumber.value += 100;
+          if (animatedNumber.value === targetNumber) {
+            clearInterval(timer);
+          }
+        }, stepTime);
+      };
 
     onMounted(() => {
+      animateNum()
+
       const scrollContainer = document.querySelector('.story_share_container');
 
       let isDown = false;
@@ -50,6 +61,7 @@ export default {
     return {
       animateClassLeft,
       animateClassRight,
+      animatedNumber
     };
   },
 };
@@ -63,6 +75,7 @@ export default {
           <img src="/assets/img/banner_logo.png" alt="logo" />
         </div>
         <div class="car col-12">
+          <span class="animatedNumber">{{ animatedNumber }}</span>
           <img src="/assets/img/banner_car.png" alt="logo" />
         </div>
       </div>
