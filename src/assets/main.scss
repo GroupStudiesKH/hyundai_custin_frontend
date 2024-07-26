@@ -85,10 +85,24 @@ main{
             img{
                 max-width: 600px;
                 width: 100%;
+                animation: logoAnimation 1s;
                 @media (max-width: 1400px){
                     margin-top: 50px;
                     max-width: 550px;
                 }
+            }
+
+            @keyframes logoAnimation {
+                0% {
+                    transform: scale(0.8);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+                
             }
         }
 
