@@ -49,6 +49,15 @@ export default {
           results.slice(11, 20),
         ];
 
+        // setInterval(() => {
+        //   stories.value.forEach((story, index) => {
+        //     const storyPop = story[story.length - 1];
+        //     stories.value[index].push(storyPop);
+        //     stories.value[index].shift();
+        //   });
+        //   console.log(stories.value);
+        // }, 5000);
+
       } catch (error) {
         console.log(error);
       }

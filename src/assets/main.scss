@@ -551,23 +551,18 @@ main{
                 animation-play-state: paused !important;
                 -webkit-animation-play-state:paused !important;
             }
-            &.left{
-                animation: scroll 60s linear infinite;
-            }
-            &.right{
-                animation: scroll 120s linear infinite;
-            }
-            @keyframes scroll {
-                0% {
-                    transform: translateY(-50%);
+            @mixin wallscroll($start: -970px, $end: 970px, $duration: 20s) {
+                @keyframes wallscroll {
+                    0% {
+                    transform: translateY($start);
+                    }
+                    100% {
+                    transform: translateY($end);
+                    }
                 }
-                100% {
-                    transform: translateY(0%);
-                }
+                animation: wallscroll $duration linear infinite;
             }
             .story-wall-left, .story-wall-right{
-
-
                 &.right{
                     margin: 100px 0 0 0;
                 }
@@ -576,6 +571,34 @@ main{
                     padding: 15px;
                     margin: 20px 0 0 10px;
                     box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.2);
+
+                    &:nth-child(1){
+                        @include wallscroll(-970px, 970px, 5s);
+                        transform: translateY(-970px);
+                    }
+
+                    &:nth-child(2){
+                        @include wallscroll(calc(-970px - 251px), calc(970px + 251px), 5s);
+                        transform: translateY(calc(-970px + -251px));
+                    }
+
+                    &:nth-child(3){
+                        @include wallscroll(calc(-970px - 251px * 2), calc(970px + 251px * 2), 5s);
+                        transform: translateY(calc(-970px + (-251px * 2)));
+                    }
+
+                    &:nth-child(4){
+                        @include wallscroll(calc(-970px - 251px * 3), calc(970px + 251px * 3), 5s);
+                        transform: translateY(calc(-970px + (-251px * 3)));
+                    }
+
+                    &:nth-child(5){
+                        @include wallscroll(calc(-970px - 251px * 4), calc(970px + 251px * 4), 5s);
+                        transform: translateY(calc(970px + (-251px * 4)));
+                    }
+
+                    
+
                     .story-body{
                         font-size: 20px;
                         margin-top: 10px;
