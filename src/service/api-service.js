@@ -1,7 +1,7 @@
 import axios from "axios";
 
-let apiUrl = "https://api.liyun.com.tw/api/";
-// let apiUrl = "http://localhost:8000/api/";
+// let apiUrl = "https://api.liyun.com.tw/api/";
+let apiUrl = "http://localhost:8000/api/";
 
 //Cookie ExpireDate
 let expire = new Date();
@@ -117,8 +117,8 @@ const objectToQueryString = (obj) => {
   return queryParams.join('&');
 }
 
-const getProducts = async (params) => {
-  const requestConfig = scGet(`${apiUrl}products?${objectToQueryString(params)}`);
+const getStories = async () => {
+  const requestConfig = scGet(`${apiUrl}stories/list`);
   try {
     const response = await axios(requestConfig);
     return checkServerResponse(response);
@@ -126,96 +126,8 @@ const getProducts = async (params) => {
     throw error;
   }
 };
-
-const getBanner = async () => {
-  const requestConfig = scGet(`${apiUrl}home-banner`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getProduct = async (id) => {
-  const requestConfig = scGet(`${apiUrl}products/${id}`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getAllCategory = async () => {
-  const requestConfig = scGet(`${apiUrl}category/list`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getCategoryPath = async (id) => {
-  const requestConfig = scGet(`${apiUrl}category/path/${id}`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getAppliedCategory = async () => {
-  const requestConfig = scGet(`${apiUrl}applied/category/list`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getAppliedCategoryPath = async (id) => {
-  const requestConfig = scGet(`${apiUrl}applied/category/path/${id}`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getApplicationContent = async (params) => {
-  const requestConfig = scGet(`${apiUrl}applied?${objectToQueryString(params)}`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-};
-
-const sendContact = async (params) => {
-  const requestConfig = scPost(`${apiUrl}contact`, params);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
 
 
 export default {
-  getProducts,
-  getProduct,
-  getAllCategory,
-  getCategoryPath,
-  getBanner,
-  getAppliedCategory,
-  getApplicationContent,
-  getAppliedCategoryPath,
-  sendContact
+  getStories
 };

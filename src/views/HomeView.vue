@@ -9,6 +9,12 @@ export default {
     const animateClassLeft = ref("");
     const animateClassRight = ref("");
     const animatedNumber = ref(0);
+    const stories = ref([
+      [],
+      [],
+      [],
+      []
+    ]);
 
     const animateNum = () => {
       const targetNumber = 10000;
@@ -23,20 +29,25 @@ export default {
       }, stepTime);
     };
 
+    const getStories = async () => {
+      try {
+        const results = await apiService.getStories();
+
+        stories.value = [
+          results.slice(0, 5),
+          results.slice(5, 10),
+          results.slice(10, 15),
+          results.slice(15, 20),
+        ];
+
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
     onMounted(() => {
       animateNum();
-
-
-
-      // const results = await apiService.sendContact({
-      //   contact_name: contact_name.value,
-      //   contact_company: contact_company.value,
-      //   contact_phone: contact_phone.value,
-      //   contact_email: contact_email.value,
-      //   contact_content: contact_content.value,
-      //   cart: JSON.stringify(cartProducts),
-      //   recaptcha_token: token,
-      // });
+      getStories();
 
       const scrollContainer = document.querySelector(".story_share_container");
 
@@ -74,6 +85,7 @@ export default {
       animateClassLeft,
       animateClassRight,
       animatedNumber,
+      stories
     };
   },
 };
@@ -330,31 +342,15 @@ export default {
               <div class="col-6 story-wall-left left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in stories[0]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -362,31 +358,15 @@ export default {
               <div class="col-6 story-wall-left right">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in stories[1]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -403,31 +383,15 @@ export default {
               <div class="col-6 story-wall-left left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in stories[2]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -435,31 +399,15 @@ export default {
               <div class="col-6 story-wall-right right">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in stories[3]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -620,7 +568,9 @@ export default {
     </section>
 
     <section id="story_share_mobile">
-      <p class="text-center" id="story_share_mobile_title"><img src="/assets/img/wall_title_mobile.png" /></p>
+      <p class="text-center" id="story_share_mobile_title">
+        <img src="/assets/img/wall_title_mobile.png" />
+      </p>
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
@@ -632,8 +582,8 @@ export default {
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
             </p>
             <span class="story_share_link"
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              ><a href="https://google.com" target="_blank">[More]</a></span
+            >
           </div>
 
           <div class="story_share_col">
@@ -645,8 +595,8 @@ export default {
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
             </p>
             <span class="story_share_link"
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              ><a href="https://google.com" target="_blank">[More]</a></span
+            >
           </div>
 
           <div class="story_share_col">
@@ -658,8 +608,8 @@ export default {
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
             </p>
             <span class="story_share_link"
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              ><a href="https://google.com" target="_blank">[More]</a></span
+            >
           </div>
 
           <div class="story_share_col">
@@ -671,8 +621,8 @@ export default {
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
             </p>
             <span class="story_share_link"
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              ><a href="https://google.com" target="_blank">[More]</a></span
+            >
           </div>
 
           <div class="story_share_col">
@@ -684,8 +634,8 @@ export default {
               Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
             </p>
             <span class="story_share_link"
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              ><a href="https://google.com" target="_blank">[More]</a></span
+            >
           </div>
         </div>
       </div>
