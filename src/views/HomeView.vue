@@ -15,6 +15,10 @@ export default {
       [],
       []
     ]);
+    const storiesMobile = ref([
+      [],
+      []
+    ]);
 
     const animateNum = () => {
       const targetNumber = 10000;
@@ -38,6 +42,11 @@ export default {
           results.slice(5, 10),
           results.slice(10, 15),
           results.slice(15, 20),
+        ];
+
+        storiesMobile.value = [
+          results.slice(0, 10),
+          results.slice(11, 20),
         ];
 
       } catch (error) {
@@ -85,7 +94,8 @@ export default {
       animateClassLeft,
       animateClassRight,
       animatedNumber,
-      stories
+      stories,
+      storiesMobile
     };
   },
 };
@@ -431,31 +441,15 @@ export default {
               <div class="col-6 story-wall-left left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in storiesMobile[0]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -463,31 +457,15 @@ export default {
               <div class="col-6 story-wall-left right">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story">
+                    <div class="story" v-for="(story, index) in storiesMobile[1]" :key="index">
                       <img
-                        src="https://picsum.photos/352/352"
+                        :src="story.car_photo_path"
                         class="story-img"
-                        alt="..."
+                        :alt="story.recommendation_title"
                       />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
-                    </div>
-
-                    <div class="story">
-                      <img
-                        src="https://picsum.photos/352/352"
-                        class="story-img"
-                        alt="..."
-                      />
-                      <div class="story-body">輕鬆駕馭城市街道或蜿蜒山路</div>
+                      <div class="story-body">
+                        {{ story.recommendation_content }}
+                      </div>
                     </div>
                   </div>
                 </div>
