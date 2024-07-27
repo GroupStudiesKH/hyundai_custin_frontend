@@ -1,6 +1,7 @@
 <script>
 import { onMounted, ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
+import apiService from "@/service/api-service.js";
 
 export default {
   setup() {
@@ -24,6 +25,18 @@ export default {
 
     onMounted(() => {
       animateNum();
+
+
+
+      // const results = await apiService.sendContact({
+      //   contact_name: contact_name.value,
+      //   contact_company: contact_company.value,
+      //   contact_phone: contact_phone.value,
+      //   contact_email: contact_email.value,
+      //   contact_content: contact_content.value,
+      //   cart: JSON.stringify(cartProducts),
+      //   recaptcha_token: token,
+      // });
 
       const scrollContainer = document.querySelector(".story_share_container");
 
