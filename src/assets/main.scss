@@ -7,6 +7,11 @@ html, body{
   padding: 0;
   margin: 0;
   background-color: #bdd6e4 !important;
+  -ms-overflow-style: none;  /* IE 和 Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
 }
 
 main{
@@ -85,7 +90,7 @@ main{
             img{
                 max-width: 600px;
                 width: 100%;
-                animation: logoAnimation 1s;
+                animation: logoAnimation 10s infinite;
                 @media (max-width: 1400px){
                     margin-top: 50px;
                     max-width: 550px;
@@ -96,13 +101,21 @@ main{
                 0% {
                     transform: scale(0.8);
                 }
-                50% {
+                5% {
+                    transform: scale(1.1);
+                }
+                10% {
+                    transform: scale(1);
+                }
+                90% {
+                    transform: scale(1);
+                }
+                95%{
                     transform: scale(1.1);
                 }
                 100% {
-                    transform: scale(1);
+                    transform: scale(0.8);
                 }
-                
             }
         }
 
@@ -371,11 +384,13 @@ main{
         }
 
         .carousel-control-prev{
-            left: -150px;
+            left: -35px;
+            width: 30px;
         }
 
         .carousel-control-next{
-            right: -150px;
+            right: -35px;
+            width: 30px;
         }
 
         .col-story{
@@ -545,11 +560,15 @@ main{
         background-repeat: no-repeat;
 
         .story-wall{
-
+            .container{
+                height: 100%;
+                overflow: hidden;
+            }
             .story-wall-left, .story-wall-right{
 
                 .vue3-marquee.vertical{
                     width: 98%;
+                    overflow-x: visible !important;
                 }
                 .story{
                     background-color: #fff;
@@ -563,6 +582,22 @@ main{
                     }
                     img{
                         width: 100%;
+                    }
+
+                    &:hover{
+                        animation: scaleUp 0.5s forwards;
+                    }
+
+                    @keyframes scaleUp {
+                        0% {
+                            transform: scale(1);
+                        }
+                        100% {
+                            transform: scale(1.05);
+                            box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.8);
+
+                        }
+                        
                     }
                 }
             }

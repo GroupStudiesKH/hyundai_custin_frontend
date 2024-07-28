@@ -28,11 +28,11 @@ export default {
 
     const animateNum = () => {
       const targetNumber = 10000;
-      const duration = 2000;
+      const duration = 5000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
 
       const timer = setInterval(() => {
-        animatedNumber.value += 100;
+        animatedNumber.value += 10;
         if (animatedNumber.value === targetNumber) {
           clearInterval(timer);
         }
