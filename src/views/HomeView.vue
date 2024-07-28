@@ -2,8 +2,12 @@
 import { onMounted, ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import apiService from "@/service/api-service.js";
+import { Vue3Marquee } from 'vue3-marquee'
 
 export default {
+  components: {
+    Vue3Marquee,
+  },
   setup() {
     const router = useRouter();
     const animateClassLeft = ref("");
@@ -361,32 +365,51 @@ export default {
               <div class="col-6 story-wall-left left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story" v-for="(story, index) in stories[0]" :key="index">
-                      <img
-                        :src="story.car_photo_path"
-                        class="story-img"
-                        :alt="story.recommendation_title"
-                      />
-                      <div class="story-body">
-                        {{ story.recommendation_content }}
+
+                    <Vue3Marquee 
+                      :vertical="true"
+                      :pause-on-hover="true"
+                      :clone="true"
+                      :duration="20"
+
+                    >
+                      <div class="story" v-for="(story, index) in stories[0]" :key="index">
+                        <img
+                          :src="story.car_photo_path"
+                          class="story-img"
+                          :alt="story.recommendation_title"
+                        />
+                        <div class="story-body">
+                          {{ story.recommendation_content }}
+                        </div>
                       </div>
-                    </div>
+                    </Vue3Marquee>
+
+
                   </div>
                 </div>
               </div>
               <div class="col-6 story-wall-left right">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story" v-for="(story, index) in stories[1]" :key="index">
-                      <img
-                        :src="story.car_photo_path"
-                        class="story-img"
-                        :alt="story.recommendation_title"
-                      />
-                      <div class="story-body">
-                        {{ story.recommendation_content }}
+                    <Vue3Marquee 
+                      :vertical="true"
+                      :pause-on-hover="true"
+                      :clone="true"
+                      :duration="60"
+
+                    >
+                      <div class="story" v-for="(story, index) in stories[1]" :key="index">
+                        <img
+                          :src="story.car_photo_path"
+                          class="story-img"
+                          :alt="story.recommendation_title"
+                        />
+                        <div class="story-body">
+                          {{ story.recommendation_content }}
+                        </div>
                       </div>
-                    </div>
+                    </Vue3Marquee>
                   </div>
                 </div>
               </div>
@@ -402,32 +425,46 @@ export default {
               <div class="col-6 story-wall-left left">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story" v-for="(story, index) in stories[2]" :key="index">
-                      <img
-                        :src="story.car_photo_path"
-                        class="story-img"
-                        :alt="story.recommendation_title"
-                      />
-                      <div class="story-body">
-                        {{ story.recommendation_content }}
+                    <Vue3Marquee 
+                      :vertical="true"
+                      :pause-on-hover="true"
+                      :clone="true"
+                      :duration="40"
+                    >
+                      <div class="story" v-for="(story, index) in stories[2]" :key="index">
+                        <img
+                          :src="story.car_photo_path"
+                          class="story-img"
+                          :alt="story.recommendation_title"
+                        />
+                        <div class="story-body">
+                          {{ story.recommendation_content }}
+                        </div>
                       </div>
-                    </div>
+                    </Vue3Marquee>
                   </div>
                 </div>
               </div>
               <div class="col-6 story-wall-right right">
                 <div class="row">
                   <div class="col-12">
-                    <div class="story" v-for="(story, index) in stories[3]" :key="index">
-                      <img
-                        :src="story.car_photo_path"
-                        class="story-img"
-                        :alt="story.recommendation_title"
-                      />
-                      <div class="story-body">
-                        {{ story.recommendation_content }}
+                    <Vue3Marquee 
+                      :vertical="true"
+                      :pause-on-hover="true"
+                      :clone="true"
+                      :duration="30"
+                    >
+                      <div class="story" v-for="(story, index) in stories[3]" :key="index">
+                        <img
+                          :src="story.car_photo_path"
+                          class="story-img"
+                          :alt="story.recommendation_title"
+                        />
+                        <div class="story-body">
+                          {{ story.recommendation_content }}
+                        </div>
                       </div>
-                    </div>
+                    </Vue3Marquee>
                   </div>
                 </div>
               </div>
