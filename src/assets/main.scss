@@ -375,7 +375,30 @@ main{
             margin-top: -100px;
             position: absolute;
             z-index: 1;
+            animation: storyCarouselAnimation 10s infinite;
+            @keyframes storyCarouselAnimation {
+                0% {
+                    margin-top: -100px;
+                }
+                5% {
+                    margin-top: -120px;
+                }
+                10% {
+                    margin-top: -100px;
+                }
+                90% {
+                    margin-top: -100px;
+                }
+                95%{
+                    margin-top: -120px;
+                }
+                100% {
+                    margin-top: -100px;
+                }
+            }
         }
+
+
 
         #story_carousel{
             margin-top: 70px;
@@ -400,7 +423,6 @@ main{
                 height: 680px;
                 margin-bottom: 50px;
                 background-color: #fff;
-                box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.2);
                 padding: 22px 25px;
                 img{
                     width: 100%;
