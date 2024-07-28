@@ -23,6 +23,7 @@ export default {
       [],
       []
     ]);
+    const runMobileMarquee = ref(false);
 
     const animateNum = () => {
       const targetNumber = 10000;
@@ -71,6 +72,11 @@ export default {
       animateNum();
       getStories();
 
+      //detect is 1280px or not
+      const is1280 = window.matchMedia("(max-width: 1280px)");
+      runMobileMarquee.value = is1280.matches;
+
+
       const scrollContainer = document.querySelector(".story_share_container");
 
       let isDown = false;
@@ -108,7 +114,8 @@ export default {
       animateClassRight,
       animatedNumber,
       stories,
-      storiesMobile
+      storiesMobile,
+      runMobileMarquee
     };
   },
 };
@@ -371,6 +378,8 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="20"
+                      v-if="!runMobileMarquee"
+
                     >
                       <div class="story" v-for="(story, index) in stories[0]" :key="index">
                         <img
@@ -396,6 +405,7 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="60"
+                      v-if="!runMobileMarquee"
 
                     >
                       <div class="story" v-for="(story, index) in stories[1]" :key="index">
@@ -429,6 +439,8 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="40"
+                      v-if="!runMobileMarquee"
+
                     >
                       <div class="story" v-for="(story, index) in stories[2]" :key="index">
                         <img
@@ -452,6 +464,8 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="30"
+                      v-if="!runMobileMarquee"
+
                     >
                       <div class="story" v-for="(story, index) in stories[3]" :key="index">
                         <img
@@ -492,7 +506,7 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="20"
-
+                      v-if="runMobileMarquee"
                     >
                       <div class="story" v-for="(story, index) in storiesMobile[0]" :key="index">
                         <img
@@ -520,7 +534,7 @@ export default {
                         :pause-on-hover="true"
                         :clone="true"
                         :duration="30"
-
+                        v-if="runMobileMarquee"
                       >
                       <div class="story" v-for="(story, index) in storiesMobile[1]" :key="index">
                         <img
