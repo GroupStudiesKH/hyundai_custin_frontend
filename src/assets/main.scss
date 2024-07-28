@@ -128,6 +128,8 @@ main{
                 transform: translateY(180px) translateX(85px);
                 position: absolute;
                 rotate: -0.5deg;
+                text-align: center;
+                width: 117px;
 
                 @media (max-width: 1400px){
                     transform: translateY(150px) translateX(105px);
@@ -303,7 +305,26 @@ main{
         }
 
         .post_btn{
+
             margin-top: -185px;
+
+            @media (max-width: 1366px) {
+                margin-top: -345px;
+            }
+
+
+            &:hover{
+                animation: postBtnScaleUp 0.5s forwards;
+            }
+
+            @keyframes postBtnScaleUp {
+                0% {
+                    transform: scale(1);
+                }
+                100% {
+                    transform: scale(1.05);
+                }
+            }
         }
     }
 
