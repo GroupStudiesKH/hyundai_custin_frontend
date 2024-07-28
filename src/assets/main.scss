@@ -265,7 +265,7 @@ main{
 
 
     #page_intro_pc{
-        height: 960px;
+        height: 1285px;
         width: 100%;
         background-image: url('../assets/img/post_bg.png');
         background-size: cover;
@@ -280,12 +280,25 @@ main{
             background-repeat: no-repeat;
 
             .link{
-                padding: 10px 15px;
+                padding: 15px 25px;
                 margin: 0 3px;
                 background-color: #5d7b97;
                 display: inline-block;
                 color: #fff;
-                font-size: 20px;
+                font-size: 25px;
+                &:hover{
+                    animation: scaleLink 0.3s forwards;                    
+                }
+
+                @keyframes scaleLink {
+                    0% {
+                        background-color: #5d7b97;
+                    }
+                    100%{
+                        background-color: #f75a53;
+                        scale: 1.05;
+                    }
+                }
             }
         }
 
