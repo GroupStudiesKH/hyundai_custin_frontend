@@ -371,7 +371,6 @@ export default {
                       :pause-on-hover="true"
                       :clone="true"
                       :duration="20"
-
                     >
                       <div class="story" v-for="(story, index) in stories[0]" :key="index">
                         <img
