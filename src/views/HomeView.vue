@@ -1,5 +1,5 @@
 <script>
-import { onMounted, ref } from "vue";
+import { onMounted, onBeforeUnmount, ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import apiService from "@/service/api-service.js";
 import { Vue3Marquee } from 'vue3-marquee'
@@ -24,6 +24,7 @@ export default {
       []
     ]);
     const runMobileMarquee = ref(false);
+    let cleanupInterval;
 
     const animateNum = () => {
       const targetNumber = 10000;
@@ -68,6 +69,56 @@ export default {
       }
     };
 
+    const cleanupClonedElements = () => {
+      const childrenPC1 = document.querySelectorAll('.story-pc1');
+      const childrenPC2 = document.querySelectorAll('.story-pc2');
+      const childrenPC3 = document.querySelectorAll('.story-pc3');
+      const childrenPC4 = document.querySelectorAll('.story-pc4');
+      const childrenMobile1 = document.querySelectorAll('.story-mobile1');
+      const childrenMobile2 = document.querySelectorAll('.story-mobile2');
+      if (childrenPC1.length > 10) {
+        for (let i = 10; i < childrenPC1.length; i++) {
+          childrenPC1[i].remove();
+        }
+      }
+
+      if (childrenPC2.length > 10) {
+        for (let i = 10; i < childrenPC2.length; i++) {
+          childrenPC2[i].remove();
+        }
+      }
+
+      if (childrenPC3.length > 10) {
+        for (let i = 10; i < childrenPC3.length; i++) {
+          childrenPC3[i].remove();
+        }
+      }
+
+      if (childrenPC4.length > 10) {
+        for (let i = 10; i < childrenPC4.length; i++) {
+          childrenPC4[i].remove();
+        }
+      }
+
+      if (childrenMobile1.length > 20) {
+        for (let i = 20; i < childrenMobile1.length; i++) {
+          childrenMobile1[i].remove();
+        }
+      }
+
+      if (childrenMobile2.length > 20) {
+        for (let i = 20; i < childrenMobile2.length; i++) {
+          childrenMobile2[i].remove();
+        }
+      }
+    };
+
+    onBeforeUnmount(() => {
+      if (cleanupInterval) {
+        clearInterval(cleanupInterval);
+      }
+    });
+
     onMounted(() => {
       animateNum();
       getStories();
@@ -76,6 +127,7 @@ export default {
       const is1280 = window.matchMedia("(max-width: 1280px)");
       runMobileMarquee.value = is1280.matches;
 
+      cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
 
       const scrollContainer = document.querySelector(".story_share_container");
 
@@ -381,7 +433,7 @@ export default {
                       v-if="!runMobileMarquee"
 
                     >
-                      <div class="story" v-for="(story, index) in stories[0]" :key="index">
+                      <div class="story story-pc1" v-for="(story, index) in stories[0]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
@@ -408,7 +460,7 @@ export default {
                       v-if="!runMobileMarquee"
 
                     >
-                      <div class="story" v-for="(story, index) in stories[1]" :key="index">
+                      <div class="story-pc2 story" v-for="(story, index) in stories[1]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
@@ -442,7 +494,7 @@ export default {
                       v-if="!runMobileMarquee"
 
                     >
-                      <div class="story" v-for="(story, index) in stories[2]" :key="index">
+                      <div class="story story-pc3" v-for="(story, index) in stories[2]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
@@ -467,7 +519,7 @@ export default {
                       v-if="!runMobileMarquee"
 
                     >
-                      <div class="story" v-for="(story, index) in stories[3]" :key="index">
+                      <div class="story story-pc4" v-for="(story, index) in stories[3]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
@@ -508,7 +560,7 @@ export default {
                       :duration="20"
                       v-if="runMobileMarquee"
                     >
-                      <div class="story" v-for="(story, index) in storiesMobile[0]" :key="index">
+                      <div class="story story-mobile1" v-for="(story, index) in storiesMobile[0]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
@@ -524,7 +576,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="col-6 story-wall-left right">
+              <div class="col-6 story-wall-right right">
                 <div class="row">
                   <div class="col-12">
 
@@ -536,7 +588,7 @@ export default {
                         :duration="30"
                         v-if="runMobileMarquee"
                       >
-                      <div class="story" v-for="(story, index) in storiesMobile[1]" :key="index">
+                      <div class="story story-mobile2" v-for="(story, index) in storiesMobile[1]" :key="index">
                         <img
                           :src="story.car_photo_path"
                           class="story-img"
