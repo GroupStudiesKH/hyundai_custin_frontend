@@ -208,18 +208,22 @@ export default {
           </div>
         </div>
       </div>
-      <div class="text-center post_btn">
-        <a href="#">
-          <img src="/assets/img/post_btn.png" alt="enter" />
-        </a>
+      <div
+        class="text-center post_btn"
+        data-bs-toggle="modal"
+        data-bs-target="#postModal"
+      >
+        <img src="/assets/img/post_btn.png" alt="enter" />
       </div>
     </section>
     <section id="page_intro_mobile">
       <div class="container"></div>
-      <div class="text-center post_btn">
-        <a href="#">
-          <img src="/assets/img/post_btn.png" alt="enter" />
-        </a>
+      <div
+        class="text-center post_btn"
+        data-bs-toggle="modal"
+        data-bs-target="#postModal"
+      >
+        <img src="/assets/img/post_btn.png" alt="enter" />
       </div>
     </section>
 
@@ -816,6 +820,170 @@ export default {
             ></button>
           </div>
           <div class="modal-body" v-html="contentModalData.content"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="postModal"
+      tabindex="-1"
+      aria-labelledby="postModalTitle"
+      aria-hidden="true"
+      style="display: none; background-color: rgb(173, 205, 221, 0.5)"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="post_title">
+                    <img src="/assets/img/post_modal_title.png" alt="post" />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 post-form">
+                  <div class="form-group">
+                    <label for="post_name">車主姓名</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="post_name"
+                      placeholder="請填寫車主本人姓名"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact_phone">車主聯絡電話</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact_phone"
+                      placeholder="請填寫車主聯絡電話"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact_email">車主聯絡E-Mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contact_email"
+                      placeholder="請填寫車主聯絡E-Mail"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="post_name">車主姓名</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="post_name"
+                      placeholder="請填寫車主本人姓名"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="recommendation_title">故事標題</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recommendation_title"
+                      placeholder="請填寫故事標題"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="recommendation_content"
+                      >故事分享（上限300字）</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="recommendation_content"
+                      rows="6"
+                      placeholder="請填寫您的故事"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 post-form">
+                  <div class="form-group">
+                    <labal for="car_photo"
+                      >CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)</labal
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="car_photo"
+                      accept="image/*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <labal for="owner_photo"
+                      >與CUSTIN的生活照或影片(擇一上傳)</labal
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="owner_photo"
+                      accept="image/*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="social_media_link"
+                      placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
+                    />
+                  </div>
+                  <p class="photo_rule">
+                    *照片格式：JPG、PNG <br>
+                    *檔案大小限制：5MB以下 <br>
+                    *圖片尺寸：具有1280x720的解析度，寬度至少為 40像素
+                    (手機皆可拍出符合上述標準之作品)<br>
+                    *影片分享請先上傳自各人社群平台(FB或IG)，並將
+                    該貼文設置為公開後提供連結
+                  </p>
+                  <div class="form-group">
+                    <input
+                      type="checkbox"
+                    />
+                    <span class="agree_text"> 我已閱讀並同意接受蒐集、處理及利用個人資料告知暨同意書內容</span>
+                  </div>
+                  <div
+                    class="text-left post_modal_submit_btn"
+                  >
+                    <img src="/assets/img/post_btn.png" alt="enter" />
+                  </div>
+                </div>
+                <div class="col-12 rule-text pt-3">
+                  <h4>/活動辦法/</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Sed ut perspiciatis
+                    unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                    illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi
+                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                    dolor sit amet, consectetur, adipisci velit, sed quia non
+                    numquam eius modi tempora incidunt ut labore et dolore
+                    magnam aliquam quaerat voluptatem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
