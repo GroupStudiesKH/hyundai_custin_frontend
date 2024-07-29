@@ -12,6 +12,7 @@ export default {
     const router = useRouter();
     const animateClassLeft = ref("");
     const animateClassRight = ref("");
+    const contentModalData = ref({title: '', content: ''});
     const animatedNumber = ref(0);
     const stories = ref([
       [],
@@ -167,7 +168,8 @@ export default {
       animatedNumber,
       stories,
       storiesMobile,
-      runMobileMarquee
+      runMobileMarquee,
+      contentModalData
     };
   },
 };
@@ -240,7 +242,7 @@ export default {
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
-                    <div class="col-6 col-story">
+                    <div class="col-6 col-story" data-bs-toggle="modal" data-bs-target="#contentModal">
                       <div class="story">
                         <img
                           src="https://picsum.photos/537/352"
@@ -255,7 +257,7 @@ export default {
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-story">
+                    <div class="col-6 col-story" data-bs-toggle="modal" data-bs-target="#contentModal">
                       <div class="story">
                         <img
                           src="https://picsum.photos/537/352"
@@ -276,7 +278,7 @@ export default {
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-                    <div class="col-6 col-story">
+                    <div class="col-6 col-story" data-bs-toggle="modal" data-bs-target="#contentModal">
                       <div class="story">
                         <img
                           src="https://picsum.photos/537/352"
@@ -284,14 +286,14 @@ export default {
                           alt="..."
                         />
                         <div class="story-body">
-                          <h5 class="story-title">1陪伴我們全家的最佳神隊友</h5>
+                          <h5 class="story-title">111ㄅ</h5>
                           <p class="story-content">
                             人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-story">
+                    <div class="col-6 col-story" data-bs-toggle="modal" data-bs-target="#contentModal">
                       <div class="story">
                         <img
                           src="https://picsum.photos/537/352"
@@ -300,7 +302,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            七人座MPV Custin A款交車，滿意!!
+                            22222
                           </h5>
                           <p class="story-content">
                             Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!
@@ -678,26 +680,21 @@ export default {
       </div>
     </section>
 
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="display: none; background-color: rgb(173, 205, 221, 0.5);">
-      <div class="modal-dialog">
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalTitle" aria-hidden="true" style="display: none; background-color: rgb(173, 205, 221, 0.5);">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLongTitle">Modal title</h1>
+            <h1 class="modal-title fs-5" id="contentModalTitle">
+              <img src="/assets/img/tape.png">
+              {{ contentModalData.title }}
+            </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" style="min-height: 1500px">
-            <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text in the modal, we use an inline style to set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body" v-html="contentModalData.content">
           </div>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
-      Launch demo modal
-    </button>
 
     <section id="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
