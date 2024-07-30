@@ -129,7 +129,6 @@ export default {
       return Object.values(formErros.value).every((error) => !error);
     };
 
-
     const handleCarPhotoChange = (event) => {
       storiesForm.value.carPhotoUpload = event.target.files[0];
       const reader = new FileReader();
@@ -137,7 +136,7 @@ export default {
         car_photo_preview.value = e.target.result;
       };
 
-      if(!event.target.files[0]){
+      if (!event.target.files[0]) {
         car_photo_preview.value = null;
         return;
       }
@@ -152,7 +151,7 @@ export default {
         owner_photo_preview.value = e.target.result;
       };
 
-      if(!event.target.files[0]){
+      if (!event.target.files[0]) {
         owner_photo_preview.value = null;
         return;
       }
@@ -251,8 +250,6 @@ export default {
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
     });
-
-
 
     return {
       animateClassLeft,
@@ -357,21 +354,24 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '陪伴我們全家的最佳神隊友',
-                          `<img src='https://picsum.photos/537/352' class='story-img' alt='...'/><br>人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。`
+                          'CUSTIN驚艷體驗:舒適實用家庭',
+                          `<img src='/assets/img/temp/01.jpg' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
+                            但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
+                            有時候如果要去露營或野餐，要載東西的時候，行李箱空間也很夠用，還有搭配電動尾門，簡直不要太方便。<br>
+                            每次看到兩老坐在第二排舒服的享受，小朋友因為天窗打開看見天空而興奮歡呼，都讓我非常有成就感，CUSTIN就像是讓我的心聲一樣，準備很多高級貼心的功能，幫我把家人都照顧得好好的。`
                         )
                       "
                     >
                       <div class="story">
                         <img
-                          src="https://picsum.photos/537/352"
+                          src="/assets/img/temp/01.jpg"
                           class="story-img"
                           alt="..."
                         />
                         <div class="story-body">
-                          <h5 class="story-title">陪伴我們全家的最佳神隊友</h5>
+                          <h5 class="story-title">CUSTIN驚艷體驗:舒適實用家庭</h5>
                           <p class="story-content">
-                            人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。
+                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
                           </p>
                         </div>
                       </div>
@@ -382,23 +382,25 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '七人座MPV Custin A款交車，滿意!!',
-                          `<img src='https://picsum.photos/537/352' class='story-img' alt='...'/><br>Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!`
+                          '魔法滑門：CUSTIN親子樂趣多',
+                          `<img src='/assets/img/temp/02.jpg' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
+<p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
+<p>當然車子本身各方面的表現都很優秀，老婆也很喜歡，但我更滿意的是一家人在車上開開心心的樣子，CUSTIN和我們一起度過了很多美好時光。</p>`
                         )
                       "
                     >
                       <div class="story">
                         <img
-                          src="https://picsum.photos/537/352"
+                          src="/assets/img/temp/02.jpg"
                           class="story-img"
                           alt="..."
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            七人座MPV Custin A款交車，滿意!!
+                            魔法滑門：CUSTIN親子樂趣多
                           </h5>
                           <p class="story-content">
-                            Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!
+                            我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
                           </p>
                         </div>
                       </div>
@@ -413,21 +415,27 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '111ㄅ',
-                          `<img src='https://picsum.photos/537/352' class='story-img' alt='...'/><br>人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。`
+                          'CUSTIN暖心座駕：全家舒適出行',
+                          `<img src='/assets/img/temp/03.jpg' class='story-img' alt='...'/><br>
+                          <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
+<p>看車當下，他們比較保守，一坐進去，雖然口頭上沒有說，但從他們的放鬆的姿勢跟表情，我就能感受的出來他們的滿意，電動側滑門跟第二排座椅，完完全全就是我要的。</p>
+<p>一開始其實會擔心車子比較大台，會不會不好開，因為我主要是上班通勤或接送家人，只有假日偶爾才會出去玩，大部分時間都是在市區跑。但實際開起來，我覺得整個視野很寬闊，而且A柱那邊還有一個三角窗，減少了很多死角，再加上有SVM環景功能，停車的時候也不用擔心不熟悉的環境，還有其他很多的安全輔助科技，給我滿滿的安全感。</p>
+<p>老婆跟小孩也對這台車很喜歡，更讓我覺得開心的是，我爸媽以前總會嫌麻煩，現在變得比較願意出門了。</p>
+                          
+                          `
                         )
                       "
                     >
                       <div class="story">
                         <img
-                          src="https://picsum.photos/537/352"
+                          src="/assets/img/temp/03.jpg"
                           class="story-img"
                           alt="..."
                         />
                         <div class="story-body">
-                          <h5 class="story-title">111ㄅ</h5>
+                          <h5 class="story-title">CUSTIN暖心座駕：全家舒適出行</h5>
                           <p class="story-content">
-                            人生第一台車就獻給Custin！全家居住於台中，隻身一人工作於台北的遲先生，為了陪伴老婆與孩子，每周末都會開著Custin帶家人們出遊，享受甜蜜的家庭時光。
+                            我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。
                           </p>
                         </div>
                       </div>
@@ -438,21 +446,23 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '22222',
-                          `<img src='https://picsum.photos/537/352' class='story-img' alt='...'/><br>Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!`
+                          '全家滿意的選擇：CUSTIN的豐富配備與貼心設計',
+                          `<img src='/assets/img/temp/04.jpg' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
+<p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
+<p>開著CUSTIN載全家人出去後，大家對它的評價都非常高，覺得這是一台很舒適享受的車，每個位置都可以感受到CUSTIN有在用心替乘客著想，我自己也很高興可以買到一台讓全家人都滿意的車！</p>`
                         )
                       "
                     >
                       <div class="story">
                         <img
-                          src="https://picsum.photos/537/352"
+                          src="/assets/img/temp/04.jpg"
                           class="story-img"
                           alt="..."
                         />
                         <div class="story-body">
-                          <h5 class="story-title">22222</h5>
+                          <h5 class="story-title">全家滿意的選擇：CUSTIN的豐富配備與貼心設計</h5>
                           <p class="story-content">
-                            Custin就是載家人出遊、偶爾滿載、臨時載貨，至於1.5T渦輪引擎開這麼大台的車到底夠不夠力呢?一踩大扭力就出來，使用到目前覺得滿載也不會感受到重拖，順順開來個瞬間加速也夠超車，幾天下來目前是滿意的!
+                            當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
                           </p>
                         </div>
                       </div>
@@ -1063,8 +1073,12 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <p class="mb-1 pb-1">CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)</p>
-                    <label id="car_photo_label" @click="triggerCarPhotoUpload">愛車照片上傳</label>
+                    <p class="mb-1 pb-1">
+                      CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)
+                    </p>
+                    <label id="car_photo_label" @click="triggerCarPhotoUpload"
+                      >愛車照片上傳</label
+                    >
                     <input
                       type="file"
                       class="form-control"
@@ -1075,7 +1089,12 @@ export default {
                       @change="handleCarPhotoChange($event)"
                     />
                     <div v-if="car_photo_preview" class="image-preview mt-3">
-                      <img :src="car_photo_preview" alt="預覽圖片" class="img-fluid" style="max-width: 150px;">
+                      <img
+                        :src="car_photo_preview"
+                        alt="預覽圖片"
+                        class="img-fluid"
+                        style="max-width: 150px"
+                      />
                     </div>
                     <span
                       class="invalid-feedback"
@@ -1085,7 +1104,11 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <p class="mb-1 pb-1">與CUSTIN的生活照或影片(擇一上傳)</p>
-                    <label id="owner_photo_label" @click="triggerOwnerPhotoUpload">生活照上傳</label>
+                    <label
+                      id="owner_photo_label"
+                      @click="triggerOwnerPhotoUpload"
+                      >生活照上傳</label
+                    >
                     <input
                       type="file"
                       class="form-control"
@@ -1096,7 +1119,12 @@ export default {
                       @change="handleOwnerPhotoChange($event)"
                     />
                     <div v-if="owner_photo_preview" class="image-preview mt-3">
-                      <img :src="owner_photo_preview" alt="預覽圖片" class="img-fluid" style="max-width: 150px;">
+                      <img
+                        :src="owner_photo_preview"
+                        alt="預覽圖片"
+                        class="img-fluid"
+                        style="max-width: 150px"
+                      />
                     </div>
                     <span
                       class="invalid-feedback"

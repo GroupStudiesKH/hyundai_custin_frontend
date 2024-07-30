@@ -592,6 +592,9 @@ main{
                 img{
                     width: 100%;
                     margin-bottom: 20px;
+                    max-height: 350px;
+                    object-fit: cover;
+                    object-position: bottom center;
                 }
 
                 .story-title{
@@ -708,6 +711,9 @@ main{
                 img{
                     width: 100%;
                     margin-bottom: 20px;
+                    max-height: 350px;
+                    object-fit: cover;
+                    object-position: bottom center;
                 }
 
                 .story-title{
