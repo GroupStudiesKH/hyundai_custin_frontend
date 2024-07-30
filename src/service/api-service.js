@@ -127,7 +127,46 @@ const getStories = async () => {
   }
 };
 
+//[POST] stories
+const postStories = async (params) => {
+  // 创建一个 FormData 对象
+  const formData = new FormData();
+  formData.append('car_owner_name', params.car_owner_name);
+  formData.append('license_plate', params.license_plate);
+  formData.append('contact_phone', params.contact_phone);
+  formData.append('contact_email', params.contact_email);
+  formData.append('recommendation_title', params.recommendation_title);
+  formData.append('recommendation_content', params.recommendation_content);
+  formData.append('social_media_link', params.social_media_link);
+  
+  // 添加文件到 FormData 对象
+  if (params.carPhotoUpload) {
+    formData.append('carPhotoUpload', params.carPhotoUpload);
+  }
+  if (params.ownerPhotoUpload) {
+    formData.append('ownerPhotoUpload', params.ownerPhotoUpload);
+  }
+
+  // 配置请求
+  const requestConfig = {
+    method: 'post',
+    url: `${apiUrl}stories`,
+    data: formData,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  };
+
+  try {
+    const response = await axios(requestConfig);
+    return checkServerResponse(response);
+  } catch (error) {
+    throw error;
+  }
+};
+
 
 export default {
-  getStories
+  getStories,
+  postStories
 };

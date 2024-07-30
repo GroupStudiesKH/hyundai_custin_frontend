@@ -17,6 +17,17 @@ export default {
     const stories = ref([[], [], [], []]);
     const storiesMobile = ref([[], []]);
     const runMobileMarquee = ref(false);
+    const storiesForm = ref({
+      car_owner_name: "",
+      license_plate: "",
+      contact_phone: "",
+      contact_email: "",
+      recommendation_title: "",
+      recommendation_content: "",
+      social_media_link: "",
+      carPhotoUpload: {},
+      ownerPhotoUpload: {},
+    })
     let cleanupInterval;
 
     const contentModalSetData = (title, content) => {
@@ -52,17 +63,24 @@ export default {
 
         storiesMobile.value = [results.slice(0, 10), results.slice(11, 20)];
 
-        // setInterval(() => {
-        //   stories.value.forEach((story, index) => {
-        //     const storyPop = story[story.length - 1];
-        //     stories.value[index].push(storyPop);
-        //     stories.value[index].shift();
-        //   });
-        //   console.log(stories.value);
-        // }, 5000);
       } catch (error) {
         console.log(error);
       }
+    };
+
+    const submitStory = async () => {
+      try {
+
+        await apiService.postStories(storiesForm.value);
+
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    const handleFileChange = (event, key) => {
+      storiesForm.value[key] = event.target.files[0];
+      console.log(storiesForm.value);
     };
 
     const cleanupClonedElements = () => {
@@ -166,6 +184,9 @@ export default {
       runMobileMarquee,
       contentModalData,
       contentModalSetData,
+      storiesForm,
+      handleFileChange,
+      submitStory
     };
   },
 };
@@ -857,6 +878,7 @@ export default {
                       class="form-control"
                       id="post_name"
                       placeholder="請填寫車主本人姓名"
+                      v-model="storiesForm.car_owner_name"
                     />
                   </div>
                   <div class="form-group">
@@ -866,6 +888,7 @@ export default {
                       class="form-control"
                       id="contact_phone"
                       placeholder="請填寫車主聯絡電話"
+                      v-model="storiesForm.contact_phone"
                     />
                   </div>
                   <div class="form-group">
@@ -875,15 +898,17 @@ export default {
                       class="form-control"
                       id="contact_email"
                       placeholder="請填寫車主聯絡E-Mail"
+                      v-model="storiesForm.contact_email"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="post_name">車主姓名</label>
+                    <label for="license_plate">車牌號碼</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="post_name"
-                      placeholder="請填寫車主本人姓名"
+                      id="license_plate"
+                      v-model="storiesForm.license_plate"
+                      placeholder="請填寫車牌號碼"
                     />
                   </div>
                   <div class="form-group">
@@ -893,6 +918,7 @@ export default {
                       class="form-control"
                       id="recommendation_title"
                       placeholder="請填寫故事標題"
+                      v-model="storiesForm.recommendation_title"
                     />
                   </div>
                   <div class="form-group">
@@ -904,6 +930,7 @@ export default {
                       id="recommendation_content"
                       rows="6"
                       placeholder="請填寫您的故事"
+                      v-model="storiesForm.recommendation_content"
                     ></textarea>
                   </div>
                 </div>
@@ -917,6 +944,7 @@ export default {
                       class="form-control"
                       id="car_photo"
                       accept="image/*"
+                      @change="handleFileChange($event, 'carPhotoUpload')"
                     />
                   </div>
                   <div class="form-group">
@@ -928,6 +956,7 @@ export default {
                       class="form-control"
                       id="owner_photo"
                       accept="image/*"
+                      @change="handleFileChange($event, 'ownerPhotoUpload')"
                     />
                   </div>
                   <div class="form-group">
@@ -936,6 +965,7 @@ export default {
                       class="form-control"
                       id="social_media_link"
                       placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
+                      v-model="storiesForm.social_media_link"
                     />
                   </div>
                   <p class="photo_rule">
@@ -954,6 +984,7 @@ export default {
                   </div>
                   <div
                     class="text-left post_modal_submit_btn"
+                    @click="submitStory()"
                   >
                     <img src="/assets/img/post_btn.png" alt="enter" />
                   </div>
