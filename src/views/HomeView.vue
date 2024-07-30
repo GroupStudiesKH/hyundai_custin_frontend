@@ -10,8 +10,6 @@ export default {
   },
   setup() {
     const router = useRouter();
-    const animateClassLeft = ref("");
-    const animateClassRight = ref("");
     const contentModalData = ref({ title: "", content: "" });
     const animatedNumber = ref(0);
     const stories = ref([[], [], [], []]);
@@ -164,8 +162,8 @@ export default {
       const childrenPC2 = document.querySelectorAll(".story-pc2");
       const childrenPC3 = document.querySelectorAll(".story-pc3");
       const childrenPC4 = document.querySelectorAll(".story-pc4");
-      const childrenMobile1 = document.querySelectorAll(".story-mobile1");
-      const childrenMobile2 = document.querySelectorAll(".story-mobile2");
+      const childrenMobile1 = document.querySelectorAll(".story-mobile1 .marquee.cloned");
+      const childrenMobile2 = document.querySelectorAll(".story-mobile2 .marquee.cloned");
       if (childrenPC1.length > 10) {
         for (let i = 10; i < childrenPC1.length; i++) {
           childrenPC1[i].remove();
@@ -190,14 +188,14 @@ export default {
         }
       }
 
-      if (childrenMobile1.length > 20) {
-        for (let i = 20; i < childrenMobile1.length; i++) {
+      if (childrenMobile1.length > 50) {
+        for (let i = 50; i < childrenMobile1.length; i++) {
           childrenMobile1[i].remove();
         }
       }
 
-      if (childrenMobile2.length > 20) {
-        for (let i = 20; i < childrenMobile2.length; i++) {
+      if (childrenMobile2.length > 50) {
+        for (let i = 50; i < childrenMobile2.length; i++) {
           childrenMobile2[i].remove();
         }
       }
@@ -218,7 +216,7 @@ export default {
       const is1280 = window.matchMedia("(max-width: 1280px)");
       runMobileMarquee.value = is1280.matches;
 
-      cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
+      // cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
 
       
       const scrollContainer = document.querySelector(".story_share_container");
@@ -255,8 +253,6 @@ export default {
     });
 
     return {
-      animateClassLeft,
-      animateClassRight,
       animatedNumber,
       stories,
       storiesMobile,
@@ -682,9 +678,6 @@ export default {
         <div class="row">
           <div
             class="col-6 story-wall left"
-            :class="animateClassLeft"
-            @mouseover="animateClassLeft = 'pause'"
-            @mouseout="animateClassLeft = ''"
           >
             <div class="row">
               <div class="col-6 story-wall-left left">
@@ -763,9 +756,6 @@ export default {
           </div>
           <div
             class="col-6 story-wall right"
-            :class="animateClassRight"
-            @mouseover="animateClassRight = 'pause'"
-            @mouseout="animateClassRight = ''"
           >
             <div class="row">
               <div class="col-6 story-wall-left left">
@@ -850,13 +840,10 @@ export default {
       <div class="container">
         <div class="row">
           <div
-            class="col-12 story-wall left"
-            :class="animateClassLeft"
-            @mouseover="animateClassLeft = 'pause'"
-            @mouseout="animateClassLeft = ''"
+            class="col-12 story-wall"
           >
             <div class="row">
-              <div class="col-6 story-wall-left left">
+              <div class="col-6 story-wall-left left story-mobile1">
                 <div class="row">
                   <div class="col-12">
                     <Vue3Marquee
@@ -866,7 +853,7 @@ export default {
                       v-if="runMobileMarquee"
                     >
                       <div
-                        class="story story-mobile1"
+                        class="story"
                         data-bs-toggle="modal"
                         data-bs-target="#contentModal"
                         @click="
@@ -891,7 +878,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="col-6 story-wall-right right">
+              <div class="col-6 story-wall-right right story-mobile2">
                 <div class="row">
                   <div class="col-12">
                     <Vue3Marquee
@@ -902,7 +889,7 @@ export default {
                       v-if="runMobileMarquee"
                     >
                       <div
-                        class="story story-mobile2"
+                        class="story "
                         data-bs-toggle="modal"
                         data-bs-target="#contentModal"
                         @click="
