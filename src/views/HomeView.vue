@@ -509,6 +509,7 @@ export default {
               id="story_carousel_mobile_container"
               class="carousel slide"
               data-ride="carousel"
+              data-touch="true"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">

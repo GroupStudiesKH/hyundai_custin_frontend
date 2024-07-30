@@ -707,10 +707,6 @@ main{
                     width: 90%;
                 }
     
-                @media (max-width: 576px){
-                    width: 80%;
-                }
-        
                 @media (max-width: 400px){
                     width: 98%;
                 }
@@ -721,6 +717,10 @@ main{
                     max-height: 250px;
                     object-fit: cover;
                     object-position: bottom center;
+
+                    @media (max-width: 768px){
+                        max-height: 200px;
+                    }
                 }
 
                 .story-title{
