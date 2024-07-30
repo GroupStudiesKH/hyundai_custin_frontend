@@ -249,6 +249,11 @@ export default {
         const walk = (x - startX) * 2; //scroll-fast
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
+
+      //carousel
+      new bootstrap.Carousel('#story_carousel_mobile_container', {
+        interval: 5000,
+      });
     });
 
     return {
@@ -450,7 +455,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '全家滿意的選擇：CUSTIN的豐富配備與貼心設計',
+                          'CUSTIN的豐富配備與貼心設計',
                           `<img src='/assets/img/temp/04.webp' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
 <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
 <p>開著CUSTIN載全家人出去後，大家對它的評價都非常高，覺得這是一台很舒適享受的車，每個位置都可以感受到CUSTIN有在用心替乘客著想，我自己也很高興可以買到一台讓全家人都滿意的車！</p>`
@@ -465,7 +470,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            全家滿意的選擇：CUSTIN的豐富配備與貼心設計
+                            CUSTIN的豐富配備與貼心設計
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
@@ -626,7 +631,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '全家滿意的選擇：CUSTIN的豐富配備與貼心設計',
+                          'CUSTIN的豐富配備與貼心設計',
                           `<img src='/assets/img/temp/04.webp' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
 <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
 <p>開著CUSTIN載全家人出去後，大家對它的評價都非常高，覺得這是一台很舒適享受的車，每個位置都可以感受到CUSTIN有在用心替乘客著想，我自己也很高興可以買到一台讓全家人都滿意的車！</p>`
@@ -641,7 +646,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            全家滿意的選擇：CUSTIN的豐富配備與貼心設計
+                            CUSTIN的豐富配備與貼心設計
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
