@@ -27,8 +27,12 @@ export default {
       social_media_link: "",
       carPhotoUpload: {},
       ownerPhotoUpload: {},
-    })
+    });
     const checkPolicy = ref(false);
+    const owner_photo = ref(null);
+    const car_photo = ref(null);
+    const owner_photo_preview = ref(null);
+    const car_photo_preview = ref(null);
 
     const formErros = ref({
       car_owner_name: "",
@@ -40,10 +44,18 @@ export default {
       social_media_link: "",
       carPhotoUpload: "",
       ownerPhotoUpload: "",
-      checkPolicy: ""
-    })
+      checkPolicy: "",
+    });
 
     let cleanupInterval;
+
+    const triggerOwnerPhotoUpload = () => {
+      owner_photo.value.click();
+    };
+
+    const triggerCarPhotoUpload = () => {
+      car_photo.value.click();
+    };
 
     const contentModalSetData = (title, content) => {
       contentModalData.value = {
@@ -77,7 +89,6 @@ export default {
         ];
 
         storiesMobile.value = [results.slice(0, 10), results.slice(11, 20)];
-
       } catch (error) {
         console.log(error);
       }
@@ -85,17 +96,17 @@ export default {
 
     const submitStory = async () => {
       try {
-        if(!checkForm()) return;
+        if (!checkForm()) return;
         await apiService.postStories(storiesForm.value);
         alert("提交成功");
-        
+
         //div id = closePostModal, closePostModal.click()
         const closePostModal = document.getElementById("closePostModal");
         closePostModal.click();
       } catch (error) {
         //check error is object
-        if(typeof error === "object") {
-          for(let key in error) {
+        if (typeof error === "object") {
+          for (let key in error) {
             formErros.value[key] = error[key].join("<br>");
           }
         } else {
@@ -105,10 +116,9 @@ export default {
     };
 
     const checkForm = () => {
-      for(let key in storiesForm.value) {
+      for (let key in storiesForm.value) {
         formErros.value[key] = "";
       }
-      
 
       if (!checkPolicy.value) {
         formErros.value.checkPolicy = "請勾選同意";
@@ -117,10 +127,28 @@ export default {
       }
 
       return Object.values(formErros.value).every((error) => !error);
-    }
+    };
 
     const handleFileChange = (event, key) => {
       storiesForm.value[key] = event.target.files[0];
+    };
+
+    const handleCarPhotoChange = (event) => {
+      storiesForm.value.carPhotoUpload = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        car_photo_preview.value = e.target.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    };
+
+    const handleOwnerPhotoChange = (event) => {
+      storiesForm.value.ownerPhotoUpload = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        owner_photo_preview.value = e.target.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
     };
 
     const cleanupClonedElements = () => {
@@ -228,7 +256,15 @@ export default {
       handleFileChange,
       submitStory,
       formErros,
-      checkPolicy
+      checkPolicy,
+      triggerOwnerPhotoUpload,
+      triggerCarPhotoUpload,
+      car_photo,
+      owner_photo,
+      handleCarPhotoChange,
+      handleOwnerPhotoChange,
+      owner_photo_preview,
+      car_photo_preview,
     };
   },
 };
@@ -924,7 +960,11 @@ export default {
                       placeholder="請填寫車主本人姓名"
                       v-model="storiesForm.car_owner_name"
                     />
-                    <span class="invalid-feedback" v-if="formErros.car_owner_name" v-html="formErros.car_owner_name"></span>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.car_owner_name"
+                      v-html="formErros.car_owner_name"
+                    ></span>
                   </div>
                   <div class="form-group">
                     <label for="contact_phone">車主聯絡電話</label>
@@ -936,7 +976,11 @@ export default {
                       placeholder="請填寫車主聯絡電話"
                       v-model="storiesForm.contact_phone"
                     />
-                    <span class="invalid-feedback" v-if="formErros.contact_phone" v-html="formErros.contact_phone"></span>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.contact_phone"
+                      v-html="formErros.contact_phone"
+                    ></span>
                   </div>
                   <div class="form-group">
                     <label for="contact_email">車主聯絡E-Mail</label>
@@ -948,7 +992,11 @@ export default {
                       placeholder="請填寫車主聯絡E-Mail"
                       v-model="storiesForm.contact_email"
                     />
-                    <span class="invalid-feedback" v-if="formErros.contact_email" v-html="formErros.contact_email"></span>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.contact_email"
+                      v-html="formErros.contact_email"
+                    ></span>
                   </div>
                   <div class="form-group">
                     <label for="license_plate">車牌號碼</label>
@@ -960,7 +1008,11 @@ export default {
                       v-model="storiesForm.license_plate"
                       placeholder="請填寫車牌號碼"
                     />
-                    <span class="invalid-feedback" v-if="formErros.license_plate" v-html="formErros.license_plate"></span>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.license_plate"
+                      v-html="formErros.license_plate"
+                    ></span>
                   </div>
                   <div class="form-group">
                     <label for="recommendation_title">故事標題</label>
@@ -972,8 +1024,11 @@ export default {
                       placeholder="請填寫故事標題"
                       v-model="storiesForm.recommendation_title"
                     />
-                    <span class="invalid-feedback" v-if="formErros.recommendation_title" v-html="formErros.recommendation_title"></span>
-
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.recommendation_title"
+                      v-html="formErros.recommendation_title"
+                    ></span>
                   </div>
                   <div class="form-group">
                     <label for="recommendation_content"
@@ -982,46 +1037,64 @@ export default {
                     <textarea
                       class="form-control"
                       id="recommendation_content"
-                      :class="{ 'is-invalid': formErros.recommendation_content }"
+                      :class="{
+                        'is-invalid': formErros.recommendation_content,
+                      }"
                       rows="6"
                       placeholder="請填寫您的故事"
                       v-model="storiesForm.recommendation_content"
                     ></textarea>
-                    <span class="invalid-feedback" v-if="formErros.recommendation_content" v-html="formErros.recommendation_content"></span>
-
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.recommendation_content"
+                      v-html="formErros.recommendation_content"
+                    ></span>
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <labal for="car_photo"
-                      >CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)</labal
-                    >
+                    <p class="mb-1 pb-1">CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)</p>
+                    <labal for="car_photo" id="car_photo_label" @click="triggerCarPhotoUpload">愛車照片上傳</labal>
                     <input
                       type="file"
                       class="form-control"
                       id="car_photo"
+                      ref="car_photo"
                       :class="{ 'is-invalid': formErros.carPhotoUpload }"
                       accept="image/*"
-                      @change="handleFileChange($event, 'carPhotoUpload')"
+                      @change="handleCarPhotoChange($event)"
                     />
-                    <span class="invalid-feedback" v-if="formErros.carPhotoUpload" v-html="formErros.carPhotoUpload"></span>
-
+                    <div v-if="car_photo_preview" class="image-preview mt-3">
+                      <img :src="car_photo_preview" alt="預覽圖片" class="img-fluid" style="max-width: 150px;">
+                    </div>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.carPhotoUpload"
+                      v-html="formErros.carPhotoUpload"
+                    ></span>
                   </div>
-                  <div class="form-group">
-                    <labal for="owner_photo"
-                      >與CUSTIN的生活照或影片(擇一上傳)</labal
-                    >
+                  <div class="form-group mt-3">
+                    <p class="mb-1 pb-1">與CUSTIN的生活照或影片(擇一上傳)</p>
+                    <labal for="owner_photo" id="owner_photo_label" @click="triggerOwnerPhotoUpload">生活照上傳</labal>
                     <input
                       type="file"
                       class="form-control"
                       id="owner_photo"
+                      ref="owner_photo"
                       :class="{ 'is-invalid': formErros.ownerPhotoUpload }"
                       accept="image/*"
-                      @change="handleFileChange($event, 'ownerPhotoUpload')"
+                      @change="handleOwnerPhotoChange($event)"
                     />
-                    <span class="invalid-feedback" v-if="formErros.ownerPhotoUpload" v-html="formErros.ownerPhotoUpload"></span>
+                    <div v-if="owner_photo_preview" class="image-preview mt-3">
+                      <img :src="owner_photo_preview" alt="預覽圖片" class="img-fluid" style="max-width: 150px;">
+                    </div>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.ownerPhotoUpload"
+                      v-html="formErros.ownerPhotoUpload"
+                    ></span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group mt-3">
                     <input
                       type="text"
                       class="form-control"
@@ -1030,14 +1103,17 @@ export default {
                       placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
                       v-model="storiesForm.social_media_link"
                     />
-                    <span class="invalid-feedback" v-if="formErros.social_media_link" v-html="formErros.social_media_link"></span>
-
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.social_media_link"
+                      v-html="formErros.social_media_link"
+                    ></span>
                   </div>
                   <p class="photo_rule">
-                    *照片格式：JPG、PNG <br>
-                    *檔案大小限制：5MB以下 <br>
+                    *照片格式：JPG、PNG <br />
+                    *檔案大小限制：5MB以下 <br />
                     *圖片尺寸：具有1280x720的解析度，寬度至少為 40像素
-                    (手機皆可拍出符合上述標準之作品)<br>
+                    (手機皆可拍出符合上述標準之作品)<br />
                     *影片分享請先上傳自各人社群平台(FB或IG)，並將
                     該貼文設置為公開後提供連結
                   </p>
@@ -1048,9 +1124,14 @@ export default {
                       v-model="checkPolicy"
                       :class="{ 'is-invalid': formErros.checkPolicy }"
                     />
-                    <span class="agree_text"> 我已閱讀並同意接受蒐集、處理及利用個人資料告知暨同意書內容</span>
-                    <span class="invalid-feedback" v-if="formErros.checkPolicy" v-html="formErros.checkPolicy"></span>
-
+                    <span class="agree_text">
+                      我已閱讀並同意接受蒐集、處理及利用個人資料告知暨同意書內容</span
+                    >
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.checkPolicy"
+                      v-html="formErros.checkPolicy"
+                    ></span>
                   </div>
                   <div
                     class="text-left post_modal_submit_btn"
