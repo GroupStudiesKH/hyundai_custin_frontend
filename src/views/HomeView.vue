@@ -93,17 +93,20 @@ export default {
         const closePostModal = document.getElementById("closePostModal");
         closePostModal.click();
       } catch (error) {
-        console.log(error);
+        //check error is object
+        if(typeof error === "object") {
+          for(let key in error) {
+            formErros.value[key] = error[key].join("<br>");
+          }
+        } else {
+          alert("提交失敗");
+        }
       }
     };
 
     const checkForm = () => {
       for(let key in storiesForm.value) {
-        if (!storiesForm.value[key] && key !== "carPhotoUpload" && key !== "ownerPhotoUpload") {
-          formErros.value[key] = "此欄位為必填";
-        } else {
-          formErros.value[key] = "";
-        }
+        formErros.value[key] = "";
       }
       
 
@@ -921,6 +924,7 @@ export default {
                       placeholder="請填寫車主本人姓名"
                       v-model="storiesForm.car_owner_name"
                     />
+                    <span class="invalid-feedback" v-if="formErros.car_owner_name" v-html="formErros.car_owner_name"></span>
                   </div>
                   <div class="form-group">
                     <label for="contact_phone">車主聯絡電話</label>
@@ -932,6 +936,7 @@ export default {
                       placeholder="請填寫車主聯絡電話"
                       v-model="storiesForm.contact_phone"
                     />
+                    <span class="invalid-feedback" v-if="formErros.contact_phone" v-html="formErros.contact_phone"></span>
                   </div>
                   <div class="form-group">
                     <label for="contact_email">車主聯絡E-Mail</label>
@@ -943,6 +948,7 @@ export default {
                       placeholder="請填寫車主聯絡E-Mail"
                       v-model="storiesForm.contact_email"
                     />
+                    <span class="invalid-feedback" v-if="formErros.contact_email" v-html="formErros.contact_email"></span>
                   </div>
                   <div class="form-group">
                     <label for="license_plate">車牌號碼</label>
@@ -954,6 +960,7 @@ export default {
                       v-model="storiesForm.license_plate"
                       placeholder="請填寫車牌號碼"
                     />
+                    <span class="invalid-feedback" v-if="formErros.license_plate" v-html="formErros.license_plate"></span>
                   </div>
                   <div class="form-group">
                     <label for="recommendation_title">故事標題</label>
@@ -965,6 +972,8 @@ export default {
                       placeholder="請填寫故事標題"
                       v-model="storiesForm.recommendation_title"
                     />
+                    <span class="invalid-feedback" v-if="formErros.recommendation_title" v-html="formErros.recommendation_title"></span>
+
                   </div>
                   <div class="form-group">
                     <label for="recommendation_content"
@@ -978,6 +987,8 @@ export default {
                       placeholder="請填寫您的故事"
                       v-model="storiesForm.recommendation_content"
                     ></textarea>
+                    <span class="invalid-feedback" v-if="formErros.recommendation_content" v-html="formErros.recommendation_content"></span>
+
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 post-form">
@@ -993,6 +1004,8 @@ export default {
                       accept="image/*"
                       @change="handleFileChange($event, 'carPhotoUpload')"
                     />
+                    <span class="invalid-feedback" v-if="formErros.carPhotoUpload" v-html="formErros.carPhotoUpload"></span>
+
                   </div>
                   <div class="form-group">
                     <labal for="owner_photo"
@@ -1006,6 +1019,7 @@ export default {
                       accept="image/*"
                       @change="handleFileChange($event, 'ownerPhotoUpload')"
                     />
+                    <span class="invalid-feedback" v-if="formErros.ownerPhotoUpload" v-html="formErros.ownerPhotoUpload"></span>
                   </div>
                   <div class="form-group">
                     <input
@@ -1016,6 +1030,8 @@ export default {
                       placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
                       v-model="storiesForm.social_media_link"
                     />
+                    <span class="invalid-feedback" v-if="formErros.social_media_link" v-html="formErros.social_media_link"></span>
+
                   </div>
                   <p class="photo_rule">
                     *照片格式：JPG、PNG <br>
@@ -1033,6 +1049,8 @@ export default {
                       :class="{ 'is-invalid': formErros.checkPolicy }"
                     />
                     <span class="agree_text"> 我已閱讀並同意接受蒐集、處理及利用個人資料告知暨同意書內容</span>
+                    <span class="invalid-feedback" v-if="formErros.checkPolicy" v-html="formErros.checkPolicy"></span>
+
                   </div>
                   <div
                     class="text-left post_modal_submit_btn"
