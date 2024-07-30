@@ -30,10 +30,29 @@ main{
                     width: 30px;
                     transform: translateY(-10px) ;
                 }
+
+                @media (max-width: 768px) {
+                    font-size: 18px !important;
+                    transform: translateY(15px) translateX(-15px);
+
+                    img{
+                        display: none;
+                    }
+                }
             }
+
+
+            @media (max-width: 768px) {
+                margin: 0 50px 0 20px;
+            }
+
             .btn-close{
                 transform: translateY(0px) translateX(30px);
                 scale: 1.5;
+
+                @media (max-width: 768px) {
+                    transform: translateY(10px) translateX(30px);
+                }
             }
         }
         .modal-content{
