@@ -25,8 +25,8 @@ export default {
       recommendation_title: "",
       recommendation_content: "",
       social_media_link: "",
-      carPhotoUpload: {},
-      ownerPhotoUpload: {},
+      carPhotoUpload: null,
+      ownerPhotoUpload: null,
     });
     const checkPolicy = ref(false);
     const owner_photo = ref(null);
@@ -129,9 +129,6 @@ export default {
       return Object.values(formErros.value).every((error) => !error);
     };
 
-    const handleFileChange = (event, key) => {
-      storiesForm.value[key] = event.target.files[0];
-    };
 
     const handleCarPhotoChange = (event) => {
       storiesForm.value.carPhotoUpload = event.target.files[0];
@@ -243,6 +240,8 @@ export default {
       });
     });
 
+
+
     return {
       animateClassLeft,
       animateClassRight,
@@ -253,7 +252,6 @@ export default {
       contentModalData,
       contentModalSetData,
       storiesForm,
-      handleFileChange,
       submitStory,
       formErros,
       checkPolicy,
@@ -1054,7 +1052,7 @@ export default {
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
                     <p class="mb-1 pb-1">CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)</p>
-                    <labal for="car_photo" id="car_photo_label" @click="triggerCarPhotoUpload">愛車照片上傳</labal>
+                    <label id="car_photo_label" @click="triggerCarPhotoUpload">愛車照片上傳</label>
                     <input
                       type="file"
                       class="form-control"
@@ -1075,7 +1073,7 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <p class="mb-1 pb-1">與CUSTIN的生活照或影片(擇一上傳)</p>
-                    <labal for="owner_photo" id="owner_photo_label" @click="triggerOwnerPhotoUpload">生活照上傳</labal>
+                    <label id="owner_photo_label" @click="triggerOwnerPhotoUpload">生活照上傳</label>
                     <input
                       type="file"
                       class="form-control"
