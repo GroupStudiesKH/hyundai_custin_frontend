@@ -282,21 +282,21 @@ export default {
     <section id="banner_pc">
       <div class="container">
         <div class="logo col-12">
-          <img src="/assets/img/banner_logo.png" alt="logo" />
+          <img src="/assets/img/banner_logo.webp" alt="logo" />
         </div>
         <div class="car col-12">
           <span class="animatedNumber">{{ animatedNumber }}</span>
-          <img src="/assets/img/banner_car.png" alt="logo" />
+          <img src="/assets/img/banner_car.webp" alt="logo" />
         </div>
       </div>
     </section>
     <section id="banner_mobile">
       <div class="container">
         <div class="logo col-12">
-          <img src="/assets/img/banner_logo_mobile.png" alt="logo" />
+          <img src="/assets/img/banner_logo_mobile.webp" alt="logo" />
         </div>
         <div class="car col-12">
-          <img src="/assets/img/banner_car.png" alt="logo" />
+          <img src="/assets/img/banner_car.webp" alt="logo" />
         </div>
         <div class="col-12">
           <span class="animatedNumber">{{ animatedNumber }}</span>
@@ -319,7 +319,7 @@ export default {
         data-bs-toggle="modal"
         data-bs-target="#postModal"
       >
-        <img src="/assets/img/post_btn.png" alt="enter" />
+        <img src="/assets/img/post_btn.webp" alt="enter" />
       </div>
     </section>
     <section id="page_intro_mobile">
@@ -329,7 +329,7 @@ export default {
         data-bs-toggle="modal"
         data-bs-target="#postModal"
       >
-        <img src="/assets/img/post_btn.png" alt="enter" />
+        <img src="/assets/img/post_btn.webp" alt="enter" />
       </div>
     </section>
 
@@ -338,7 +338,7 @@ export default {
         <div class="row">
           <div class="col-12">
             <div id="story_carousel_title">
-              <img src="/assets/img/story_title.png" alt="title" />
+              <img src="/assets/img/story_title.webp" alt="title" />
             </div>
             <div
               id="story_carousel"
@@ -355,7 +355,7 @@ export default {
                       @click="
                         contentModalSetData(
                           'CUSTIN驚艷體驗:舒適實用家庭',
-                          `<img src='/assets/img/temp/01.jpg' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
+                          `<img src='/assets/img/temp/01.webp' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
                             有時候如果要去露營或野餐，要載東西的時候，行李箱空間也很夠用，還有搭配電動尾門，簡直不要太方便。<br>
                             每次看到兩老坐在第二排舒服的享受，小朋友因為天窗打開看見天空而興奮歡呼，都讓我非常有成就感，CUSTIN就像是讓我的心聲一樣，準備很多高級貼心的功能，幫我把家人都照顧得好好的。`
@@ -364,7 +364,7 @@ export default {
                     >
                       <div class="story">
                         <img
-                          src="/assets/img/temp/01.jpg"
+                          src="/assets/img/temp/01.webp"
                           class="story-img"
                           alt="..."
                         />
@@ -383,7 +383,7 @@ export default {
                       @click="
                         contentModalSetData(
                           '魔法滑門：CUSTIN親子樂趣多',
-                          `<img src='/assets/img/temp/02.jpg' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
+                          `<img src='/assets/img/temp/02.webp' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
 <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
 <p>當然車子本身各方面的表現都很優秀，老婆也很喜歡，但我更滿意的是一家人在車上開開心心的樣子，CUSTIN和我們一起度過了很多美好時光。</p>`
                         )
@@ -391,7 +391,7 @@ export default {
                     >
                       <div class="story">
                         <img
-                          src="/assets/img/temp/02.jpg"
+                          src="/assets/img/temp/02.webp"
                           class="story-img"
                           alt="..."
                         />
@@ -416,7 +416,7 @@ export default {
                       @click="
                         contentModalSetData(
                           'CUSTIN暖心座駕：全家舒適出行',
-                          `<img src='/assets/img/temp/03.jpg' class='story-img' alt='...'/><br>
+                          `<img src='/assets/img/temp/03.webp' class='story-img' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
 <p>看車當下，他們比較保守，一坐進去，雖然口頭上沒有說，但從他們的放鬆的姿勢跟表情，我就能感受的出來他們的滿意，電動側滑門跟第二排座椅，完完全全就是我要的。</p>
 <p>一開始其實會擔心車子比較大台，會不會不好開，因為我主要是上班通勤或接送家人，只有假日偶爾才會出去玩，大部分時間都是在市區跑。但實際開起來，我覺得整個視野很寬闊，而且A柱那邊還有一個三角窗，減少了很多死角，再加上有SVM環景功能，停車的時候也不用擔心不熟悉的環境，還有其他很多的安全輔助科技，給我滿滿的安全感。</p>
@@ -428,7 +428,7 @@ export default {
                     >
                       <div class="story">
                         <img
-                          src="/assets/img/temp/03.jpg"
+                          src="/assets/img/temp/03.webp"
                           class="story-img"
                           alt="..."
                         />
@@ -447,7 +447,7 @@ export default {
                       @click="
                         contentModalSetData(
                           '全家滿意的選擇：CUSTIN的豐富配備與貼心設計',
-                          `<img src='/assets/img/temp/04.jpg' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
+                          `<img src='/assets/img/temp/04.webp' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
 <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
 <p>開著CUSTIN載全家人出去後，大家對它的評價都非常高，覺得這是一台很舒適享受的車，每個位置都可以感受到CUSTIN有在用心替乘客著想，我自己也很高興可以買到一台讓全家人都滿意的車！</p>`
                         )
@@ -455,7 +455,7 @@ export default {
                     >
                       <div class="story">
                         <img
-                          src="/assets/img/temp/04.jpg"
+                          src="/assets/img/temp/04.webp"
                           class="story-img"
                           alt="..."
                         />
@@ -476,7 +476,7 @@ export default {
                 role="button"
                 data-bs-slide="prev"
               >
-                <img src="/assets/img/story_arrow_left.png" />
+                <img src="/assets/img/story_arrow_left.webp" />
               </a>
               <a
                 class="carousel-control-next"
@@ -484,7 +484,7 @@ export default {
                 role="button"
                 data-bs-slide="next"
               >
-                <img src="/assets/img/story_arrow_right.png" />
+                <img src="/assets/img/story_arrow_right.webp" />
               </a>
             </div>
           </div>
@@ -497,7 +497,7 @@ export default {
         <div class="row">
           <div class="col-12">
             <div id="story_carousel_title">
-              <img src="/assets/img/story_title_mobile.png" alt="title" />
+              <img src="/assets/img/story_title_mobile.webp" alt="title" />
             </div>
             <div
               id="story_carousel_mobile_container"
@@ -574,14 +574,14 @@ export default {
                   role="button"
                   data-bs-slide="prev"
                 >
-                  <img src="/assets/img/story_arrow_left.png" />
+                  <img src="/assets/img/story_arrow_left.webp" />
                 </a>
                 <a
                   data-bs-target="#story_carousel_mobile_container"
                   role="button"
                   data-bs-slide="next"
                 >
-                  <img src="/assets/img/story_arrow_right.png" />
+                  <img src="/assets/img/story_arrow_right.webp" />
                 </a>
               </div>
             </div>
@@ -848,7 +848,7 @@ export default {
     </section>
 
     <section id="story_share_pc">
-      <p class="text-center"><img src="/assets/img/wall_title.png" /></p>
+      <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
@@ -928,7 +928,7 @@ export default {
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="contentModalTitle">
-              <img src="/assets/img/tape.png" />
+              <img src="/assets/img/tape.webp" />
               {{ contentModalData.title }}
             </h1>
             <button
@@ -966,7 +966,7 @@ export default {
               <div class="row">
                 <div class="col-12">
                   <div class="post_title">
-                    <img src="/assets/img/post_modal_title.png" alt="post" />
+                    <img src="/assets/img/post_modal_title.webp" alt="post" />
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 post-form">
@@ -1175,7 +1175,7 @@ export default {
                     class="text-left post_modal_submit_btn"
                     @click="submitStory()"
                   >
-                    <img src="/assets/img/post_btn.png" alt="enter" />
+                    <img src="/assets/img/post_btn.webp" alt="enter" />
                   </div>
                 </div>
                 <div class="col-12 rule-text pt-3">
@@ -1210,7 +1210,7 @@ export default {
 
     <section id="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
-        <img src="/assets/img/wall_title_mobile.png" />
+        <img src="/assets/img/wall_title_mobile.webp" />
       </p>
       <div class="story_share_container">
         <div class="story_share_row">
@@ -1285,34 +1285,34 @@ export default {
     <section id="champion_pc">
       <div class="row">
         <div class="col-7 champion_left">
-          <img src="/assets/img/champion_title.png" class="champion_title" />
-          <img src="/assets/img/champion_car_left.png" class="champion_car" />
+          <img src="/assets/img/champion_title.webp" class="champion_title" />
+          <img src="/assets/img/champion_car_left.webp" class="champion_car" />
           <div class="champion-action-list">
             <a
               ><img
-                src="/assets/img/champion_testdrive.png"
+                src="/assets/img/champion_testdrive.webp"
                 class="champion-action testdrive"
             /></a>
             <a
               ><img
-                src="/assets/img/champion_order.png"
+                src="/assets/img/champion_order.webp"
                 class="champion-action order"
             /></a>
             <a
               ><img
-                src="/assets/img/champion_more.png"
+                src="/assets/img/champion_more.webp"
                 class="champion-action more"
             /></a>
           </div>
         </div>
         <div class="col-5 champion_right">
-          <img src="/assets/img/champion_right_1.png" />
+          <img src="/assets/img/champion_right_1.webp" />
           <p>前衛科技座艙</p>
-          <img src="/assets/img/champion_right_2.png" />
+          <img src="/assets/img/champion_right_2.webp" />
           <p>感應式電動側滑門</p>
-          <img src="/assets/img/champion_right_3.png" />
+          <img src="/assets/img/champion_right_3.webp" />
           <p>正七人座寬敞空間</p>
-          <img src="/assets/img/champion_right_4.png" />
+          <img src="/assets/img/champion_right_4.webp" />
           <p>第二排VIP皇家座椅</p>
         </div>
       </div>
@@ -1321,33 +1321,33 @@ export default {
     <section id="champion_mobile">
       <div class="row">
         <div class="col-12 champion_left">
-          <img src="/assets/img/champion_title.png" class="champion_title" />
-          <img src="/assets/img/champion_car_left.png" class="champion_car" />
+          <img src="/assets/img/champion_title.webp" class="champion_title" />
+          <img src="/assets/img/champion_car_left.webp" class="champion_car" />
         </div>
         <div class="col-12 champion_right">
-          <img src="/assets/img/champion_right_1.png" />
+          <img src="/assets/img/champion_right_1.webp" />
           <p>前衛科技座艙</p>
-          <img src="/assets/img/champion_right_2.png" />
+          <img src="/assets/img/champion_right_2.webp" />
           <p>感應式電動側滑門</p>
-          <img src="/assets/img/champion_right_3.png" />
+          <img src="/assets/img/champion_right_3.webp" />
           <p>正七人座寬敞空間</p>
-          <img src="/assets/img/champion_right_4.png" />
+          <img src="/assets/img/champion_right_4.webp" />
           <p>第二排VIP皇家座椅</p>
 
           <div class="champion-action-list">
             <a
               ><img
-                src="/assets/img/champion_testdrive.png"
+                src="/assets/img/champion_testdrive.webp"
                 class="champion-action testdrive"
             /></a>
             <a
               ><img
-                src="/assets/img/champion_order.png"
+                src="/assets/img/champion_order.webp"
                 class="champion-action order"
             /></a>
             <a
               ><img
-                src="/assets/img/champion_more.png"
+                src="/assets/img/champion_more.webp"
                 class="champion-action more"
             /></a>
           </div>
