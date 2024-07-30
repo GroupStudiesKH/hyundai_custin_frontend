@@ -202,6 +202,7 @@ export default {
         }
       }
     };
+     
 
     onBeforeUnmount(() => {
       if (cleanupInterval) {
@@ -219,6 +220,7 @@ export default {
 
       cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
 
+      
       const scrollContainer = document.querySelector(".story_share_container");
 
       let isDown = false;
@@ -250,10 +252,6 @@ export default {
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
 
-      //carousel
-      new bootstrap.Carousel('#story_carousel_mobile_container', {
-        interval: 5000,
-      });
     });
 
     return {
@@ -863,7 +861,6 @@ export default {
                   <div class="col-12">
                     <Vue3Marquee
                       :vertical="true"
-                      :pause-on-hover="true"
                       :clone="true"
                       :duration="20"
                       v-if="runMobileMarquee"
@@ -899,9 +896,9 @@ export default {
                   <div class="col-12">
                     <Vue3Marquee
                       :vertical="true"
-                      :pause-on-hover="true"
                       :clone="true"
                       :duration="30"
+
                       v-if="runMobileMarquee"
                     >
                       <div
