@@ -216,7 +216,7 @@ export default {
       const is1280 = window.matchMedia("(max-width: 1280px)");
       runMobileMarquee.value = is1280.matches;
 
-      // cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
+      cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
 
       
       const scrollContainer = document.querySelector(".story_share_container");
