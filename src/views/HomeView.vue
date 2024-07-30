@@ -136,6 +136,12 @@ export default {
       reader.onload = (e) => {
         car_photo_preview.value = e.target.result;
       };
+
+      if(!event.target.files[0]){
+        car_photo_preview.value = null;
+        return;
+      }
+
       reader.readAsDataURL(event.target.files[0]);
     };
 
@@ -145,6 +151,12 @@ export default {
       reader.onload = (e) => {
         owner_photo_preview.value = e.target.result;
       };
+
+      if(!event.target.files[0]){
+        owner_photo_preview.value = null;
+        return;
+      }
+
       reader.readAsDataURL(event.target.files[0]);
     };
 
