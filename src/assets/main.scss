@@ -108,8 +108,21 @@ main{
             }
 
             .post_modal_submit_btn{
+                cursor: pointer;
                 img{
                     width: 200px;
+                    &:hover{
+                        animation: postBtnScaleUp 0.5s forwards;
+                    }
+                }
+
+                @keyframes postBtnScaleUp {
+                    0% {
+                        transform: scale(1);
+                    }
+                    100% {
+                        transform: scale(1.05);
+                    }
                 }
             }
         }

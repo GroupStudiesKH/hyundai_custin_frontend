@@ -28,6 +28,21 @@ export default {
       carPhotoUpload: {},
       ownerPhotoUpload: {},
     })
+    const checkPolicy = ref(false);
+
+    const formErros = ref({
+      car_owner_name: "",
+      license_plate: "",
+      contact_phone: "",
+      contact_email: "",
+      recommendation_title: "",
+      recommendation_content: "",
+      social_media_link: "",
+      carPhotoUpload: "",
+      ownerPhotoUpload: "",
+      checkPolicy: ""
+    })
+
     let cleanupInterval;
 
     const contentModalSetData = (title, content) => {
@@ -70,17 +85,39 @@ export default {
 
     const submitStory = async () => {
       try {
-
+        if(!checkForm()) return;
         await apiService.postStories(storiesForm.value);
-
+        alert("提交成功");
+        
+        //div id = closePostModal, closePostModal.click()
+        const closePostModal = document.getElementById("closePostModal");
+        closePostModal.click();
       } catch (error) {
         console.log(error);
       }
     };
 
+    const checkForm = () => {
+      for(let key in storiesForm.value) {
+        if (!storiesForm.value[key] && key !== "carPhotoUpload" && key !== "ownerPhotoUpload") {
+          formErros.value[key] = "此欄位為必填";
+        } else {
+          formErros.value[key] = "";
+        }
+      }
+      
+
+      if (!checkPolicy.value) {
+        formErros.value.checkPolicy = "請勾選同意";
+      } else {
+        formErros.value.checkPolicy = "";
+      }
+
+      return Object.values(formErros.value).every((error) => !error);
+    }
+
     const handleFileChange = (event, key) => {
       storiesForm.value[key] = event.target.files[0];
-      console.log(storiesForm.value);
     };
 
     const cleanupClonedElements = () => {
@@ -186,7 +223,9 @@ export default {
       contentModalSetData,
       storiesForm,
       handleFileChange,
-      submitStory
+      submitStory,
+      formErros,
+      checkPolicy
     };
   },
 };
@@ -860,6 +899,7 @@ export default {
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              id="closePostModal"
             ></button>
           </div>
           <div class="modal-body">
@@ -872,11 +912,12 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <label for="post_name">車主姓名</label>
+                    <label for="car_owner_name">車主姓名</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="post_name"
+                      :class="{ 'is-invalid': formErros.car_owner_name }"
+                      id="car_owner_name"
                       placeholder="請填寫車主本人姓名"
                       v-model="storiesForm.car_owner_name"
                     />
@@ -886,6 +927,7 @@ export default {
                     <input
                       type="text"
                       class="form-control"
+                      :class="{ 'is-invalid': formErros.contact_phone }"
                       id="contact_phone"
                       placeholder="請填寫車主聯絡電話"
                       v-model="storiesForm.contact_phone"
@@ -896,6 +938,7 @@ export default {
                     <input
                       type="email"
                       class="form-control"
+                      :class="{ 'is-invalid': formErros.contact_email }"
                       id="contact_email"
                       placeholder="請填寫車主聯絡E-Mail"
                       v-model="storiesForm.contact_email"
@@ -906,6 +949,7 @@ export default {
                     <input
                       type="text"
                       class="form-control"
+                      :class="{ 'is-invalid': formErros.license_plate }"
                       id="license_plate"
                       v-model="storiesForm.license_plate"
                       placeholder="請填寫車牌號碼"
@@ -916,6 +960,7 @@ export default {
                     <input
                       type="text"
                       class="form-control"
+                      :class="{ 'is-invalid': formErros.recommendation_title }"
                       id="recommendation_title"
                       placeholder="請填寫故事標題"
                       v-model="storiesForm.recommendation_title"
@@ -928,6 +973,7 @@ export default {
                     <textarea
                       class="form-control"
                       id="recommendation_content"
+                      :class="{ 'is-invalid': formErros.recommendation_content }"
                       rows="6"
                       placeholder="請填寫您的故事"
                       v-model="storiesForm.recommendation_content"
@@ -943,6 +989,7 @@ export default {
                       type="file"
                       class="form-control"
                       id="car_photo"
+                      :class="{ 'is-invalid': formErros.carPhotoUpload }"
                       accept="image/*"
                       @change="handleFileChange($event, 'carPhotoUpload')"
                     />
@@ -955,6 +1002,7 @@ export default {
                       type="file"
                       class="form-control"
                       id="owner_photo"
+                      :class="{ 'is-invalid': formErros.ownerPhotoUpload }"
                       accept="image/*"
                       @change="handleFileChange($event, 'ownerPhotoUpload')"
                     />
@@ -963,6 +1011,7 @@ export default {
                     <input
                       type="text"
                       class="form-control"
+                      :class="{ 'is-invalid': formErros.social_media_link }"
                       id="social_media_link"
                       placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
                       v-model="storiesForm.social_media_link"
@@ -979,6 +1028,9 @@ export default {
                   <div class="form-group">
                     <input
                       type="checkbox"
+                      class="form-check-input"
+                      v-model="checkPolicy"
+                      :class="{ 'is-invalid': formErros.checkPolicy }"
                     />
                     <span class="agree_text"> 我已閱讀並同意接受蒐集、處理及利用個人資料告知暨同意書內容</span>
                   </div>
