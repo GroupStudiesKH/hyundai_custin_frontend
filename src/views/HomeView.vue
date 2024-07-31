@@ -31,6 +31,13 @@ export default {
     const car_photo = ref(null);
     const owner_photo_preview = ref(null);
     const car_photo_preview = ref(null);
+    const randomSpeedMobileLeft = ref(20);
+    const randomSpeedMobileRight = ref(30);
+    const randomSpeedPCLeft1 = ref(20);
+    const randomSpeedPCLeft2 = ref(60);
+    const randomSpeedPCRight1 = ref(40);
+    const randomSpeedPCRight2 = ref(30);
+
 
     const formErros = ref({
       car_owner_name: "",
@@ -188,14 +195,14 @@ export default {
         }
       }
 
-      if (childrenMobile1.length > 50) {
-        for (let i = 50; i < childrenMobile1.length; i++) {
+      if (childrenMobile1.length > 10) {
+        for (let i = 20; i < childrenMobile1.length; i++) {
           childrenMobile1[i].remove();
         }
       }
 
-      if (childrenMobile2.length > 50) {
-        for (let i = 50; i < childrenMobile2.length; i++) {
+      if (childrenMobile2.length > 10) {
+        for (let i = 20; i < childrenMobile2.length; i++) {
           childrenMobile2[i].remove();
         }
       }
@@ -211,6 +218,19 @@ export default {
     onMounted(() => {
       animateNum();
       getStories();
+
+      // detect is safari or not
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      if(isSafari){
+        setTimeout(() => {
+          randomSpeedMobileLeft.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedMobileRight.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCLeft1.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCLeft2.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCRight1.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCRight2.value += Math.random() > 0.5 ? 1 : -1;
+        }, 1500);
+      }
 
       //detect is 1280px or not
       const is1280 = window.matchMedia("(max-width: 1280px)");
@@ -271,6 +291,12 @@ export default {
       handleOwnerPhotoChange,
       owner_photo_preview,
       car_photo_preview,
+      randomSpeedMobileLeft,
+      randomSpeedMobileRight,
+      randomSpeedPCLeft1,
+      randomSpeedPCLeft2,
+      randomSpeedPCRight1,
+      randomSpeedPCRight2,
     };
   },
 };
@@ -687,7 +713,7 @@ export default {
                       :vertical="true"
                       :pause-on-hover="true"
                       :clone="true"
-                      :duration="20"
+                      :duration="randomSpeedPCLeft1"
                       v-if="!runMobileMarquee"
                     >
                       <div
@@ -723,7 +749,7 @@ export default {
                       :vertical="true"
                       :pause-on-hover="true"
                       :clone="true"
-                      :duration="60"
+                      :duration="randomSpeedPCLeft2"
                       v-if="!runMobileMarquee"
                     >
                       <div
@@ -765,7 +791,7 @@ export default {
                       :vertical="true"
                       :pause-on-hover="true"
                       :clone="true"
-                      :duration="40"
+                      :duration="randomSpeedPCRight1"
                       v-if="!runMobileMarquee"
                     >
                       <div
@@ -801,7 +827,7 @@ export default {
                       :vertical="true"
                       :pause-on-hover="true"
                       :clone="true"
-                      :duration="30"
+                      :duration="randomSpeedPCRight2"
                       v-if="!runMobileMarquee"
                     >
                       <div
@@ -849,7 +875,7 @@ export default {
                     <Vue3Marquee
                       :vertical="true"
                       :clone="true"
-                      :duration="20"
+                      :duration="randomSpeedMobileLeft"
                       v-if="runMobileMarquee"
                     >
                       <div
@@ -884,7 +910,7 @@ export default {
                     <Vue3Marquee
                       :vertical="true"
                       :clone="true"
-                      :duration="30"
+                      :duration="randomSpeedMobileRight"
 
                       v-if="runMobileMarquee"
                     >
