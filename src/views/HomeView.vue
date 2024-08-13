@@ -330,7 +330,7 @@ export default {
     </section>
 
     <section id="page_intro_pc">
-      <div class="container">
+      <div class="page-content">
         <div class="row">
           <div class="col-12 text-center">
             <div class="link">故事募集中</div>
@@ -1023,7 +1023,7 @@ export default {
       aria-hidden="true"
       style="display: none; background-color: rgb(173, 205, 221, 0.5)"
     >
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="contentModalTitle">
@@ -1049,7 +1049,7 @@ export default {
       aria-hidden="true"
       style="display: none; background-color: rgb(173, 205, 221, 0.5)"
     >
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button
@@ -1177,6 +1177,7 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
+                    <img class="step1_img" src="/assets/img/step1.png" />
                     <label id="car_photo_label" @click="triggerCarPhotoUpload"
                       >愛車照片上傳</label
                     >
@@ -1204,11 +1205,13 @@ export default {
                     ></span>
                   </div>
                   <div class="form-group mt-3">
+                    <img class="step2_img" src="/assets/img/step2.png" />
                     <label
                       id="owner_photo_label"
                       @click="triggerOwnerPhotoUpload"
                       >生活照上傳</label
                     >
+                    <p>上傳與CUSTIN的生活影片</p>
                     <input
                       type="file"
                       class="form-control"
@@ -1318,7 +1321,7 @@ export default {
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_01.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1331,7 +1334,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_02.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1344,7 +1347,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_03.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1357,7 +1360,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_04.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1370,7 +1373,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_05.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>

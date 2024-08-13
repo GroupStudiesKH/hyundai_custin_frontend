@@ -88,6 +88,12 @@ main{
 
     #postModal{
         
+        .modal-dialog{
+            --bs-modal-width: 850px;
+            width: 100%;
+            max-width: 850px;
+        }
+
         .modal-header{
             border-bottom: none;
             .btn-close{
@@ -107,7 +113,12 @@ main{
             .post_title{
                 margin: -130px auto 20px auto;
                 text-align: center;
-                width: 500px;
+                width: 100%;
+                max-width: 500px;
+
+                @media screen and (max-width: 991px) {
+                    max-width: 250px;
+                }
 
                 img{
                     width: 300px;
@@ -123,7 +134,17 @@ main{
                     margin: 10px 0;
                 }
 
+                .step1_img{
+                    max-width: 500px;
+                    width: 100%;
+                    display: block;
+                }
 
+                .step2_img{
+                    max-width: 240px;
+                    width: 100%;
+                    display: block;
+                }
             }
 
             .post-form:nth-child(2){
@@ -135,18 +156,18 @@ main{
                 border-top: 1px solid #ddd;
 
                 .rule-text-content{
-                    color: #666;
+                    color: #999;
                 }
             }
 
             .photo_rule{
-                color: #666;
+                color: #999;
                 font-size: 13px;
-                line-height: 30px;
+                line-height: 23px;
             }
 
             .agree_text{
-                color: #666;
+                color: #999;
                 font-size: 12px;
             }
 
@@ -425,12 +446,37 @@ main{
         height: 1285px;
         width: 100%;
         background-image: url('../assets/img/post_bg.webp');
-        background-size: auto;
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
 
-        .container{
+        @media (max-width: 1366px) {
+            height: 1200px;
+        }
+
+        @media (max-width: 1280px) {
+            height: 1100px;
+        }
+
+        @media (max-width: 1199px) {
+            height: 1000px;
+        }
+
+        .page-content{
             height: 100%;
+            max-height: 1085px;
+            @media (max-width: 1366px){
+                max-height: 1000px;
+            }
+
+            @media (max-width: 1280px){
+                max-height: 900px;
+            }
+
+            @media (max-width: 1199px){
+                max-height: 800px;
+            }
+
             background-image: url('../assets/img/post_content_bg.webp');
             background-size: contain;
             background-position: top center;
@@ -461,9 +507,9 @@ main{
 
         .post_btn{
             cursor: pointer;
-            margin-top: -185px;
+            margin-top: -50px;
 
-            @media (max-width: 1366px) {
+            @media (max-width: 991px) {
                 margin-top: -345px;
             }
 
