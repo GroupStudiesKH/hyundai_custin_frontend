@@ -951,7 +951,7 @@ export default {
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_01.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -964,7 +964,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_02.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -976,7 +976,7 @@ export default {
             </p>
           </div>
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_03.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -988,7 +988,7 @@ export default {
             </p>
           </div>
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_04.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1000,7 +1000,7 @@ export default {
             </p>
           </div>
           <div class="story_share_col">
-            <img src="https://picsum.photos/579/322" alt="..." />
+            <img src="/assets/img/kol_05.webp" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1049,7 +1049,7 @@ export default {
       aria-hidden="true"
       style="display: none; background-color: rgb(173, 205, 221, 0.5)"
     >
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <button
@@ -1163,6 +1163,11 @@ export default {
                       placeholder="請填寫您的故事"
                       v-model="storiesForm.recommendation_content"
                     ></textarea>
+                    <div class="text-count ">
+                      <small :class="{ 'text-danger': storiesForm.recommendation_content.length > 300 }">
+                        {{ storiesForm.recommendation_content.length }}/300
+                      </small>
+                    </div>
                     <span
                       class="invalid-feedback"
                       v-if="formErros.recommendation_content"
@@ -1172,9 +1177,6 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <p class="mb-1 pb-1">
-                      CUSTIN愛車照 (需呈現車牌號碼，供驗證車牌用)
-                    </p>
                     <label id="car_photo_label" @click="triggerCarPhotoUpload"
                       >愛車照片上傳</label
                     >
@@ -1202,7 +1204,6 @@ export default {
                     ></span>
                   </div>
                   <div class="form-group mt-3">
-                    <p class="mb-1 pb-1">與CUSTIN的生活照或影片(擇一上傳)</p>
                     <label
                       id="owner_photo_label"
                       @click="triggerOwnerPhotoUpload"
@@ -1279,26 +1280,29 @@ export default {
                 </div>
                 <div class="col-12 rule-text pt-3">
                   <h4>/活動辦法/</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                    illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi
-                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                    dolor sit amet, consectetur, adipisci velit, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem.
-                  </p>
+                  <div class="rule-text-content">
+                    <h6>■ 活動時間：</h6>
+                    <p>2024/8/1起至2024/10/31止</p>
+                    <h6>■ 參加資格：</h6>
+                    <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
+                    <h6>■ 投稿說明：</h6>
+                    <p>1.	投稿內容包含文字故事分享(200字內)以及搭配之圖片或影音(擇一)。</p>
+                    <p>2. 照片格式：檔案需提供約2MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
+                    <p>3. 影音格式：需先將影片上傳至個人社群平台FB或IG，並將該篇貼文設定為公開後提供該篇貼文連結。</p>
+                    <p>4. 投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。</p>
+                    <p>5. 車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。</p>
+                    <p>6. 投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。</p>
+                    <p>7. 車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料 ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。</p>
+                    <h6>■ 獎項說明：</h6>
+                    <p>1. 完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE POINTS 100點(100位)。與CUSTIN模型車(10名)、王品集團1,000元餐券(5名)抽獎資格乙次。</p>
+                    <p>2. 投稿者須有LINE帳號始得獲贈LINE POINTS，以填入之手機號碼透過LINE發放，若因資料有誤導致寄送失敗、逾期未完成領取，皆視同放棄以上獎品，LINE POINTS之使用及折扣優惠悉依Line官方使用辦法說明。</p>
+                    <p>3. 依中華民國稅法規定，機會中獎之獎項價值超過新台幣1,000元以上者，於年度結算時必須計入個人之綜合所得申報，超過新臺幣20,010(含)元以上，需預先扣繳稅款，才可兌換獎項，故獲選車主應提供相關文件予主辦單位，以利主辦單位製作扣繳憑單，始得領取本活動獎項。若獲選車主未提供資料予主辦單位，則視同放棄獲選資格，不另行通知。</p>
+                    <h6>■ 獲選車主須知：</h6>
+                    <p>1. 投稿內容經主辦單位評選後，合適者將安排進一步的深入訪談、攝影或錄影紀錄等，如獲選車主無法全程配合主辦單位之安排，視同放棄獲選資格。</p>
+                    <p>2. 主辦單位為獲選車主安排深入訪談所拍攝之照片、影片及成果物，其智慧財產權歸屬於主辦單位所有，主辦單位不另支付報酬予獲選車主。</p>
+                    <h6>■ 主辦單位係指南陽實業股份有限公司。主辦單位有隨時有權取消、終止、修改活動內容，亦有權對本活動之所有事宜做出最終解釋或決定，及保留最後核准與否權利。相關未盡事宜，以Hyundai官網或官方粉絲團公告為準，不另行通知。</h6>
+
+                  </div>
                 </div>
               </div>
             </div>
