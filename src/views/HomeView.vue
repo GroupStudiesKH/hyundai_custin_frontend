@@ -196,13 +196,13 @@ export default {
       }
 
       if (childrenMobile1.length > 10) {
-        for (let i = 20; i < childrenMobile1.length; i++) {
+        for (let i = 10; i < childrenMobile1.length; i++) {
           childrenMobile1[i].remove();
         }
       }
 
       if (childrenMobile2.length > 10) {
-        for (let i = 20; i < childrenMobile2.length; i++) {
+        for (let i = 10; i < childrenMobile2.length; i++) {
           childrenMobile2[i].remove();
         }
       }
@@ -700,8 +700,7 @@ export default {
     </section>
 
     <section id="story_wall_pc">
-      <div class="container">
-        <div class="row">
+      <div class="row">
           <div
             class="col-6 story-wall left"
           >
@@ -859,7 +858,6 @@ export default {
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section id="story_wall_mobile">
