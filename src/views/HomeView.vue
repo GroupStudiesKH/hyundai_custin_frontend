@@ -222,7 +222,10 @@ export default {
     });
 
     onMounted(() => {
-      animateNum();
+      window.onload = function() {
+        animateNum();
+      };
+
       getStories();
 
       // detect is safari or not
