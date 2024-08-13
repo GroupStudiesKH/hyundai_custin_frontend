@@ -75,7 +75,7 @@ export default {
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
 
       const timer = setInterval(() => {
-        animatedNumber.value += 10;
+        animatedNumber.value += 80;
         if (animatedNumber.value === targetNumber) {
           clearInterval(timer);
         }
@@ -232,9 +232,9 @@ export default {
         }, 1500);
       }
 
-      //detect is 1280px or not
-      const is1280 = window.matchMedia("(max-width: 1280px)");
-      runMobileMarquee.value = is1280.matches;
+      //detect is 991px or not
+      const is991 = window.matchMedia("(max-width: 991px)");
+      runMobileMarquee.value = is991.matches;
 
       cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
 
