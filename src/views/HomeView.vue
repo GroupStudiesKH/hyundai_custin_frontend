@@ -221,7 +221,7 @@ export default {
 
       // detect is safari or not
       const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-      if(isSafari){
+      if(isSafari || true){ //temporary
         setTimeout(() => {
           randomSpeedMobileLeft.value += Math.random() > 0.5 ? 1 : -1;
           randomSpeedMobileRight.value += Math.random() > 0.5 ? 1 : -1;
