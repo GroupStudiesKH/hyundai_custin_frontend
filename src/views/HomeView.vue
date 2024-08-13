@@ -31,8 +31,8 @@ export default {
     const car_photo = ref(null);
     const owner_photo_preview = ref(null);
     const car_photo_preview = ref(null);
-    const randomSpeedMobileLeft = ref(20);
-    const randomSpeedMobileRight = ref(30);
+    const randomSpeedMobileLeft = ref(40);
+    const randomSpeedMobileRight = ref(60);
     const randomSpeedPCLeft1 = ref(20);
     const randomSpeedPCLeft2 = ref(60);
     const randomSpeedPCRight1 = ref(40);
@@ -353,15 +353,13 @@ export default {
         <img src="/assets/img/post_btn.webp" alt="enter" />
       </div>
     </section>
-    <section id="page_intro_mobile">
-      <div class="container"></div>
-      <div
-        class="text-center post_btn"
+    <section id="page_intro_mobile"
+    
+    class="text-center post_btn"
         data-bs-toggle="modal"
         data-bs-target="#postModal"
-      >
-        <img src="/assets/img/post_btn.webp" alt="enter" />
-      </div>
+    >
+      <div class="container"></div>
     </section>
 
     <section id="story_carousel_pc">
