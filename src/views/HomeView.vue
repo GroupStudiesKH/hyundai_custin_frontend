@@ -131,6 +131,12 @@ export default {
         formErros.value.checkPolicy = "";
       }
 
+      if (storiesForm.value.recommendation_content && storiesForm.value.recommendation_content.length > 300) {
+        formErros.value.recommendation_content = "內容不得超過300字";
+      } else {
+        formErros.value.recommendation_content = "";
+      }
+
       return Object.values(formErros.value).every((error) => !error);
     };
 
