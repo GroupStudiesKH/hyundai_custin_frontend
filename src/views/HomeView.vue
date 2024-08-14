@@ -1434,12 +1434,12 @@ export default {
 
     <section id="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
-        <img src="/assets/img/wall_title_mobile.webp" />
+        <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
       </p>
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
-            <img src="/assets/img/kol_01.webp" alt="..." />
+            <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1452,7 +1452,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="/assets/img/kol_02.webp" alt="..." />
+            <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1465,7 +1465,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="/assets/img/kol_03.webp" alt="..." />
+            <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1478,7 +1478,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="/assets/img/kol_04.webp" alt="..." />
+            <img src="/assets/img/kol_04.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1491,7 +1491,7 @@ export default {
           </div>
 
           <div class="story_share_col">
-            <img src="/assets/img/kol_05.webp" alt="..." />
+            <img src="/assets/img/kol_05.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
               <a href="https://google.com" target="_blank">冠儀試車</a>
             </p>
@@ -1545,33 +1545,36 @@ export default {
     <section id="champion_mobile">
       <div class="row">
         <div class="col-12 champion_left">
-          <img src="/assets/img/champion_title.webp" class="champion_title" />
-          <img src="/assets/img/champion_car_left.webp" class="champion_car" />
+          <img src="/assets/img/champion_title.webp" class="champion_title" loading="lazy" />
+          <img src="/assets/img/champion_car_left.webp" class="champion_car" loading="lazy" />
         </div>
         <div class="col-12 champion_right">
-          <img src="/assets/img/champion_right_1.webp" />
+          <img src="/assets/img/champion_right_1.webp" loading="lazy" />
           <p>前衛科技座艙</p>
-          <img src="/assets/img/champion_right_2.webp" />
+          <img src="/assets/img/champion_right_2.webp" loading="lazy" />
           <p>感應式電動側滑門</p>
-          <img src="/assets/img/champion_right_3.webp" />
+          <img src="/assets/img/champion_right_3.webp" loading="lazy" />
           <p>正七人座寬敞空間</p>
-          <img src="/assets/img/champion_right_4.webp" />
+          <img src="/assets/img/champion_right_4.webp" loading="lazy" />
           <p>第二排VIP皇家座椅</p>
 
           <div class="champion-action-list">
             <a
               ><img
                 src="/assets/img/champion_testdrive.webp"
+                loading="lazy"
                 class="champion-action testdrive"
             /></a>
             <a
               ><img
                 src="/assets/img/champion_order.webp"
+                loading="lazy"
                 class="champion-action order"
             /></a>
             <a
               ><img
                 src="/assets/img/champion_more.webp"
+                loading="lazy"
                 class="champion-action more"
             /></a>
           </div>
