@@ -229,28 +229,25 @@ export default {
     onMounted(() => {
       window.onload = function () {
         animateNum();
-
-        getStories();
-
-        // detect is safari or not
-        const isSafari = /^((?!chrome|android).)*safari/i.test(
-          navigator.userAgent
-        );
-        if (isSafari || true) {
-          //temporary
-          setTimeout(() => {
-            randomSpeedMobileLeft.value += Math.random() > 0.5 ? 1 : -1;
-            randomSpeedMobileRight.value += Math.random() > 0.5 ? 1 : -1;
-            randomSpeedPCLeft1.value += Math.random() > 0.5 ? 1 : -1;
-            randomSpeedPCLeft2.value += Math.random() > 0.5 ? 1 : -1;
-            randomSpeedPCRight1.value += Math.random() > 0.5 ? 1 : -1;
-            randomSpeedPCRight2.value += Math.random() > 0.5 ? 1 : -1;
-          }, 500);
-        }
-
       };
 
+      getStories();
 
+      // detect is safari or not
+      const isSafari = /^((?!chrome|android).)*safari/i.test(
+        navigator.userAgent
+      );
+      if (isSafari || true) {
+        //temporary
+        setTimeout(() => {
+          randomSpeedMobileLeft.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedMobileRight.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCLeft1.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCLeft2.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCRight1.value += Math.random() > 0.5 ? 1 : -1;
+          randomSpeedPCRight2.value += Math.random() > 0.5 ? 1 : -1;
+        }, 500);
+      }
 
       //detect is 991px or not
       const is991 = window.matchMedia("(max-width: 991px)");
