@@ -1314,9 +1314,10 @@ export default {
                     ></span>
                   </div>
                   <div class="form-group mt-3">
-                    <img class="step2_img" src="/assets/img/step2.png" />
+                    <img class="step2_img mb-2" src="/assets/img/step2.png" />
                     <label
                       id="owner_photo_label"
+                      class="mb-1"
                       @click="triggerOwnerPhotoUpload"
                       >生活照上傳</label
                     >
