@@ -1179,7 +1179,7 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <label for="car_owner_name">車主姓名</label>
+                    <label for="car_owner_name">車主(領牌者)姓名</label>
                     <input
                       type="text"
                       class="form-control"
