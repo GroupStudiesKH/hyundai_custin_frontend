@@ -1539,7 +1539,7 @@ export default {
     <section id="champion_pc" ref="champion_pc">
       <div class="row">
         <div class="col-7 champion_left">
-          <img src="/assets/img/champion_title.webp" loading='lazy' class="champion_title" />
+          <img src="/assets/img/champion_title.webp" class="champion_title" />
           <img src="/assets/img/champion_car_left.webp" loading='lazy' class="champion_car" />
           <div class="champion-action-list">
             <a href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24"
@@ -1583,7 +1583,7 @@ export default {
     <section id="champion_mobile" ref="champion_mobile">
       <div class="row">
         <div class="col-12 champion_left">
-          <img src="/assets/img/champion_title.webp" class="champion_title" loading="lazy" />
+          <img src="/assets/img/champion_title.webp" class="champion_title" />
           <img src="/assets/img/champion_car_left.webp" class="champion_car" loading="lazy" />
         </div>
         <div class="col-12 champion_right">
