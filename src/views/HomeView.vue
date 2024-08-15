@@ -172,6 +172,14 @@ export default {
       reader.readAsDataURL(event.target.files[0]);
     };
 
+
+    const scrollTo = (elementID) => {
+      let targetDiv = document.getElementById(elementID);
+      if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
     const cleanupClonedElements = () => {
       const childrenPC1 = document.querySelectorAll(".story-pc1");
       const childrenPC2 = document.querySelectorAll(".story-pc2");
@@ -332,6 +340,7 @@ export default {
       randomSpeedPCLeft2,
       randomSpeedPCRight1,
       randomSpeedPCRight2,
+      scrollTo
     };
   },
 };
@@ -368,9 +377,9 @@ export default {
       <div class="page-content">
         <div class="row">
           <div class="col-12 text-center">
-            <div class="link">故事募集中</div>
-            <div class="link">幸福故事集</div>
-            <div class="link">名人車主故事&體驗分享</div>
+            <div class="link" @click="scrollTo('page_intro_pc')">故事募集中</div>
+            <div class="link" @click="scrollTo('story_carousel_pc')">幸福故事集</div>
+            <div class="link" @click="scrollTo('story_share_pc')">名人車主故事&體驗分享</div>
           </div>
         </div>
       </div>

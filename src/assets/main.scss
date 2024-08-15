@@ -502,6 +502,7 @@ main{
                 display: inline-block;
                 color: #fff;
                 font-size: 25px;
+                cursor: pointer;
                 &:hover{
                     animation: scaleLink 0.3s forwards;                    
                 }
