@@ -339,7 +339,7 @@ export default {
 
 <template>
   <main>
-    <section id="banner_pc">
+    <section id="banner_pc" ref="banner_pc">
       <div class="container">
         <div class="logo col-12">
           <img src="/assets/img/banner_logo.webp" loading="lazy" alt="logo" />
@@ -350,7 +350,7 @@ export default {
         </div>
       </div>
     </section>
-    <section id="banner_mobile">
+    <section id="banner_mobile" ref="banner_mobile">
       <div class="container">
         <div class="logo col-12">
           <img src="/assets/img/banner_logo_mobile.webp" loading="lazy" alt="logo" />
@@ -364,7 +364,7 @@ export default {
       </div>
     </section>
 
-    <section id="page_intro_pc">
+    <section id="page_intro_pc" ref="page_intro_pc">
       <div class="page-content">
         <div class="row">
           <div class="col-12 text-center">
@@ -383,7 +383,7 @@ export default {
       </div>
     </section>
     <section id="page_intro_mobile"
-    
+      ref="page_intro_mobile"
       class="text-center post_btn"
         data-bs-toggle="modal"
         data-bs-target="#postModal"
@@ -391,7 +391,7 @@ export default {
       <div class="container"></div>
     </section>
 
-    <section id="story_carousel_pc">
+    <section id="story_carousel_pc" ref="story_carousel_pc">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -556,7 +556,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '寬敞大空間 輕松出遊沒煩惱',
+                          '寬敞大空間 輕鬆出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
@@ -577,7 +577,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            寬敞大空間 輕松出遊沒煩惱
+                            寬敞大空間 輕鬆出遊沒煩惱
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
@@ -612,7 +612,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_carousel_mobile">
+    <section id="story_carousel_mobile" ref="story_carousel_mobile">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -787,7 +787,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '寬敞大空間 輕松出遊沒煩惱',
+                          '寬敞大空間 輕鬆出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
@@ -807,7 +807,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            寬敞大空間 輕松出遊沒煩惱
+                            寬敞大空間 輕鬆出遊沒煩惱
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
@@ -842,7 +842,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_wall_pc">
+    <section id="story_wall_pc" ref="story_wall_pc">
       <div class="row">
           <div
             class="col-6 story-wall left"
@@ -1007,7 +1007,7 @@ export default {
         </div>
     </section>
 
-    <section id="story_wall_mobile">
+    <section id="story_wall_mobile" ref="story_wall_mobile">
       <div class="container">
         <div class="row">
           <div
@@ -1093,7 +1093,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_share_pc">
+    <section id="story_share_pc" ref="story_share_pc">
       <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
@@ -1462,7 +1462,7 @@ export default {
       </div>
     </div>
 
-    <section id="story_share_mobile">
+    <section id="story_share_mobile" ref="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
         <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
       </p>
@@ -1536,25 +1536,30 @@ export default {
       </div>
     </section>
 
-    <section id="champion_pc">
+    <section id="champion_pc" ref="champion_pc">
       <div class="row">
         <div class="col-7 champion_left">
           <img src="/assets/img/champion_title.webp" loading='lazy' class="champion_title" />
           <img src="/assets/img/champion_car_left.webp" loading='lazy' class="champion_car" />
           <div class="champion-action-list">
-            <a
+            <a href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24"
+              target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
                 class="champion-action testdrive"
                 loading='lazy'
             /></a>
             <a
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize"
+              target="_blank"
               ><img
                 src="/assets/img/champion_order.webp"
                 class="champion-action order"
                 loading='lazy'
             /></a>
             <a
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin"
+              target="_blank"
               ><img
                 src="/assets/img/champion_more.webp"
                 class="champion-action more"
@@ -1575,7 +1580,7 @@ export default {
       </div>
     </section>
 
-    <section id="champion_mobile">
+    <section id="champion_mobile" ref="champion_mobile">
       <div class="row">
         <div class="col-12 champion_left">
           <img src="/assets/img/champion_title.webp" class="champion_title" loading="lazy" />
@@ -1593,18 +1598,24 @@ export default {
 
           <div class="champion-action-list">
             <a
+              href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24"
+              target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
                 loading="lazy"
                 class="champion-action testdrive"
             /></a>
             <a
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize"
+              target="_blank"
               ><img
                 src="/assets/img/champion_order.webp"
                 loading="lazy"
                 class="champion-action order"
             /></a>
             <a
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin"
+              target="_blank"
               ><img
                 src="/assets/img/champion_more.webp"
                 loading="lazy"
