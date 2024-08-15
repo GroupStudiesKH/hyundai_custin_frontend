@@ -207,14 +207,14 @@ export default {
         }
       }
 
-      if (childrenMobile1.length > 3) {
-        for (let i = 3; i < childrenMobile1.length; i++) {
+      if (childrenMobile1.length > 2) {
+        for (let i = 2; i < childrenMobile1.length; i++) {
           childrenMobile1[i].remove();
         }
       }
 
-      if (childrenMobile2.length > 3) {
-        for (let i = 3; i < childrenMobile2.length; i++) {
+      if (childrenMobile2.length > 2) {
+        for (let i = 2; i < childrenMobile2.length; i++) {
           childrenMobile2[i].remove();
         }
       }
@@ -252,8 +252,11 @@ export default {
       //detect is 991px or not
       const is991 = window.matchMedia("(max-width: 991px)");
       runMobileMarquee.value = is991.matches;
-
-      cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
+      if(runMobileMarquee.value){
+        cleanupInterval = setInterval(cleanupClonedElements, 2500); // 每5秒清理一次
+      }else{
+        cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
+      }
 
       const scrollContainer = document.querySelector(".story_share_container");
 
