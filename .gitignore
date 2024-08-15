@@ -1,3 +1,8 @@
 /node_modules
 package-lock.json
 psd/index_E.psd
+public/assets/video/media1.mp4
+public/assets/video/media1.webm.xmp
+.DS_Store
+docs/assets/video/media1.mp4
+docs/assets/video/media1_1.webm.xmp

@@ -395,7 +395,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN驚艷體驗:舒適實用家庭',
+                          '照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
@@ -414,7 +414,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN驚艷體驗:舒適實用家庭
+                            照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
                             我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
@@ -428,7 +428,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '魔法滑門：CUSTIN親子樂趣多',
+                          '配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' class='story-img' loading='lazy' alt='...'/>
                           <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
@@ -446,7 +446,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            魔法滑門：CUSTIN親子樂趣多
+                            配備給好給滿超有料
                           </h5>
                           <p class="story-content">
                             我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
@@ -465,7 +465,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN的豐富配備與貼心設計',
+                          '替每一位著想的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
@@ -483,7 +483,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN的豐富配備與貼心設計
+                            替每一位著想的家庭神車
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
@@ -498,7 +498,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN暖心座駕：全家舒適出行',
+                          '每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
                           <img src='/assets/img/story/d/2.webp' class='story-img' loading='lazy' alt='...'/><br>
@@ -520,7 +520,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN暖心座駕：全家舒適出行
+                            每一次旅程都無比享受
                           </h5>
                           <p class="story-content">
                             我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。
@@ -539,10 +539,11 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '讓孩子隨時隨地舞動的驚喜',
+                          '寬敞大空間 輕松出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
+                          <video width='100%' controls autoplay loop><source src='/assets/video/media1.webm' type='video/webm'>Your browser does not support the video tag.</video>
                           <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
@@ -559,7 +560,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            讓孩子隨時隨地舞動的驚喜
+                            寬敞大空間 輕松出遊沒煩惱
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
@@ -616,7 +617,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN驚艷體驗:舒適實用家庭',
+                          '照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
@@ -635,7 +636,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN驚艷體驗:舒適實用家庭
+                            照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
                             我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
@@ -653,7 +654,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '魔法滑門：CUSTIN親子樂趣多',
+                          '配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' loading='lazy' class='story-img' alt='...'/>
                           <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
@@ -672,7 +673,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            魔法滑門：CUSTIN親子樂趣多
+                            配備給好給滿超有料
                           </h5>
                           <p class="story-content">
                             我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
@@ -692,7 +693,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN的豐富配備與貼心設計',
+                          '替每一位著想的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
@@ -710,7 +711,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN的豐富配備與貼心設計
+                            替每一位著想的家庭神車
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
@@ -728,7 +729,7 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          'CUSTIN暖心座駕：全家舒適出行',
+                          '每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
                           <img src='/assets/img/story/d/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -750,7 +751,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            CUSTIN暖心座駕：全家舒適出行
+                            每一次旅程都無比享受
                           </h5>
                           <p class="story-content">
                             我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。
@@ -769,10 +770,11 @@ export default {
                       data-bs-target="#contentModal"
                       @click="
                         contentModalSetData(
-                          '讓孩子隨時隨地舞動的驚喜',
+                          '寬敞大空間 輕松出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
+                          <video width='100%' controls autoplay loop><source src='/assets/video/media1.webm' type='video/webm'>Your browser does not support the video tag.</video>
                           <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
@@ -789,7 +791,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            讓孩子隨時隨地舞動的驚喜
+                            寬敞大空間 輕松出遊沒煩惱
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
