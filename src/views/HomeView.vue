@@ -246,7 +246,7 @@ export default {
           randomSpeedPCLeft2.value += Math.random() > 0.5 ? 1 : -1;
           randomSpeedPCRight1.value += Math.random() > 0.5 ? 1 : -1;
           randomSpeedPCRight2.value += Math.random() > 0.5 ? 1 : -1;
-        }, 500);
+        }, 1500);
       }
 
       //detect is 991px or not
