@@ -229,6 +229,23 @@ export default {
     onMounted(() => {
       window.onload = function () {
         animateNum();
+
+        const modal = document.getElementById('contentModal');
+
+        // 定義一個函數來停止YouTube影片
+        function stopVideo() {
+          const iframe = modal.querySelector('iframe');
+          if (iframe) {
+            const src = iframe.getAttribute('src');
+            iframe.setAttribute('src', '');
+            iframe.setAttribute('src', src);
+          }
+        }
+
+        // 監聽modal關閉事件
+        // 注意: 這裡的事件名稱可能需要根據你使用的modal庫來調整
+        modal.addEventListener('hidden.bs.modal', stopVideo);
+
       };
 
       getStories();
@@ -543,7 +560,7 @@ export default {
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
-                          <video width='100%' controls autoplay loop playsinline><source src='/assets/video/media1.webm' type='video/webm'>Your browser does not support the video tag.</video>
+                          <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                          <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
@@ -774,8 +791,7 @@ export default {
                           `<img src='/assets/img/story/e/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
-                          <video width='100%' controls autoplay loop playsinline><source src='/assets/video/media1.webm' type='video/webm'>Your browser does not support the video tag.</video>
-                          <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
+                          <iframe width='100%' height='250' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                          <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
                           `
