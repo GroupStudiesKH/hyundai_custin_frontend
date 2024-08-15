@@ -1,5 +1,5 @@
 <script>
-import { onMounted, onBeforeUnmount, ref } from "vue";
+import { onMounted, onBeforeUnmount, ref, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import apiService from "@/service/api-service.js";
 import { Vue3Marquee } from "vue3-marquee";
@@ -37,6 +37,10 @@ export default {
     const randomSpeedPCLeft2 = ref(60);
     const randomSpeedPCRight1 = ref(40);
     const randomSpeedPCRight2 = ref(30);
+    const menuVisible = ref(false);
+    const toggleMenu = () => {
+      menuVisible.value = !menuVisible.value;
+    }
 
     const formErros = ref({
       car_owner_name: "",
@@ -177,6 +181,7 @@ export default {
       let targetDiv = document.getElementById(elementID);
       if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
+        menuVisible.value = false
       }
     };
 
@@ -231,6 +236,14 @@ export default {
     onBeforeUnmount(() => {
       if (cleanupInterval) {
         clearInterval(cleanupInterval);
+      }
+    });
+
+    watch(menuVisible, (newValue) => {
+      if (newValue) {
+        document.body.classList.add('no-scroll');
+      } else {
+        document.body.classList.remove('no-scroll');
       }
     });
 
@@ -340,7 +353,9 @@ export default {
       randomSpeedPCLeft2,
       randomSpeedPCRight1,
       randomSpeedPCRight2,
-      scrollTo
+      scrollTo,
+      toggleMenu,
+      menuVisible
     };
   },
 };
@@ -348,6 +363,7 @@ export default {
 
 <template>
   <main>
+    <div class="menuMask" v-if="menuVisible"></div>
     <section id="banner_pc" ref="banner_pc">
       <div class="container">
         <div class="logo col-12">
@@ -361,6 +377,31 @@ export default {
     </section>
     <section id="banner_mobile" ref="banner_mobile">
       <div class="container">
+
+        <div>
+
+          <div class="nav-btn" @click="toggleMenu">
+            <img src="/assets/img/nav_btn.webp">
+          </div>
+
+          <div
+            :class="menuVisible ? 'show' : ''"
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            style="visibility: visible;"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" @click="toggleMenu"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="menu-list" @click="scrollTo('page_intro_mobile')">故事募集中</div>
+              <div class="menu-list" @click="scrollTo('story_carousel_mobile')">幸福故事集</div>
+              <div class="menu-list" @click="scrollTo('story_share_mobile')">名人車主故事&體驗分享</div>
+            </div>
+          </div>
+        </div>
+        
         <div class="logo col-12">
           <img src="/assets/img/banner_logo_mobile.webp" loading="lazy" alt="logo" />
         </div>
