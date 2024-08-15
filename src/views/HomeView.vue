@@ -31,7 +31,7 @@ export default {
     const car_photo = ref(null);
     const owner_photo_preview = ref(null);
     const car_photo_preview = ref(null);
-    const randomSpeedMobileLeft = ref(40);
+    const randomSpeedMobileLeft = ref(50);
     const randomSpeedMobileRight = ref(60);
     const randomSpeedPCLeft1 = ref(20);
     const randomSpeedPCLeft2 = ref(60);
@@ -207,14 +207,14 @@ export default {
         }
       }
 
-      if (childrenMobile1.length > 10) {
-        for (let i = 10; i < childrenMobile1.length; i++) {
+      if (childrenMobile1.length > 3) {
+        for (let i = 3; i < childrenMobile1.length; i++) {
           childrenMobile1[i].remove();
         }
       }
 
-      if (childrenMobile2.length > 10) {
-        for (let i = 10; i < childrenMobile2.length; i++) {
+      if (childrenMobile2.length > 3) {
+        for (let i = 3; i < childrenMobile2.length; i++) {
           childrenMobile2[i].remove();
         }
       }
