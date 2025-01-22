@@ -1376,7 +1376,7 @@ export default {
                   <div class="form-group">
                     <img class="step1_img" src="/assets/img/step1.png" loading='lazy' />
                     <label id="car_photo_label" @click="triggerCarPhotoUpload"
-                      >愛車照片上傳</label
+                      >上傳愛車照片</label
                     >
                     <input
                       type="file"
@@ -1403,13 +1403,13 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <img class="step2_img mb-2" loading='lazy' src="/assets/img/step2.png" />
-                    <label
+                    <span>・</span><label
                       id="owner_photo_label"
                       class="mb-1"
                       @click="triggerOwnerPhotoUpload"
                       >生活照上傳</label
                     >
-                    <p>上傳與CUSTIN的生活影片</p>
+                    <p><span>・</span>上傳與CUSTIN的生活影片</p>
                     <input
                       type="file"
                       class="form-control"
@@ -1483,7 +1483,7 @@ export default {
                   <h4>/活動辦法/</h4>
                   <div class="rule-text-content">
                     <h6>■ 活動時間：</h6>
-                    <p>2024/8/1起至2024/10/31止</p>
+                    <p>2025/2/17起至2025/05/31止</p>
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
                     <h6>■ 投稿說明：</h6>
