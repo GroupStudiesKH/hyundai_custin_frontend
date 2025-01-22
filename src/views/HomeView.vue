@@ -1403,7 +1403,7 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <img class="step2_img mb-2" loading='lazy' src="/assets/img/step2.png" />
-                    <span>・</span><label
+                    <label
                       id="owner_photo_label"
                       class="mb-1"
                       @click="triggerOwnerPhotoUpload"
