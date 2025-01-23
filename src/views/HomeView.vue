@@ -10,7 +10,8 @@ export default {
   },
   setup() {
     const router = useRouter();
-    const contentModalData = ref({ title: "", content: "" });
+    const storyModalData = ref({ title: "", content: ""});
+    const contentModalData = ref({ title: "", content: "", img_url: "", social_media_link: "" });
     const animatedNumber = ref(0);
     const stories = ref([[], [], [], []]);
     const storiesMobile = ref([[], []]);
@@ -65,13 +66,20 @@ export default {
       car_photo.value.click();
     };
 
-    const contentModalSetData = (title, content) => {
+    const contentModalSetData = (title, img_url, content, social_media_link = ``) => {
       contentModalData.value = {
+        title: title,
+        content: content,
+        img_url: img_url,
+        social_media_link: social_media_link
+      };
+    };
+    const storyModalSetData = (title, content) => {
+      storyModalData.value = {
         title,
         content,
       };
     };
-
     const animateNum = () => {
       const targetNumber = 10000;
       const duration = 5000;
@@ -248,6 +256,7 @@ export default {
     });
 
     onMounted(() => {
+
       window.onload = function () {
         animateNum();
 
@@ -335,6 +344,8 @@ export default {
       runMobileMarquee,
       contentModalData,
       contentModalSetData,
+      storyModalData,
+      storyModalSetData,
       storiesForm,
       submitStory,
       formErros,
@@ -360,7 +371,6 @@ export default {
   },
 };
 </script>
-
 <template>
   <main>
     <div class="menuMask" v-if="menuVisible"></div>
@@ -459,9 +469,9 @@ export default {
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -492,9 +502,9 @@ export default {
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' class='story-img' loading='lazy' alt='...'/>
@@ -529,9 +539,9 @@ export default {
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '替每一位著想的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' class='story-img' loading='lazy' alt='...'/><br>
@@ -562,9 +572,9 @@ export default {
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
@@ -603,9 +613,9 @@ export default {
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '寬敞大空間 輕鬆出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
@@ -681,9 +691,9 @@ export default {
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -718,9 +728,9 @@ export default {
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' loading='lazy' class='story-img' alt='...'/>
@@ -757,9 +767,9 @@ export default {
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '替每一位著想的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -793,9 +803,9 @@ export default {
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
@@ -834,9 +844,9 @@ export default {
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
-                      data-bs-target="#contentModal"
+                      data-bs-target="#storyModal"
                       @click="
-                        contentModalSetData(
+                        storyModalSetData(
                           '寬敞大空間 輕鬆出遊沒煩惱',
                           `<img src='/assets/img/story/e/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -917,7 +927,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                       >
@@ -952,7 +964,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                         v-for="(story, index) in stories[1]"
@@ -995,7 +1009,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                         v-for="(story, index) in stories[2]"
@@ -1032,7 +1048,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                         v-for="(story, index) in stories[3]"
@@ -1080,7 +1098,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                         v-for="(story, index) in storiesMobile[0]"
@@ -1117,7 +1137,9 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            `<img src='${story.car_photo_path}' loading='lazy' class='story-img' alt='...'/><br>${story.recommendation_content}`
+                            story.car_photo_path,
+                            story.recommendation_content,
+                            story.social_media_link
                           )
                         "
                         v-for="(story, index) in storiesMobile[1]"
@@ -1211,7 +1233,32 @@ export default {
         </div>
       </div>
     </section>
-
+    <div
+      class="modal fade"
+      id="storyModal"
+      tabindex="-1"
+      aria-labelledby="storyModalTitle"
+      aria-hidden="true"
+      style="display: none; background-color: rgb(173, 205, 221, 0.5)"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contentModalTitle">
+              <img src="/assets/img/tape.webp" loading='lazy' />
+              {{ storyModalData.title }}
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" v-html="storyModalData.content"></div>
+        </div>
+      </div>
+    </div>
     <div
       class="modal fade"
       id="contentModal"
@@ -1234,7 +1281,19 @@ export default {
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body" v-html="contentModalData.content"></div>
+          <div class="modal-body">
+
+            <a :href="contentModalData.social_media_link" target="_blank" v-if="!contentModalData.social_media_link.includes('youtube')">
+              <img :src="contentModalData.img_url">
+            </a>
+
+            <div v-else>
+              <img :src="contentModalData.img_url">
+            </div>
+
+            <p v-html="contentModalData.content"></p>
+
+          </div>
         </div>
       </div>
     </div>
