@@ -12,6 +12,7 @@ export default {
     const router = useRouter();
     const storyModalData = ref({ title: "", content: ""});
     const contentModalData = ref({ title: "", content: "", img_url: "", social_media_link: "" });
+    const contentModalYTOpened = ref(false)
     const animatedNumber = ref(0);
     const stories = ref([[], [], [], []]);
     const storiesMobile = ref([[], []]);
@@ -66,6 +67,8 @@ export default {
       car_photo.value.click();
     };
 
+    const youtubeEmbedUrl = ref("");
+
     const contentModalSetData = (title, img_url, content, social_media_link = ``) => {
       contentModalData.value = {
         title: title,
@@ -73,6 +76,9 @@ export default {
         img_url: img_url,
         social_media_link: social_media_link
       };
+      if (social_media_link.includes("youtube")) {
+        contentModalData.value.social_media_link = `https://www.youtube.com/embed/${new URL(social_media_link).searchParams.get('v')}`;
+      }
     };
     const storyModalSetData = (title, content) => {
       storyModalData.value = {
@@ -265,6 +271,7 @@ export default {
         // 定義一個函數來停止YouTube影片
         function stopVideo() {
           const iframe = modal.querySelector('iframe');
+          contentModalYTOpened.value = false
           if (iframe) {
             const src = iframe.getAttribute('src');
             iframe.setAttribute('src', '');
@@ -344,6 +351,7 @@ export default {
       runMobileMarquee,
       contentModalData,
       contentModalSetData,
+      contentModalYTOpened,
       storyModalData,
       storyModalSetData,
       storiesForm,
@@ -1287,8 +1295,23 @@ export default {
               <img :src="contentModalData.img_url">
             </a>
 
+
+
             <div v-else>
-              <img :src="contentModalData.img_url">
+
+              <img :src="contentModalData.img_url" @click="contentModalYTOpened = true" v-if="!contentModalYTOpened" role="button">
+
+              <iframe
+                v-if="contentModalYTOpened"
+                width="100%"
+                height="350"
+                :src="contentModalData.social_media_link"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              
             </div>
 
             <p v-html="contentModalData.content"></p>
