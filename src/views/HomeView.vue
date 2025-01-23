@@ -1407,7 +1407,7 @@ export default {
                       id="owner_photo_label"
                       class="mb-1"
                       @click="triggerOwnerPhotoUpload"
-                      >生活照上傳</label
+                      >上傳生活照</label
                     >
                     <p><span>・</span>上傳與CUSTIN的生活影片</p>
                     <input
@@ -1483,7 +1483,7 @@ export default {
                   <h4>/活動辦法/</h4>
                   <div class="rule-text-content">
                     <h6>■ 活動時間：</h6>
-                    <p>2025/2/17起至2025/05/31止</p>
+                    <p>2025/02/17起至2025/05/31止</p>
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
                     <h6>■ 投稿說明：</h6>
