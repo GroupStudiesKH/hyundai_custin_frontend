@@ -90,12 +90,20 @@ export default {
       const targetNumber = 10000;
       const duration = 5000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
+      const slowDownPoint = 9000;
+      const slowDownFactor = 2;
 
       const timer = setInterval(() => {
-        animatedNumber.value += 80;
-        if (animatedNumber.value === targetNumber) {
-          clearInterval(timer);
-        }
+      if (animatedNumber.value < slowDownPoint) {
+        animatedNumber.value += 30;
+      } else {
+        animatedNumber.value += slowDownFactor;
+      }
+
+      if (animatedNumber.value >= targetNumber) {
+        animatedNumber.value = targetNumber;
+        clearInterval(timer);
+      }
       }, stepTime);
     };
 
