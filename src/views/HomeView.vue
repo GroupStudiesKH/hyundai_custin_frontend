@@ -91,7 +91,7 @@ export default {
       const duration = 5000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
       const slowDownPoint = 9000;
-      const slowDownFactor = 2;
+      const slowDownFactor = 1;
 
       const timer = setInterval(() => {
       if (animatedNumber.value < slowDownPoint) {
@@ -1188,64 +1188,42 @@ export default {
           <div class="story_share_col">
             <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">彼得爸與蘇珊媽</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+              <span><a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">[More]</a></span>
             </p>
           </div>
 
           <div class="story_share_col">
             <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">絕代雙Ｑ</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜
+              開全新的THE ALL-NEW CUSTIN 頂級LMPV
+              和阿嬤一起來接薇0～
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
+              <span><a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">[More]</a></span>
             </p>
           </div>
+
           <div class="story_share_col">
             <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">小朗哥爸爸</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，
+              大家坐的很舒服，很有安全感！
+              <span><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">[More]</a></span>
             </p>
           </div>
-          <div class="story_share_col">
-            <img src="/assets/img/kol_04.webp" loading="lazy" alt="..." />
-            <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
-            </p>
-            <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
-            </p>
-          </div>
-          <div class="story_share_col">
-            <img src="/assets/img/kol_05.webp" loading="lazy" alt="..." />
-            <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
-            </p>
-            <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-              <span
-                ><a href="https://google.com" target="_blank">[More]</a></span
-              >
-            </p>
-          </div>
+
+
         </div>
       </div>
     </section>
@@ -1493,13 +1471,12 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <img class="step2_img mb-2" loading='lazy' src="/assets/img/step2.png" />
+                    <p><span>・</span>上傳與CUSTIN的生活影片</p>
                     <label
                       id="owner_photo_label"
-                      class="mb-1"
                       @click="triggerOwnerPhotoUpload"
                       >上傳生活照</label
                     >
-                    <p><span>・</span>上傳與CUSTIN的生活影片</p>
                     <input
                       type="file"
                       class="form-control"
@@ -1573,7 +1550,7 @@ export default {
                   <h4>/活動辦法/</h4>
                   <div class="rule-text-content">
                     <h6>■ 活動時間：</h6>
-                    <p>2025/02/17起至2025/05/31止</p>
+                    <p>2025/02/15起至2025/05/31止</p>
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
                     <h6>■ 投稿說明：</h6>
@@ -1611,65 +1588,44 @@ export default {
           <div class="story_share_col">
             <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">彼得爸與蘇珊媽</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
             </p>
             <span class="story_share_link"
-              ><a href="https://google.com" target="_blank">[More]</a></span
+              ><a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">[More]</a></span
             >
           </div>
 
           <div class="story_share_col">
             <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">絕代雙Ｑ</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br>
+              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br>
+              和阿嬤一起來接薇0～<br>
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
             </p>
             <span class="story_share_link"
-              ><a href="https://google.com" target="_blank">[More]</a></span
+              ><a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">[More]</a></span
             >
           </div>
 
           <div class="story_share_col">
             <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
+              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">小朗哥爸爸</a>
             </p>
             <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br>
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br>
+              大家坐的很舒服，很有安全感！
             </p>
             <span class="story_share_link"
-              ><a href="https://google.com" target="_blank">[More]</a></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <img src="/assets/img/kol_04.webp" loading="lazy" alt="..." />
-            <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
-            </p>
-            <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-            </p>
-            <span class="story_share_link"
-              ><a href="https://google.com" target="_blank">[More]</a></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <img src="/assets/img/kol_05.webp" loading="lazy" alt="..." />
-            <p class="story_share_title">
-              <a href="https://google.com" target="_blank">冠儀試車</a>
-            </p>
-            <p class="story_share_content">
-              Custin轉眼之間也開了三個月啦！整理了一些心得感想，也把這台車的馬力以及使用之後的優缺點分享給大家，同時也跟大家分享整車最實用的一些配件，希望對想入手的你有幫助！
-            </p>
-            <span class="story_share_link"
-              ><a href="https://google.com" target="_blank">[More]</a></span
+              ><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">[More]</a></span
             >
           </div>
         </div>

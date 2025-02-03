@@ -1048,7 +1048,8 @@ main {
             cursor: grab;
 
             .story_share_row {
-                width: calc(625px * 5);
+                width: calc(625px * 3);
+                margin: 0 auto;
 
                 .story_share_col {
                     width: 605px;
@@ -1131,7 +1132,7 @@ main {
             cursor: grab;
 
             .story_share_row {
-                width: calc(46vw * 6);
+                width: calc(46vw * 3.5);
 
                 .story_share_col {
                     width: 46vw;
