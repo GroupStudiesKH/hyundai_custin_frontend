@@ -1471,7 +1471,7 @@ export default {
                   </div>
                   <div class="form-group mt-3">
                     <img class="step2_img mb-2" loading='lazy' src="/assets/img/step2.png" />
-                    <p><span>・</span>上傳與CUSTIN的生活影片</p>
+                    <p style="font-size: 18px; font-weight: 500;"><span>・</span>上傳與CUSTIN的生活照或影片</p>
                     <label
                       id="owner_photo_label"
                       @click="triggerOwnerPhotoUpload"
