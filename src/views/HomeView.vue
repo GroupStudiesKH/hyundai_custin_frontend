@@ -1213,13 +1213,13 @@ export default {
           <div class="story_share_col">
             <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">小朗哥爸爸</a>
+              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">小朗哥爸爸</a>
             </p>
             <p class="story_share_content">
               我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
               這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，
               大家坐的很舒服，很有安全感！
-              <span><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">[More]</a></span>
+              <span><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">[More]</a></span>
             </p>
           </div>
 
@@ -1617,7 +1617,7 @@ export default {
           <div class="story_share_col">
             <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">小朗哥爸爸</a>
+              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">小朗哥爸爸</a>
             </p>
             <p class="story_share_content">
               我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br>
@@ -1625,7 +1625,7 @@ export default {
               大家坐的很舒服，很有安全感！
             </p>
             <span class="story_share_link"
-              ><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc&t=317s" target="_blank">[More]</a></span
+              ><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">[More]</a></span
             >
           </div>
         </div>
