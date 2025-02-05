@@ -489,7 +489,7 @@ export default {
                       @click="
                         storyModalSetData(
                           '照顧全家人的貼心夥伴',
-                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
+                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
                           <img src='/assets/img/story/a/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
@@ -510,7 +510,7 @@ export default {
                             照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
-                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
+                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型...
                           </p>
                         </div>
                       </div>
@@ -711,7 +711,7 @@ export default {
                       @click="
                         storyModalSetData(
                           '照顧全家人的貼心夥伴',
-                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
+                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
                           <img src='/assets/img/story/a/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
@@ -732,7 +732,7 @@ export default {
                             照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
-                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身流線、大器的車頭霸氣設計以及尾燈也很醒目的事尾，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
+                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
                           </p>
                         </div>
                       </div>
@@ -1191,7 +1191,7 @@ export default {
               <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">彼得爸與蘇珊媽</a>
             </p>
             <p class="story_share_content">
-              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+              體驗完 CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
               <span><a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">[More]</a></span>
             </p>
           </div>
@@ -1203,7 +1203,7 @@ export default {
             </p>
             <p class="story_share_content">
               薇0要從月子中心回家啦！今天特別給薇0一個驚喜
-              開全新的THE ALL-NEW CUSTIN 頂級LMPV
+              開全新的 THE ALL-NEW CUSTIN 頂級 LMPV
               和阿嬤一起來接薇0～
               這台車真的蠻舒服的，很適合三代同堂一起乘坐
               <span><a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">[More]</a></span>
@@ -1217,7 +1217,7 @@ export default {
             </p>
             <p class="story_share_content">
               我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
               大家坐的很舒服，很有安全感！
               <span><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">[More]</a></span>
             </p>
@@ -1506,7 +1506,7 @@ export default {
                       class="form-control"
                       :class="{ 'is-invalid': formErros.social_media_link }"
                       id="social_media_link"
-                      placeholder="影片上傳，請輸入FB、IG之影片貼文連結"
+                      placeholder="影片上傳，請輸入Facebook、Instagram、YouTube之影片貼文連結"
                       v-model="storiesForm.social_media_link"
                     />
                     <span
@@ -1550,19 +1550,21 @@ export default {
                   <h4>/活動辦法/</h4>
                   <div class="rule-text-content">
                     <h6>■ 活動時間：</h6>
-                    <p>2025/02/15起至2025/05/31止</p>
+                    <p>2025/02/15起至2025/05/15止</p>
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
+                    <h6>■ 獎項：</h6>
+                    <p>LINE POINTS 100點(50位)、CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)</p>
                     <h6>■ 投稿說明：</h6>
-                    <p>1.	投稿內容包含文字故事分享(200字內)以及搭配之圖片或影音(擇一)。</p>
-                    <p>2. 照片格式：檔案需提供約2MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
-                    <p>3. 影音格式：需先將影片上傳至個人社群平台FB或IG，並將該篇貼文設定為公開後提供該篇貼文連結。</p>
+                    <p>1.	投稿內容包含文字故事分享(300字內)以及搭配之圖片或影音(擇一)。</p>
+                    <p>2. 照片格式：檔案需提供約5MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
+                    <p>3. 影音格式：需先將影片上傳至個人社群平台Facebook或Instagram或YouTube，並將該篇貼文設定為公開後提供該篇貼文連結。</p>
                     <p>4. 投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。</p>
                     <p>5. 車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。</p>
                     <p>6. 投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。</p>
                     <p>7. 車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料 ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。</p>
                     <h6>■ 獎項說明：</h6>
-                    <p>1. 完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE POINTS 100點(100位)。與CUSTIN模型車(10名)、王品集團1,000元餐券(5名)抽獎資格乙次。</p>
+                    <p>1. 完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE POINTS 100點(50位)。與CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)抽獎資格乙次。</p>
                     <p>2. 投稿者須有LINE帳號始得獲贈LINE POINTS，以填入之手機號碼透過LINE發放，若因資料有誤導致寄送失敗、逾期未完成領取，皆視同放棄以上獎品，LINE POINTS之使用及折扣優惠悉依Line官方使用辦法說明。</p>
                     <p>3. 依中華民國稅法規定，機會中獎之獎項價值超過新台幣1,000元以上者，於年度結算時必須計入個人之綜合所得申報，超過新臺幣20,010(含)元以上，需預先扣繳稅款，才可兌換獎項，故獲選車主應提供相關文件予主辦單位，以利主辦單位製作扣繳憑單，始得領取本活動獎項。若獲選車主未提供資料予主辦單位，則視同放棄獲選資格，不另行通知。</p>
                     <h6>■ 獲選車主須知：</h6>
@@ -1638,7 +1640,7 @@ export default {
           <img src="/assets/img/champion_title.webp" class="champion_title" />
           <img src="/assets/img/champion_car_left.webp" loading='lazy' class="champion_car" />
           <div class="champion-action-list">
-            <a href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24"
+            <a href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24?utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
@@ -1646,7 +1648,7 @@ export default {
                 loading='lazy'
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize?utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_order.webp"
@@ -1654,7 +1656,7 @@ export default {
                 loading='lazy'
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin?utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_more.webp"
