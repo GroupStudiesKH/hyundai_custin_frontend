@@ -636,7 +636,7 @@ export default {
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
-                          <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                          <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
+                          <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                     
                           <p>但更重要的是坐起來非常舒適，尤其是第二排的電動座椅，除了家人之外，有坐過的朋友或是同事也都讚譽有加！</p>
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
@@ -1506,6 +1506,7 @@ export default {
                       class="form-control"
                       :class="{ 'is-invalid': formErros.social_media_link }"
                       id="social_media_link"
+                      style="padding: 0.375rem;"
                       placeholder="影片上傳，請輸入Facebook、Instagram、YouTube之影片貼文連結"
                       v-model="storiesForm.social_media_link"
                     />
@@ -1570,8 +1571,6 @@ export default {
                     <h6>■ 獲選車主須知：</h6>
                     <p>1. 投稿內容經主辦單位評選後，合適者將安排進一步的深入訪談、攝影或錄影紀錄等，如獲選車主無法全程配合主辦單位之安排，視同放棄獲選資格。</p>
                     <p>2. 主辦單位為獲選車主安排深入訪談所拍攝之照片、影片及成果物，其智慧財產權歸屬於主辦單位所有，主辦單位不另支付報酬予獲選車主。</p>
-                    <h6>■ 主辦單位係指南陽實業股份有限公司。主辦單位有隨時有權取消、終止、修改活動內容，亦有權對本活動之所有事宜做出最終解釋或決定，及保留最後核准與否權利。相關未盡事宜，以Hyundai官網或官方粉絲團公告為準，不另行通知。</h6>
-
                   </div>
                 </div>
               </div>
