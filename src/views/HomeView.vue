@@ -1281,28 +1281,27 @@ export default {
             ></button>
           </div>
           <div class="modal-body">
-
-            <a :href="contentModalData.social_media_link" target="_blank" v-if="!contentModalData.social_media_link.includes('youtube')">
-              <img :src="contentModalData.img_url">
-            </a>
-
-
+            <div v-if="contentModalData.social_media_link != null">
+              <a :href="contentModalData.social_media_link" target="_blank" v-if="!contentModalData.social_media_link.includes('youtube')">
+                <img :src="contentModalData.img_url" v-if="contentModalData.img_url != null">
+              </a>
+              <div v-else>
+                <img :src="contentModalData.img_url" @click="contentModalYTOpened = true" v-if="!contentModalYTOpened" role="button">
+                <iframe
+                  v-if="contentModalYTOpened"
+                  width="100%"
+                  height="350"
+                  :src="contentModalData.social_media_link"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
 
             <div v-else>
-
-              <img :src="contentModalData.img_url" @click="contentModalYTOpened = true" v-if="!contentModalYTOpened" role="button">
-
-              <iframe
-                v-if="contentModalYTOpened"
-                width="100%"
-                height="350"
-                :src="contentModalData.social_media_link"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              
+              <img :src="contentModalData.img_url" v-if="contentModalData.img_url != null">
             </div>
 
             <p v-html="contentModalData.content"></p>
