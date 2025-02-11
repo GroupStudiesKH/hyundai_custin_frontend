@@ -1517,7 +1517,7 @@ export default {
                     ></span>
                   </div>
                   <p class="photo_rule">
-                    <span style="color: #000;">*影片上傳請先發布於各人社群平台(Facebook/Instagram/Youtube)，並將該貼文設置為公開後提供分享連結</span><br />
+                    <span style="color: #000;">*影片上傳請先發布於個人社群平台(Facebook/Instagram/Youtube)，並將該貼文設置為公開後提供分享連結</span><br />
                     *照片格式：JPG、PNG <br />
                     *檔案大小限制：5MB以下 <br />
                     *圖片尺寸：具有1280x720的解析度，寬度至少為 40像素
