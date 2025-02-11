@@ -76,9 +76,14 @@ export default {
         img_url: img_url,
         social_media_link: social_media_link
       };
-      if (social_media_link.includes("youtube")) {
-        contentModalData.value.social_media_link = `https://www.youtube.com/embed/${new URL(social_media_link).searchParams.get('v')}`;
+
+      if(social_media_link.length > 0){
+        if (social_media_link.includes("youtube")) {
+          contentModalData.value.social_media_link = `https://www.youtube.com/embed/${new URL(social_media_link).searchParams.get('v')}`;
+        }
       }
+
+
     };
     const storyModalSetData = (title, content) => {
       storyModalData.value = {
@@ -956,7 +961,7 @@ export default {
                           loading='lazy'
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
@@ -995,7 +1000,7 @@ export default {
                           loading='lazy'
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
@@ -1040,7 +1045,7 @@ export default {
                           :alt="story.recommendation_title"
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
@@ -1079,7 +1084,7 @@ export default {
                           :alt="story.recommendation_title"
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
@@ -1129,7 +1134,7 @@ export default {
                           :alt="story.recommendation_title"
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
@@ -1168,7 +1173,7 @@ export default {
                           :alt="story.recommendation_title"
                         />
                         <div class="story-body">
-                          {{ story.recommendation_content }}
+                          {{ story.recommendation_title }}
                         </div>
                       </div>
                     </Vue3Marquee>
