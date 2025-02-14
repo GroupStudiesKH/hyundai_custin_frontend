@@ -96,7 +96,7 @@ export default {
       const duration = 5000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
       const slowDownPoint = 9000;
-      const slowDownFactor = 1;
+      const slowDownFactor = 10000;
 
       const timer = setInterval(() => {
         animatedNumber.value += slowDownFactor;
