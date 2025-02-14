@@ -447,7 +447,7 @@ export default {
           <div class="col-12 text-center">
             <div class="link" @click="scrollTo('page_intro_pc')">故事募集中</div>
             <div class="link" @click="scrollTo('story_carousel_pc')">幸福故事集</div>
-            <div class="link" @click="scrollTo('story_share_pc')">Youtuber車主故事&體驗分享</div>
+            <div class="link" @click="scrollTo('story_share_pc')">YouTuber車主故事&體驗分享</div>
           </div>
         </div>
       </div>
@@ -522,7 +522,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '永和周先生 ｜配備給好給滿超有料',
+                          '彰化周先生 ｜配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' class='story-img' loading='lazy' alt='...'/>
                           <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
@@ -540,7 +540,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            永和周先生 ｜配備給好給滿超有料
+                            彰化周先生 ｜配備給好給滿超有料
                           </h5>
                           <p class="story-content">
                             我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
@@ -559,7 +559,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '大安李先生 ｜體貼每一位的家庭神車',
+                          '高雄李先生 ｜體貼每一位的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
@@ -577,7 +577,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            大安李先生 ｜體貼每一位的家庭神車
+                            高雄李先生 ｜體貼每一位的家庭神車
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
@@ -592,11 +592,11 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '新店許先生｜每一次旅程都無比享受',
+                          '新竹許先生｜每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
                           <img src='/assets/img/story/d/2.webp' class='story-img' loading='lazy' alt='...'/><br>
-                          <p>看車當下，他們比較保守，一坐進去，雖然口頭上沒有說，但從他們的放鬆的姿勢跟表情，我就能感受的出來他們的滿意，電動側滑門跟第二排座椅，完完全全就是我要的。</p>
+                          <p>看車當下，他們比較保守，一坐進去，雖然口頭上沒有說，但從他們放鬆的姿勢跟表情，我就能感受的出來他們的滿意，電動側滑門跟第二排座椅，完完全全就是我要的。</p>
                           <img src='/assets/img/story/d/3.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>一開始其實會擔心車子比較大台，會不會不好開，因為我主要是上班通勤或接送家人，只有假日偶爾才會出去玩，大部分時間都是在市區跑。但實際開起來，我覺得整個視野很寬闊，而且A柱那邊還有一個三角窗，減少了很多死角，再加上有SVM環景功能，停車的時候也不用擔心不熟悉的環境，還有其他很多的安全輔助科技，給我滿滿的安全感。</p>
                           <p>老婆跟小孩也對這台車很喜歡，更讓我覺得開心的是，我爸媽以前總會嫌麻煩，現在變得比較願意出門了。</p>
@@ -614,7 +614,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            新店許先生｜每一次旅程都無比享受
+                            新竹許先生｜每一次旅程都無比享受
                           </h5>
                           <p class="story-content">
                             我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。
@@ -633,7 +633,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '信義劉小姐｜寬敞空間輕鬆出遊',
+                          '台北劉小姐｜寬敞空間輕鬆出遊',
                           `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
@@ -654,7 +654,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            信義劉小姐｜寬敞空間輕鬆出遊
+                            台北劉小姐｜寬敞空間輕鬆出遊
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
@@ -748,7 +748,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '永和周先生 ｜配備給好給滿超有料',
+                          '彰化周先生 ｜配備給好給滿超有料',
                           `<img src='/assets/img/story/b/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
                           <img src='/assets/img/story/b/2.webp' loading='lazy' class='story-img' alt='...'/>
                           <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
@@ -767,7 +767,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            永和周先生 ｜配備給好給滿超有料
+                            彰化周先生 ｜配備給好給滿超有料
                           </h5>
                           <p class="story-content">
                             我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
@@ -787,7 +787,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '大安李先生 ｜體貼每一位的家庭神車',
+                          '高雄李先生 ｜體貼每一位的家庭神車',
                           `<img src='/assets/img/story/c/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！</p>
                           <img src='/assets/img/story/c/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>當初試過後就被他的豐富配備給吸引，尤其是第二排座椅跟電動滑門，不敢相信在這個價位可以做到這樣。除此之外車內也有很多貼心的小細節，比如說第二排遮陽簾、折疊桌板，甚至還有杯架跟平板架，就像是在搭飛機一樣，就連第三排也有獨立的冷氣出風口跟USB充電孔，小朋友在後面也坐的很舒服。</p>
@@ -805,7 +805,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            大安李先生 ｜體貼每一位的家庭神車
+                            高雄李先生 ｜體貼每一位的家庭神車
                           </h5>
                           <p class="story-content">
                             當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
@@ -823,7 +823,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '新店許先生｜每一次旅程都無比享受',
+                          '新竹許先生｜每一次旅程都無比享受',
                           `<img src='/assets/img/story/d/1.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。</p>
                           <img src='/assets/img/story/d/2.webp' loading='lazy' class='story-img' alt='...'/><br>
@@ -845,7 +845,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            新店許先生｜每一次旅程都無比享受
+                            新竹許先生｜每一次旅程都無比享受
                           </h5>
                           <p class="story-content">
                             我爸媽上了年紀後，行動變得沒那麼靈活，原本的車子對他們來說上下車不太方便，坐久了也會有身體痠痛的問題，因緣際會之下看到了CUSTIN，便帶著他們一起去看車。
@@ -864,7 +864,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '信義劉小姐｜寬敞空間輕鬆出遊',
+                          '台北劉小姐｜寬敞空間輕鬆出遊',
                           `<img src='/assets/img/story/e/1.webp' loading='lazy' class='story-img' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
@@ -884,7 +884,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            信義劉小姐｜寬敞空間輕鬆出遊
+                            台北劉小姐｜寬敞空間輕鬆出遊
                           </h5>
                           <p class="story-content">
                             我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
@@ -1518,6 +1518,7 @@ export default {
                   </div>
                   <p class="photo_rule">
                     <span style="color: #000;">*影片上傳請先發布於個人社群平台(FB/IG/YT)，並將該貼文設置為公開後提供分享連結</span><br />
+                    <span style="color: #ff0000;">*請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主</span><br>
                     *照片格式：JPG、PNG <br />
                     *檔案大小限制：5MB以下 <br />
                     *圖片尺寸：具有1280x720的解析度，寬度至少為 40像素
@@ -1550,19 +1551,20 @@ export default {
                   <h4>/活動辦法/</h4>
                   <div class="rule-text-content">
                     <h6>■ 活動時間：</h6>
-                    <p>2025/02/15起至2025/05/15止</p>
+                    <p>2025/02/20起至2025/05/20止</p>
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
                     <h6>■ 獎項：</h6>
                     <p>LINE POINTS 100點(50位)、CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)</p>
                     <h6>■ 投稿說明：</h6>
                     <p>1.	投稿內容包含文字故事分享(300字內)以及搭配之圖片或影音(擇一)。</p>
-                    <p>2. 照片格式：檔案需提供約5MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
-                    <p>3. 影音格式：需先將影片上傳至個人社群平台Facebook或Instagram或YouTube，並將該篇貼文設定為公開後提供該篇貼文連結。</p>
-                    <p>4. 投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。</p>
-                    <p>5. 車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。</p>
-                    <p>6. 投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。</p>
-                    <p>7. 車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料 ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。</p>
+                    <p>2. 如選擇上傳生活照，請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主。</p>
+                    <p>3. 照片格式：檔案需提供約5MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
+                    <p>4. 影音格式：需先將影片上傳至個人社群平台Facebook或Instagram或YouTube，並將該貼文設置為公開後提供分享連結。</p>
+                    <p>5. 投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。</p>
+                    <p>6. 車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。</p>
+                    <p>7. 投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。</p>
+                    <p>8. 車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料 ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。</p>
                     <h6>■ 獎項說明：</h6>
                     <p>1. 完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE POINTS 100點(50位)。與CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)抽獎資格乙次。</p>
                     <p>2. 投稿者須有LINE帳號始得獲贈LINE POINTS，以填入之手機號碼透過LINE發放，若因資料有誤導致寄送失敗、逾期未完成領取，皆視同放棄以上獎品，LINE POINTS之使用及折扣優惠悉依Line官方使用辦法說明。</p>
