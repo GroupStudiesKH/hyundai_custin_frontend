@@ -447,7 +447,7 @@ export default {
           <div class="col-12 text-center">
             <div class="link" @click="scrollTo('page_intro_pc')">故事募集中</div>
             <div class="link" @click="scrollTo('story_carousel_pc')">幸福故事集</div>
-            <div class="link" @click="scrollTo('story_share_pc')">Youtube車主故事&體驗分享</div>
+            <div class="link" @click="scrollTo('story_share_pc')">Youtuber車主故事&體驗分享</div>
           </div>
         </div>
       </div>
