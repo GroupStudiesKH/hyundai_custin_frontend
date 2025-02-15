@@ -112,12 +112,14 @@ main {
     }
 
     #owner_photo,
+    #owner_photo2,
     #car_photo {
         display: none;
     }
 
     #car_photo_label,
-    #owner_photo_label {
+    #owner_photo_label,
+    #owner_photo2_label {
         cursor: pointer;
         background-color: #5d7b97;
         padding: 6px 12px;
@@ -178,14 +180,14 @@ main {
                 }
 
                 .step1_img {
-                    max-width: 500px;
-                    width: 100%;
+                    max-width: 380px;
+                    width: 380px;
                     display: block;
                 }
 
                 .step2_img {
                     max-width: 250px;
-                    width: 100%;
+                    width: 250px;
                     display: block;
                 }
             }

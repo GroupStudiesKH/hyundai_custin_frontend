@@ -1,7 +1,7 @@
 import axios from "axios";
 
-let apiUrl = "https://api.custin-event.hyundai-motor.com.tw/api/";
-// let apiUrl = "http://localhost:8000/api/";
+// let apiUrl = "https://api.custin-event.hyundai-motor.com.tw/api/";
+let apiUrl = "http://localhost:8000/api/";
 
 //Cookie ExpireDate
 let expire = new Date();
@@ -145,6 +145,10 @@ const postStories = async (params) => {
   }
   if (params.ownerPhotoUpload) {
     formData.append('ownerPhotoUpload', params.ownerPhotoUpload);
+  }
+
+  if (params.ownerPhoto2Upload) {
+    formData.append('ownerPhotoUpload2', params.ownerPhoto2Upload);
   }
 
   // 配置请求

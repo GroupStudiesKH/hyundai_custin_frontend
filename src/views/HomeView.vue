@@ -27,11 +27,14 @@ export default {
       social_media_link: "",
       carPhotoUpload: null,
       ownerPhotoUpload: null,
+      ownerPhoto2Upload: null
     });
     const checkPolicy = ref(false);
     const owner_photo = ref(null);
+    const owner_photo2 = ref(null);
     const car_photo = ref(null);
     const owner_photo_preview = ref(null);
+    const owner_photo2_preview = ref(null);
     const car_photo_preview = ref(null);
     const randomSpeedMobileLeft = ref(50);
     const randomSpeedMobileRight = ref(60);
@@ -54,6 +57,7 @@ export default {
       social_media_link: "",
       carPhotoUpload: "",
       ownerPhotoUpload: "",
+      ownerPhoto2Upload: "",
       checkPolicy: "",
     });
 
@@ -61,6 +65,10 @@ export default {
 
     const triggerOwnerPhotoUpload = () => {
       owner_photo.value.click();
+    };
+
+    const triggerOwnerPhoto2Upload = () => {
+      owner_photo2.value.click();
     };
 
     const triggerCarPhotoUpload = () => {
@@ -199,6 +207,20 @@ export default {
       reader.readAsDataURL(event.target.files[0]);
     };
 
+    const handleOwnerPhoto2Change = (event) => {
+      storiesForm.value.ownerPhoto2Upload = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        owner_photo2_preview.value = e.target.result;
+      };
+
+      if (!event.target.files[0]) {
+        owner_photo2_preview.value = null;
+        return;
+      }
+
+      reader.readAsDataURL(event.target.files[0]);
+    };
 
     const scrollTo = (elementID) => {
       let targetDiv = document.getElementById(elementID);
@@ -368,12 +390,16 @@ export default {
       formErros,
       checkPolicy,
       triggerOwnerPhotoUpload,
+      triggerOwnerPhoto2Upload,
       triggerCarPhotoUpload,
       car_photo,
       owner_photo,
+      owner_photo2,
       handleCarPhotoChange,
       handleOwnerPhotoChange,
+      handleOwnerPhoto2Change,
       owner_photo_preview,
+      owner_photo2_preview,
       car_photo_preview,
       randomSpeedMobileLeft,
       randomSpeedMobileRight,
@@ -951,7 +977,7 @@ export default {
                         "
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           :alt="story.recommendation_title"
                           loading='lazy'
@@ -990,7 +1016,7 @@ export default {
                         :key="index"
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           :alt="story.recommendation_title"
                           loading='lazy'
@@ -1035,7 +1061,7 @@ export default {
                         :key="index"
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           loading='lazy'
                           :alt="story.recommendation_title"
@@ -1074,7 +1100,7 @@ export default {
                         :key="index"
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           loading='lazy'
                           :alt="story.recommendation_title"
@@ -1124,7 +1150,7 @@ export default {
                         :key="index"
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           loading="lazy"
                           :alt="story.recommendation_title"
@@ -1163,7 +1189,7 @@ export default {
                         :key="index"
                       >
                         <img
-                          :src="story.car_photo_path"
+                          :src="story.owner_photo"
                           class="story-img"
                           loading="lazy"
                           :alt="story.recommendation_title"
@@ -1498,6 +1524,35 @@ export default {
                       class="invalid-feedback"
                       v-if="formErros.ownerPhotoUpload"
                       v-html="formErros.ownerPhotoUpload"
+                    ></span>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      id="owner_photo2_label"
+                      @click="triggerOwnerPhoto2Upload"
+                      >上傳生活照2</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="owner_photo2"
+                      ref="owner_photo2"
+                      :class="{ 'is-invalid': formErros.ownerPhoto2Upload }"
+                      accept="image/*"
+                      @change="handleOwnerPhoto2Change($event)"
+                    />
+                    <div v-if="owner_photo2_preview" class="image-preview mt-3">
+                      <img
+                        :src="owner_photo2_preview"
+                        alt="預覽圖片"
+                        class="img-fluid"
+                        style="max-width: 150px"
+                      />
+                    </div>
+                    <span
+                      class="invalid-feedback"
+                      v-if="formErros.ownerPhoto2Upload"
+                      v-html="formErros.ownerPhoto2Upload"
                     ></span>
                   </div>
                   <div class="form-group mt-3">
