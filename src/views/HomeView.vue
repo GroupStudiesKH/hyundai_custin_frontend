@@ -1501,7 +1501,7 @@ export default {
                     <label
                       id="owner_photo_label"
                       @click="triggerOwnerPhotoUpload"
-                      >上傳生活照</label
+                      >上傳生活照1</label
                     >
                     <input
                       type="file"
