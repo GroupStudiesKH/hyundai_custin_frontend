@@ -970,7 +970,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
@@ -1007,7 +1007,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
@@ -1052,7 +1052,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
@@ -1091,7 +1091,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
@@ -1141,7 +1141,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
@@ -1180,7 +1180,7 @@ export default {
                         @click="
                           contentModalSetData(
                             story.recommendation_title,
-                            story.car_photo_path,
+                            story.owner_photo,
                             story.recommendation_content,
                             story.social_media_link
                           )
