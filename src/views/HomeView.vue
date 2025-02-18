@@ -515,7 +515,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '台北吳先生｜照顧全家人的貼心夥伴',
+                          '桃園吳先生｜照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
@@ -534,7 +534,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            三重吳先生｜照顧全家人的貼心夥伴
+                            桃園吳先生｜照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
                             我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型...
@@ -737,7 +737,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '三重吳先生｜照顧全家人的貼心夥伴',
+                          '桃園吳先生｜照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
@@ -756,7 +756,7 @@ export default {
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            三重吳先生｜照顧全家人的貼心夥伴
+                            桃園吳先生｜照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
                             我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。...
