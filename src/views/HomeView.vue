@@ -57,7 +57,7 @@ export default {
       social_media_link: "",
       carPhotoUpload: "",
       ownerPhotoUpload: "",
-      ownerPhoto2Upload: "",
+      ownerPhotoUpload2: "",
       checkPolicy: "",
     });
 
@@ -135,13 +135,20 @@ export default {
 
     const submitStory = async () => {
       try {
-        if (!checkForm()) return;
-        await apiService.postStories(storiesForm.value);
-        alert("提交成功");
 
-        //div id = closePostModal, closePostModal.click()
-        const closePostModal = document.getElementById("closePostModal");
-        closePostModal.click();
+        const formCheck = checkForm()
+
+        if (formCheck){
+          await apiService.postStories(storiesForm.value);
+          alert("提交成功");
+
+          //div id = closePostModal, closePostModal.click()
+          const closePostModal = document.getElementById("closePostModal");
+          closePostModal.click();
+        }else{
+          console.log(formErros.value)
+        }
+
       } catch (error) {
         //check error is object
         if (typeof error === "object") {
@@ -155,7 +162,7 @@ export default {
     };
 
     const checkForm = () => {
-      for (let key in storiesForm.value) {
+      for (let key in formErros.value) {
         formErros.value[key] = "";
       }
 
@@ -163,15 +170,6 @@ export default {
         formErros.value.checkPolicy = "請勾選同意";
       } else {
         formErros.value.checkPolicy = "";
-      }
-
-      if (
-        storiesForm.value.recommendation_content &&
-        storiesForm.value.recommendation_content.length > 300
-      ) {
-        formErros.value.recommendation_content = "內容不得超過300字";
-      } else {
-        formErros.value.recommendation_content = "";
       }
 
       return Object.values(formErros.value).every((error) => !error);
@@ -1537,7 +1535,7 @@ export default {
                       class="form-control"
                       id="owner_photo2"
                       ref="owner_photo2"
-                      :class="{ 'is-invalid': formErros.ownerPhoto2Upload }"
+                      :class="{ 'is-invalid': formErros.ownerPhotoUpload2 }"
                       accept="image/*"
                       @change="handleOwnerPhoto2Change($event)"
                     />
@@ -1551,8 +1549,8 @@ export default {
                     </div>
                     <span
                       class="invalid-feedback"
-                      v-if="formErros.ownerPhoto2Upload"
-                      v-html="formErros.ownerPhoto2Upload"
+                      v-if="formErros.ownerPhotoUpload2"
+                      v-html="formErros.ownerPhotoUpload2"
                     ></span>
                   </div>
                   <div class="form-group mt-3">
