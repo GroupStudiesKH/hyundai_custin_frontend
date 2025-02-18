@@ -450,7 +450,7 @@ export default {
             <div class="offcanvas-body">
               <div class="menu-list" @click="scrollTo('page_intro_mobile')">故事募集中</div>
               <div class="menu-list" @click="scrollTo('story_carousel_mobile')">幸福故事集</div>
-              <div class="menu-list" @click="scrollTo('story_share_mobile')">Youtube車主故事&體驗分享</div>
+              <div class="menu-list" @click="scrollTo('story_share_mobile')">Youtube體驗分享</div>
             </div>
           </div>
         </div>
@@ -473,7 +473,7 @@ export default {
           <div class="col-12 text-center">
             <div class="link" @click="scrollTo('page_intro_pc')">故事募集中</div>
             <div class="link" @click="scrollTo('story_carousel_pc')">幸福故事集</div>
-            <div class="link" @click="scrollTo('story_share_pc')">YouTuber車主故事&體驗分享</div>
+            <div class="link" @click="scrollTo('story_share_pc')">YouTuber體驗分享</div>
           </div>
         </div>
       </div>
@@ -515,7 +515,7 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '三重吳先生｜照顧全家人的貼心夥伴',
+                          '台北吳先生｜照顧全家人的貼心夥伴',
                           `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
                             <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
                           但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
