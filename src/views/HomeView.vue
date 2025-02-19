@@ -1707,7 +1707,7 @@ export default {
           <img src="/assets/img/champion_title.webp" class="champion_title" />
           <img src="/assets/img/champion_car_left.webp" loading='lazy' class="champion_car" />
           <div class="champion-action-list">
-            <a href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24?utm_campaign=KU_event"
+            <a href="https://www.hyundai-motor.com.tw/testdrive.html?utm_source=officialwebsite&utm_medium=testdrive&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
@@ -1715,7 +1715,7 @@ export default {
                 loading='lazy'
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize?utm_campaign=KU_event"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize?utm_source=officialwebsite&utm_medium=clicktobuy&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_order.webp"
@@ -1723,7 +1723,7 @@ export default {
                 loading='lazy'
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin?utm_campaign=KU_event"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin?utm_source=officialwebsite&utm_medium=clicktobuy_custin&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_more.webp"
@@ -1763,7 +1763,7 @@ export default {
 
           <div class="champion-action-list">
             <a
-              href="https://www.hyundai-motor.com.tw/testdrive.php?car_id=24"
+              href="https://www.hyundai-motor.com.tw/testdrive.html?utm_source=officialwebsite&utm_medium=testdrive&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
@@ -1771,7 +1771,7 @@ export default {
                 class="champion-action testdrive"
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize?utm_source=officialwebsite&utm_medium=clicktobuy&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_order.webp"
@@ -1779,7 +1779,7 @@ export default {
                 class="champion-action order"
             /></a>
             <a
-              href="https://www.hyundai-motor.com.tw/clicktobuy/custin"
+              href="https://www.hyundai-motor.com.tw/clicktobuy/custin?utm_source=officialwebsite&utm_medium=clicktobuy_custin&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_more.webp"
