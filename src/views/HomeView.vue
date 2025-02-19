@@ -943,7 +943,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_wall_pc" ref="story_wall_pc">
+    <section id="story_wall_pc" ref="story_wall_pc" class="d-none">
       <div class="row">
           <div
             class="col-6 story-wall left"
@@ -1116,7 +1116,7 @@ export default {
         </div>
     </section>
 
-    <section id="story_wall_mobile" ref="story_wall_mobile">
+    <section id="story_wall_mobile" ref="story_wall_mobile" class="d-none">
       <div class="container">
         <div class="row">
           <div
