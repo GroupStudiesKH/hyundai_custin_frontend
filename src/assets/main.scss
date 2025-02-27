@@ -926,7 +926,8 @@ main {
         height: 970px;
         width: 100%;
         padding: 25px 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         border-bottom: 25px solid #efefef;
         background-image: url('../assets/img/wall_bg.webp');
         background-size: cover;
@@ -958,11 +959,13 @@ main {
                     margin: 10px;
                     box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.2);
                     cursor: pointer;
+                    user-select:none;
                     width: 95%;
 
                     .story-body {
                         font-size: 20px;
                         margin-top: 10px;
+                        pointer-events: none;
                     }
 
                     img {
@@ -970,6 +973,7 @@ main {
                         height: 350px;
                         object-fit: cover;
                         object-position: center center;
+                        pointer-events: none;
                     }
 
                     &:hover {
@@ -997,7 +1001,9 @@ main {
         height: 600px;
         width: 100%;
         padding: 25px 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         background-image: url('../assets/img/wall_bg_mobile.webp');
         background-size: cover;
         background-position: center center;

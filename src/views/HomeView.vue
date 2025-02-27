@@ -371,6 +371,38 @@ export default {
         const walk = (x - startX) * 2; //scroll-fast
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
+      
+      // 垂直滚动功能 - 为 #story_wall_pc 添加
+      const storyWallPC = document.querySelector("#story_wall_pc");
+      
+      let isDownVertical = false;
+      let startY;
+      let scrollTop;
+      
+      storyWallPC.addEventListener("mousedown", (e) => {
+        isDownVertical = true;
+        storyWallPC.classList.add("active");
+        startY = e.pageY - storyWallPC.offsetTop;
+        scrollTop = storyWallPC.scrollTop;
+      });
+      
+      storyWallPC.addEventListener("mouseleave", () => {
+        isDownVertical = false;
+        storyWallPC.classList.remove("active");
+      });
+      
+      storyWallPC.addEventListener("mouseup", () => {
+        isDownVertical = false;
+        storyWallPC.classList.remove("active");
+      });
+      
+      storyWallPC.addEventListener("mousemove", (e) => {
+        if (!isDownVertical) return;
+        e.preventDefault();
+        const y = e.pageY - storyWallPC.offsetTop;
+        const walk = (y - startY) * 2; // 滚动速度
+        storyWallPC.scrollTop = scrollTop - walk;
+      });
     });
 
     return {
@@ -1033,7 +1065,7 @@ export default {
             class="col-6 story-wall right"
           >
             <div class="row">
-              <div class="col-6 story-wall-left left">
+              <div class="col-6 story-wall-right left">
                 <div class="row">
                   <div class="col-12">
                     <Vue3Marquee
