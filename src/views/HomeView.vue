@@ -91,7 +91,6 @@ export default {
         }
       }
 
-
     };
     const storyModalSetData = (title, content) => {
       storyModalData.value = {
@@ -341,37 +340,7 @@ export default {
         cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
       }
 
-      const scrollContainer = document.querySelector(".story_share_container");
 
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      scrollContainer.addEventListener("mousedown", (e) => {
-        isDown = true;
-        scrollContainer.classList.add("active");
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-      });
-
-      scrollContainer.addEventListener("mouseleave", () => {
-        isDown = false;
-        scrollContainer.classList.remove("active");
-      });
-
-      scrollContainer.addEventListener("mouseup", () => {
-        isDown = false;
-        scrollContainer.classList.remove("active");
-      });
-
-      scrollContainer.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2; //scroll-fast
-        scrollContainer.scrollLeft = scrollLeft - walk;
-      });
-      
       // 垂直滚动功能 - 为 #story_wall_pc 添加
       const storyWallPC = document.querySelector("#story_wall_pc");
       
@@ -380,8 +349,8 @@ export default {
       let scrollTop;
       
       storyWallPC.addEventListener("mousedown", (e) => {
+        e.preventDefault()
         isDownVertical = true;
-        storyWallPC.classList.add("active");
         startY = e.pageY - storyWallPC.offsetTop;
         scrollTop = storyWallPC.scrollTop;
       });
@@ -391,7 +360,7 @@ export default {
         storyWallPC.classList.remove("active");
       });
       
-      storyWallPC.addEventListener("mouseup", () => {
+      storyWallPC.addEventListener("mouseup", (e) => {
         isDownVertical = false;
         storyWallPC.classList.remove("active");
       });
@@ -399,6 +368,7 @@ export default {
       storyWallPC.addEventListener("mousemove", (e) => {
         if (!isDownVertical) return;
         e.preventDefault();
+        storyWallPC.classList.add("active");
         const y = e.pageY - storyWallPC.offsetTop;
         const walk = (y - startY) * 2; // 滚动速度
         storyWallPC.scrollTop = scrollTop - walk;

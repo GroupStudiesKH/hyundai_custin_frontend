@@ -933,6 +933,15 @@ main {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        cursor: grab;
+
+        &.active{
+            .story-wall {
+                .story {
+                    pointer-events: none;
+                }
+            }
+        }
 
         >.container {
             height: 100%;
@@ -958,7 +967,7 @@ main {
                     padding: 15px;
                     margin: 10px;
                     box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.2);
-                    cursor: pointer;
+                    cursor: grab;
                     user-select:none;
                     width: 95%;
 
