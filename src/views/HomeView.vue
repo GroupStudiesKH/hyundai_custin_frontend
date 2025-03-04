@@ -36,12 +36,12 @@ export default {
     const owner_photo_preview = ref(null);
     const owner_photo2_preview = ref(null);
     const car_photo_preview = ref(null);
-    const randomSpeedMobileLeft = ref(50);
+    const randomSpeedMobileLeft = ref(60);
     const randomSpeedMobileRight = ref(60);
-    const randomSpeedPCLeft1 = ref(20);
-    const randomSpeedPCLeft2 = ref(60);
+    const randomSpeedPCLeft1 = ref(40);
+    const randomSpeedPCLeft2 = ref(40);
     const randomSpeedPCRight1 = ref(40);
-    const randomSpeedPCRight2 = ref(30);
+    const randomSpeedPCRight2 = ref(40);
     const menuVisible = ref(false);
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
@@ -371,6 +371,59 @@ export default {
         const walk = (x - startX) * 2; //scroll-fast
         scrollContainer.scrollLeft = scrollLeft - walk;
       });
+
+      // 為 story_wall_pc 的箭頭添加點擊事件
+      const storyWallUpArrow = document.querySelector('#story_wall_pc .arrow_up');
+      const storyWallDownArrow = document.querySelector('#story_wall_pc .arrow_down');
+      const storyWall = document.querySelector('#story_wall_pc');
+      const storyWallMobile = document.querySelector('#story_wall_mobile');
+      const storyWallMobileUpArrow = document.querySelector('#story_wall_mobile .arrow_up');
+      const storyWallMobileArrow = document.querySelector('#story_wall_mobile .arrow_down');
+        
+        if (storyWallUpArrow) {
+          storyWallUpArrow.addEventListener('click', () => {
+            console.log(123)
+            if (storyWall) {
+              storyWall.scrollBy({
+                top: -100,
+                behavior: 'smooth'
+              });
+            }
+          });
+        }
+
+        if (storyWallMobileUpArrow) {
+          storyWallMobileUpArrow.addEventListener('click', () => {
+            if (storyWallMobile) {
+              storyWallMobile.scrollBy({
+                top: -100,
+                behavior:'smooth'
+              });
+            }
+          });
+        }
+        
+        if (storyWallDownArrow) {
+          storyWallDownArrow.addEventListener('click', () => {
+            if (storyWall) {
+              storyWall.scrollBy({
+                top: 100,
+                behavior: 'smooth'
+              });
+            }
+          });
+        }
+
+        if (storyWallMobileArrow) {
+          storyWallMobileArrow.addEventListener('click', () => {
+            if (storyWallMobile) {
+              storyWallMobile.scrollBy({
+                top: 100,
+                behavior:'smooth'
+              });
+            }
+          });
+        }
     });
 
     return {
@@ -944,6 +997,8 @@ export default {
     </section>
 
     <section id="story_wall_pc" ref="story_wall_pc">
+      <div class="arrow arrow_down"></div>
+      <div class="arrow arrow_up"></div>
       <div class="row">
           <div
             class="col-6 story-wall left"
@@ -1117,6 +1172,8 @@ export default {
     </section>
 
     <section id="story_wall_mobile" ref="story_wall_mobile">
+      <div class="arrow arrow_down"></div>
+      <div class="arrow arrow_up"></div>
       <div class="container">
         <div class="row">
           <div
