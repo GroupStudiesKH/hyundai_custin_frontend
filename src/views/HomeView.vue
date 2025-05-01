@@ -10,9 +10,14 @@ export default {
   },
   setup() {
     const router = useRouter();
-    const storyModalData = ref({ title: "", content: ""});
-    const contentModalData = ref({ title: "", content: "", img_url: "", social_media_link: "" });
-    const contentModalYTOpened = ref(false)
+    const storyModalData = ref({ title: "", content: "" });
+    const contentModalData = ref({
+      title: "",
+      content: "",
+      img_url: "",
+      social_media_link: "",
+    });
+    const contentModalYTOpened = ref(false);
     const animatedNumber = ref(0);
     const stories = ref([[], [], [], []]);
     const storiesMobile = ref([[], []]);
@@ -27,7 +32,7 @@ export default {
       social_media_link: "",
       carPhotoUpload: null,
       ownerPhotoUpload: null,
-      ownerPhoto2Upload: null
+      ownerPhoto2Upload: null,
     });
     const checkPolicy = ref(false);
     const owner_photo = ref(null);
@@ -45,7 +50,7 @@ export default {
     const menuVisible = ref(false);
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
-    }
+    };
 
     const formErros = ref({
       car_owner_name: "",
@@ -77,21 +82,26 @@ export default {
 
     const youtubeEmbedUrl = ref("");
 
-    const contentModalSetData = (title, img_url, content, social_media_link = ``) => {
+    const contentModalSetData = (
+      title,
+      img_url,
+      content,
+      social_media_link = ``
+    ) => {
       contentModalData.value = {
         title: title,
         content: content,
         img_url: img_url,
-        social_media_link: social_media_link
+        social_media_link: social_media_link,
       };
 
-      if(social_media_link.length > 0){
+      if (social_media_link.length > 0) {
         if (social_media_link.includes("youtube")) {
-          contentModalData.value.social_media_link = `https://www.youtube.com/embed/${new URL(social_media_link).searchParams.get('v')}`;
+          contentModalData.value.social_media_link = `https://www.youtube.com/embed/${new URL(
+            social_media_link
+          ).searchParams.get("v")}`;
         }
       }
-
-
     };
     const storyModalSetData = (title, content) => {
       storyModalData.value = {
@@ -109,16 +119,160 @@ export default {
       const timer = setInterval(() => {
         animatedNumber.value += slowDownFactor;
 
-      if (animatedNumber.value >= targetNumber) {
-        animatedNumber.value = targetNumber;
-        clearInterval(timer);
-      }
+        if (animatedNumber.value >= targetNumber) {
+          animatedNumber.value = targetNumber;
+          clearInterval(timer);
+        }
       }, stepTime);
     };
 
     const getStories = async () => {
       try {
-        const results = await apiService.getStories();
+        // const results = await apiService.getStories();
+        const results = [
+          {
+            id: 187,
+            recommendation_title: "我們這一家與CUSTIN的故事",
+            recommendation_content:
+              "至從買了CUSTIN,我們全家五人就開啟了與CUSTIN的連結了，他為我們遮風擋雨，保護我們全家的安全，讓這個世界變得更美好，當初如果沒有選擇CUSTIN,或許這段旅程可能沒有了開始。",
+            owner_photo: "/assets/img/upload/1742188129_圖片1.webp",
+          },
+          {
+            id: 186,
+            recommendation_title: "笑容",
+            recommendation_content:
+              "升格成了父母，帶著雙方的父母與兩個寶寶，用這台車開啟每一次出遊的舒適回憶，並期待著下一次的旅程",
+            owner_photo: "/assets/img/upload/1742188024_生活照1.webp",
+          },
+          {
+            id: 183,
+            recommendation_title: "未來的老闆娘",
+            recommendation_content:
+              "每次出門，爸爸媽媽總是為了自己的子女安全與舒適著想，2024這年想換台舒適一點的車，無意間看到了這台Custin，馬上預約看車與試乘，在業務專業的介紹下，感覺這台車很適合目前我要的，馬上簽約，足足等了三個月才交車，現在出門旅遊看到小孩坐的很舒適，就感覺這錢花的很值得。",
+            owner_photo: "/assets/img/upload/1742181037_生活照2.webp",
+          },
+          {
+            id: 182,
+            recommendation_title: "乘載幸福的車",
+            recommendation_content:
+              '一部乘載著"家的幸福",當初選擇Custin,一來家中乘員較多，二來除了接送家中寶貝上、下學，也是出門旅遊的相當不錯的交通工具，再來因工作關係，有時還需擔任送貨的任務，所以也占據大部分的時間。\r\n除了短暫時間與小朋友分享上、下學校點滴，因大空間出外踏青還能攜帶所需的衣物及物品，所以除了乘載*家的幸福*外，更是家中不可缺一的生活伴侶，有你真好。',
+            owner_photo: "/assets/img/upload/1741679554_生活照1.webp",
+          },
+          {
+            id: 176,
+            recommendation_title: "櫻花🌸",
+            recommendation_content:
+              "每到一個美麗的景點，都不忘幫，也是家裡一份子的CUSTIN紀錄每一個美麗的地標～",
+            owner_photo: "/assets/img/upload/1741156789_圖片1.webp",
+          },
+          {
+            id: 175,
+            recommendation_title: "闔家歡樂一同郊遊趣",
+            recommendation_content:
+              "自從買了Custin後，我們一家大大小小出遊的機率更頻繁了！\r\n喜歡大家熱熱鬧鬧聚在一起的氛圍，能這樣大家團聚出遊真的很棒很幸福！\r\n一家五口再加上長輩一台車就直接出遊不需再多開一台車，說走就走去哪都開心。\r\n車子真的很舒適，也很好開。以前開個車開較遠程小孩就會哇哇叫怎麼這麼遠，要坐好久，但自從換了Custin後因為座椅太舒適，一家在車上熱熱鬧鬧玩得太開心都不會覺得路途很遙遠了，甚至環島也開心！所以我們出遊機會更多，全台四處趴趴走，也一路認識了不少車友，更值得誇讚的是，因為擁有這台車後還有很多機會參加車聚，適合家庭出遊的車，連車聚都辦得有聲有色，完全符合我們家庭，實在太慶幸了！",
+            owner_photo: "/assets/img/upload/1741156755_圖片2.webp",
+          },
+          {
+            id: 174,
+            recommendation_title: "陪伴我人生後半段",
+            recommendation_content:
+              "人生的下半段精彩故事就由Custin來陪伴我們一家人繼續走下去 👍",
+            owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
+          },
+          {
+            id: 173,
+            recommendation_title: "戴著思念的Custin",
+            recommendation_content:
+              "去年，老婆傳來了第二胎的好消息，想想家裡的老瑞獅，看著家裡同住的岳母以及住在內湖的老爸老媽和未來出門至少2大加兩張安全座椅，想再坐第5人根本不可能，確立了放好小孩仍能進出第3排的MPV車型，於暑假就下訂大小勉強可以停路邊車格，又能舒適承載7人的Custin，沒想到11月老婆緊急剖腹，第2隻小可愛提早來到人世，但因為不明原因無法自主呼吸，在出生2天後便結束短短的人生，就在這天接到了新車通知，當下真心痛苦，當初為他而訂的車卻在他走了的時侯到來，幾番掙扎還是牽了回家，看著原本應該滿座的第二排不明悲傷，今年1月，原本空著的位置在南下探親時滿載大舅子一家和令岳母，2月帶著岳母姐妹們泡溫泉，現在，車子滿了",
+            owner_photo: "/assets/img/upload/1741060258_圖片1.webp",
+          },
+          {
+            id: 171,
+            recommendation_title: "幸福安親班交通車",
+            recommendation_content:
+              "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
+            owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
+          },
+          {
+            id: 165,
+            recommendation_title: "家用神車",
+            recommendation_content:
+              "同級價位首選\r\n家用的大空間\r\n配備盡完美",
+            owner_photo: "/assets/img/upload/1740986049_生活照2.webp",
+          },
+          {
+            id: 158,
+            recommendation_title: "滿滿幸福的小藍",
+            recommendation_content:
+              "妹妹一句，爸爸我可以站在車上，讓我們決定上手我們的Custin小藍，從此在小藍車上皆充滿歡樂與回憶，舒適的小藍總讓小孩有個舒適的車上空間，Custin讓我們無可挑剔！",
+            owner_photo: "/assets/img/upload/1740985876_生活照1.webp",
+          },
+          {
+            id: 157,
+            recommendation_title: "就是這台車！！！",
+            recommendation_content:
+              "想換車 ，家中加上媽媽，總共有6個人，所以開始想找一台滿意的七人座 ，某次去台東玩，看見一台車 ，一秒覺得，這個外型，就是心中想要找尋的七人坐車子，馬上拿出手機搜尋，是現代的CUSTIN，回到屏東後，很快的就去現代汽車賞車了。\r\n一看見實車就很滿意，第二次去看，試乘後，就直接下訂了，完全沒有去看過其他廠牌，就決定買下這台七人坐。\r\n開著這台車，四處玩，釣魚也很合適，座位很舒適，全家都很滿意，未來，要再開著我們這台心中滿意的CUSTIN，繼續玩透透！",
+            owner_photo: "/assets/img/upload/1740985830_圖片1.webp",
+          },
+          {
+            id: 141,
+            recommendation_title: "神帶我遇Custin",
+            recommendation_content:
+              "當初家庭的需要，我們要找一台7人座車子，意外從親戚那得知Custin，去展間試完車沒多久就訂購了～CP值高的車，讚👍",
+            owner_photo: "/assets/img/upload/1740559433_生活照1.webp",
+          },
+          {
+            id: 142,
+            recommendation_title: "Custin",
+            recommendation_content:
+              "我個人覺得Custin真的是CP值很高的車，稅金也很省空間又大，油耗我個人覺得還好畢竟車那麼重，引擎才1.5CC我個人覺得算省油了如果沒辦法接受Custin那也只能加預算往上買到阿爾法或LM，所以我覺得Custin我是給蠻高的評分",
+            owner_photo: "/assets/img/upload/1740559361_圖片2.webp",
+          },
+          {
+            id: 140,
+            recommendation_title: "給最愛的家人頂級的乘坐享受",
+            recommendation_content:
+              "去年要換車時我的首選原本是日系SUV車款，但老婆考慮到家人乘坐空間傾向MPV車款。為了迎合老婆的要求，便到住家附近的展示中心看Hyundai Custin車款，映入眼簾的是大器的豪華外型以及簡約、前衛風格的設計美學，深深吸引我的目光。\r\n上車試坐後發現乘坐空間非常的寬敞，全車皮椅更構成科技豪華的內裝氛圍，而頂級的VIP車款有雙邊電動側滑門上下車更安全舒適，第二排座椅擁有皇家VIP等級的電動調整及通風加熱功能，還有全套先進的駕駛輔助及完備的安全配備，確實顛覆了以前對韓國車的刻板印象，而為了給最愛的家人頂級的乘坐享受，這也是最後選擇Hyundai Custin的最大理由。",
+            owner_photo: "/assets/img/upload/1740463168_圖片2.webp",
+          },
+          {
+            id: 139,
+            recommendation_title: "當我們Custin串在一起",
+            recommendation_content:
+              "愛上Custin大家庭，每年群組發起一次的大會師，有400台霸氣壯觀畫面，車友不私藏的改車分享，各個區域也不定時一同出遊、一同做公益的活動，因為有車友們，生活變得多采多姿。為了家庭孩子、又可認識各式各樣的朋友～購買Custin非常值得。",
+            owner_photo: "/assets/img/upload/1740463137_圖片3.webp",
+          },
+          {
+            id: 138,
+            recommendation_title: "一台製造全家回憶的車",
+            recommendation_content:
+              "家人陪伴的時候，一台需要滿載家人回憶的車出現了，經歷了半年的等待，永遠記得首次出遊前往九族文化村，當時Custin車輛總數還沒那麼多，開過去路人出現了讚嘆的聲音，小朋友坐在車內總是可以安靜的睡覺玩耍，這台車真是值得推薦",
+            owner_photo: "/assets/img/upload/1740463114_圖片1.webp",
+          },
+          {
+            id: 133,
+            recommendation_title: "第一次帶媽媽坐Custin出遊",
+            recommendation_content:
+              "很高興年前取車，年初三去板橋載媽媽一起去紫南宮走走。媽媽一上車就說座位好舒服，沒多久媽媽就睡著了。 一直開心的使用一些座位旁的按鍵。 媽媽一定很開心我們第一次買新車吧！之前那台五人座二手車媽媽跟兩個女兒擠在後座動彈不得\r\n一天下來，車上五個人開心聊天，也吃了好吃的食物。買一些紫南宮老街的伴手禮。 載媽媽回板橋。 結束我回娘家的一天，我們一家四口也開心的回宜蘭\r\n年假我們天天開著Custin到處去玩，很開心因緣際會之下在中和買到車業務人超熱情的，跟我們宜蘭的業務真的差很多\r\n現在使用這台車滿一個月了。 結論是很開心老公做了很久的功課確定買了它，搭過它的評價都超好的好開心",
+            owner_photo:
+              "/assets/img/upload/1740380612_67b9b56bc4643_image0.webp",
+          },
+          {
+            id: 135,
+            recommendation_title: "三代同堂出遊",
+            recommendation_content:
+              "婚前原本開小轎車，隨著情侶踏入了婚禮殿堂後然而有一個小生命誕生，才慢慢發覺到車子空間怎麼越來越壓迫了，每次一到假日可以三代同堂出遊還可以勉強歡樂抵達目的，隨著二寶來到，到了假日時會捨棄父母，帶著兩寶出遊，日子久了知道這不是我想到的出遊，於是騙騙父母去現代試駕Custin 說試駕不用錢去坐坐，試駕後父母對於Custin評價很高，在試駕後一個禮拜後立刻下單，來繼續我們的三代同堂出遊，一起玩遍全台灣啦",
+            owner_photo: "/assets/img/upload/1740380682_生活照2.webp",
+          },
+          {
+            id: 134,
+            recommendation_title: "Sweet Custin",
+            recommendation_content:
+              '原本開Focus載著一家三口~忽然一下子甜蜜的幸福來太快\r\n2、3寶接連報到~ Focus的空間直接無法承擔~\r\n看了很多款7人座,不是不舒服、空間小、不然就是太商務\r\n剛好遇到CUSTIN上市,試乘了兩次就直接下單排隊了~\r\nCUSTIN整個就是為了家庭量身訂做的車款\r\n空間適中,可以帶兩台推車,二排椅子又是同級距無敵~\r\n每次出遊,就是老話一句"上車睡覺、下車尿尿"\r\n不論是妻子、孩子都很愛這台車~\r\n載著我們一家人上山下海到處遊玩~\r\n很開心一家五口加上CUSTIN組成的甜蜜家庭~',
+            owner_photo:
+              "/assets/img/upload/1740380648_67b9ce952eeb3_IMG20230817084922.webp",
+          },
+        ];
 
         stories.value = [
           results.slice(0, 5),
@@ -135,20 +289,18 @@ export default {
 
     const submitStory = async () => {
       try {
+        const formCheck = checkForm();
 
-        const formCheck = checkForm()
-
-        if (formCheck){
+        if (formCheck) {
           await apiService.postStories(storiesForm.value);
           alert("提交成功");
 
           //div id = closePostModal, closePostModal.click()
           const closePostModal = document.getElementById("closePostModal");
           closePostModal.click();
-        }else{
-          console.log(formErros.value)
+        } else {
+          console.log(formErros.value);
         }
-
       } catch (error) {
         //check error is object
         if (typeof error === "object") {
@@ -223,8 +375,8 @@ export default {
     const scrollTo = (elementID) => {
       let targetDiv = document.getElementById(elementID);
       if (targetDiv) {
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
-        menuVisible.value = false
+        targetDiv.scrollIntoView({ behavior: "smooth" });
+        menuVisible.value = false;
       }
     };
 
@@ -284,34 +436,32 @@ export default {
 
     watch(menuVisible, (newValue) => {
       if (newValue) {
-        document.body.classList.add('no-scroll');
+        document.body.classList.add("no-scroll");
       } else {
-        document.body.classList.remove('no-scroll');
+        document.body.classList.remove("no-scroll");
       }
     });
 
     onMounted(() => {
-
       window.onload = function () {
         animateNum();
 
-        const modal = document.getElementById('contentModal');
+        const modal = document.getElementById("contentModal");
 
         // 定義一個函數來停止YouTube影片
         function stopVideo() {
-          const iframe = modal.querySelector('iframe');
-          contentModalYTOpened.value = false
+          const iframe = modal.querySelector("iframe");
+          contentModalYTOpened.value = false;
           if (iframe) {
-            const src = iframe.getAttribute('src');
-            iframe.setAttribute('src', '');
-            iframe.setAttribute('src', src);
+            const src = iframe.getAttribute("src");
+            iframe.setAttribute("src", "");
+            iframe.setAttribute("src", src);
           }
         }
 
         // 監聽modal關閉事件
         // 注意: 這裡的事件名稱可能需要根據你使用的modal庫來調整
-        modal.addEventListener('hidden.bs.modal', stopVideo);
-
+        modal.addEventListener("hidden.bs.modal", stopVideo);
       };
 
       getStories();
@@ -335,9 +485,9 @@ export default {
       //detect is 991px or not
       const is991 = window.matchMedia("(max-width: 991px)");
       runMobileMarquee.value = is991.matches;
-      if(runMobileMarquee.value){
+      if (runMobileMarquee.value) {
         cleanupInterval = setInterval(cleanupClonedElements, 2500); // 每5秒清理一次
-      }else{
+      } else {
         cleanupInterval = setInterval(cleanupClonedElements, 5000); // 每5秒清理一次
       }
 
@@ -373,57 +523,65 @@ export default {
       });
 
       // 為 story_wall_pc 的箭頭添加點擊事件
-      const storyWallUpArrow = document.querySelector('#story_wall_pc .arrow_up');
-      const storyWallDownArrow = document.querySelector('#story_wall_pc .arrow_down');
-      const storyWall = document.querySelector('#story_wall_pc');
-      const storyWallMobile = document.querySelector('#story_wall_mobile');
-      const storyWallMobileUpArrow = document.querySelector('#story_wall_mobile .arrow_up');
-      const storyWallMobileArrow = document.querySelector('#story_wall_mobile .arrow_down');
-        
-        if (storyWallUpArrow) {
-          storyWallUpArrow.addEventListener('click', () => {
-            console.log(123)
-            if (storyWall) {
-              storyWall.scrollBy({
-                top: -100,
-                behavior: 'smooth'
-              });
-            }
-          });
-        }
+      const storyWallUpArrow = document.querySelector(
+        "#story_wall_pc .arrow_up"
+      );
+      const storyWallDownArrow = document.querySelector(
+        "#story_wall_pc .arrow_down"
+      );
+      const storyWall = document.querySelector("#story_wall_pc");
+      const storyWallMobile = document.querySelector("#story_wall_mobile");
+      const storyWallMobileUpArrow = document.querySelector(
+        "#story_wall_mobile .arrow_up"
+      );
+      const storyWallMobileArrow = document.querySelector(
+        "#story_wall_mobile .arrow_down"
+      );
 
-        if (storyWallMobileUpArrow) {
-          storyWallMobileUpArrow.addEventListener('click', () => {
-            if (storyWallMobile) {
-              storyWallMobile.scrollBy({
-                top: -100,
-                behavior:'smooth'
-              });
-            }
-          });
-        }
-        
-        if (storyWallDownArrow) {
-          storyWallDownArrow.addEventListener('click', () => {
-            if (storyWall) {
-              storyWall.scrollBy({
-                top: 100,
-                behavior: 'smooth'
-              });
-            }
-          });
-        }
+      if (storyWallUpArrow) {
+        storyWallUpArrow.addEventListener("click", () => {
+          console.log(123);
+          if (storyWall) {
+            storyWall.scrollBy({
+              top: -100,
+              behavior: "smooth",
+            });
+          }
+        });
+      }
 
-        if (storyWallMobileArrow) {
-          storyWallMobileArrow.addEventListener('click', () => {
-            if (storyWallMobile) {
-              storyWallMobile.scrollBy({
-                top: 100,
-                behavior:'smooth'
-              });
-            }
-          });
-        }
+      if (storyWallMobileUpArrow) {
+        storyWallMobileUpArrow.addEventListener("click", () => {
+          if (storyWallMobile) {
+            storyWallMobile.scrollBy({
+              top: -100,
+              behavior: "smooth",
+            });
+          }
+        });
+      }
+
+      if (storyWallDownArrow) {
+        storyWallDownArrow.addEventListener("click", () => {
+          if (storyWall) {
+            storyWall.scrollBy({
+              top: 100,
+              behavior: "smooth",
+            });
+          }
+        });
+      }
+
+      if (storyWallMobileArrow) {
+        storyWallMobileArrow.addEventListener("click", () => {
+          if (storyWallMobile) {
+            storyWallMobile.scrollBy({
+              top: 100,
+              behavior: "smooth",
+            });
+          }
+        });
+      }
     });
 
     return {
@@ -460,7 +618,7 @@ export default {
       randomSpeedPCRight2,
       scrollTo,
       toggleMenu,
-      menuVisible
+      menuVisible,
     };
   },
 };
@@ -481,33 +639,45 @@ export default {
     </section>
     <section id="banner_mobile" ref="banner_mobile">
       <div class="container">
-
         <div>
-
           <div class="nav-btn" @click="toggleMenu">
-            <img src="/assets/img/nav_btn.webp">
+            <img src="/assets/img/nav_btn.webp" />
           </div>
 
           <div
             :class="menuVisible ? 'show' : ''"
             class="offcanvas offcanvas-end"
             tabindex="-1"
-            style="visibility: visible;"
+            style="visibility: visible"
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title">Menu</h5>
-              <button type="button" class="btn-close" @click="toggleMenu"></button>
+              <button
+                type="button"
+                class="btn-close"
+                @click="toggleMenu"
+              ></button>
             </div>
             <div class="offcanvas-body">
-              <div class="menu-list" @click="scrollTo('page_intro_mobile')">故事募集中</div>
-              <div class="menu-list" @click="scrollTo('story_carousel_mobile')">幸福故事集</div>
-              <div class="menu-list" @click="scrollTo('story_share_mobile')">Youtube體驗分享</div>
+              <div class="menu-list" @click="scrollTo('page_intro_mobile')">
+                故事募集中
+              </div>
+              <div class="menu-list" @click="scrollTo('story_carousel_mobile')">
+                幸福故事集
+              </div>
+              <div class="menu-list" @click="scrollTo('story_share_mobile')">
+                Youtube體驗分享
+              </div>
             </div>
           </div>
         </div>
-        
+
         <div class="logo col-12">
-          <img src="/assets/img/banner_logo_mobile.webp" loading="lazy" alt="logo" />
+          <img
+            src="/assets/img/banner_logo_mobile.webp"
+            loading="lazy"
+            alt="logo"
+          />
         </div>
         <div class="car col-12">
           <img src="/assets/img/banner_car.webp" loading="lazy" alt="logo" />
@@ -522,25 +692,32 @@ export default {
       <div class="page-content">
         <div class="row">
           <div class="col-12 text-center">
-            <div class="link" @click="scrollTo('page_intro_pc')">故事募集中</div>
-            <div class="link" @click="scrollTo('story_carousel_pc')">幸福故事集</div>
-            <div class="link" @click="scrollTo('story_share_pc')">YouTuber體驗分享</div>
+            <div class="link" @click="scrollTo('page_intro_pc')">
+              故事募集中
+            </div>
+            <div class="link" @click="scrollTo('story_carousel_pc')">
+              幸福故事集
+            </div>
+            <div class="link" @click="scrollTo('story_share_pc')">
+              YouTuber體驗分享
+            </div>
           </div>
         </div>
       </div>
       <div
-        class="text-center post_btn"
+        class="text-center post_btn d-none"
         data-bs-toggle="modal"
         data-bs-target="#postModal"
       >
         <img src="/assets/img/post_btn.webp" loading="lazy" alt="enter" />
       </div>
     </section>
-    <section id="page_intro_mobile"
+    <section
+      id="page_intro_mobile"
       ref="page_intro_mobile"
-      class="text-center post_btn"
-        data-bs-toggle="modal"
-        data-bs-target="#postModal"
+      class="text-center post_btn d-none"
+      data-bs-toggle="modal"
+      data-bs-target="#postModal"
     >
       <div class="container"></div>
     </section>
@@ -550,7 +727,11 @@ export default {
         <div class="row">
           <div class="col-12">
             <div id="story_carousel_title">
-              <img src="/assets/img/story_title.webp" loading="lazy" alt="title" />
+              <img
+                src="/assets/img/story_title.webp"
+                loading="lazy"
+                alt="title"
+              />
             </div>
             <div
               id="story_carousel"
@@ -580,7 +761,7 @@ export default {
                         <img
                           src="/assets/img/story/a/1.webp"
                           class="story-img"
-                          loading='lazy'
+                          loading="lazy"
                           alt="..."
                         />
                         <div class="story-body">
@@ -612,7 +793,7 @@ export default {
                         <img
                           src="/assets/img/story/b/1.webp"
                           class="story-img"
-                          loading='lazy'
+                          loading="lazy"
                           alt="..."
                         />
                         <div class="story-body">
@@ -629,7 +810,6 @@ export default {
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
@@ -649,7 +829,7 @@ export default {
                         <img
                           src="/assets/img/story/c/1.webp"
                           class="story-img"
-                          loading='lazy'
+                          loading="lazy"
                           alt="..."
                         />
                         <div class="story-body">
@@ -686,7 +866,7 @@ export default {
                         <img
                           src="/assets/img/story/d/1.webp"
                           class="story-img"
-                          loading='lazy'
+                          loading="lazy"
                           alt="..."
                         />
                         <div class="story-body">
@@ -703,7 +883,6 @@ export default {
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
@@ -725,7 +904,7 @@ export default {
                       <div class="story">
                         <img
                           src="/assets/img/story/e/1.webp"
-                          loading='lazy'
+                          loading="lazy"
                           class="story-img"
                           alt="..."
                         />
@@ -739,8 +918,6 @@ export default {
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -771,7 +948,11 @@ export default {
         <div class="row">
           <div class="col-12">
             <div id="story_carousel_title">
-              <img src="/assets/img/story_title_mobile.webp" alt="title" loading="lazy" />
+              <img
+                src="/assets/img/story_title_mobile.webp"
+                alt="title"
+                loading="lazy"
+              />
             </div>
             <div
               id="story_carousel_mobile_container"
@@ -779,7 +960,7 @@ export default {
               data-ride="carousel"
               data-touch="true"
             >
-            <div class="carousel-inner">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
                     <div
@@ -839,7 +1020,6 @@ export default {
                           src="/assets/img/story/b/1.webp"
                           class="story-img"
                           loading="lazy"
-
                           alt="..."
                         />
                         <div class="story-body">
@@ -857,7 +1037,6 @@ export default {
 
                 <div class="carousel-item">
                   <div class="row">
-
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
@@ -934,7 +1113,6 @@ export default {
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-
                     <div
                       class="col-12 col-story"
                       data-bs-toggle="modal"
@@ -969,8 +1147,6 @@ export default {
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -1000,175 +1176,171 @@ export default {
       <div class="arrow arrow_down"></div>
       <div class="arrow arrow_up"></div>
       <div class="row">
-          <div
-            class="col-6 story-wall left"
-          >
-            <div class="row">
-              <div class="col-6 story-wall-left left">
-                <div class="row">
-                  <div class="col-12">
-                    <Vue3Marquee
-                      :vertical="true"
-                      :pause-on-hover="true"
-                      :clone="true"
-                      :duration="randomSpeedPCLeft1"
-                      v-if="!runMobileMarquee"
+        <div class="col-6 story-wall left">
+          <div class="row">
+            <div class="col-6 story-wall-left left">
+              <div class="row">
+                <div class="col-12">
+                  <Vue3Marquee
+                    :vertical="true"
+                    :pause-on-hover="true"
+                    :clone="true"
+                    :duration="randomSpeedPCLeft1"
+                    v-if="!runMobileMarquee"
+                  >
+                    <div
+                      class="story story-pc1"
+                      v-for="(story, index) in stories[0]"
+                      :key="index"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contentModal"
+                      @click="
+                        contentModalSetData(
+                          story.recommendation_title,
+                          story.owner_photo,
+                          story.recommendation_content,
+                          story.social_media_link
+                        )
+                      "
                     >
-                      <div
-                        class="story story-pc1"
-                        v-for="(story, index) in stories[0]"
-                        :key="index"
-                        data-bs-toggle="modal"
-                        data-bs-target="#contentModal"
-                        @click="
-                          contentModalSetData(
-                            story.recommendation_title,
-                            story.owner_photo,
-                            story.recommendation_content,
-                            story.social_media_link
-                          )
-                        "
-                      >
-                        <img
-                          :src="story.owner_photo"
-                          class="story-img"
-                          :alt="story.recommendation_title"
-                          loading='lazy'
-                        />
-                        <div class="story-body">
-                          {{ story.recommendation_title }}
-                        </div>
+                      <img
+                        :src="story.owner_photo"
+                        class="story-img"
+                        :alt="story.recommendation_title"
+                        loading="lazy"
+                      />
+                      <div class="story-body">
+                        {{ story.recommendation_title }}
                       </div>
-                    </Vue3Marquee>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 story-wall-left right">
-                <div class="row">
-                  <div class="col-12">
-                    <Vue3Marquee
-                      :vertical="true"
-                      :pause-on-hover="true"
-                      :clone="true"
-                      :duration="randomSpeedPCLeft2"
-                      v-if="!runMobileMarquee"
-                    >
-                      <div
-                        class="story-pc2 story"
-                        data-bs-toggle="modal"
-                        data-bs-target="#contentModal"
-                        @click="
-                          contentModalSetData(
-                            story.recommendation_title,
-                            story.owner_photo,
-                            story.recommendation_content,
-                            story.social_media_link
-                          )
-                        "
-                        v-for="(story, index) in stories[1]"
-                        :key="index"
-                      >
-                        <img
-                          :src="story.owner_photo"
-                          class="story-img"
-                          :alt="story.recommendation_title"
-                          loading='lazy'
-                        />
-                        <div class="story-body">
-                          {{ story.recommendation_title }}
-                        </div>
-                      </div>
-                    </Vue3Marquee>
-                  </div>
+                    </div>
+                  </Vue3Marquee>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-6 story-wall right"
-          >
-            <div class="row">
-              <div class="col-6 story-wall-left left">
-                <div class="row">
-                  <div class="col-12">
-                    <Vue3Marquee
-                      :vertical="true"
-                      :pause-on-hover="true"
-                      :clone="true"
-                      :duration="randomSpeedPCRight1"
-                      v-if="!runMobileMarquee"
+            <div class="col-6 story-wall-left right">
+              <div class="row">
+                <div class="col-12">
+                  <Vue3Marquee
+                    :vertical="true"
+                    :pause-on-hover="true"
+                    :clone="true"
+                    :duration="randomSpeedPCLeft2"
+                    v-if="!runMobileMarquee"
+                  >
+                    <div
+                      class="story-pc2 story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contentModal"
+                      @click="
+                        contentModalSetData(
+                          story.recommendation_title,
+                          story.owner_photo,
+                          story.recommendation_content,
+                          story.social_media_link
+                        )
+                      "
+                      v-for="(story, index) in stories[1]"
+                      :key="index"
                     >
-                      <div
-                        class="story story-pc3"
-                        data-bs-toggle="modal"
-                        data-bs-target="#contentModal"
-                        @click="
-                          contentModalSetData(
-                            story.recommendation_title,
-                            story.owner_photo,
-                            story.recommendation_content,
-                            story.social_media_link
-                          )
-                        "
-                        v-for="(story, index) in stories[2]"
-                        :key="index"
-                      >
-                        <img
-                          :src="story.owner_photo"
-                          class="story-img"
-                          loading='lazy'
-                          :alt="story.recommendation_title"
-                        />
-                        <div class="story-body">
-                          {{ story.recommendation_title }}
-                        </div>
+                      <img
+                        :src="story.owner_photo"
+                        class="story-img"
+                        :alt="story.recommendation_title"
+                        loading="lazy"
+                      />
+                      <div class="story-body">
+                        {{ story.recommendation_title }}
                       </div>
-                    </Vue3Marquee>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 story-wall-right right">
-                <div class="row">
-                  <div class="col-12">
-                    <Vue3Marquee
-                      :vertical="true"
-                      :pause-on-hover="true"
-                      :clone="true"
-                      :duration="randomSpeedPCRight2"
-                      v-if="!runMobileMarquee"
-                    >
-                      <div
-                        class="story story-pc4"
-                        data-bs-toggle="modal"
-                        data-bs-target="#contentModal"
-                        @click="
-                          contentModalSetData(
-                            story.recommendation_title,
-                            story.owner_photo,
-                            story.recommendation_content,
-                            story.social_media_link
-                          )
-                        "
-                        v-for="(story, index) in stories[3]"
-                        :key="index"
-                      >
-                        <img
-                          :src="story.owner_photo"
-                          class="story-img"
-                          loading='lazy'
-                          :alt="story.recommendation_title"
-                        />
-                        <div class="story-body">
-                          {{ story.recommendation_title }}
-                        </div>
-                      </div>
-                    </Vue3Marquee>
-                  </div>
+                    </div>
+                  </Vue3Marquee>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-6 story-wall right">
+          <div class="row">
+            <div class="col-6 story-wall-left left">
+              <div class="row">
+                <div class="col-12">
+                  <Vue3Marquee
+                    :vertical="true"
+                    :pause-on-hover="true"
+                    :clone="true"
+                    :duration="randomSpeedPCRight1"
+                    v-if="!runMobileMarquee"
+                  >
+                    <div
+                      class="story story-pc3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contentModal"
+                      @click="
+                        contentModalSetData(
+                          story.recommendation_title,
+                          story.owner_photo,
+                          story.recommendation_content,
+                          story.social_media_link
+                        )
+                      "
+                      v-for="(story, index) in stories[2]"
+                      :key="index"
+                    >
+                      <img
+                        :src="story.owner_photo"
+                        class="story-img"
+                        loading="lazy"
+                        :alt="story.recommendation_title"
+                      />
+                      <div class="story-body">
+                        {{ story.recommendation_title }}
+                      </div>
+                    </div>
+                  </Vue3Marquee>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 story-wall-right right">
+              <div class="row">
+                <div class="col-12">
+                  <Vue3Marquee
+                    :vertical="true"
+                    :pause-on-hover="true"
+                    :clone="true"
+                    :duration="randomSpeedPCRight2"
+                    v-if="!runMobileMarquee"
+                  >
+                    <div
+                      class="story story-pc4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contentModal"
+                      @click="
+                        contentModalSetData(
+                          story.recommendation_title,
+                          story.owner_photo,
+                          story.recommendation_content,
+                          story.social_media_link
+                        )
+                      "
+                      v-for="(story, index) in stories[3]"
+                      :key="index"
+                    >
+                      <img
+                        :src="story.owner_photo"
+                        class="story-img"
+                        loading="lazy"
+                        :alt="story.recommendation_title"
+                      />
+                      <div class="story-body">
+                        {{ story.recommendation_title }}
+                      </div>
+                    </div>
+                  </Vue3Marquee>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="story_wall_mobile" ref="story_wall_mobile">
@@ -1176,9 +1348,7 @@ export default {
       <div class="arrow arrow_up"></div>
       <div class="container">
         <div class="row">
-          <div
-            class="col-12 story-wall"
-          >
+          <div class="col-12 story-wall">
             <div class="row">
               <div class="col-6 story-wall-left left story-mobile1">
                 <div class="row">
@@ -1225,11 +1395,10 @@ export default {
                       :vertical="true"
                       :clone="true"
                       :duration="randomSpeedMobileRight"
-
                       v-if="runMobileMarquee"
                     >
                       <div
-                        class="story "
+                        class="story"
                         data-bs-toggle="modal"
                         data-bs-target="#contentModal"
                         @click="
@@ -1268,50 +1437,90 @@ export default {
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
-            <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" class="d-inline-block" target="_blank">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
             </a>
             <p class="story_share_title">
-              <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">彼得爸與蘇珊媽</a>
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
             </p>
             <p class="story_share_content">
-              體驗完 CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
-              <span><a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">[More]</a></span>
+              體驗完
+              CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+              <span
+                ><a
+                  href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
             </p>
           </div>
 
           <div class="story_share_col">
-            <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" class="d-inline-block" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
             </a>
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">絕代雙Ｑ</a>
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
             </p>
             <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜
-              開全新的 THE ALL-NEW CUSTIN 頂級 LMPV
-              和阿嬤一起來接薇0～
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜 開全新的 THE ALL-NEW
+              CUSTIN 頂級 LMPV 和阿嬤一起來接薇0～
               這台車真的蠻舒服的，很適合三代同堂一起乘坐
-              <span><a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">[More]</a></span>
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
             </p>
           </div>
 
           <div class="story_share_col">
-            <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" class="d-inline-block" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             </a>
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">小朗哥爸爸</a>
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
             </p>
             <p class="story_share_content">
               我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
               這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
               大家坐的很舒服，很有安全感！
-              <span><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">[More]</a></span>
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
             </p>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -1327,7 +1536,7 @@ export default {
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="contentModalTitle">
-              <img src="/assets/img/tape.webp" loading='lazy' />
+              <img src="/assets/img/tape.webp" loading="lazy" />
               {{ storyModalData.title }}
             </h1>
             <button
@@ -1353,7 +1562,7 @@ export default {
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="contentModalTitle">
-              <img src="/assets/img/tape.webp" loading='lazy' />
+              <img src="/assets/img/tape.webp" loading="lazy" />
               {{ contentModalData.title }}
             </h1>
             <button
@@ -1365,11 +1574,23 @@ export default {
           </div>
           <div class="modal-body">
             <div v-if="contentModalData.social_media_link != null">
-              <a :href="contentModalData.social_media_link" target="_blank" v-if="!contentModalData.social_media_link.includes('youtube')">
-                <img :src="contentModalData.img_url" v-if="contentModalData.img_url != null">
+              <a
+                :href="contentModalData.social_media_link"
+                target="_blank"
+                v-if="!contentModalData.social_media_link.includes('youtube')"
+              >
+                <img
+                  :src="contentModalData.img_url"
+                  v-if="contentModalData.img_url != null"
+                />
               </a>
               <div v-else>
-                <img :src="contentModalData.img_url" @click="contentModalYTOpened = true" v-if="!contentModalYTOpened" role="button">
+                <img
+                  :src="contentModalData.img_url"
+                  @click="contentModalYTOpened = true"
+                  v-if="!contentModalYTOpened"
+                  role="button"
+                />
                 <iframe
                   v-if="contentModalYTOpened"
                   width="100%"
@@ -1384,11 +1605,13 @@ export default {
             </div>
 
             <div v-else>
-              <img :src="contentModalData.img_url" v-if="contentModalData.img_url != null">
+              <img
+                :src="contentModalData.img_url"
+                v-if="contentModalData.img_url != null"
+              />
             </div>
 
             <p v-html="contentModalData.content"></p>
-
           </div>
         </div>
       </div>
@@ -1417,7 +1640,11 @@ export default {
               <div class="row">
                 <div class="col-12">
                   <div class="post_title">
-                    <img src="/assets/img/post_modal_title.webp" loading='lazy' alt="post" />
+                    <img
+                      src="/assets/img/post_modal_title.webp"
+                      loading="lazy"
+                      alt="post"
+                    />
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 post-form">
@@ -1515,8 +1742,13 @@ export default {
                       placeholder="請填寫您的故事"
                       v-model="storiesForm.recommendation_content"
                     ></textarea>
-                    <div class="text-count ">
-                      <small :class="{ 'text-danger': storiesForm.recommendation_content.length > 300 }">
+                    <div class="text-count">
+                      <small
+                        :class="{
+                          'text-danger':
+                            storiesForm.recommendation_content.length > 300,
+                        }"
+                      >
                         {{ storiesForm.recommendation_content.length }}/300
                       </small>
                     </div>
@@ -1529,7 +1761,11 @@ export default {
                 </div>
                 <div class="col-12 col-lg-6 post-form">
                   <div class="form-group">
-                    <img class="step1_img" src="/assets/img/step1.png" loading='lazy' />
+                    <img
+                      class="step1_img"
+                      src="/assets/img/step1.png"
+                      loading="lazy"
+                    />
                     <label id="car_photo_label" @click="triggerCarPhotoUpload"
                       >上傳愛車照片</label
                     >
@@ -1557,8 +1793,14 @@ export default {
                     ></span>
                   </div>
                   <div class="form-group mt-3">
-                    <img class="step2_img mb-2" loading='lazy' src="/assets/img/step2.png" />
-                    <p style="font-size: 18px; font-weight: 500;">上傳與CUSTIN的生活照或影片</p>
+                    <img
+                      class="step2_img mb-2"
+                      loading="lazy"
+                      src="/assets/img/step2.png"
+                    />
+                    <p style="font-size: 18px; font-weight: 500">
+                      上傳與CUSTIN的生活照或影片
+                    </p>
                     <label
                       id="owner_photo_label"
                       @click="triggerOwnerPhotoUpload"
@@ -1622,7 +1864,7 @@ export default {
                       class="form-control"
                       :class="{ 'is-invalid': formErros.social_media_link }"
                       id="social_media_link"
-                      style="padding: 0.375rem;"
+                      style="padding: 0.375rem"
                       placeholder="影片上傳，請輸入FB、IG、YT之影片貼文連結"
                       v-model="storiesForm.social_media_link"
                     />
@@ -1633,8 +1875,12 @@ export default {
                     ></span>
                   </div>
                   <p class="photo_rule">
-                    <span style="color: #000;">*影片上傳請先發布於個人社群平台(FB/IG/YT)，並將該貼文設置為公開後提供分享連結</span><br />
-                    <span style="color: #ff0000;">*請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主</span><br>
+                    <span style="color: #000"
+                      >*影片上傳請先發布於個人社群平台(FB/IG/YT)，並將該貼文設置為公開後提供分享連結</span
+                    ><br />
+                    <span style="color: #ff0000"
+                      >*請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主</span
+                    ><br />
                     *照片格式：JPG、PNG <br />
                     *檔案大小限制：5MB以下 <br />
                     *圖片尺寸：具有1280x720的解析度，寬度至少為 40像素
@@ -1671,24 +1917,72 @@ export default {
                     <h6>■ 參加資格：</h6>
                     <p>Hyundai CUSTIN 車主（以車牌號碼為認定依據）</p>
                     <h6>■ 獎項：</h6>
-                    <p>LINE POINTS 100點(50位)、CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)</p>
+                    <p>
+                      LINE POINTS
+                      100點(50位)、CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)
+                    </p>
                     <h6>■ 投稿說明：</h6>
-                    <p>1.	投稿內容包含文字故事分享(300字內)以及搭配之圖片或影音(擇一)。</p>
-                    <p>2. 如選擇上傳生活照，請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主。</p>
-                    <p>3. 照片格式：檔案需提供約5MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。</p>
-                    <p>4. 影音格式：需先將影片上傳至個人社群平台Facebook或Instagram或YouTube，並將該貼文設置為公開後提供分享連結。</p>
-                    <p>5. 投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。</p>
-                    <p>6. 車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。</p>
-                    <p>7. 投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。</p>
-                    <p>8. 車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料 ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。</p>
+                    <p>
+                      1.
+                      投稿內容包含文字故事分享(300字內)以及搭配之圖片或影音(擇一)。
+                    </p>
+                    <p>
+                      2.
+                      如選擇上傳生活照，請至少上傳兩張與CUSTIN的生活照，生活照形式可參考網站中幸福故事集，以車主與愛車清晰合照為主。
+                    </p>
+                    <p>
+                      3.
+                      照片格式：檔案需提供約5MB內，具有1280*720的解析度(寬度至少為640像素)之圖檔，JPG/PNG。(目前手機都能拍攝出的規格)。
+                    </p>
+                    <p>
+                      4.
+                      影音格式：需先將影片上傳至個人社群平台Facebook或Instagram或YouTube，並將該貼文設置為公開後提供分享連結。
+                    </p>
+                    <p>
+                      5.
+                      投稿內容須符合上述規定，未符合規定者，主辦單位保有取消投稿資格(含領獎及抽獎資格)之權利。
+                    </p>
+                    <p>
+                      6.
+                      車主應確保投稿內容無侵害任何第三人之智慧財產權，不得使用他人照片、影片或截圖，經發現後主辦單位有權立即取消其獲贈資格，相關法律責任，由投稿者自行負責。
+                    </p>
+                    <p>
+                      7.
+                      投稿內容不得含有誹謗、侮辱、不雅、威脅、攻擊、色情等違反公共秩序或善良風俗、可能損害本活動進行之病毒檔案或其他任何惡意程式以及盜用他人著作內容或以AI生成方式產生之投稿內容。
+                    </p>
+                    <p>
+                      8.
+                      車主參加本活動並提供其個人資料予主辦單位，即視為已同意主辦單位依相關法令蒐集、處理及利用車主之個人資料
+                      ，且同意其投稿作品、後續相關拍攝工作等無償永久授權主辦宣傳及使用。範圍包括使用投稿內容於國內外改編、重製、發布、公開傳輸、公開播送及公開上映等。
+                    </p>
                     <h6>■ 獎項說明：</h6>
-                    <p>1. 完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE POINTS 100點(50位)。與CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)抽獎資格乙次。</p>
-                    <p>2. 投稿者須有LINE帳號始得獲贈LINE POINTS，以填入之手機號碼透過LINE發放，若因資料有誤導致寄送失敗、逾期未完成領取，皆視同放棄以上獎品，LINE POINTS之使用及折扣優惠悉依Line官方使用辦法說明。</p>
-                    <p>3. 依中華民國稅法規定，機會中獎之獎項價值超過新台幣1,000元以上者，於年度結算時必須計入個人之綜合所得申報，超過新臺幣20,010(含)元以上，需預先扣繳稅款，才可兌換獎項，故獲選車主應提供相關文件予主辦單位，以利主辦單位製作扣繳憑單，始得領取本活動獎項。若獲選車主未提供資料予主辦單位，則視同放棄獲選資格，不另行通知。</p>
+                    <p>
+                      1.
+                      完成投稿程序後，由主辦單位確認並審閱其內容，經主辦單位通知並成功刊登者，即贈送投稿者LINE
+                      POINTS
+                      100點(50位)。與CUSTIN模型車(5名)、王品集團1,000元餐券(5名)、IONIQ自動摺疊傘(5名)抽獎資格乙次。
+                    </p>
+                    <p>
+                      2. 投稿者須有LINE帳號始得獲贈LINE
+                      POINTS，以填入之手機號碼透過LINE發放，若因資料有誤導致寄送失敗、逾期未完成領取，皆視同放棄以上獎品，LINE
+                      POINTS之使用及折扣優惠悉依Line官方使用辦法說明。
+                    </p>
+                    <p>
+                      3.
+                      依中華民國稅法規定，機會中獎之獎項價值超過新台幣1,000元以上者，於年度結算時必須計入個人之綜合所得申報，超過新臺幣20,010(含)元以上，需預先扣繳稅款，才可兌換獎項，故獲選車主應提供相關文件予主辦單位，以利主辦單位製作扣繳憑單，始得領取本活動獎項。若獲選車主未提供資料予主辦單位，則視同放棄獲選資格，不另行通知。
+                    </p>
                     <h6>■ 獲選車主須知：</h6>
-                    <p>1. 投稿內容經主辦單位評選後，合適者將安排進一步的深入訪談、攝影或錄影紀錄等，如獲選車主無法全程配合主辦單位之安排，視同放棄獲選資格。</p>
-                    <p>2. 主辦單位為獲選車主安排深入訪談所拍攝之照片、影片及成果物，其智慧財產權歸屬於主辦單位所有，主辦單位不另支付報酬予獲選車主。</p>
-                    <p>■兌獎與寄送將由主辦單位「南陽實業股份有限公司」指定之活動小組「博報堂思索股份有限公司」統一處理相關事宜，詳細兌獎方式將於得獎者與活動小組聯繫後進行通知，並以主辦單位規劃之方式為主，僅限郵寄至台、澎、金、馬地區。主辦單位有隨時有權取消、終止、修改活動內容，亦有權對本活動之所有事宜做出最終解釋或決定，及保留最後核准與否權利。相關未盡事宜，以Hyundai官網或官方粉絲團公告為準，不另行通知。</p>
+                    <p>
+                      1.
+                      投稿內容經主辦單位評選後，合適者將安排進一步的深入訪談、攝影或錄影紀錄等，如獲選車主無法全程配合主辦單位之安排，視同放棄獲選資格。
+                    </p>
+                    <p>
+                      2.
+                      主辦單位為獲選車主安排深入訪談所拍攝之照片、影片及成果物，其智慧財產權歸屬於主辦單位所有，主辦單位不另支付報酬予獲選車主。
+                    </p>
+                    <p>
+                      ■兌獎與寄送將由主辦單位「南陽實業股份有限公司」指定之活動小組「博報堂思索股份有限公司」統一處理相關事宜，詳細兌獎方式將於得獎者與活動小組聯繫後進行通知，並以主辦單位規劃之方式為主，僅限郵寄至台、澎、金、馬地區。主辦單位有隨時有權取消、終止、修改活動內容，亦有權對本活動之所有事宜做出最終解釋或決定，及保留最後核准與否權利。相關未盡事宜，以Hyundai官網或官方粉絲團公告為準，不另行通知。
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1705,53 +1999,89 @@ export default {
       <div class="story_share_container">
         <div class="story_share_row">
           <div class="story_share_col">
-            <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" class="d-inline-block" target="_blank">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
             </a>
             <p class="story_share_title">
-              <a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">彼得爸與蘇珊媽</a>
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
             </p>
             <p class="story_share_content">
               體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
             </p>
             <span class="story_share_link"
-              ><a href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy" target="_blank">[More]</a></span
+              ><a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >[More]</a
+              ></span
             >
           </div>
 
           <div class="story_share_col">
-            <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" class="d-inline-block" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
             </a>
 
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">絕代雙Ｑ</a>
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
             </p>
             <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br>
-              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br>
-              和阿嬤一起來接薇0～<br>
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br />
+              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br />
+              和阿嬤一起來接薇0～<br />
               這台車真的蠻舒服的，很適合三代同堂一起乘坐
             </p>
             <span class="story_share_link"
-              ><a href="https://www.youtube.com/watch?v=QDQ4iIjVFyY" target="_blank">[More]</a></span
+              ><a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >[More]</a
+              ></span
             >
           </div>
 
           <div class="story_share_col">
-            <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" class="d-inline-block" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
               <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
             </a>
             <p class="story_share_title">
-              <a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">小朗哥爸爸</a>
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
             </p>
             <p class="story_share_content">
-              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br>
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br>
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br />
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br />
               大家坐的很舒服，很有安全感！
             </p>
             <span class="story_share_link"
-              ><a href="https://www.youtube.com/watch?v=S8ynSa0YVGc" target="_blank">[More]</a></span
+              ><a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >[More]</a
+              ></span
             >
           </div>
         </div>
@@ -1762,14 +2092,19 @@ export default {
       <div class="row">
         <div class="col-7 champion_left">
           <img src="/assets/img/champion_title.webp" class="champion_title" />
-          <img src="/assets/img/champion_car_left.webp" loading='lazy' class="champion_car" />
+          <img
+            src="/assets/img/champion_car_left.webp"
+            loading="lazy"
+            class="champion_car"
+          />
           <div class="champion-action-list">
-            <a href="https://www.hyundai-motor.com.tw/testdrive.html?utm_source=officialwebsite&utm_medium=testdrive&utm_campaign=KU_event"
+            <a
+              href="https://www.hyundai-motor.com.tw/testdrive.html?utm_source=officialwebsite&utm_medium=testdrive&utm_campaign=KU_event"
               target="_blank"
               ><img
                 src="/assets/img/champion_testdrive.webp"
                 class="champion-action testdrive"
-                loading='lazy'
+                loading="lazy"
             /></a>
             <a
               href="https://www.hyundai-motor.com.tw/clicktobuy/custin/customize?utm_source=officialwebsite&utm_medium=clicktobuy&utm_campaign=KU_event"
@@ -1777,7 +2112,7 @@ export default {
               ><img
                 src="/assets/img/champion_order.webp"
                 class="champion-action order"
-                loading='lazy'
+                loading="lazy"
             /></a>
             <a
               href="https://www.hyundai-motor.com.tw/clicktobuy/custin?utm_source=officialwebsite&utm_medium=clicktobuy_custin&utm_campaign=KU_event"
@@ -1785,18 +2120,18 @@ export default {
               ><img
                 src="/assets/img/champion_more.webp"
                 class="champion-action more"
-                loading='lazy'
+                loading="lazy"
             /></a>
           </div>
         </div>
         <div class="col-5 champion_right">
-          <img src="/assets/img/champion_right_1.webp" loading='lazy'/>
+          <img src="/assets/img/champion_right_1.webp" loading="lazy" />
           <p>前衛科技座艙</p>
-          <img src="/assets/img/champion_right_2.webp" loading='lazy'/>
+          <img src="/assets/img/champion_right_2.webp" loading="lazy" />
           <p>感應式電動側滑門</p>
-          <img src="/assets/img/champion_right_3.webp" loading='lazy'/>
+          <img src="/assets/img/champion_right_3.webp" loading="lazy" />
           <p>正七人座寬敞空間</p>
-          <img src="/assets/img/champion_right_4.webp" loading='lazy'/>
+          <img src="/assets/img/champion_right_4.webp" loading="lazy" />
           <p>第二排VIP皇家座椅</p>
         </div>
       </div>
@@ -1806,7 +2141,11 @@ export default {
       <div class="row">
         <div class="col-12 champion_left">
           <img src="/assets/img/champion_title.webp" class="champion_title" />
-          <img src="/assets/img/champion_car_left.webp" class="champion_car" loading="lazy" />
+          <img
+            src="/assets/img/champion_car_left.webp"
+            class="champion_car"
+            loading="lazy"
+          />
         </div>
         <div class="col-12 champion_right">
           <img src="/assets/img/champion_right_1.webp" loading="lazy" />
