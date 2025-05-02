@@ -1173,8 +1173,8 @@ export default {
     </section>
 
     <section id="story_wall_pc" ref="story_wall_pc">
-      <div class="arrow arrow_down"></div>
-      <div class="arrow arrow_up"></div>
+      <!-- <div class="arrow arrow_down"></div>
+      <div class="arrow arrow_up"></div> -->
       <div class="row">
         <div class="col-6 story-wall left">
           <div class="row">
@@ -1344,8 +1344,8 @@ export default {
     </section>
 
     <section id="story_wall_mobile" ref="story_wall_mobile">
-      <div class="arrow arrow_down"></div>
-      <div class="arrow arrow_up"></div>
+      <!-- <div class="arrow arrow_down"></div>
+      <div class="arrow arrow_up"></div> -->
       <div class="container">
         <div class="row">
           <div class="col-12 story-wall">
