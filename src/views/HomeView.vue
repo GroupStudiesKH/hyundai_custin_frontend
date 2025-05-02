@@ -128,151 +128,151 @@ export default {
 
     const getStories = async () => {
       try {
-        // const results = await apiService.getStories();
-        const results = [
-          {
-            id: 187,
-            recommendation_title: "我們這一家與CUSTIN的故事",
-            recommendation_content:
-              "至從買了CUSTIN,我們全家五人就開啟了與CUSTIN的連結了，他為我們遮風擋雨，保護我們全家的安全，讓這個世界變得更美好，當初如果沒有選擇CUSTIN,或許這段旅程可能沒有了開始。",
-            owner_photo: "/assets/img/upload/1742188129_圖片1.webp",
-          },
-          {
-            id: 186,
-            recommendation_title: "笑容",
-            recommendation_content:
-              "升格成了父母，帶著雙方的父母與兩個寶寶，用這台車開啟每一次出遊的舒適回憶，並期待著下一次的旅程",
-            owner_photo: "/assets/img/upload/1742188024_生活照1.webp",
-          },
-          {
-            id: 183,
-            recommendation_title: "未來的老闆娘",
-            recommendation_content:
-              "每次出門，爸爸媽媽總是為了自己的子女安全與舒適著想，2024這年想換台舒適一點的車，無意間看到了這台Custin，馬上預約看車與試乘，在業務專業的介紹下，感覺這台車很適合目前我要的，馬上簽約，足足等了三個月才交車，現在出門旅遊看到小孩坐的很舒適，就感覺這錢花的很值得。",
-            owner_photo: "/assets/img/upload/1742181037_生活照2.webp",
-          },
-          {
-            id: 182,
-            recommendation_title: "乘載幸福的車",
-            recommendation_content:
-              '一部乘載著"家的幸福",當初選擇Custin,一來家中乘員較多，二來除了接送家中寶貝上、下學，也是出門旅遊的相當不錯的交通工具，再來因工作關係，有時還需擔任送貨的任務，所以也占據大部分的時間。\r\n除了短暫時間與小朋友分享上、下學校點滴，因大空間出外踏青還能攜帶所需的衣物及物品，所以除了乘載*家的幸福*外，更是家中不可缺一的生活伴侶，有你真好。',
-            owner_photo: "/assets/img/upload/1741679554_生活照1.webp",
-          },
-          {
-            id: 176,
-            recommendation_title: "櫻花🌸",
-            recommendation_content:
-              "每到一個美麗的景點，都不忘幫，也是家裡一份子的CUSTIN紀錄每一個美麗的地標～",
-            owner_photo: "/assets/img/upload/1741156789_圖片1.webp",
-          },
-          {
-            id: 175,
-            recommendation_title: "闔家歡樂一同郊遊趣",
-            recommendation_content:
-              "自從買了Custin後，我們一家大大小小出遊的機率更頻繁了！\r\n喜歡大家熱熱鬧鬧聚在一起的氛圍，能這樣大家團聚出遊真的很棒很幸福！\r\n一家五口再加上長輩一台車就直接出遊不需再多開一台車，說走就走去哪都開心。\r\n車子真的很舒適，也很好開。以前開個車開較遠程小孩就會哇哇叫怎麼這麼遠，要坐好久，但自從換了Custin後因為座椅太舒適，一家在車上熱熱鬧鬧玩得太開心都不會覺得路途很遙遠了，甚至環島也開心！所以我們出遊機會更多，全台四處趴趴走，也一路認識了不少車友，更值得誇讚的是，因為擁有這台車後還有很多機會參加車聚，適合家庭出遊的車，連車聚都辦得有聲有色，完全符合我們家庭，實在太慶幸了！",
-            owner_photo: "/assets/img/upload/1741156755_圖片2.webp",
-          },
-          {
-            id: 174,
-            recommendation_title: "陪伴我人生後半段",
-            recommendation_content:
-              "人生的下半段精彩故事就由Custin來陪伴我們一家人繼續走下去 👍",
-            owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
-          },
-          {
-            id: 173,
-            recommendation_title: "戴著思念的Custin",
-            recommendation_content:
-              "去年，老婆傳來了第二胎的好消息，想想家裡的老瑞獅，看著家裡同住的岳母以及住在內湖的老爸老媽和未來出門至少2大加兩張安全座椅，想再坐第5人根本不可能，確立了放好小孩仍能進出第3排的MPV車型，於暑假就下訂大小勉強可以停路邊車格，又能舒適承載7人的Custin，沒想到11月老婆緊急剖腹，第2隻小可愛提早來到人世，但因為不明原因無法自主呼吸，在出生2天後便結束短短的人生，就在這天接到了新車通知，當下真心痛苦，當初為他而訂的車卻在他走了的時侯到來，幾番掙扎還是牽了回家，看著原本應該滿座的第二排不明悲傷，今年1月，原本空著的位置在南下探親時滿載大舅子一家和令岳母，2月帶著岳母姐妹們泡溫泉，現在，車子滿了",
-            owner_photo: "/assets/img/upload/1741060258_圖片1.webp",
-          },
-          {
-            id: 171,
-            recommendation_title: "幸福安親班交通車",
-            recommendation_content:
-              "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
-            owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
-          },
-          {
-            id: 165,
-            recommendation_title: "家用神車",
-            recommendation_content:
-              "同級價位首選\r\n家用的大空間\r\n配備盡完美",
-            owner_photo: "/assets/img/upload/1740986049_生活照2.webp",
-          },
-          {
-            id: 158,
-            recommendation_title: "滿滿幸福的小藍",
-            recommendation_content:
-              "妹妹一句，爸爸我可以站在車上，讓我們決定上手我們的Custin小藍，從此在小藍車上皆充滿歡樂與回憶，舒適的小藍總讓小孩有個舒適的車上空間，Custin讓我們無可挑剔！",
-            owner_photo: "/assets/img/upload/1740985876_生活照1.webp",
-          },
-          {
-            id: 157,
-            recommendation_title: "就是這台車！！！",
-            recommendation_content:
-              "想換車 ，家中加上媽媽，總共有6個人，所以開始想找一台滿意的七人座 ，某次去台東玩，看見一台車 ，一秒覺得，這個外型，就是心中想要找尋的七人坐車子，馬上拿出手機搜尋，是現代的CUSTIN，回到屏東後，很快的就去現代汽車賞車了。\r\n一看見實車就很滿意，第二次去看，試乘後，就直接下訂了，完全沒有去看過其他廠牌，就決定買下這台七人坐。\r\n開著這台車，四處玩，釣魚也很合適，座位很舒適，全家都很滿意，未來，要再開著我們這台心中滿意的CUSTIN，繼續玩透透！",
-            owner_photo: "/assets/img/upload/1740985830_圖片1.webp",
-          },
-          {
-            id: 141,
-            recommendation_title: "神帶我遇Custin",
-            recommendation_content:
-              "當初家庭的需要，我們要找一台7人座車子，意外從親戚那得知Custin，去展間試完車沒多久就訂購了～CP值高的車，讚👍",
-            owner_photo: "/assets/img/upload/1740559433_生活照1.webp",
-          },
-          {
-            id: 142,
-            recommendation_title: "Custin",
-            recommendation_content:
-              "我個人覺得Custin真的是CP值很高的車，稅金也很省空間又大，油耗我個人覺得還好畢竟車那麼重，引擎才1.5CC我個人覺得算省油了如果沒辦法接受Custin那也只能加預算往上買到阿爾法或LM，所以我覺得Custin我是給蠻高的評分",
-            owner_photo: "/assets/img/upload/1740559361_圖片2.webp",
-          },
-          {
-            id: 140,
-            recommendation_title: "給最愛的家人頂級的乘坐享受",
-            recommendation_content:
-              "去年要換車時我的首選原本是日系SUV車款，但老婆考慮到家人乘坐空間傾向MPV車款。為了迎合老婆的要求，便到住家附近的展示中心看Hyundai Custin車款，映入眼簾的是大器的豪華外型以及簡約、前衛風格的設計美學，深深吸引我的目光。\r\n上車試坐後發現乘坐空間非常的寬敞，全車皮椅更構成科技豪華的內裝氛圍，而頂級的VIP車款有雙邊電動側滑門上下車更安全舒適，第二排座椅擁有皇家VIP等級的電動調整及通風加熱功能，還有全套先進的駕駛輔助及完備的安全配備，確實顛覆了以前對韓國車的刻板印象，而為了給最愛的家人頂級的乘坐享受，這也是最後選擇Hyundai Custin的最大理由。",
-            owner_photo: "/assets/img/upload/1740463168_圖片2.webp",
-          },
-          {
-            id: 139,
-            recommendation_title: "當我們Custin串在一起",
-            recommendation_content:
-              "愛上Custin大家庭，每年群組發起一次的大會師，有400台霸氣壯觀畫面，車友不私藏的改車分享，各個區域也不定時一同出遊、一同做公益的活動，因為有車友們，生活變得多采多姿。為了家庭孩子、又可認識各式各樣的朋友～購買Custin非常值得。",
-            owner_photo: "/assets/img/upload/1740463137_圖片3.webp",
-          },
-          {
-            id: 138,
-            recommendation_title: "一台製造全家回憶的車",
-            recommendation_content:
-              "家人陪伴的時候，一台需要滿載家人回憶的車出現了，經歷了半年的等待，永遠記得首次出遊前往九族文化村，當時Custin車輛總數還沒那麼多，開過去路人出現了讚嘆的聲音，小朋友坐在車內總是可以安靜的睡覺玩耍，這台車真是值得推薦",
-            owner_photo: "/assets/img/upload/1740463114_圖片1.webp",
-          },
-          {
-            id: 133,
-            recommendation_title: "第一次帶媽媽坐Custin出遊",
-            recommendation_content:
-              "很高興年前取車，年初三去板橋載媽媽一起去紫南宮走走。媽媽一上車就說座位好舒服，沒多久媽媽就睡著了。 一直開心的使用一些座位旁的按鍵。 媽媽一定很開心我們第一次買新車吧！之前那台五人座二手車媽媽跟兩個女兒擠在後座動彈不得\r\n一天下來，車上五個人開心聊天，也吃了好吃的食物。買一些紫南宮老街的伴手禮。 載媽媽回板橋。 結束我回娘家的一天，我們一家四口也開心的回宜蘭\r\n年假我們天天開著Custin到處去玩，很開心因緣際會之下在中和買到車業務人超熱情的，跟我們宜蘭的業務真的差很多\r\n現在使用這台車滿一個月了。 結論是很開心老公做了很久的功課確定買了它，搭過它的評價都超好的好開心",
-            owner_photo:
-              "/assets/img/upload/1740380612_67b9b56bc4643_image0.webp",
-          },
-          {
-            id: 135,
-            recommendation_title: "三代同堂出遊",
-            recommendation_content:
-              "婚前原本開小轎車，隨著情侶踏入了婚禮殿堂後然而有一個小生命誕生，才慢慢發覺到車子空間怎麼越來越壓迫了，每次一到假日可以三代同堂出遊還可以勉強歡樂抵達目的，隨著二寶來到，到了假日時會捨棄父母，帶著兩寶出遊，日子久了知道這不是我想到的出遊，於是騙騙父母去現代試駕Custin 說試駕不用錢去坐坐，試駕後父母對於Custin評價很高，在試駕後一個禮拜後立刻下單，來繼續我們的三代同堂出遊，一起玩遍全台灣啦",
-            owner_photo: "/assets/img/upload/1740380682_生活照2.webp",
-          },
-          {
-            id: 134,
-            recommendation_title: "Sweet Custin",
-            recommendation_content:
-              '原本開Focus載著一家三口~忽然一下子甜蜜的幸福來太快\r\n2、3寶接連報到~ Focus的空間直接無法承擔~\r\n看了很多款7人座,不是不舒服、空間小、不然就是太商務\r\n剛好遇到CUSTIN上市,試乘了兩次就直接下單排隊了~\r\nCUSTIN整個就是為了家庭量身訂做的車款\r\n空間適中,可以帶兩台推車,二排椅子又是同級距無敵~\r\n每次出遊,就是老話一句"上車睡覺、下車尿尿"\r\n不論是妻子、孩子都很愛這台車~\r\n載著我們一家人上山下海到處遊玩~\r\n很開心一家五口加上CUSTIN組成的甜蜜家庭~',
-            owner_photo:
-              "/assets/img/upload/1740380648_67b9ce952eeb3_IMG20230817084922.webp",
-          },
-        ];
+        const results = await apiService.getStories();
+        // const results = [
+        //   {
+        //     id: 187,
+        //     recommendation_title: "我們這一家與CUSTIN的故事",
+        //     recommendation_content:
+        //       "至從買了CUSTIN,我們全家五人就開啟了與CUSTIN的連結了，他為我們遮風擋雨，保護我們全家的安全，讓這個世界變得更美好，當初如果沒有選擇CUSTIN,或許這段旅程可能沒有了開始。",
+        //     owner_photo: "/assets/img/upload/1742188129_圖片1.webp",
+        //   },
+        //   {
+        //     id: 186,
+        //     recommendation_title: "笑容",
+        //     recommendation_content:
+        //       "升格成了父母，帶著雙方的父母與兩個寶寶，用這台車開啟每一次出遊的舒適回憶，並期待著下一次的旅程",
+        //     owner_photo: "/assets/img/upload/1742188024_生活照1.webp",
+        //   },
+        //   {
+        //     id: 183,
+        //     recommendation_title: "未來的老闆娘",
+        //     recommendation_content:
+        //       "每次出門，爸爸媽媽總是為了自己的子女安全與舒適著想，2024這年想換台舒適一點的車，無意間看到了這台Custin，馬上預約看車與試乘，在業務專業的介紹下，感覺這台車很適合目前我要的，馬上簽約，足足等了三個月才交車，現在出門旅遊看到小孩坐的很舒適，就感覺這錢花的很值得。",
+        //     owner_photo: "/assets/img/upload/1742181037_生活照2.webp",
+        //   },
+        //   {
+        //     id: 182,
+        //     recommendation_title: "乘載幸福的車",
+        //     recommendation_content:
+        //       '一部乘載著"家的幸福",當初選擇Custin,一來家中乘員較多，二來除了接送家中寶貝上、下學，也是出門旅遊的相當不錯的交通工具，再來因工作關係，有時還需擔任送貨的任務，所以也占據大部分的時間。\r\n除了短暫時間與小朋友分享上、下學校點滴，因大空間出外踏青還能攜帶所需的衣物及物品，所以除了乘載*家的幸福*外，更是家中不可缺一的生活伴侶，有你真好。',
+        //     owner_photo: "/assets/img/upload/1741679554_生活照1.webp",
+        //   },
+        //   {
+        //     id: 176,
+        //     recommendation_title: "櫻花🌸",
+        //     recommendation_content:
+        //       "每到一個美麗的景點，都不忘幫，也是家裡一份子的CUSTIN紀錄每一個美麗的地標～",
+        //     owner_photo: "/assets/img/upload/1741156789_圖片1.webp",
+        //   },
+        //   {
+        //     id: 175,
+        //     recommendation_title: "闔家歡樂一同郊遊趣",
+        //     recommendation_content:
+        //       "自從買了Custin後，我們一家大大小小出遊的機率更頻繁了！\r\n喜歡大家熱熱鬧鬧聚在一起的氛圍，能這樣大家團聚出遊真的很棒很幸福！\r\n一家五口再加上長輩一台車就直接出遊不需再多開一台車，說走就走去哪都開心。\r\n車子真的很舒適，也很好開。以前開個車開較遠程小孩就會哇哇叫怎麼這麼遠，要坐好久，但自從換了Custin後因為座椅太舒適，一家在車上熱熱鬧鬧玩得太開心都不會覺得路途很遙遠了，甚至環島也開心！所以我們出遊機會更多，全台四處趴趴走，也一路認識了不少車友，更值得誇讚的是，因為擁有這台車後還有很多機會參加車聚，適合家庭出遊的車，連車聚都辦得有聲有色，完全符合我們家庭，實在太慶幸了！",
+        //     owner_photo: "/assets/img/upload/1741156755_圖片2.webp",
+        //   },
+        //   {
+        //     id: 174,
+        //     recommendation_title: "陪伴我人生後半段",
+        //     recommendation_content:
+        //       "人生的下半段精彩故事就由Custin來陪伴我們一家人繼續走下去 👍",
+        //     owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
+        //   },
+        //   {
+        //     id: 173,
+        //     recommendation_title: "戴著思念的Custin",
+        //     recommendation_content:
+        //       "去年，老婆傳來了第二胎的好消息，想想家裡的老瑞獅，看著家裡同住的岳母以及住在內湖的老爸老媽和未來出門至少2大加兩張安全座椅，想再坐第5人根本不可能，確立了放好小孩仍能進出第3排的MPV車型，於暑假就下訂大小勉強可以停路邊車格，又能舒適承載7人的Custin，沒想到11月老婆緊急剖腹，第2隻小可愛提早來到人世，但因為不明原因無法自主呼吸，在出生2天後便結束短短的人生，就在這天接到了新車通知，當下真心痛苦，當初為他而訂的車卻在他走了的時侯到來，幾番掙扎還是牽了回家，看著原本應該滿座的第二排不明悲傷，今年1月，原本空著的位置在南下探親時滿載大舅子一家和令岳母，2月帶著岳母姐妹們泡溫泉，現在，車子滿了",
+        //     owner_photo: "/assets/img/upload/1741060258_圖片1.webp",
+        //   },
+        //   {
+        //     id: 171,
+        //     recommendation_title: "幸福安親班交通車",
+        //     recommendation_content:
+        //       "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
+        //     owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
+        //   },
+        //   {
+        //     id: 165,
+        //     recommendation_title: "家用神車",
+        //     recommendation_content:
+        //       "同級價位首選\r\n家用的大空間\r\n配備盡完美",
+        //     owner_photo: "/assets/img/upload/1740986049_生活照2.webp",
+        //   },
+        //   {
+        //     id: 158,
+        //     recommendation_title: "滿滿幸福的小藍",
+        //     recommendation_content:
+        //       "妹妹一句，爸爸我可以站在車上，讓我們決定上手我們的Custin小藍，從此在小藍車上皆充滿歡樂與回憶，舒適的小藍總讓小孩有個舒適的車上空間，Custin讓我們無可挑剔！",
+        //     owner_photo: "/assets/img/upload/1740985876_生活照1.webp",
+        //   },
+        //   {
+        //     id: 157,
+        //     recommendation_title: "就是這台車！！！",
+        //     recommendation_content:
+        //       "想換車 ，家中加上媽媽，總共有6個人，所以開始想找一台滿意的七人座 ，某次去台東玩，看見一台車 ，一秒覺得，這個外型，就是心中想要找尋的七人坐車子，馬上拿出手機搜尋，是現代的CUSTIN，回到屏東後，很快的就去現代汽車賞車了。\r\n一看見實車就很滿意，第二次去看，試乘後，就直接下訂了，完全沒有去看過其他廠牌，就決定買下這台七人坐。\r\n開著這台車，四處玩，釣魚也很合適，座位很舒適，全家都很滿意，未來，要再開著我們這台心中滿意的CUSTIN，繼續玩透透！",
+        //     owner_photo: "/assets/img/upload/1740985830_圖片1.webp",
+        //   },
+        //   {
+        //     id: 141,
+        //     recommendation_title: "神帶我遇Custin",
+        //     recommendation_content:
+        //       "當初家庭的需要，我們要找一台7人座車子，意外從親戚那得知Custin，去展間試完車沒多久就訂購了～CP值高的車，讚👍",
+        //     owner_photo: "/assets/img/upload/1740559433_生活照1.webp",
+        //   },
+        //   {
+        //     id: 142,
+        //     recommendation_title: "Custin",
+        //     recommendation_content:
+        //       "我個人覺得Custin真的是CP值很高的車，稅金也很省空間又大，油耗我個人覺得還好畢竟車那麼重，引擎才1.5CC我個人覺得算省油了如果沒辦法接受Custin那也只能加預算往上買到阿爾法或LM，所以我覺得Custin我是給蠻高的評分",
+        //     owner_photo: "/assets/img/upload/1740559361_圖片2.webp",
+        //   },
+        //   {
+        //     id: 140,
+        //     recommendation_title: "給最愛的家人頂級的乘坐享受",
+        //     recommendation_content:
+        //       "去年要換車時我的首選原本是日系SUV車款，但老婆考慮到家人乘坐空間傾向MPV車款。為了迎合老婆的要求，便到住家附近的展示中心看Hyundai Custin車款，映入眼簾的是大器的豪華外型以及簡約、前衛風格的設計美學，深深吸引我的目光。\r\n上車試坐後發現乘坐空間非常的寬敞，全車皮椅更構成科技豪華的內裝氛圍，而頂級的VIP車款有雙邊電動側滑門上下車更安全舒適，第二排座椅擁有皇家VIP等級的電動調整及通風加熱功能，還有全套先進的駕駛輔助及完備的安全配備，確實顛覆了以前對韓國車的刻板印象，而為了給最愛的家人頂級的乘坐享受，這也是最後選擇Hyundai Custin的最大理由。",
+        //     owner_photo: "/assets/img/upload/1740463168_圖片2.webp",
+        //   },
+        //   {
+        //     id: 139,
+        //     recommendation_title: "當我們Custin串在一起",
+        //     recommendation_content:
+        //       "愛上Custin大家庭，每年群組發起一次的大會師，有400台霸氣壯觀畫面，車友不私藏的改車分享，各個區域也不定時一同出遊、一同做公益的活動，因為有車友們，生活變得多采多姿。為了家庭孩子、又可認識各式各樣的朋友～購買Custin非常值得。",
+        //     owner_photo: "/assets/img/upload/1740463137_圖片3.webp",
+        //   },
+        //   {
+        //     id: 138,
+        //     recommendation_title: "一台製造全家回憶的車",
+        //     recommendation_content:
+        //       "家人陪伴的時候，一台需要滿載家人回憶的車出現了，經歷了半年的等待，永遠記得首次出遊前往九族文化村，當時Custin車輛總數還沒那麼多，開過去路人出現了讚嘆的聲音，小朋友坐在車內總是可以安靜的睡覺玩耍，這台車真是值得推薦",
+        //     owner_photo: "/assets/img/upload/1740463114_圖片1.webp",
+        //   },
+        //   {
+        //     id: 133,
+        //     recommendation_title: "第一次帶媽媽坐Custin出遊",
+        //     recommendation_content:
+        //       "很高興年前取車，年初三去板橋載媽媽一起去紫南宮走走。媽媽一上車就說座位好舒服，沒多久媽媽就睡著了。 一直開心的使用一些座位旁的按鍵。 媽媽一定很開心我們第一次買新車吧！之前那台五人座二手車媽媽跟兩個女兒擠在後座動彈不得\r\n一天下來，車上五個人開心聊天，也吃了好吃的食物。買一些紫南宮老街的伴手禮。 載媽媽回板橋。 結束我回娘家的一天，我們一家四口也開心的回宜蘭\r\n年假我們天天開著Custin到處去玩，很開心因緣際會之下在中和買到車業務人超熱情的，跟我們宜蘭的業務真的差很多\r\n現在使用這台車滿一個月了。 結論是很開心老公做了很久的功課確定買了它，搭過它的評價都超好的好開心",
+        //     owner_photo:
+        //       "/assets/img/upload/1740380612_67b9b56bc4643_image0.webp",
+        //   },
+        //   {
+        //     id: 135,
+        //     recommendation_title: "三代同堂出遊",
+        //     recommendation_content:
+        //       "婚前原本開小轎車，隨著情侶踏入了婚禮殿堂後然而有一個小生命誕生，才慢慢發覺到車子空間怎麼越來越壓迫了，每次一到假日可以三代同堂出遊還可以勉強歡樂抵達目的，隨著二寶來到，到了假日時會捨棄父母，帶著兩寶出遊，日子久了知道這不是我想到的出遊，於是騙騙父母去現代試駕Custin 說試駕不用錢去坐坐，試駕後父母對於Custin評價很高，在試駕後一個禮拜後立刻下單，來繼續我們的三代同堂出遊，一起玩遍全台灣啦",
+        //     owner_photo: "/assets/img/upload/1740380682_生活照2.webp",
+        //   },
+        //   {
+        //     id: 134,
+        //     recommendation_title: "Sweet Custin",
+        //     recommendation_content:
+        //       '原本開Focus載著一家三口~忽然一下子甜蜜的幸福來太快\r\n2、3寶接連報到~ Focus的空間直接無法承擔~\r\n看了很多款7人座,不是不舒服、空間小、不然就是太商務\r\n剛好遇到CUSTIN上市,試乘了兩次就直接下單排隊了~\r\nCUSTIN整個就是為了家庭量身訂做的車款\r\n空間適中,可以帶兩台推車,二排椅子又是同級距無敵~\r\n每次出遊,就是老話一句"上車睡覺、下車尿尿"\r\n不論是妻子、孩子都很愛這台車~\r\n載著我們一家人上山下海到處遊玩~\r\n很開心一家五口加上CUSTIN組成的甜蜜家庭~',
+        //     owner_photo:
+        //       "/assets/img/upload/1740380648_67b9ce952eeb3_IMG20230817084922.webp",
+        //   },
+        // ];
 
         stories.value = [
           results.slice(0, 5),
@@ -705,7 +705,7 @@ export default {
         </div>
       </div>
       <div
-        class="text-center post_btn d-none"
+        class="text-center post_btn"
         data-bs-toggle="modal"
         data-bs-target="#postModal"
       >
@@ -715,7 +715,7 @@ export default {
     <section
       id="page_intro_mobile"
       ref="page_intro_mobile"
-      class="text-center post_btn d-none"
+      class="text-center post_btn"
       data-bs-toggle="modal"
       data-bs-target="#postModal"
     >

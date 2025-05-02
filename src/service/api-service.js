@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let apiUrl = "https://api.custin-test.hyundai-motor.com.tw/api/";
+let apiUrl = "https://api.custin-event.hyundai-motor.com.tw/api/";
 // let apiUrl = "http://localhost:8000/api/";
 
 //Cookie ExpireDate
