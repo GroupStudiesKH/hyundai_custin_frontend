@@ -923,9 +923,9 @@ main {
     #story_wall_pc {
         height: 970px;
         width: 100%;
-        padding: 85px 0;
+        // padding: 85px 0;
         overflow: hidden;
-        border-bottom: 85px solid #efefef;
+        // border-bottom: 85px solid #efefef;
         background-image: url('../assets/img/wall_bg.webp');
         background-size: cover;
         background-position: center center;
@@ -1015,7 +1015,7 @@ main {
     #story_wall_mobile {
         height: 600px;
         width: 100%;
-        padding: 45px 0;
+        // padding: 45px 0;
         border-bottom: 45px solid #efefef;
         overflow: hidden;
         background-image: url('../assets/img/wall_bg_mobile.webp');
