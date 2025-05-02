@@ -527,7 +527,8 @@ main {
 
 
     #page_intro_pc {
-        height: 1285px;
+        // height: 1285px;
+        height: 285px;
         width: 100%;
         background-image: url('../assets/img/post_bg.webp');
         background-size: cover;
@@ -562,10 +563,10 @@ main {
                 max-height: 800px;
             }
 
-            background-image: url('../assets/img/post_content_bg.webp');
-            background-size: contain;
-            background-position: top center;
-            background-repeat: no-repeat;
+            // background-image: url('../assets/img/post_content_bg.webp');
+            // background-size: contain;
+            // background-position: top center;
+            // background-repeat: no-repeat;
 
             .link {
                 padding: 15px 25px;
