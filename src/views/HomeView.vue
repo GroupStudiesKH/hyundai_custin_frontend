@@ -705,7 +705,7 @@ export default {
         </div>
       </div>
       <div
-        class="text-center post_btn"
+        class="text-center post_btn d-none"
         data-bs-toggle="modal"
         data-bs-target="#postModal"
       >
@@ -715,7 +715,7 @@ export default {
     <section
       id="page_intro_mobile"
       ref="page_intro_mobile"
-      class="text-center post_btn"
+      class="text-center post_btn d-none"
       data-bs-toggle="modal"
       data-bs-target="#postModal"
     >
