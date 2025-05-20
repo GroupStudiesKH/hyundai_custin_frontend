@@ -688,7 +688,7 @@ export default {
       </div>
     </section>
 
-    <section id="page_intro_pc" ref="page_intro_pc">
+    <section id="page_intro_pc" class="d-none" ref="page_intro_pc">
       <div class="page-content">
         <div class="row d-none">
           <div class="col-12 text-center">
