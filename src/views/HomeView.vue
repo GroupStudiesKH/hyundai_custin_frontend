@@ -690,7 +690,7 @@ export default {
 
     <section id="page_intro_pc" ref="page_intro_pc">
       <div class="page-content">
-        <div class="row">
+        <div class="row d-none">
           <div class="col-12 text-center">
             <div class="link" @click="scrollTo('page_intro_pc')">
               故事募集中
