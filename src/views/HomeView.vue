@@ -1432,7 +1432,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_share_pc" ref="story_share_pc">
+    <section id="story_share_pc" class="d-none" ref="story_share_pc">
       <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
