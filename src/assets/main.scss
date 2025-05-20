@@ -527,7 +527,7 @@ main {
 
 
     #page_intro_pc {
-        height: 1210px;
+        height: 1010px;
         width: 100%;
         background-image: url('../assets/img/post_bg.webp');
         background-size: cover;
@@ -564,7 +564,7 @@ main {
 
             background-image: url('../assets/img/post_content_bg.webp');
             background-size: contain;
-            background-position: top center;
+            background-position: top -100px center;
             background-repeat: no-repeat;
 
             .link {
