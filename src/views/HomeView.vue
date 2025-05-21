@@ -715,6 +715,193 @@ export default {
         </div>
       </div>
     </section>
+    <section id="story_share_pc" ref="story_share_pc">
+      <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
+      <div class="story_share_container">
+        <div class="story_share_row">
+          <div class="story_share_col">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
+            </p>
+            <p class="story_share_content">
+              體驗完
+              CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+              <span
+                ><a
+                  href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
+            </p>
+            <p class="story_share_content">
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜 開全新的 THE ALL-NEW
+              CUSTIN 頂級 LMPV 和阿嬤一起來接薇0～
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
+            </p>
+            <p class="story_share_content">
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
+              大家坐的很舒服，很有安全感！
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
+      <p class="text-center" id="story_share_mobile_title">
+        <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
+      </p>
+      <div class="story_share_container">
+        <div class="story_share_row">
+          <div class="story_share_col">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
+            </p>
+            <p class="story_share_content">
+              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
+            </a>
+
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
+            </p>
+            <p class="story_share_content">
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br />
+              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br />
+              和阿嬤一起來接薇0～<br />
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
+            </p>
+            <p class="story_share_content">
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br />
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br />
+              大家坐的很舒服，很有安全感！
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="page_intro_pc" class="d-none" ref="page_intro_pc">
       <div class="page-content">
@@ -751,6 +938,7 @@ export default {
     </section>
 
     <section id="story_carousel_pc" ref="story_carousel_pc">
+      <div id="story_carousel_pc_shadow"></div>
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1456,98 +1644,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_share_pc" class="d-none" ref="story_share_pc">
-      <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
-      <div class="story_share_container">
-        <div class="story_share_row">
-          <div class="story_share_col">
-            <a
-              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >彼得爸與蘇珊媽</a
-              >
-            </p>
-            <p class="story_share_content">
-              體驗完
-              CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
-              <span
-                ><a
-                  href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
 
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >絕代雙Ｑ</a
-              >
-            </p>
-            <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜 開全新的 THE ALL-NEW
-              CUSTIN 頂級 LMPV 和阿嬤一起來接薇0～
-              這台車真的蠻舒服的，很適合三代同堂一起乘坐
-              <span
-                ><a
-                  href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >小朗哥爸爸</a
-              >
-            </p>
-            <p class="story_share_content">
-              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
-              大家坐的很舒服，很有安全感！
-              <span
-                ><a
-                  href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
     <div
       class="modal fade"
       id="storyModal"
@@ -2015,102 +2112,6 @@ export default {
         </div>
       </div>
     </div>
-
-    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
-      <p class="text-center" id="story_share_mobile_title">
-        <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
-      </p>
-      <div class="story_share_container">
-        <div class="story_share_row">
-          <div class="story_share_col">
-            <a
-              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >彼得爸與蘇珊媽</a
-              >
-            </p>
-            <p class="story_share_content">
-              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
-            </a>
-
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >絕代雙Ｑ</a
-              >
-            </p>
-            <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br />
-              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br />
-              和阿嬤一起來接薇0～<br />
-              這台車真的蠻舒服的，很適合三代同堂一起乘坐
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >小朗哥爸爸</a
-              >
-            </p>
-            <p class="story_share_content">
-              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br />
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br />
-              大家坐的很舒服，很有安全感！
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="champion_pc" ref="champion_pc">
       <div class="row">
