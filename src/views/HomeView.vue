@@ -110,7 +110,7 @@ export default {
       };
     };
     const animateNum = () => {
-      const targetNumber = 11565;
+      const targetNumber = 12357;
       const duration = 5000;
       const stepTime = Math.abs(Math.floor(duration / targetNumber));
       const slowDownPoint = 9000;
@@ -128,151 +128,179 @@ export default {
 
     const getStories = async () => {
       try {
-        const results = await apiService.getStories();
-        // const results = [
-        //   {
-        //     id: 187,
-        //     recommendation_title: "我們這一家與CUSTIN的故事",
-        //     recommendation_content:
-        //       "至從買了CUSTIN,我們全家五人就開啟了與CUSTIN的連結了，他為我們遮風擋雨，保護我們全家的安全，讓這個世界變得更美好，當初如果沒有選擇CUSTIN,或許這段旅程可能沒有了開始。",
-        //     owner_photo: "/assets/img/upload/1742188129_圖片1.webp",
-        //   },
-        //   {
-        //     id: 186,
-        //     recommendation_title: "笑容",
-        //     recommendation_content:
-        //       "升格成了父母，帶著雙方的父母與兩個寶寶，用這台車開啟每一次出遊的舒適回憶，並期待著下一次的旅程",
-        //     owner_photo: "/assets/img/upload/1742188024_生活照1.webp",
-        //   },
-        //   {
-        //     id: 183,
-        //     recommendation_title: "未來的老闆娘",
-        //     recommendation_content:
-        //       "每次出門，爸爸媽媽總是為了自己的子女安全與舒適著想，2024這年想換台舒適一點的車，無意間看到了這台Custin，馬上預約看車與試乘，在業務專業的介紹下，感覺這台車很適合目前我要的，馬上簽約，足足等了三個月才交車，現在出門旅遊看到小孩坐的很舒適，就感覺這錢花的很值得。",
-        //     owner_photo: "/assets/img/upload/1742181037_生活照2.webp",
-        //   },
-        //   {
-        //     id: 182,
-        //     recommendation_title: "乘載幸福的車",
-        //     recommendation_content:
-        //       '一部乘載著"家的幸福",當初選擇Custin,一來家中乘員較多，二來除了接送家中寶貝上、下學，也是出門旅遊的相當不錯的交通工具，再來因工作關係，有時還需擔任送貨的任務，所以也占據大部分的時間。\r\n除了短暫時間與小朋友分享上、下學校點滴，因大空間出外踏青還能攜帶所需的衣物及物品，所以除了乘載*家的幸福*外，更是家中不可缺一的生活伴侶，有你真好。',
-        //     owner_photo: "/assets/img/upload/1741679554_生活照1.webp",
-        //   },
-        //   {
-        //     id: 176,
-        //     recommendation_title: "櫻花🌸",
-        //     recommendation_content:
-        //       "每到一個美麗的景點，都不忘幫，也是家裡一份子的CUSTIN紀錄每一個美麗的地標～",
-        //     owner_photo: "/assets/img/upload/1741156789_圖片1.webp",
-        //   },
-        //   {
-        //     id: 175,
-        //     recommendation_title: "闔家歡樂一同郊遊趣",
-        //     recommendation_content:
-        //       "自從買了Custin後，我們一家大大小小出遊的機率更頻繁了！\r\n喜歡大家熱熱鬧鬧聚在一起的氛圍，能這樣大家團聚出遊真的很棒很幸福！\r\n一家五口再加上長輩一台車就直接出遊不需再多開一台車，說走就走去哪都開心。\r\n車子真的很舒適，也很好開。以前開個車開較遠程小孩就會哇哇叫怎麼這麼遠，要坐好久，但自從換了Custin後因為座椅太舒適，一家在車上熱熱鬧鬧玩得太開心都不會覺得路途很遙遠了，甚至環島也開心！所以我們出遊機會更多，全台四處趴趴走，也一路認識了不少車友，更值得誇讚的是，因為擁有這台車後還有很多機會參加車聚，適合家庭出遊的車，連車聚都辦得有聲有色，完全符合我們家庭，實在太慶幸了！",
-        //     owner_photo: "/assets/img/upload/1741156755_圖片2.webp",
-        //   },
-        //   {
-        //     id: 174,
-        //     recommendation_title: "陪伴我人生後半段",
-        //     recommendation_content:
-        //       "人生的下半段精彩故事就由Custin來陪伴我們一家人繼續走下去 👍",
-        //     owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
-        //   },
-        //   {
-        //     id: 173,
-        //     recommendation_title: "戴著思念的Custin",
-        //     recommendation_content:
-        //       "去年，老婆傳來了第二胎的好消息，想想家裡的老瑞獅，看著家裡同住的岳母以及住在內湖的老爸老媽和未來出門至少2大加兩張安全座椅，想再坐第5人根本不可能，確立了放好小孩仍能進出第3排的MPV車型，於暑假就下訂大小勉強可以停路邊車格，又能舒適承載7人的Custin，沒想到11月老婆緊急剖腹，第2隻小可愛提早來到人世，但因為不明原因無法自主呼吸，在出生2天後便結束短短的人生，就在這天接到了新車通知，當下真心痛苦，當初為他而訂的車卻在他走了的時侯到來，幾番掙扎還是牽了回家，看著原本應該滿座的第二排不明悲傷，今年1月，原本空著的位置在南下探親時滿載大舅子一家和令岳母，2月帶著岳母姐妹們泡溫泉，現在，車子滿了",
-        //     owner_photo: "/assets/img/upload/1741060258_圖片1.webp",
-        //   },
-        //   {
-        //     id: 171,
-        //     recommendation_title: "幸福安親班交通車",
-        //     recommendation_content:
-        //       "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
-        //     owner_photo: "/assets/img/upload/1741060367_圖片1.webp",
-        //   },
-        //   {
-        //     id: 165,
-        //     recommendation_title: "家用神車",
-        //     recommendation_content:
-        //       "同級價位首選\r\n家用的大空間\r\n配備盡完美",
-        //     owner_photo: "/assets/img/upload/1740986049_生活照2.webp",
-        //   },
-        //   {
-        //     id: 158,
-        //     recommendation_title: "滿滿幸福的小藍",
-        //     recommendation_content:
-        //       "妹妹一句，爸爸我可以站在車上，讓我們決定上手我們的Custin小藍，從此在小藍車上皆充滿歡樂與回憶，舒適的小藍總讓小孩有個舒適的車上空間，Custin讓我們無可挑剔！",
-        //     owner_photo: "/assets/img/upload/1740985876_生活照1.webp",
-        //   },
-        //   {
-        //     id: 157,
-        //     recommendation_title: "就是這台車！！！",
-        //     recommendation_content:
-        //       "想換車 ，家中加上媽媽，總共有6個人，所以開始想找一台滿意的七人座 ，某次去台東玩，看見一台車 ，一秒覺得，這個外型，就是心中想要找尋的七人坐車子，馬上拿出手機搜尋，是現代的CUSTIN，回到屏東後，很快的就去現代汽車賞車了。\r\n一看見實車就很滿意，第二次去看，試乘後，就直接下訂了，完全沒有去看過其他廠牌，就決定買下這台七人坐。\r\n開著這台車，四處玩，釣魚也很合適，座位很舒適，全家都很滿意，未來，要再開著我們這台心中滿意的CUSTIN，繼續玩透透！",
-        //     owner_photo: "/assets/img/upload/1740985830_圖片1.webp",
-        //   },
-        //   {
-        //     id: 141,
-        //     recommendation_title: "神帶我遇Custin",
-        //     recommendation_content:
-        //       "當初家庭的需要，我們要找一台7人座車子，意外從親戚那得知Custin，去展間試完車沒多久就訂購了～CP值高的車，讚👍",
-        //     owner_photo: "/assets/img/upload/1740559433_生活照1.webp",
-        //   },
-        //   {
-        //     id: 142,
-        //     recommendation_title: "Custin",
-        //     recommendation_content:
-        //       "我個人覺得Custin真的是CP值很高的車，稅金也很省空間又大，油耗我個人覺得還好畢竟車那麼重，引擎才1.5CC我個人覺得算省油了如果沒辦法接受Custin那也只能加預算往上買到阿爾法或LM，所以我覺得Custin我是給蠻高的評分",
-        //     owner_photo: "/assets/img/upload/1740559361_圖片2.webp",
-        //   },
-        //   {
-        //     id: 140,
-        //     recommendation_title: "給最愛的家人頂級的乘坐享受",
-        //     recommendation_content:
-        //       "去年要換車時我的首選原本是日系SUV車款，但老婆考慮到家人乘坐空間傾向MPV車款。為了迎合老婆的要求，便到住家附近的展示中心看Hyundai Custin車款，映入眼簾的是大器的豪華外型以及簡約、前衛風格的設計美學，深深吸引我的目光。\r\n上車試坐後發現乘坐空間非常的寬敞，全車皮椅更構成科技豪華的內裝氛圍，而頂級的VIP車款有雙邊電動側滑門上下車更安全舒適，第二排座椅擁有皇家VIP等級的電動調整及通風加熱功能，還有全套先進的駕駛輔助及完備的安全配備，確實顛覆了以前對韓國車的刻板印象，而為了給最愛的家人頂級的乘坐享受，這也是最後選擇Hyundai Custin的最大理由。",
-        //     owner_photo: "/assets/img/upload/1740463168_圖片2.webp",
-        //   },
-        //   {
-        //     id: 139,
-        //     recommendation_title: "當我們Custin串在一起",
-        //     recommendation_content:
-        //       "愛上Custin大家庭，每年群組發起一次的大會師，有400台霸氣壯觀畫面，車友不私藏的改車分享，各個區域也不定時一同出遊、一同做公益的活動，因為有車友們，生活變得多采多姿。為了家庭孩子、又可認識各式各樣的朋友～購買Custin非常值得。",
-        //     owner_photo: "/assets/img/upload/1740463137_圖片3.webp",
-        //   },
-        //   {
-        //     id: 138,
-        //     recommendation_title: "一台製造全家回憶的車",
-        //     recommendation_content:
-        //       "家人陪伴的時候，一台需要滿載家人回憶的車出現了，經歷了半年的等待，永遠記得首次出遊前往九族文化村，當時Custin車輛總數還沒那麼多，開過去路人出現了讚嘆的聲音，小朋友坐在車內總是可以安靜的睡覺玩耍，這台車真是值得推薦",
-        //     owner_photo: "/assets/img/upload/1740463114_圖片1.webp",
-        //   },
-        //   {
-        //     id: 133,
-        //     recommendation_title: "第一次帶媽媽坐Custin出遊",
-        //     recommendation_content:
-        //       "很高興年前取車，年初三去板橋載媽媽一起去紫南宮走走。媽媽一上車就說座位好舒服，沒多久媽媽就睡著了。 一直開心的使用一些座位旁的按鍵。 媽媽一定很開心我們第一次買新車吧！之前那台五人座二手車媽媽跟兩個女兒擠在後座動彈不得\r\n一天下來，車上五個人開心聊天，也吃了好吃的食物。買一些紫南宮老街的伴手禮。 載媽媽回板橋。 結束我回娘家的一天，我們一家四口也開心的回宜蘭\r\n年假我們天天開著Custin到處去玩，很開心因緣際會之下在中和買到車業務人超熱情的，跟我們宜蘭的業務真的差很多\r\n現在使用這台車滿一個月了。 結論是很開心老公做了很久的功課確定買了它，搭過它的評價都超好的好開心",
-        //     owner_photo:
-        //       "/assets/img/upload/1740380612_67b9b56bc4643_image0.webp",
-        //   },
-        //   {
-        //     id: 135,
-        //     recommendation_title: "三代同堂出遊",
-        //     recommendation_content:
-        //       "婚前原本開小轎車，隨著情侶踏入了婚禮殿堂後然而有一個小生命誕生，才慢慢發覺到車子空間怎麼越來越壓迫了，每次一到假日可以三代同堂出遊還可以勉強歡樂抵達目的，隨著二寶來到，到了假日時會捨棄父母，帶著兩寶出遊，日子久了知道這不是我想到的出遊，於是騙騙父母去現代試駕Custin 說試駕不用錢去坐坐，試駕後父母對於Custin評價很高，在試駕後一個禮拜後立刻下單，來繼續我們的三代同堂出遊，一起玩遍全台灣啦",
-        //     owner_photo: "/assets/img/upload/1740380682_生活照2.webp",
-        //   },
-        //   {
-        //     id: 134,
-        //     recommendation_title: "Sweet Custin",
-        //     recommendation_content:
-        //       '原本開Focus載著一家三口~忽然一下子甜蜜的幸福來太快\r\n2、3寶接連報到~ Focus的空間直接無法承擔~\r\n看了很多款7人座,不是不舒服、空間小、不然就是太商務\r\n剛好遇到CUSTIN上市,試乘了兩次就直接下單排隊了~\r\nCUSTIN整個就是為了家庭量身訂做的車款\r\n空間適中,可以帶兩台推車,二排椅子又是同級距無敵~\r\n每次出遊,就是老話一句"上車睡覺、下車尿尿"\r\n不論是妻子、孩子都很愛這台車~\r\n載著我們一家人上山下海到處遊玩~\r\n很開心一家五口加上CUSTIN組成的甜蜜家庭~',
-        //     owner_photo:
-        //       "/assets/img/upload/1740380648_67b9ce952eeb3_IMG20230817084922.webp",
-        //   },
-        // ];
+        // 檢查網址是否為 *.hanyuan.info
+        const isHanyuanDomain =
+          window.location.hostname.endsWith("hanyuan.info") ||
+          window.location.hostname === "localhost";
+
+        let results;
+        if (isHanyuanDomain) {
+          results = [
+            {
+              id: 206,
+              recommendation_title: "終於有大空間了",
+              recommendation_content:
+                "原本舊車開了很多年，兩位小朋友長大後空間確實有點不夠，後來為了考量的空間感終於找到喜歡的車子，當初試乘時，兒子一上車就說我都不用彎腰感覺好輕鬆，這也是下訂的理由之一，等了一段時間終於交車，雖然才入手沒多久，但老婆跟兩位小朋友都很滿意",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1746437445_圖片2.jpg",
+            },
+            {
+              id: 203,
+              recommendation_title: "三代卡司行",
+              recommendation_content:
+                "屢次假期出遊去，因為成員的關係，開車只好分兩批，自從有了 CUSTIN ，顛覆傳統廂型車，改寫家庭房車系，視覺性能安全性，空間寬敞大無比。\r\n配合先進的科技，一千五渦輪引擎，車身長達近五米，輕鬆駕馭樂不疲，一家七口座一起，各個都有專屬椅，要坐躺平皆適宜，一鍵輕鬆搞定，遙控靠近車柱 C，滑門自動來開啟，尾門也不用腳踢，人鑰近距就掀起，提升用車人便利。有了 CUSTIN 參與，行駛到婉蜒崎嶇，不再嘔吐與頭暈，幸福旅途有了你，天天都想出遊去，享受天倫之樂趣。車外美景收眼底，車內歡樂聲響起，三代同堂的溫馨，心中歡樂與甜蜜，再多金錢無法比，感謝現代 CUSTIN ，留住美好的回憶。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1746437230_１.jpg",
+            },
+            {
+              id: 200,
+              recommendation_title: "為你沒有遺憾",
+              recommendation_content:
+                "20230917選擇結婚紀念日來取車，終於可以一家六人一起舒服出遊，你總是不好意思跟我們出門，總說小孩長大坐車太擠，七人座剛好。\r\n每個星期日我們開心😃，持續二年超過100次我們沒有缺席，帶你走過很多地方，每一次都帶你去到定點放你在最近的地方，不用走很多路，你欣賞美景吃美食，開心渡過最後羅癌末期。\r\n你好嗎？這星期🈵百日。\r\n媽媽，為你我們努力過，所以沒有遺憾。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745820305_圖片2.jpg",
+            },
+            {
+              id: 201,
+              recommendation_title: "陶哲晨蕾的好家人",
+              recommendation_content:
+                "我家的CUSTIN名字叫小卡，一直以來家裡的車是我們全家的好夥伴，選擇CUSTIN主要是空間大舒適，車內寧靜度好，動力性能好，安全性能佳，載著我們上山下海、颳風下雨都靠它，一台能夠載著全家三代的好車，讓我們全家好幸福。❤️",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745820149_生活照1.jpg",
+            },
+            {
+              id: 199,
+              recommendation_title: "與大甲媽的約定",
+              recommendation_content:
+                "每年的三月瘋媽祖是我們固定的行程，媽祖起駕後的第一個星期一便是我們跟著媽祖的腳步前往新港拜祖的日子，自從換了這部CUSTIN後就變成了可以全家一起出發的好夥伴，帶著大甲媽祖的進香旗，跟隨著媽祖的腳步一站一站的前行，追隨著我們的信仰，也完成了跟大甲媽的約定",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745225563_圖片1.jpg",
+            },
+            {
+              id: 194,
+              recommendation_title: "Custin的好只有車主才知道",
+              recommendation_content:
+                "上武嶺 去環島 去露營 大空間配備好馬力夠 價格親民 是台很棒的車",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742971975_圖片2.jpg",
+            },
+            {
+              id: 193,
+              recommendation_title: "開車大吉，貓咪也想搭",
+              recommendation_content:
+                "駕駛著全新的 Hyundai Custin，排隊等待新車祈福過火儀式，悠閒欣賞著熱鬧的街景與紅燈籠高掛的農曆春節氣氛。車內的先進儀表板顯示著平穩的駕駛狀態，對這輛車的舒適感受相當滿意。\r\n\r\n工作午休時，買完午餐進入駕駛座，突然發現擋風玻璃上多了一位「不速之客」——一隻陌生的虎斑貓輕盈地跳上車前緣，睜大眼睛好奇地打量著我的Custin。牠掛著項圈，看起來像是附近居民的愛貓，卻毫不膽怯地踏著車前，仿佛在審視這輛新車是否合格。直到我輕輕按了幾下喇叭，貓咪這才優雅地轉身跳下，留給我一段特別又逗趣的駕駛回憶。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742801900_生活照2.jpeg",
+            },
+            {
+              id: 190,
+              recommendation_title: "最終的乘載",
+              recommendation_content:
+                "我們原本是豐田的車主，在電視的廣告中被Custin優雅霸氣的外表和寬敞的乘坐空間所吸引，索幸剛好想換車讓高齡的公婆易於上車搭乘，於是決定入列待車行列中，歷經漫長等待終於在四個月後迎來夢想中的新車，在待車的期間婆婆因跌倒臥床無緣搭乘，公公與娘家的媽媽都對Custin的舒適乘坐空間讚不絕口，最令人感到遺憾的是婆婆在擁車後八個月不幸去逝，無緣搭乘只有在她老人家化為一甕骨灰時送婆婆最後一程，這真是趟最終的乘載令人哽咽，筆落至此。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742550541_圖片1.jpg",
+            },
+            {
+              id: 171,
+              recommendation_title: "幸福安親班交通車",
+              recommendation_content:
+                "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742439977_圖片1.jpg",
+            },
+            {
+              id: 189,
+              recommendation_title: "與我同行",
+              recommendation_content:
+                "自從換了Custin之後，小孩都很喜歡，上山下海都有Custin作陪，玩累了上車就可以好好休息，到下一個點又可以精力滿滿的繼續玩樂。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742375799_圖片2.jpg",
+            },
+            {
+              id: 188,
+              recommendation_title: "家人與Custin的相遇",
+              recommendation_content:
+                "第一台車給了Custin\r\n開著最愛的車，載著最愛的家人，到處走走逛逛，舒適的乘坐感，家人一上車就直接睡著了，心裡就覺得心滿意足🥰",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742375790_圖片1.jpg",
+            },
+            {
+              id: 187,
+              recommendation_title: "我們這一家與CUSTIN的故事",
+              recommendation_content:
+                "至從買了CUSTIN,我們全家五人就開啟了與CUSTIN的連結了，他為我們遮風擋雨，保護我們全家的安全，讓這個世界變得更美好，當初如果沒有選擇CUSTIN,或許這段旅程可能沒有了開始。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742188129_圖片1.jpg",
+            },
+            {
+              id: 186,
+              recommendation_title: "笑容",
+              recommendation_content:
+                "升格成了父母，帶著雙方的父母與兩個寶寶，用這台車開啟每一次出遊的舒適回憶，並期待著下一次的旅程",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742188024_生活照1.jpeg",
+            },
+            {
+              id: 183,
+              recommendation_title: "未來的老闆娘",
+              recommendation_content:
+                "每次出門，爸爸媽媽總是為了自己的子女安全與舒適著想，2024這年想換台舒適一點的車，無意間看到了這台Custin，馬上預約看車與試乘，在業務專業的介紹下，感覺這台車很適合目前我要的，馬上簽約，足足等了三個月才交車，現在出門旅遊看到小孩坐的很舒適，就感覺這錢花的很值得。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742181037_生活照2.jpg",
+            },
+            {
+              id: 182,
+              recommendation_title: "乘載幸福的車",
+              recommendation_content:
+                '一部乘載著"家的幸福",當初選擇Custin,一來家中乘員較多，二來除了接送家中寶貝上、下學，也是出門旅遊的相當不錯的交通工具，再來因工作關係，有時還需擔任送貨的任務，所以也占據大部分的時間。\r\n除了短暫時間與小朋友分享上、下學校點滴，因大空間出外踏青還能攜帶所需的衣物及物品，所以除了乘載*家的幸福*外，更是家中不可缺一的生活伴侶，有你真好。',
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741679554_生活照1.jpg",
+            },
+            {
+              id: 176,
+              recommendation_title: "櫻花🌸",
+              recommendation_content:
+                "每到一個美麗的景點，都不忘幫，也是家裡一份子的CUSTIN紀錄每一個美麗的地標～",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741156789_圖片1.jpg",
+            },
+            {
+              id: 175,
+              recommendation_title: "闔家歡樂一同郊遊趣",
+              recommendation_content:
+                "自從買了Custin後，我們一家大大小小出遊的機率更頻繁了！\r\n喜歡大家熱熱鬧鬧聚在一起的氛圍，能這樣大家團聚出遊真的很棒很幸福！\r\n一家五口再加上長輩一台車就直接出遊不需再多開一台車，說走就走去哪都開心。\r\n車子真的很舒適，也很好開。以前開個車開較遠程小孩就會哇哇叫怎麼這麼遠，要坐好久，但自從換了Custin後因為座椅太舒適，一家在車上熱熱鬧鬧玩得太開心都不會覺得路途很遙遠了，甚至環島也開心！所以我們出遊機會更多，全台四處趴趴走，也一路認識了不少車友，更值得誇讚的是，因為擁有這台車後還有很多機會參加車聚，適合家庭出遊的車，連車聚都辦得有聲有色，完全符合我們家庭，實在太慶幸了！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741156755_圖片2.jpg",
+            },
+            {
+              id: 174,
+              recommendation_title: "陪伴我人生後半段",
+              recommendation_content:
+                "人生的下半段精彩故事就由Custin來陪伴我們一家人繼續走下去 👍",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741060367_圖片1.jpg",
+            },
+            {
+              id: 173,
+              recommendation_title: "戴著思念的Custin",
+              recommendation_content:
+                "去年，老婆傳來了第二胎的好消息，想想家裡的老瑞獅，看著家裡同住的岳母以及住在內湖的老爸老媽和未來出門至少2大加兩張安全座椅，想再坐第5人根本不可能，確立了放好小孩仍能進出第3排的MPV車型，於暑假就下訂大小勉強可以停路邊車格，又能舒適承載7人的Custin，沒想到11月老婆緊急剖腹，第2隻小可愛提早來到人世，但因為不明原因無法自主呼吸，在出生2天後便結束短短的人生，就在這天接到了新車通知，當下真心痛苦，當初為他而訂的車卻在他走了的時侯到來，幾番掙扎還是牽了回家，看著原本應該滿座的第二排不明悲傷，今年1月，原本空著的位置在南下探親時滿載大舅子一家和令岳母，2月帶著岳母姐妹們泡溫泉，現在，車子滿了",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741060258_圖片1.jpg",
+            },
+            {
+              id: 165,
+              recommendation_title: "家用神車",
+              recommendation_content:
+                "同級價位首選\r\n家用的大空間\r\n配備盡完美",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740986049_生活照2.jpg",
+            },
+          ];
+        } else {
+          // 如果不是 hanyuan.info 網域,呼叫 API
+          results = await apiService.getStories();
+        }
 
         stories.value = [
           results.slice(0, 5),
@@ -687,6 +715,193 @@ export default {
         </div>
       </div>
     </section>
+    <section id="story_share_pc" ref="story_share_pc">
+      <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
+      <div class="story_share_container">
+        <div class="story_share_row">
+          <div class="story_share_col">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
+            </p>
+            <p class="story_share_content">
+              體驗完
+              CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+              <span
+                ><a
+                  href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
+            </p>
+            <p class="story_share_content">
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜 開全新的 THE ALL-NEW
+              CUSTIN 頂級 LMPV 和阿嬤一起來接薇0～
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
+            </p>
+            <p class="story_share_content">
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
+              大家坐的很舒服，很有安全感！
+              <span
+                ><a
+                  href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                  target="_blank"
+                  >[More]</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
+      <p class="text-center" id="story_share_mobile_title">
+        <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
+      </p>
+      <div class="story_share_container">
+        <div class="story_share_row">
+          <div class="story_share_col">
+            <a
+              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >彼得爸與蘇珊媽</a
+              >
+            </p>
+            <p class="story_share_content">
+              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
+            </a>
+
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >絕代雙Ｑ</a
+              >
+            </p>
+            <p class="story_share_content">
+              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br />
+              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br />
+              和阿嬤一起來接薇0～<br />
+              這台車真的蠻舒服的，很適合三代同堂一起乘坐
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+
+          <div class="story_share_col">
+            <a
+              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+              class="d-inline-block"
+              target="_blank"
+            >
+              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
+            </a>
+            <p class="story_share_title">
+              <a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >小朗哥爸爸</a
+              >
+            </p>
+            <p class="story_share_content">
+              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br />
+              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br />
+              大家坐的很舒服，很有安全感！
+            </p>
+            <span class="story_share_link"
+              ><a
+                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
+                target="_blank"
+                >[More]</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="page_intro_pc" class="d-none" ref="page_intro_pc">
       <div class="page-content">
@@ -723,6 +938,7 @@ export default {
     </section>
 
     <section id="story_carousel_pc" ref="story_carousel_pc">
+      <div id="story_carousel_pc_shadow"></div>
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -742,7 +958,7 @@ export default {
                 <div class="carousel-item active">
                   <div class="row">
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -769,13 +985,13 @@ export default {
                             桃園 吳先生｜照顧全家人的貼心夥伴
                           </h5>
                           <p class="story-content">
-                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型...
+                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素...
                           </p>
                         </div>
                       </div>
                     </div>
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -801,17 +1017,13 @@ export default {
                             彰化 周先生 ｜配備給好給滿超有料
                           </h5>
                           <p class="story-content">
-                            我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。
+                            我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」...
                           </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -837,12 +1049,15 @@ export default {
                             高雄 李先生 ｜體貼每一位的家庭神車
                           </h5>
                           <p class="story-content">
-                            當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後，只有CUSTIN在空間上能夠滿足我，而且也讓我印象最深刻！
+                            當初是因為有空間上的需求，才開始找尋7人座的車，中間陸陸續續有看了很多款，還包含5+2的休旅車，但在都試乘過一遍後...
                           </p>
                         </div>
                       </div>
                     </div>
-
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
@@ -879,18 +1094,15 @@ export default {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
+
                     <div
-                      class="col-6 col-story"
-                      data-bs-toggle="modal"
-                      data-bs-target="#storyModal"
-                      @click="
-                        storyModalSetData(
-                          '台北 劉小姐｜寬敞空間輕鬆出遊',
-                          `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
+                        class="col-6 col-story"
+                        data-bs-toggle="modal"
+                        data-bs-target="#storyModal"
+                        @click="
+                          storyModalSetData(
+                            '台北 劉小姐｜寬敞空間輕鬆出遊',
+                            `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
                           <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                     
@@ -898,26 +1110,26 @@ export default {
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
                           `
-                        )
-                      "
-                    >
-                      <div class="story">
-                        <img
-                          src="/assets/img/story/e/1.webp"
-                          loading="lazy"
-                          class="story-img"
-                          alt="..."
-                        />
-                        <div class="story-body">
-                          <h5 class="story-title">
-                            台北 劉小姐｜寬敞空間輕鬆出遊
-                          </h5>
-                          <p class="story-content">
-                            我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
-                          </p>
+                          )
+                        "
+                      >
+                        <div class="story">
+                          <img
+                            src="/assets/img/story/e/1.webp"
+                            loading="lazy"
+                            class="story-img"
+                            alt="..."
+                          />
+                          <div class="story-body">
+                            <h5 class="story-title">
+                              台北 劉小姐｜寬敞空間輕鬆出遊
+                            </h5>
+                            <p class="story-content">
+                              我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1432,98 +1644,7 @@ export default {
       </div>
     </section>
 
-    <section id="story_share_pc" class="d-none" ref="story_share_pc">
-      <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
-      <div class="story_share_container">
-        <div class="story_share_row">
-          <div class="story_share_col">
-            <a
-              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >彼得爸與蘇珊媽</a
-              >
-            </p>
-            <p class="story_share_content">
-              體驗完
-              CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
-              <span
-                ><a
-                  href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
 
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >絕代雙Ｑ</a
-              >
-            </p>
-            <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜 開全新的 THE ALL-NEW
-              CUSTIN 頂級 LMPV 和阿嬤一起來接薇0～
-              這台車真的蠻舒服的，很適合三代同堂一起乘坐
-              <span
-                ><a
-                  href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >小朗哥爸爸</a
-              >
-            </p>
-            <p class="story_share_content">
-              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級 LMPV，
-              大家坐的很舒服，很有安全感！
-              <span
-                ><a
-                  href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                  target="_blank"
-                  >[More]</a
-                ></span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
     <div
       class="modal fade"
       id="storyModal"
@@ -1991,102 +2112,6 @@ export default {
         </div>
       </div>
     </div>
-
-    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
-      <p class="text-center" id="story_share_mobile_title">
-        <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
-      </p>
-      <div class="story_share_container">
-        <div class="story_share_row">
-          <div class="story_share_col">
-            <a
-              href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_01.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >彼得爸與蘇珊媽</a
-              >
-            </p>
-            <p class="story_share_content">
-              體驗完CUSTIN，果然跟當初看到的配備內容一樣，實在是一台好車～不管是主動被動安全配備還是內裝配備，全部都給好給滿！整體體驗下來真的是很不錯的
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://youtu.be/9LWFInAFJCw?si=SECGqXFRm6Z_q1Jy"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_02.webp" loading="lazy" alt="..." />
-            </a>
-
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >絕代雙Ｑ</a
-              >
-            </p>
-            <p class="story_share_content">
-              薇0要從月子中心回家啦！今天特別給薇0一個驚喜<br />
-              開全新的THE ALL-NEW CUSTIN 頂級LMPV<br />
-              和阿嬤一起來接薇0～<br />
-              這台車真的蠻舒服的，很適合三代同堂一起乘坐
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://www.youtube.com/watch?v=QDQ4iIjVFyY"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-
-          <div class="story_share_col">
-            <a
-              href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-              class="d-inline-block"
-              target="_blank"
-            >
-              <img src="/assets/img/kol_03.webp" loading="lazy" alt="..." />
-            </a>
-            <p class="story_share_title">
-              <a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >小朗哥爸爸</a
-              >
-            </p>
-            <p class="story_share_content">
-              我們回台灣後第一禮拜假日帶阿公阿婆出去玩，<br />
-              這次剛好有一個好機會體驗7人座 THE ALL-NEW CUSTIN 頂級LMPV，<br />
-              大家坐的很舒服，很有安全感！
-            </p>
-            <span class="story_share_link"
-              ><a
-                href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
-                target="_blank"
-                >[More]</a
-              ></span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="champion_pc" ref="champion_pc">
       <div class="row">

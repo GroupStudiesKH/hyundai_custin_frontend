@@ -2,10 +2,21 @@
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
+@font-face {
+    font-family: 'HyundaiSansHeadKROTF';
+    src: url('/fonts/HyundaiSansHeadKROTFRegular.woff2') format('woff2'),
+         url('/fonts/HyundaiSansHeadKROTFRegular.woff') format('woff'),
+         url('/fonts/HyundaiSansHeadKROTFRegular.otf') format('opentype'),
+         url('/fonts/HyundaiSansHeadKROTFRegular.eot') format('embedded-opentype'),
+         url('/fonts/HyundaiSansHeadKROTFRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html,
 body {
-    /* 先套用 Noto Sans TC 這個 思源黑體 */
-    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif !important;
+    font-family: 'HyundaiSansHeadKROTF', 'Noto Sans TC', '微軟正黑體', sans-serif !important;
     padding: 0;
     margin: 0;
     background-color: #bdd6e4 !important;
@@ -687,11 +698,22 @@ main {
 
 
     #story_carousel_pc {
-        height: 950px;
+        height: 850px;
         width: 100%;
-        background-color: #fff;
-        padding-top: 100px;
-
+        background-color: #d3eaf6;
+        border-top: 70px solid #bdd6e4;
+        #story_carousel_pc_shadow{
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            transform: translateY(-100%);
+            // gradient
+            // display: none;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+            // filter: blur(100px);
+            z-index: 0;
+        }
+        
         #story_carousel_title {
             margin-top: -100px;
             position: absolute;
@@ -757,10 +779,14 @@ main {
             .story {
                 width: 100%;
                 border: 15px solid #ccc;
-                height: 680px;
+                height: 600px;
                 margin-bottom: 50px;
                 background-color: #fff;
                 padding: 22px 25px;
+
+                @media (max-width: 1200px) {
+                    height: 650px;
+                }
 
                 img {
                     width: 100%;
@@ -797,26 +823,18 @@ main {
     #story_carousel_mobile {
         height: 1024px;
         width: 100%;
-        background-image: url('../assets/img/story_bg_mobile.webp');
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
+        background-color: #fff;
+        // background-image: url('../assets/img/story_bg_mobile.webp');
+        // background-size: contain;
+        // background-position: top center;
+        // background-repeat: no-repeat;
 
-        @media (max-width: 991px) {
-            height: 900px;
-        }
-
-        @media (max-width: 767px) {
+        @media (max-width: 900px) {
             height: 690px;
         }
 
-        @media (max-width: 576px) {
-            height: 535px;
-        }
-
-        @media (max-width: 400px) {
-            background-size: cover;
-            height: 500px;
+        @media (max-width: 767px) {
+            height: 550px;
         }
 
         #story_carousel_title {
@@ -842,18 +860,6 @@ main {
             margin: 0 auto;
             width: 100%;
             bottom: -60px;
-
-            @media (max-width: 767px) {
-                bottom: -150px;
-            }
-
-            @media (max-width: 576px) {
-                bottom: -60px;
-            }
-
-            @media (max-width: 400px) {
-                bottom: -40px;
-            }
 
             img {
                 width: 20px;
@@ -928,7 +934,7 @@ main {
         border-bottom: 85px solid #efefef;
         background-image: url('../assets/img/wall_bg.webp');
         background-size: cover;
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
 
         .arrow{
@@ -1226,6 +1232,7 @@ main {
     }
 
     #champion_pc {
+        padding-top: 105px;
         height: 1300px;
         width: 100%;
         overflow: hidden;
