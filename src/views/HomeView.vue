@@ -130,7 +130,8 @@ export default {
       try {
         // 檢查網址是否為 *.hanyuan.info
         const isHanyuanDomain =
-          window.location.hostname.endsWith("hanyuan.info") || window.location.hostname === "localhost";
+          window.location.hostname.endsWith("hanyuan.info") ||
+          window.location.hostname === "localhost";
 
         let results;
         if (isHanyuanDomain) {
@@ -769,7 +770,7 @@ export default {
                 <div class="carousel-item active">
                   <div class="row">
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -802,7 +803,7 @@ export default {
                       </div>
                     </div>
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -833,12 +834,8 @@ export default {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -869,7 +866,10 @@ export default {
                         </div>
                       </div>
                     </div>
-
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
                     <div
                       class="col-6 col-story"
                       data-bs-toggle="modal"
@@ -906,18 +906,15 @@ export default {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
+
                     <div
-                      class="col-6 col-story"
-                      data-bs-toggle="modal"
-                      data-bs-target="#storyModal"
-                      @click="
-                        storyModalSetData(
-                          '台北 劉小姐｜寬敞空間輕鬆出遊',
-                          `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
+                        class="col-6 col-story"
+                        data-bs-toggle="modal"
+                        data-bs-target="#storyModal"
+                        @click="
+                          storyModalSetData(
+                            '台北 劉小姐｜寬敞空間輕鬆出遊',
+                            `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
                           <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                     
@@ -925,26 +922,26 @@ export default {
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
                           `
-                        )
-                      "
-                    >
-                      <div class="story">
-                        <img
-                          src="/assets/img/story/e/1.webp"
-                          loading="lazy"
-                          class="story-img"
-                          alt="..."
-                        />
-                        <div class="story-body">
-                          <h5 class="story-title">
-                            台北 劉小姐｜寬敞空間輕鬆出遊
-                          </h5>
-                          <p class="story-content">
-                            我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
-                          </p>
+                          )
+                        "
+                      >
+                        <div class="story">
+                          <img
+                            src="/assets/img/story/e/1.webp"
+                            loading="lazy"
+                            class="story-img"
+                            alt="..."
+                          />
+                          <div class="story-body">
+                            <h5 class="story-title">
+                              台北 劉小姐｜寬敞空間輕鬆出遊
+                            </h5>
+                            <p class="story-content">
+                              我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
