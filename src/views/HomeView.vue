@@ -1992,7 +1992,7 @@ export default {
       </div>
     </div>
 
-    <section id="story_share_mobile" ref="story_share_mobile">
+    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
         <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
       </p>
