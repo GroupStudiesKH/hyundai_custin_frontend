@@ -698,7 +698,7 @@ main {
 
 
     #story_carousel_pc {
-        height: 900px;
+        height: 850px;
         width: 100%;
         background-color: #d3eaf6;
         border-top: 70px solid #bdd6e4;
@@ -779,10 +779,14 @@ main {
             .story {
                 width: 100%;
                 border: 15px solid #ccc;
-                height: 680px;
+                height: 600px;
                 margin-bottom: 50px;
                 background-color: #fff;
                 padding: 22px 25px;
+
+                @media (max-width: 1200px) {
+                    height: 650px;
+                }
 
                 img {
                     width: 100%;
@@ -819,26 +823,18 @@ main {
     #story_carousel_mobile {
         height: 1024px;
         width: 100%;
-        background-image: url('../assets/img/story_bg_mobile.webp');
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
+        background-color: #fff;
+        // background-image: url('../assets/img/story_bg_mobile.webp');
+        // background-size: contain;
+        // background-position: top center;
+        // background-repeat: no-repeat;
 
-        @media (max-width: 991px) {
-            height: 900px;
-        }
-
-        @media (max-width: 767px) {
+        @media (max-width: 900px) {
             height: 690px;
         }
 
-        @media (max-width: 576px) {
-            height: 535px;
-        }
-
-        @media (max-width: 400px) {
-            background-size: cover;
-            height: 500px;
+        @media (max-width: 767px) {
+            height: 550px;
         }
 
         #story_carousel_title {
@@ -864,18 +860,6 @@ main {
             margin: 0 auto;
             width: 100%;
             bottom: -60px;
-
-            @media (max-width: 767px) {
-                bottom: -150px;
-            }
-
-            @media (max-width: 576px) {
-                bottom: -60px;
-            }
-
-            @media (max-width: 400px) {
-                bottom: -40px;
-            }
 
             img {
                 width: 20px;
@@ -1248,6 +1232,7 @@ main {
     }
 
     #champion_pc {
+        padding-top: 105px;
         height: 1300px;
         width: 100%;
         overflow: hidden;
