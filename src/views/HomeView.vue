@@ -957,6 +957,111 @@ export default {
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '新店 謝先生｜全家人的移動小天地',
+                          `<p><img src='/assets/img/story/f/1.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                              我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純：外型好看、空間夠大、家人坐得舒服就好。雖然預算有限，但還是希望找一台自己開得順手、家人也開心的車。</p>
+                            <p>試過幾台七人座，有的底盤太高，開起來不穩，車內也會晃。後來試到 CUSTIN，真的有驚喜。油門、功能使用都很順，還有個我很喜歡的小細節：排檔做成按鈕式，底下多了收納空間，對於東西多的家庭超加分。</p>
+
+                            <p>
+                            <img src='/assets/img/story/f/2.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            最讓我滿意的是第二排座椅的舒適度！爸媽坐得舒服、小孩也開心，我開起車來才安心。第二排有電動椅，椅背可以調整，空間寬敞，小孩可以自己走到第三排，不用翻椅子。還有獨立冷氣出風口，夏天不會悶熱，令人意外的也沒有刺鼻的新車味。
+                            </p>
+                            <p>我們平常做生意，能出門的機會不多，所以只要能放假，全家都會很期待。假日常去桃園、宜蘭走走，過年就回老家雲林。CUSTIN空間大、座椅舒服，長途也不會累。</p>
+                            <p>印象最深的是交車那天，原本還怕年前拿不到，結果順利交車後，我馬上開去老家讓阿公阿嬤坐看看。他們一上車就說：「這台不錯耶！」鄰居也跑來看，問什麼車、多少錢，感覺超有面子。</p>
+
+
+                            <p>
+                            <img src='/assets/img/story/f/3.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            現在最享受的就是假日出遊時光，放著音樂，一家人聊天笑鬧。有時也會跟老婆在車上來個簡單的兩人時光。這台車不只是交通工具，更像我們家的移動小天地，載著平凡日子裡的小幸福。
+                            </p>
+
+                            <p>
+                              一句話推薦 CUSTIN？<br/>
+                              <strong>「想顧好家人，又想自己開得爽，這台車不會讓你失望。」</strong>
+                              <br/>
+                              <img src='/assets/img/story/f/4.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            </p>
+                            `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/f/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            新店 謝先生｜全家人的移動小天地
+                          </h5>
+                          <p class="story-content">
+                            我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '新店 謝先生｜全家人的移動小天地',
+                          `<p><img src='/assets/img/story/f/1.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                              我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純：外型好看、空間夠大、家人坐得舒服就好。雖然預算有限，但還是希望找一台自己開得順手、家人也開心的車。</p>
+                            <p>試過幾台七人座，有的底盤太高，開起來不穩，車內也會晃。後來試到 CUSTIN，真的有驚喜。油門、功能使用都很順，還有個我很喜歡的小細節：排檔做成按鈕式，底下多了收納空間，對於東西多的家庭超加分。</p>
+
+                            <p>
+                            <img src='/assets/img/story/f/2.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            最讓我滿意的是第二排座椅的舒適度！爸媽坐得舒服、小孩也開心，我開起車來才安心。第二排有電動椅，椅背可以調整，空間寬敞，小孩可以自己走到第三排，不用翻椅子。還有獨立冷氣出風口，夏天不會悶熱，令人意外的也沒有刺鼻的新車味。
+                            </p>
+                            <p>我們平常做生意，能出門的機會不多，所以只要能放假，全家都會很期待。假日常去桃園、宜蘭走走，過年就回老家雲林。CUSTIN空間大、座椅舒服，長途也不會累。</p>
+                            <p>印象最深的是交車那天，原本還怕年前拿不到，結果順利交車後，我馬上開去老家讓阿公阿嬤坐看看。他們一上車就說：「這台不錯耶！」鄰居也跑來看，問什麼車、多少錢，感覺超有面子。</p>
+
+
+                            <p>
+                            <img src='/assets/img/story/f/3.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            現在最享受的就是假日出遊時光，放著音樂，一家人聊天笑鬧。有時也會跟老婆在車上來個簡單的兩人時光。這台車不只是交通工具，更像我們家的移動小天地，載著平凡日子裡的小幸福。
+                            </p>
+
+                            <p>
+                              一句話推薦 CUSTIN？<br/>
+                              <strong>「想顧好家人，又想自己開得爽，這台車不會讓你失望。」</strong>
+                              <br/>
+                              <img src='/assets/img/story/f/4.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                            </p>
+                            `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/f/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            新店 謝先生｜全家人的移動小天地
+                          </h5>
+                          <p class="story-content">
+                            我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div
                       class="col-4 col-story"
                       data-bs-toggle="modal"
@@ -990,6 +1095,10 @@ export default {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
                     <div
                       class="col-4 col-story"
                       data-bs-toggle="modal"
@@ -1054,12 +1163,9 @@ export default {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
+
                     <div
-                      class="col-6 col-story"
+                      class="col-4 col-story"
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
@@ -1094,15 +1200,19 @@ export default {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
 
+                <div class="carousel-item">
+                  <div class="row">
                     <div
-                        class="col-6 col-story"
-                        data-bs-toggle="modal"
-                        data-bs-target="#storyModal"
-                        @click="
-                          storyModalSetData(
-                            '台北 劉小姐｜寬敞空間輕鬆出遊',
-                            `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '台北 劉小姐｜寬敞空間輕鬆出遊',
+                          `<img src='/assets/img/story/e/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～</p>
                           <img src='/assets/img/story/e/2.webp' class='story-img' loading='lazy' alt='...'/><br>
                           <p>CUSTIN的空間真的很大，每個位置都可以都坐得很舒服，有時候出去玩會帶多一些行李或其他東西，也都綽綽有餘，而且行李箱是電動尾門，上下東西很方便。</p>
                           <iframe width='100%' height='350' src='https://www.youtube.com/embed/0nNbDBBJ7vc?si=MRTpgpA3hCDYRZH-' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>                     
@@ -1110,26 +1220,26 @@ export default {
                           <p>而我自己因為最近天氣非常熱，對CUSTIN的通風坐椅就非常有感，我自己是比較怕熱的人，好險有這個功能，讓我就算開長途也能保持舒爽不悶熱，而且第一二排的位置都有，真的很貼心。</p>
                           <p>買到現在覺得CUSTIN不僅空間需求上可以滿足我，整體的舒適度跟質感表現也都在水準之上，而且還有很多貼心的設計跟配備，真的是一台非常超值的車！</p>
                           `
-                          )
-                        "
-                      >
-                        <div class="story">
-                          <img
-                            src="/assets/img/story/e/1.webp"
-                            loading="lazy"
-                            class="story-img"
-                            alt="..."
-                          />
-                          <div class="story-body">
-                            <h5 class="story-title">
-                              台北 劉小姐｜寬敞空間輕鬆出遊
-                            </h5>
-                            <p class="story-content">
-                              我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
-                            </p>
-                          </div>
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/e/1.webp"
+                          loading="lazy"
+                          class="story-img"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            台北 劉小姐｜寬敞空間輕鬆出遊
+                          </h5>
+                          <p class="story-content">
+                            我們家小朋友有在學跳舞，有一次在路上剛好聽到一首他們前陣子剛學過的音樂，他們很興奮的說這是上禮拜老師教的，然後他們就在後面直接跳起來～
+                          </p>
                         </div>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1643,7 +1753,6 @@ export default {
         </div>
       </div>
     </section>
-
 
     <div
       class="modal fade"
