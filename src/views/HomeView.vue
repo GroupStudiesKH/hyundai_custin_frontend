@@ -963,48 +963,49 @@ export default {
                       data-bs-toggle="modal"
                       data-bs-target="#storyModal"
                       @click="
-                        storyModalSetData(
-                          '新店 謝先生｜全家人的移動小天地',
-                          `<p><img src='/assets/img/story/f/1.webp' loading='lazy' class='story-img' alt='...'/><br/>
-                              我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純：外型好看、空間夠大、家人坐得舒服就好。雖然預算有限，但還是希望找一台自己開得順手、家人也開心的車。</p>
-                            <p>試過幾台七人座，有的底盤太高，開起來不穩，車內也會晃。後來試到 CUSTIN，真的有驚喜。油門、功能使用都很順，還有個我很喜歡的小細節：排檔做成按鈕式，底下多了收納空間，對於東西多的家庭超加分。</p>
+                      storyModalSetData(
+                        '鶯歌 吳先生｜我上山下海的最佳旅伴',
+                        `<p><img src='/assets/img/story/g/1.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                          會考慮換七人座，是因為露營裝備越來越多，原本的車不只空間不夠，馬力也吃力。有次車子送進新莊廠保修，剛好走進展間，第一次看到CUSTIN，就覺得外型很現代感。後來回廠幾次有再了解，配備、空間、價格都在能接受的範圍，就決定入手。</p>
+                        <p>當時也有考慮其他品牌的皮卡，但價格偏高、配備也沒有比較好，就沒選那台。選七人座我最在意的就是空間、馬力、還有外觀不能太老氣。CUSTIN是 1.5T引擎、170匹馬力，連上武嶺都沒問題，重點是稅金又省，開起來夠力但不傷荷包。</p>
 
-                            <p>
-                            <img src='/assets/img/story/f/2.webp' loading='lazy' class='story-img' alt='...'/><br/>
-                            最讓我滿意的是第二排座椅的舒適度！爸媽坐得舒服、小孩也開心，我開起車來才安心。第二排有電動椅，椅背可以調整，空間寬敞，小孩可以自己走到第三排，不用翻椅子。還有獨立冷氣出風口，夏天不會悶熱，令人意外的也沒有刺鼻的新車味。
-                            </p>
-                            <p>我們平常做生意，能出門的機會不多，所以只要能放假，全家都會很期待。假日常去桃園、宜蘭走走，過年就回老家雲林。CUSTIN空間大、座椅舒服，長途也不會累。</p>
-                            <p>印象最深的是交車那天，原本還怕年前拿不到，結果順利交車後，我馬上開去老家讓阿公阿嬤坐看看。他們一上車就說：「這台不錯耶！」鄰居也跑來看，問什麼車、多少錢，感覺超有面子。</p>
+                        <p>
+                        <img src='/assets/img/story/g/2.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                        以現在很多休旅車破百萬來說，CUSTIN的價格算很實在，配備齊、用料也不馬虎，整體舒適度我很滿意。休假時我幾乎都開它出遊，不是露營就是釣魚，花蓮、屏東、高雄跑透透，七天六夜那種也常有。最有感的就是空間真的夠大，載滿一車也不會擠。甚至去澎湖，我直接坐船把車運過去，島上到處跑，完全不怕舟車勞頓。
+                        </p>
 
 
-                            <p>
-                            <img src='/assets/img/story/f/3.webp' loading='lazy' class='story-img' alt='...'/><br/>
-                            現在最享受的就是假日出遊時光，放著音樂，一家人聊天笑鬧。有時也會跟老婆在車上來個簡單的兩人時光。這台車不只是交通工具，更像我們家的移動小天地，載著平凡日子裡的小幸福。
-                            </p>
+                        <p>
+                        <img src='/assets/img/story/g/3.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                        剛拿到車那陣子，CUSTIN在路上還不多，有時停紅燈，會有人多看幾眼，心裡也會覺得：「嗯，這車真不錯。」不管是實用性還是外觀設計，都讓人有一點小小的得意。
+                        </p>
 
-                            <p>
-                              一句話推薦 CUSTIN？<br/>
-                              <strong>「想顧好家人，又想自己開得爽，這台車不會讓你失望。」</strong>
-                              <br/>
-                              <img src='/assets/img/story/f/4.webp' loading='lazy' class='story-img' alt='...'/><br/>
-                            </p>
-                            `
-                        )
+                        <p>我也推薦給不少同事，大家都是上班族，有家庭後對空間跟舒適度都特別有感。CUSTIN價格合理、馬力夠、配備到位，是一台很平均又划算的選擇。
+                        </p>
+
+                        <p>
+                          一句話推薦 CUSTIN？<br/>
+                          <strong>「親民的價格、舒適性的大空間、極佳穩定性的操控，還在觀望什麼？快入手CUSTIN吧。」</strong>
+                          <br/>
+                          <img src='/assets/img/story/g/4.webp' loading='lazy' class='story-img' alt='...'/><br/>
+                        </p>
+                        `
+                      )
                       "
                     >
                       <div class="story">
                         <img
-                          src="/assets/img/story/f/1.webp"
+                          src="/assets/img/story/g/1.webp"
                           class="story-img"
                           loading="lazy"
                           alt="..."
                         />
                         <div class="story-body">
                           <h5 class="story-title">
-                            新店 謝先生｜全家人的移動小天地
+                            鶯歌 吳先生｜我上山下海的最佳旅伴
                           </h5>
                           <p class="story-content">
-                            我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純...
+                            會考慮換七人座，是因為露營裝備越來越多，原本的車不只空間不夠，馬力也吃力。有次車子送進新莊廠保修，剛好走進展間，第一次看到CUSTIN...
                           </p>
                         </div>
                       </div>
