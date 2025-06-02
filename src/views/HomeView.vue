@@ -153,20 +153,20 @@ export default {
                 "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1746437230_１.jpg",
             },
             {
-              id: 200,
-              recommendation_title: "為你沒有遺憾",
-              recommendation_content:
-                "20230917選擇結婚紀念日來取車，終於可以一家六人一起舒服出遊，你總是不好意思跟我們出門，總說小孩長大坐車太擠，七人座剛好。\r\n每個星期日我們開心😃，持續二年超過100次我們沒有缺席，帶你走過很多地方，每一次都帶你去到定點放你在最近的地方，不用走很多路，你欣賞美景吃美食，開心渡過最後羅癌末期。\r\n你好嗎？這星期🈵百日。\r\n媽媽，為你我們努力過，所以沒有遺憾。",
-              owner_photo:
-                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745820305_圖片2.jpg",
-            },
-            {
               id: 201,
               recommendation_title: "陶哲晨蕾的好家人",
               recommendation_content:
                 "我家的CUSTIN名字叫小卡，一直以來家裡的車是我們全家的好夥伴，選擇CUSTIN主要是空間大舒適，車內寧靜度好，動力性能好，安全性能佳，載著我們上山下海、颳風下雨都靠它，一台能夠載著全家三代的好車，讓我們全家好幸福。❤️",
               owner_photo:
                 "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745820149_生活照1.jpg",
+            },
+            {
+              id: 200,
+              recommendation_title: "為你沒有遺憾",
+              recommendation_content:
+                "20230917選擇結婚紀念日來取車，終於可以一家六人一起舒服出遊，你總是不好意思跟我們出門，總說小孩長大坐車太擠，七人座剛好。\r\n每個星期日我們開心😃，持續二年超過100次我們沒有缺席，帶你走過很多地方，每一次都帶你去到定點放你在最近的地方，不用走很多路，你欣賞美景吃美食，開心渡過最後羅癌末期。\r\n你好嗎？這星期🈵百日。\r\n媽媽，為你我們努力過，所以沒有遺憾。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1745820305_圖片2.jpg",
             },
             {
               id: 199,
@@ -199,14 +199,6 @@ export default {
                 "我們原本是豐田的車主，在電視的廣告中被Custin優雅霸氣的外表和寬敞的乘坐空間所吸引，索幸剛好想換車讓高齡的公婆易於上車搭乘，於是決定入列待車行列中，歷經漫長等待終於在四個月後迎來夢想中的新車，在待車的期間婆婆因跌倒臥床無緣搭乘，公公與娘家的媽媽都對Custin的舒適乘坐空間讚不絕口，最令人感到遺憾的是婆婆在擁車後八個月不幸去逝，無緣搭乘只有在她老人家化為一甕骨灰時送婆婆最後一程，這真是趟最終的乘載令人哽咽，筆落至此。",
               owner_photo:
                 "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742550541_圖片1.jpg",
-            },
-            {
-              id: 171,
-              recommendation_title: "幸福安親班交通車",
-              recommendation_content:
-                "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
-              owner_photo:
-                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742439977_圖片1.jpg",
             },
             {
               id: 189,
@@ -289,12 +281,259 @@ export default {
                 "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1741060258_圖片1.jpg",
             },
             {
+              id: 171,
+              recommendation_title: "幸福安親班交通車",
+              recommendation_content:
+                "我是員林國小對面的昱昇補習班，因為要接員東國小的學生下課來上安親班，需要一台交通車！在我精挑細選之下，Custin是我萬中選一的溫馨豪華車！學生非常開心舒服的坐著中排豪華坐椅臉上露出滿滿驕傲幸福的笑容！連學校老師都覺得在昱昇補習班上課可以坐如此頂級舒適的坐椅，真的幸福滿分💯！為昱昇補習班的形象加分滿滿～^_^",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1742439977_圖片1.jpg",
+            },
+            {
               id: 165,
               recommendation_title: "家用神車",
               recommendation_content:
                 "同級價位首選\r\n家用的大空間\r\n配備盡完美",
               owner_photo:
                 "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740986049_生活照2.jpg",
+            },
+            {
+              id: 159,
+              recommendation_title: "讓我們家庭旅程更精彩",
+              recommendation_content:
+                "身為一個重視家庭的車主，選擇一台適合全家出遊的車對我來說至關重要。自從擁有Custin，每一次的家庭旅行都變得更輕鬆更快樂\r\n這次我們駕駛 Custin 來到山林秘境，一家大小三代同堂，滿滿的親子時光。Custin 的大空間與舒適座椅，讓孩子們可以自在地坐著躺著，連長途旅行也不覺得疲累。電動側滑門 更讓載送家人變得輕鬆，尤其是對帶著小孩的父母來說簡直是神隊友\r\n旅途中Custin 的靜肅性與穩定的駕駛感 讓我們可以安心聊天、聽音樂，享受沿途風景\r\n這趟旅程不只是一次出遊更是家人間美好回憶的累積。謝謝 Hyundai Custin，讓我們的家庭旅程更加精彩，每一次啟程都充滿期待",
+              owner_photo: null,
+            },
+            {
+              id: 158,
+              recommendation_title: "滿滿幸福的小藍",
+              recommendation_content:
+                "妹妹一句，爸爸我可以站在車上，讓我們決定上手我們的Custin小藍，從此在小藍車上皆充滿歡樂與回憶，舒適的小藍總讓小孩有個舒適的車上空間，Custin讓我們無可挑剔！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740985876_生活照1.jpeg",
+            },
+            {
+              id: 157,
+              recommendation_title: "就是這台車！！！",
+              recommendation_content:
+                "想換車 ，家中加上媽媽，總共有6個人，所以開始想找一台滿意的七人座 ，某次去台東玩，看見一台車 ，一秒覺得，這個外型，就是心中想要找尋的七人坐車子，馬上拿出手機搜尋，是現代的CUSTIN，回到屏東後，很快的就去現代汽車賞車了。\r\n一看見實車就很滿意，第二次去看，試乘後，就直接下訂了，完全沒有去看過其他廠牌，就決定買下這台七人坐。\r\n開著這台車，四處玩，釣魚也很合適，座位很舒適，全家都很滿意，未來，要再開著我們這台心中滿意的CUSTIN，繼續玩透透！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740985830_圖片1.jpg",
+            },
+            {
+              id: 142,
+              recommendation_title: "Custin",
+              recommendation_content:
+                "我個人覺得Custin真的是CP值很高的車，稅金也很省空間又大，油耗我個人覺得還好畢竟車那麼重，引擎才1.5CC我個人覺得算省油了如果沒辦法接受Custin那也只能加預算往上買到阿爾法或LM，所以我覺得Custin我是給蠻高的評分",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740559361_圖片2.jpg",
+            },
+            {
+              id: 141,
+              recommendation_title: "神帶我遇Custin",
+              recommendation_content:
+                "當初家庭的需要，我們要找一台7人座車子，意外從親戚那得知Custin，去展間試完車沒多久就訂購了～CP值高的車，讚👍",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740559433_生活照1.jpg",
+            },
+            {
+              id: 140,
+              recommendation_title: "給最愛的家人頂級的乘坐享受",
+              recommendation_content:
+                "去年要換車時我的首選原本是日系SUV車款，但老婆考慮到家人乘坐空間傾向MPV車款。為了迎合老婆的要求，便到住家附近的展示中心看Hyundai Custin車款，映入眼簾的是大器的豪華外型以及簡約、前衛風格的設計美學，深深吸引我的目光。\r\n上車試坐後發現乘坐空間非常的寬敞，全車皮椅更構成科技豪華的內裝氛圍，而頂級的VIP車款有雙邊電動側滑門上下車更安全舒適，第二排座椅擁有皇家VIP等級的電動調整及通風加熱功能，還有全套先進的駕駛輔助及完備的安全配備，確實顛覆了以前對韓國車的刻板印象，而為了給最愛的家人頂級的乘坐享受，這也是最後選擇Hyundai Custin的最大理由。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740463168_圖片2.jpg",
+            },
+            {
+              id: 139,
+              recommendation_title: "當我們Custin串在一起",
+              recommendation_content:
+                "愛上Custin大家庭，每年群組發起一次的大會師，有400台霸氣壯觀畫面，車友不私藏的改車分享，各個區域也不定時一同出遊、一同做公益的活動，因為有車友們，生活變得多采多姿。為了家庭孩子、又可認識各式各樣的朋友～購買Custin非常值得。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740463137_圖片3.jpg",
+            },
+            {
+              id: 138,
+              recommendation_title: "一台製造全家回憶的車",
+              recommendation_content:
+                "家人陪伴的時候，一台需要滿載家人回憶的車出現了，經歷了半年的等待，永遠記得首次出遊前往九族文化村，當時Custin車輛總數還沒那麼多，開過去路人出現了讚嘆的聲音，小朋友坐在車內總是可以安靜的睡覺玩耍，這台車真是值得推薦",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740463114_圖片1.jpg",
+            },
+            {
+              id: 135,
+              recommendation_title: "三代同堂出遊",
+              recommendation_content:
+                "婚前原本開小轎車，隨著情侶踏入了婚禮殿堂後然而有一個小生命誕生，才慢慢發覺到車子空間怎麼越來越壓迫了，每次一到假日可以三代同堂出遊還可以勉強歡樂抵達目的，隨著二寶來到，到了假日時會捨棄父母，帶著兩寶出遊，日子久了知道這不是我想到的出遊，於是騙騙父母去現代試駕Custin 說試駕不用錢去坐坐，試駕後父母對於Custin評價很高，在試駕後一個禮拜後立刻下單，來繼續我們的三代同堂出遊，一起玩遍全台灣啦",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380682_生活照2.jpg",
+            },
+            {
+              id: 134,
+              recommendation_title: "Sweet Custin",
+              recommendation_content:
+                '原本開Focus載著一家三口~忽然一下子甜蜜的幸福來太快\r\n2、3寶接連報到~ Focus的空間直接無法承擔~\r\n看了很多款7人座,不是不舒服、空間小、不然就是太商務\r\n剛好遇到CUSTIN上市,試乘了兩次就直接下單排隊了~\r\nCUSTIN整個就是為了家庭量身訂做的車款\r\n空間適中,可以帶兩台推車,二排椅子又是同級距無敵~\r\n每次出遊,就是老話一句"上車睡覺、下車尿尿"\r\n不論是妻子、孩子都很愛這台車~\r\n載著我們一家人上山下海到處遊玩~\r\n很開心一家五口加上CUSTIN組成的甜蜜家庭~',
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380648_67b9ce952eeb3_IMG20230817084922.jpg",
+            },
+            {
+              id: 133,
+              recommendation_title: "第一次帶媽媽坐Custin出遊",
+              recommendation_content:
+                "很高興年前取車，年初三去板橋載媽媽一起去紫南宮走走。媽媽一上車就說座位好舒服，沒多久媽媽就睡著了。 一直開心的使用一些座位旁的按鍵。 媽媽一定很開心我們第一次買新車吧！之前那台五人座二手車媽媽跟兩個女兒擠在後座動彈不得\r\n一天下來，車上五個人開心聊天，也吃了好吃的食物。買一些紫南宮老街的伴手禮。 載媽媽回板橋。 結束我回娘家的一天，我們一家四口也開心的回宜蘭\r\n年假我們天天開著Custin到處去玩，很開心因緣際會之下在中和買到車業務人超熱情的，跟我們宜蘭的業務真的差很多\r\n現在使用這台車滿一個月了。 結論是很開心老公做了很久的功課確定買了它，搭過它的評價都超好的好開心",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380612_67b9b56bc4643_image0.jpeg",
+            },
+            {
+              id: 132,
+              recommendation_title: "幸福就是如此簡單",
+              recommendation_content:
+                "看著小孩在車上睡的如此香甜就值得了\r\n隨著小孩長大就要Custin帶我們去旅行\r\n值得推薦一下囉",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380578_67b99d3c7e5bc_IMG_6917.jpeg",
+            },
+            {
+              id: 131,
+              recommendation_title: "Custin我的大家族",
+              recommendation_content:
+                "因為這台Custin讓我認識了很多車友！\r\n從原本車主賴群300多人加入到現在、已經3400多人、我從默默無名的車友、變成管理者、再變成會長、讓我舉辦了第三屆大會師400台成就！解鎖！\r\n也讓我帶著家人一同遊玩同樂！買這車很棒！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380550_c_1740380526.jpg",
+            },
+            {
+              id: 129,
+              recommendation_title: "一台載滿歡樂的車子",
+              recommendation_content:
+                "Custin是一台可以讓我載滿三代同堂的好車，我要分享的是小時候的我都會看到鄰居一家老小開著車子出遊，小時候的我常常羨慕別人家都可以一家大小坐著車子出遊去玩樂，因為本身家庭算大家庭爸爸媽媽生了我們一家7口 ， 所以更不用說可以一起出遊玩了 ，因為爸爸長期在外面工作媽媽是家庭主婦，我告訴自己以後長大一定要買一台可以載滿一家出遊的車子，終於讓我第一眼看到我就喜歡上的車子，上網爬文看到在2022年11月8號上市，當時我們中部展示車還沒配到所以當時就還沒辦法試乘到車子，於是我們就等到2023年的2月直接去彰化試乘，載著一家大小試完車子看著家人們滿臉笑容，當天立馬下訂等著漫長等待4月終於配到車子了",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380501_黃.jpg",
+            },
+            {
+              id: 128,
+              recommendation_title: "幸福的移動家園",
+              recommendation_content:
+                "在一個陽光明媚的早晨，我們一家決定開著現代Custin 7人座MVP房車，來一場久違的家庭旅行。這輛車不僅是我們的交通工具，更是我們家庭生活的重要一部分。當我打開車門，孩子們興奮地跳上車，選擇自己喜歡的座位。寬敞的車內空間讓每個人都感到舒適自在，甚至連我們家的狗狗也有自己的專屬位置。我太太坐在副駕駛座上，微笑著看著這一切。一路上，車內充滿了孩子們的笑聲和音樂聲。現代Custin的先進音響系統讓每一首歌曲都變得更加動聽。我一邊開車，一邊和家人分享著我年輕時的旅行故事，孩子們聽得津津有味。\r\n現代Custin 7人座MVP房車，不僅僅是一輛車，更是承載著我們一家人幸福與回憶的移動家園。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380316_生活照2.jpeg",
+            },
+            {
+              id: 127,
+              recommendation_title: "全家出遊沒煩惱一人一位剛剛好",
+              recommendation_content:
+                "因家中人數增長，為了可以全家人一起出遊，所以選擇換了cp質超高的Custin 7人座。\r\n全家出遊沒煩惱，一人一位剛剛好。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380261_林致豪.jpg",
+            },
+            {
+              id: 126,
+              recommendation_title: "承載幸福的家庭房車",
+              recommendation_content:
+                "當初選擇CUSTIN時，我就被它的寬敞舒適和貼心設計吸引。身為一位熱愛旅行與家庭生活的車主，CUSTIN不僅成為我日常通勤的好夥伴，更是全家出遊的最佳選擇。\r\n記得有一次，我們全家臨時決定來一趟說走就走的旅行。孩子們興奮地坐進車內，打開全景天窗，看著藍天白雲飄過；妻子則享受著後座寬敞的空間，輕鬆自在地滑著手機。長途駕駛最怕疲勞，但CUSTIN的舒適座椅與靜謐車室，讓我能專心駕駛，享受沿途風景，而不是擔心身體的疲憊。\r\n不論是日常接送家人，還是帶著親友出遊，CUSTIN總能讓每一次旅程變得更愜意、更美好。這不只是一台車，而是承載著我們幸福時光的移動空間，每一次發動引擎，都是一段美好回憶的開始！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380226_生活照2.jpg",
+            },
+            {
+              id: 124,
+              recommendation_title: "實現家庭和睦的一台好車",
+              recommendation_content:
+                "謝謝CUSTIN的記憶座椅讓腳短的我坐上駕駛座時，不用手動調整好久的座椅；讓怕冷又愛穿短褲的我，上車不用冰屁股；讓怕熱的老公不用再熱到背後起疹子；讓孩子們不再因為座位擠到彼此而吵架；一人一個王位，愛怎麼睡就怎麼睡；讓我們能帶著孩子們跟外婆舒服的出遊，交車不久後女兒在校不幸腳骨折了，謝謝這台車的大空間不僅可以載輪椅，還可以讓她打石膏的腳舒服的放在腳靠上，位置也夠大，不怕被其他乘客再撞到，這台車真的是我們家的命定車！謝謝有你CUSTIN❤️",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740380192_蔡.jpg",
+            },
+            {
+              id: 121,
+              recommendation_title: "人生第一台車",
+              recommendation_content:
+                "因為家庭及戶外需求選擇了七人車，原本不考慮現代，看到現代近幾年的進步選擇了現代，目前開到現在，車子非常好開，空間大小也很夠用，車身高度下地下室也不會有疑慮，露營載裝備的空間也非常足夠，Custin 是一台很不錯的車，現代的安全性也讓我載起家人更安心，豐富的主被動安全，不續用選配才能選到我要的安全，這是一台讓人不會後悔的車",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740379867_圖片2.jpg",
+            },
+            {
+              id: 120,
+              recommendation_title: "前往幸福的車程",
+              recommendation_content:
+                "我是一位忙碌的爸爸，總是在城市生活被時間推著走。一直夢想能帶家人來一場自在舒適的旅行，但總是因為工作而一再延後。直到有一天，他在車展上遇見了 Custin，一款專為家庭設計的豪華 MPV。\r\n週末，終於帶著妻子和孩子開著新車出發。輕踩油門，Custin 的靜謐車艙與寬敞座椅讓全家人倍感舒適。孩子興奮地打開車內娛樂系統，妻子則欣賞著天窗外的藍天白雲。自動駕駛輔助系統讓李偉不再疲憊，我終於能放慢腳步，專心享受與家人在一起的時光。\r\n駛過蜿蜒的山路，遠方的湖泊映照著夕陽，停下車，看著孩子開心奔跑。這才明白，幸福並不只是終點，而是旅途中的每一刻。而 Custin，不只是車，更是一座移動的幸福空間。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740124059_蘇涴怡.png.jpg",
+            },
+            {
+              id: 119,
+              recommendation_title: "愛車愛妻愛孩的老爸",
+              recommendation_content:
+                "我們一家人都很愛這台車，尤其是開著這台車露營遊山玩水",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740123924_67b72b0363f32_IMG_9804.jpeg",
+            },
+            {
+              id: 118,
+              recommendation_title: "前往幸福的車程",
+              recommendation_content:
+                "我是一位忙碌的爸爸，總是在城市生活被時間推著走。一直夢想能帶家人來一場自在舒適的旅行，但總是因為工作而一再延後。直到有一天，他在車展上遇見了 Custin，一款專為家庭設計的豪華 MPV。\r\n週末，終於帶著妻子和孩子開著新車出發。輕踩油門，Custin 的靜謐車艙與寬敞座椅讓全家人倍感舒適。孩子興奮地打開車內娛樂系統，妻子則欣賞著天窗外的藍天白雲。自動駕駛輔助系統讓李偉不再疲憊，我終於能放慢腳步，專心享受與家人在一起的時光。\r\n駛過蜿蜒的山路，遠方的湖泊映照著夕陽，停下車，看著孩子開心奔跑。這才明白，幸福並不只是終點，而是旅途中的每一刻。而 Custin，不只是車，更是一座移動的幸福空間。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740123858_蘇涴怡.png.jpg",
+            },
+            {
+              id: 117,
+              recommendation_title: "家人的愛與custin",
+              recommendation_content:
+                "開著custin載著最愛的家人，到處旅遊、露營、品嚐美食，不管是旅途時家人期待、興奮的神情，或是回程途中家人坐在後座休息時舒適、安穩、滿足的臉龐，這都是駕駛感受到的，家人的愛，也是我的最愛，custin^o^。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740123777_李建德.png.jpg",
+            },
+            {
+              id: 116,
+              recommendation_title: "為了更好的體驗生活",
+              recommendation_content:
+                "本身是一家7口的三代同堂，原本有一台轎車，雖然平日接送小孩還算游刃有餘，但若是要總動員出門時，就是讓我感到困擾的時刻了，長輩都認為擠一下沒關係，但隨著小孩的成長，已經不是擠一下就能處理的了，更何況這還是違規、安全性的問題了，在這總總的取向需求之下，便開始尋找7人座的選項，kodiaq、5008、布丁狗還有carnival、outlander、sorento、custin等等……\r\n大多為5+2，，使用感受並不好，小孩大概只能坐國小以下較合適，carnival 的車型又太大，而最後就下訂了符合最多條件的custin，因為外型以及方便性以及安全性還有價位都是讓人感到心動的原因。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740123787_詹鈺蓉.png.jpg",
+            },
+            {
+              id: 115,
+              recommendation_title: "承載全家人的幸福生活",
+              recommendation_content:
+                "在交車前就規劃好武陵農場賞櫻行程，整段行程非常的愉悅幸福，也幸好貴公司能夠讓我們於新年前能交到車，也承載著全家人及幸福，欣賞美景😍CUSTIN是輛好車！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740379755_圖片1.jpg",
+            },
+            {
+              id: 112,
+              recommendation_title: "前往幸福的車程",
+              recommendation_content:
+                "我是一位忙碌的爸爸，總是在城市生活被時間推著走。一直夢想能帶家人來一場自在舒適的旅行，但總是因為工作而一再延後。直到有一天，他在車展上遇見了 Custin，一款專為家庭設計的豪華 MPV。\r\n週末，終於帶著妻子和孩子開著新車出發。輕踩油門，Custin 的靜謐車艙與寬敞座椅讓全家人倍感舒適。孩子興奮地打開車內娛樂系統，妻子則欣賞著天窗外的藍天白雲。自動駕駛輔助系統讓李偉不再疲憊，我終於能放慢腳步，專心享受與家人在一起的時光。\r\n駛過蜿蜒的山路，遠方的湖泊映照著夕陽，停下車，看著孩子開心奔跑。這才明白，幸福並不只是終點，而是旅途中的每一刻。而 Custin，不只是車，更是一座移動的幸福空間。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740120104_蘇涴怡.png.jpg",
+            },
+            {
+              id: 108,
+              recommendation_title: "愛車愛妻愛孩的老爸",
+              recommendation_content:
+                "我們一家人都很愛這台車，尤其是開著這台車露營遊山玩水",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740120074_67b72b0363f32_IMG_9804.jpeg",
+            },
+            {
+              id: 107,
+              recommendation_title: "家人的愛與custin",
+              recommendation_content:
+                "開著custin載著最愛的家人，到處旅遊、露營、品嚐美食，不管是旅途時家人期待、興奮的神情，或是回程途中家人坐在後座休息時舒適、安穩、滿足的臉龐，這都是駕駛感受到的，家人的愛，也是我的最愛，custin^o^。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740120047_李建德.png.jpg",
+            },
+            {
+              id: 106,
+              recommendation_title: "為了更好的體驗生活",
+              recommendation_content:
+                "本身是一家7口的三代同堂，原本有一台轎車，雖然平日接送小孩還算游刃有餘，但若是要總動員出門時，就是讓我感到困擾的時刻了，長輩都認為擠一下沒關係，但隨著小孩的成長，已經不是擠一下就能處理的了，更何況這還是違規、安全性的問題了，在這總總的取向需求之下，便開始尋找7人座的選項，kodiaq、5008、布丁狗還有carnival、outlander、sorento、custin等等……\r\n大多為5+2，，使用感受並不好，小孩大概只能坐國小以下較合適，carnival 的車型又太大，而最後就下訂了符合最多條件的custin，因為外型以及方便性以及安全性還有價位都是讓人感到心動的原因。",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740120033_詹鈺蓉.png.jpg",
+            },
+            {
+              id: 105,
+              recommendation_title: "CUSTIN跟你一起走下去！",
+              recommendation_content:
+                "一位完美的爸爸！\r\n合一個完美的家庭！\r\n需要一台完美的七人座！\r\n就需要一台頂尖的CUSTIN！\r\n帶全家人上山下海，帶全家人走片天下。\r\n\r\n小孩一出生，出門旅遊大包小包，之前的小車位子根本不夠，換車的同時剛好看到現代的新出的CUSTIN ， 當下看到霸氣的車頭！潮流的車尾燈！鋁圈在跑時帥氣的忍者飛鏢的圖案！立馬跑去下定！",
+              owner_photo:
+                "https://api.custin-event.hyundai-motor.com.tw/storage/upload/1740048476_c_1740047604.jpg",
             },
           ];
         } else {
@@ -1395,7 +1634,6 @@ export default {
                     </div>
                   </div>
                 </div>
-
 
                 <div class="carousel-item">
                   <div class="row">
