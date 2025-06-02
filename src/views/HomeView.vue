@@ -1849,7 +1849,7 @@ export default {
     <section id="story_wall_pc" ref="story_wall_pc">
       <!-- <div class="arrow arrow_down"></div>
       <div class="arrow arrow_up"></div> -->
-      <div class="row">
+      <div class="row wall-row">
         <div class="col-6 story-wall left">
           <div class="row">
             <div class="col-6 story-wall-left left">
