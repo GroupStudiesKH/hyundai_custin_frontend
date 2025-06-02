@@ -374,7 +374,7 @@ main {
                 font-size: 50px;
                 color: #f75a53;
                 font-weight: 600;
-                transform: translateY(180px) translateX(85px);
+                transform: translateY(180px) translateX(95px);
                 position: absolute;
                 rotate: -0.5deg;
                 text-align: center;
@@ -1100,7 +1100,7 @@ main {
             cursor: grab;
 
             .story_share_row {
-                width: calc(625px * 3);
+                width: calc(625px * 2);
                 margin: 0 auto;
 
                 .story_share_col {

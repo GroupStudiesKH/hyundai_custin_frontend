@@ -776,7 +776,7 @@ export default {
             </p>
           </div>
 
-          <div class="story_share_col">
+          <div class="story_share_col d-none">
             <a
               href="https://www.youtube.com/watch?v=S8ynSa0YVGc"
               class="d-inline-block"
@@ -1056,7 +1056,7 @@ export default {
                             新店 謝先生｜全家人的移動小天地
                           </h5>
                           <p class="story-content">
-                            我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純...
+                            我們家有六個人，一直需要一台空間夠大的車。當初找車時想法很單純：外型好看、空間夠大、家人坐得舒服就好。雖然預算有限，但還是希望...
                           </p>
                         </div>
                       </div>
