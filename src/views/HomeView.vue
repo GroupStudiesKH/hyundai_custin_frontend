@@ -954,7 +954,7 @@ export default {
         </div>
       </div>
     </section>
-    <section id="story_share_pc" ref="story_share_pc">
+    <section id="story_share_pc" class="d-none" ref="story_share_pc">
       <p class="text-center"><img src="/assets/img/wall_title.webp" /></p>
       <div class="story_share_container">
         <div class="story_share_row">
@@ -1046,7 +1046,7 @@ export default {
         </div>
       </div>
     </section>
-    <section id="story_share_mobile" ref="story_share_mobile">
+    <section id="story_share_mobile" class="d-none" ref="story_share_mobile">
       <p class="text-center" id="story_share_mobile_title">
         <img src="/assets/img/wall_title_mobile.webp" loading="lazy" />
       </p>
