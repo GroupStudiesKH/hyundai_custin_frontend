@@ -1232,6 +1232,84 @@ export default {
                         </div>
                       </div>
                     </div>
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '淡水 周先生｜幸福就來自車的舒適',
+                          `<img src='/assets/img/story/k/1.webp' loading='lazy' class='story-img' alt='...'/><br>我們家人口比較多，原本開的是五加二的車，但第三排空間真的太擠，尤其有長輩或小孩一起搭車的時候，坐起來都不太舒服。加上我們每一兩個月就會開長途回高雄，久了真的覺得需要一台空間大、坐起來舒服的車，才不會每次旅程都像在忍耐。<br><br>
+                          後來注意到CUSTIN，是因為空間配置真的很不錯，車長不到五米但室內空間很大，加上是七人座，實際上比之前的五加二舒適很多。而且有電動滑門，家中有小孩和長輩的話，上下車真的方便也安全很多。而且購車時業務介紹得非常清楚，不會有壓力，整個購車過程也讓人覺得舒服，這點也讓我們對這台車留下很好的第一印象。<br><br>
+                          <img src='/assets/img/story/k/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          開起來的感覺也讓我滿驚訝的，這台車雖然空間大，但靈活度、穩定性都很好，高速上也不會覺得車身笨重，馬力也夠，整體開起來是舒服、安心的。爸媽最有感，他們坐第二排都說可以整個躺平，長途坐下來也不會再腰痠腳麻了。<br>
+                          <img src='/assets/img/story/k/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          小朋友的話則超愛天窗，尤其是下雨天，看著雨滴打在玻璃上，對他們來說特別新鮮。現在只要是長途行程，他們都會自動帶上棉被，一上車就當自己的「移動小臥室」，常常一開沒多久就睡著了。<br><br>
+                          有了CUSTIN之後，我們反而更願意安排一些長途旅程，像是開車去露營、小旅行之類的活動變多了。看著家人坐得舒服、心情也好，對我來說就是一件很值得的事。CUSTIN除了空間寬敞、舒適度高之外，整體駕駛體驗也很順手。<br>
+
+                          <strong>一句話推薦 CUSTIN？</strong><br><br>
+                          我會說：「家人的幸福感，就來自車的舒適感。」<br>
+                          <img src='/assets/img/story/k/4.webp' loading='lazy' class='story-img' alt='...'/>
+                          `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/k/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            淡水 周先生｜幸福就來自車的舒適
+                          </h5>
+                          <p class="story-content">
+                            我們家人口比較多，原本開的是五加二的車，但第三排空間真的太擠，尤其有長輩或小孩一起搭車的時候...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '新豐 楊先生｜給全家人最高規格享受',
+                          `<img src='/assets/img/story/l/1.webp' loading='lazy' class='story-img' alt='...'/><br>雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座。挑車的時候最重視的，其實就是乘坐舒適度，畢竟爸媽年紀大了，坐起來要舒服、進出也不能太費力，CUSTIN 的中間走道可以直通第三排，不用翻折座椅，爸媽上下車就很方便，非常適合家庭用。<br><br>
+                          <img src='/assets/img/story/l/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          而除了舒適性，自動滑門和跟車巡航，也是我覺得非常加分的功能。像很多停車場位子都很小，以前每次開傳統車門都擔心會撞到別人，現在有滑門完全不怕。而跟車系統更是讓我們全家出遠門的時候，安全又省心，大大減輕疲勞，尤其遇到塞車時，有這個功能真的差很多，這台車的完整度非常高。當初也有去看三菱、KIA、Mazda CX-9，但不是空間不夠，就是價格偏高或稅金不理想，整體比較下來，CUSTIN 真的是同級車中最讓我放心的選擇。<br><br>
+                          爸媽對這台車的評價非常高。他們一坐上來就說：「這椅子比沙發還舒服。」以前長途開車常常坐到腰痠背痛，現在就算是連續幾小時的車程，也都能自在地聊天、欣賞風景，不再腰酸背痛。<br><br>
+                          <img src='/assets/img/story/l/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          孩子也愛上這台車。自動滑門讓她可以輕鬆上下車，車子的高級感及滑門，讓女兒覺得自己像公主。她最喜歡的是大螢幕跟音響，每次出門都要點歌當DJ，享受音樂，讓我這個爸爸看了都忍不住微笑。<br><br>
+                          印象最深的一次，是剛牽車沒幾天，公司有重要客戶來訪，中午需要派車接送。因為剛好是七人，我就自告奮勇出動CUSTIN。沒想到客戶一上車就連連誇讚，坐起舒服，氣氛一下子就拉近了，也讓我感到很開心。<br><br>
+                          對我們家來說，CUSTIN 在駕駛的過程中擁有滿滿的幸福感，旁人也經常投以羨慕的眼光，絕對是台值得入手的好車！<br><br>
+                          <img src='/assets/img/story/l/4.webp' loading='lazy' class='story-img' alt='...'/>
+                          `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/l/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            新豐 楊先生｜給全家人最高規格享受
+                          </h5>
+                          <p class="story-content">
+                            雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -1660,6 +1738,277 @@ export default {
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '平鎮 林先生｜七人座首選配備超齊全',
+                          `<img src='/assets/img/story/j/1.webp' loading='lazy' class='story-img' alt='...'/><br>我們家三代同堂，平常出門都要開兩台車，真的很不方便。所以開始考慮七人座MPV，最在意的就是電動滑門和安全功能，尤其是家裡有長輩跟小孩，乘車的安全性一定不能妥協。<br> <br>  當初會選擇CUSTIN，是因為在同級距的七人座裡，它的配備最齊全、價格又合理。我也看過ZINGER，不過功能跟配備上還是差了一截，尤其CUSTIN有滑門，這點就直接加分不少。加上現代汽車是全球前三大車廠，品牌讓人覺得信得過。<br>
+        <img src='/assets/img/story/j/2.webp' loading='lazy' class='story-img' alt='...'/><br>
+      實際開起來，除了外型大器之外，整體的舒適性、穩定性、安全感都讓人很安心。父母坐在第二排，也覺得車子安靜、座椅包覆性很好，舒適度很高。小孩平常坐第三排，因為有三角窗，可以看到外面景色，都會興奮地跟我們分享看到什麼。而且他們很喜歡滑門，每次都很期待想自己操作開關門，雖然平常還是由我來控制比較安全（笑）。<br><br>
+      我們常開CUSTIN去郊外、景點走走，最遠目前開到中部，未來也想挑戰花蓮、台東等更遠的地方。因為輔助駕駛系統幫了我不少忙，長途駕駛不會太累，可以安排更多地方和家人一起探索，也讓我可以更專注在家人身上。<br><br>
+      <img src='/assets/img/story/j/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+      印象最深的一次，是加入CUSTIN車友社團之後，發現有滿多家庭車主會分享自己的用車心得，感覺很溫馨。這台車除了自己家用，有時候親友聚會如果臨時要載人，也可以派上用場，實用又有面子。<br><br>
+      如果要推薦給朋友，我會說，CUSTIN的車身尺寸很剛好，台灣道路開起來不會有壓力，實用性真的很高。如果你也在找一台全家都會滿意的七人座車，那我只想說一句話：<br><br>👉「就快點入手吧，一起當車友吧！」<br>
+              <img src='/assets/img/story/j/4.webp' loading='lazy' class='story-img' alt='...'/>
+      `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/j/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            平鎮 林先生｜七人座首選配備超齊全
+                          </h5>
+                          <p class="story-content">
+                            我們家三代同堂，平常出門都要開兩台車，真的很不方便。所以開始考慮七人座MPV，最在意的就是電動滑門和安全功能，尤其是家裡有長輩跟小孩...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '新豐 楊先生｜給全家人最高規格享受',
+                          `<img src='/assets/img/story/l/1.webp' loading='lazy' class='story-img' alt='...'/><br>雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座。挑車的時候最重視的，其實就是乘坐舒適度，畢竟爸媽年紀大了，坐起來要舒服、進出也不能太費力，CUSTIN 的中間走道可以直通第三排，不用翻折座椅，爸媽上下車就很方便，非常適合家庭用。<br><br>
+                          <img src='/assets/img/story/l/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          而除了舒適性，自動滑門和跟車巡航，也是我覺得非常加分的功能。像很多停車場位子都很小，以前每次開傳統車門都擔心會撞到別人，現在有滑門完全不怕。而跟車系統更是讓我們全家出遠門的時候，安全又省心，大大減輕疲勞，尤其遇到塞車時，有這個功能真的差很多，這台車的完整度非常高。當初也有去看三菱、KIA、Mazda CX-9，但不是空間不夠，就是價格偏高或稅金不理想，整體比較下來，CUSTIN 真的是同級車中最讓我放心的選擇。<br><br>
+                          爸媽對這台車的評價非常高。他們一坐上來就說：「這椅子比沙發還舒服。」以前長途開車常常坐到腰痠背痛，現在就算是連續幾小時的車程，也都能自在地聊天、欣賞風景，不再腰酸背痛。<br><br>
+                          <img src='/assets/img/story/l/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          孩子也愛上這台車。自動滑門讓她可以輕鬆上下車，車子的高級感及滑門，讓女兒覺得自己像公主。她最喜歡的是大螢幕跟音響，每次出門都要點歌當DJ，享受音樂，讓我這個爸爸看了都忍不住微笑。<br><br>
+                          印象最深的一次，是剛牽車沒幾天，公司有重要客戶來訪，中午需要派車接送。因為剛好是七人，我就自告奮勇出動CUSTIN。沒想到客戶一上車就連連誇讚，坐起舒服，氣氛一下子就拉近了，也讓我感到很開心。<br><br>
+                          對我們家來說，CUSTIN 在駕駛的過程中擁有滿滿的幸福感，旁人也經常投以羨慕的眼光，絕對是台值得入手的好車！<br><br>
+                          <img src='/assets/img/story/l/4.webp' loading='lazy' class='story-img' alt='...'/>
+                          `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/l/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            新豐 楊先生｜給全家人最高規格享受
+                          </h5>
+                          <p class="story-content">
+                            雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '淡水 周先生｜幸福就來自車的舒適',
+                          `<img src='/assets/img/story/k/1.webp' loading='lazy' class='story-img' alt='...'/><br>我們家人口比較多，原本開的是五加二的車，但第三排空間真的太擠，尤其有長輩或小孩一起搭車的時候，坐起來都不太舒服。加上我們每一兩個月就會開長途回高雄，久了真的覺得需要一台空間大、坐起來舒服的車，才不會每次旅程都像在忍耐。<br><br>
+                          後來注意到CUSTIN，是因為空間配置真的很不錯，車長不到五米但室內空間很大，加上是七人座，實際上比之前的五加二舒適很多。而且有電動滑門，家中有小孩和長輩的話，上下車真的方便也安全很多。而且購車時業務介紹得非常清楚，不會有壓力，整個購車過程也讓人覺得舒服，這點也讓我們對這台車留下很好的第一印象。<br><br>
+                          <img src='/assets/img/story/k/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          開起來的感覺也讓我滿驚訝的，這台車雖然空間大，但靈活度、穩定性都很好，高速上也不會覺得車身笨重，馬力也夠，整體開起來是舒服、安心的。爸媽最有感，他們坐第二排都說可以整個躺平，長途坐下來也不會再腰痠腳麻了。<br>
+                          <img src='/assets/img/story/k/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          小朋友的話則超愛天窗，尤其是下雨天，看著雨滴打在玻璃上，對他們來說特別新鮮。現在只要是長途行程，他們都會自動帶上棉被，一上車就當自己的「移動小臥室」，常常一開沒多久就睡著了。<br><br>
+                          有了CUSTIN之後，我們反而更願意安排一些長途旅程，像是開車去露營、小旅行之類的活動變多了。看著家人坐得舒服、心情也好，對我來說就是一件很值得的事。CUSTIN除了空間寬敞、舒適度高之外，整體駕駛體驗也很順手。<br>
+
+                          <strong>一句話推薦 CUSTIN？</strong><br><br>
+                          我會說：「家人的幸福感，就來自車的舒適感。」<br>
+                          <img src='/assets/img/story/k/4.webp' loading='lazy' class='story-img' alt='...'/>
+                          `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/k/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            淡水 周先生｜幸福就來自車的舒適
+                          </h5>
+                          <p class="story-content">
+                            我們家人口比較多，原本開的是五加二的車，但第三排空間真的太擠，尤其有長輩或小孩一起搭車的時候...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '新豐 楊先生｜給全家人最高規格享受',
+                          `<img src='/assets/img/story/l/1.webp' loading='lazy' class='story-img' alt='...'/><br>雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座。挑車的時候最重視的，其實就是乘坐舒適度，畢竟爸媽年紀大了，坐起來要舒服、進出也不能太費力，CUSTIN 的中間走道可以直通第三排，不用翻折座椅，爸媽上下車就很方便，非常適合家庭用。<br><br>
+                          <img src='/assets/img/story/l/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          而除了舒適性，自動滑門和跟車巡航，也是我覺得非常加分的功能。像很多停車場位子都很小，以前每次開傳統車門都擔心會撞到別人，現在有滑門完全不怕。而跟車系統更是讓我們全家出遠門的時候，安全又省心，大大減輕疲勞，尤其遇到塞車時，有這個功能真的差很多，這台車的完整度非常高。當初也有去看三菱、KIA、Mazda CX-9，但不是空間不夠，就是價格偏高或稅金不理想，整體比較下來，CUSTIN 真的是同級車中最讓我放心的選擇。<br><br>
+                          爸媽對這台車的評價非常高。他們一坐上來就說：「這椅子比沙發還舒服。」以前長途開車常常坐到腰痠背痛，現在就算是連續幾小時的車程，也都能自在地聊天、欣賞風景，不再腰酸背痛。<br><br>
+                          <img src='/assets/img/story/l/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          孩子也愛上這台車。自動滑門讓她可以輕鬆上下車，車子的高級感及滑門，讓女兒覺得自己像公主。她最喜歡的是大螢幕跟音響，每次出門都要點歌當DJ，享受音樂，讓我這個爸爸看了都忍不住微笑。<br><br>
+                          印象最深的一次，是剛牽車沒幾天，公司有重要客戶來訪，中午需要派車接送。因為剛好是七人，我就自告奮勇出動CUSTIN。沒想到客戶一上車就連連誇讚，坐起舒服，氣氛一下子就拉近了，也讓我感到很開心。<br><br>
+                          對我們家來說，CUSTIN 在駕駛的過程中擁有滿滿的幸福感，旁人也經常投以羨慕的眼光，絕對是台值得入手的好車！<br><br>
+                          <img src='/assets/img/story/l/4.webp' loading='lazy' class='story-img' alt='...'/>
+                          `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/l/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            新豐 楊先生｜給全家人最高規格享受
+                          </h5>
+                          <p class="story-content">
+                            雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '八德 林先生｜全家出遊就是幸福模樣',
+                          `<img src='/assets/img/story/h/1.webp' loading='lazy' class='story-img' alt='...'/><br>
+      我們家原本是開五人座車，常常會出現座位不夠的情況，一家人要出遊的時候，媽媽常常去不了，總覺得有些遺憾。所以當我們開始考慮換車時，首要目標就是一台真正能「全家坐得下」的七人座。<br><br>
+
+      選擇 CUSTIN，除了空間夠大、乘坐舒適外，更實際的理由是它的自動電動滑門與電動尾門設計，對家有長輩與小孩的我們來說，非常方便。像是提東西、拿東西時，不用再彎腰拉門，電動滑門一鍵開啟，省力又安全。前座也可以幫小孩控制滑門，孩子們背著書包、拿著便當準備上下車時，動線非常順暢。<br>
+      <img src='/assets/img/story/h/2.webp' loading='lazy' class='story-img' alt='...'/><br><br>
+
+      我本身是現代汽車的長期車主，這已經是我第三台 Hyundai。從 I30CW、柴油版現在的 CUSTIN，一路走來最信任的還是現代汽車的安全性與 CP 值。這次在選車時也有試駕其他品牌，像 Kia Carnival、Skoda Kodiaq，但 CUSTIN 的價格相對親民、整體配置又不馬虎，是我們最後決定的關鍵。<br><br>
+
+      特別喜歡的是第二排的座椅，不僅寬敞舒適，還有通風功能，搭配前座也有通風座椅，坐起來非常舒服。而且車子底盤高度適中，長輩上下車不用太費力，這點媽媽也覺得貼心。<br>
+      <img src='/assets/img/story/h/3.webp' loading='lazy' class='story-img' alt='...'/><br><br>
+
+      孩子也對這台車印象很好。他們覺得車內空間大，可以自在移動，第三排的頭部高度也夠，不像以前坐其他的車會覺得壓迫。現在上下學接送，他們也很開心，會和同學分享家裡的車，有種尊榮感，特別是滑門打開時！<br><br>
+
+      如果要推薦 CUSTIN，我會說這是一台很實在的七人座 MPV，空間、便利性、價格都兼顧。幸福的感覺，有時候就是能帶著家人一起自在出遊！<br><br>
+
+      <strong>一句話推薦 CUSTIN？</strong><br>
+      如果有點心動不如馬上行動，機會是留給準備好的人，不然就要繼續等待下去囉！
+      <img src='/assets/img/story/h/4.webp' loading='lazy' class='story-img' alt='...'/>
+      
+      `
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/h/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            八德 林先生｜全家出遊就是幸福模樣
+                          </h5>
+                          <p class="story-content">
+                            我們家原本是開五人座車，常常會出現座位不夠的情況，一家人要出遊的時候，媽媽常常去不了，總覺得有些遺憾...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div
+                      class="col-12 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '土城 莊先生｜滿足全家人的移動城堡',
+                          `<img src='/assets/img/story/i/1.webp' loading='lazy' class='story-img' alt='...'/><br>
+      我們是三代同堂的家庭，一台車要滿足長輩、小孩、我們夫妻的需求，空間夠大、後座要好坐，真的很重要。以前的休旅車開了快二十年，想換車時看了很多七人座 MPV，剛好看到 CUSTIN 有不少網路討論，就實際去了解。<br><br>
+
+      第一眼吸引我的是外型設計，有設計感又不浮誇。實際入手後，爸媽覺得這台車的第二排電動座椅像商務艙一樣，座椅幾乎可以平躺，一上車就能休息。<br>
+      還有像高鐵那樣的餐檯，放飲料、食物都很方便。再加上通風座椅，不管冬天夏天都坐得舒服，這些細節讓人感受到 CUSTIN 對乘坐體驗的重視。<br>
+      <img src='/assets/img/story/i/2.webp' loading='lazy' class='story-img' alt='...'/><br><br>
+
+      第三排大空間，三個大人坐也沒問題，不像其他車款會有壓迫感。那時也看過其他廠牌，有的沒有滑門，第三排也比較擁擠。CUSTIN 不只空間大，還有我很在意的電動滑門，可以掌控開關，讓後座乘客上下車更安全，避免危險。<br>
+      孩子們最喜歡的也是這個電動門。每天接送上下學時，我幫他們打開車門，他們就能直接上車，覺得像高級接駁車一樣，孩子的同學都會用羨慕的眼神看著這台車，覺得高級車又來了，我心裡也會偷偷得意。<br>
+      <img src='/assets/img/story/i/3.webp' loading='lazy' class='story-img' alt='...'/><br><br>
+
+      我們家旅遊很頻繁，像是北海岸下午茶、宜蘭、桃園，或是每兩三個月回嘉義娘家。現在開 CUSTIN 上高速公路，因為有 LV2 輔助，長途開起來輕鬆很多，也比以前省油滿多的，動力也夠，連爬坡都輕輕鬆鬆。<br>
+      印象最深的一次，是拿這台車當老婆的弟弟婚禮車。我們是前導車，滑門一開氣勢十足，很多人都在看，還有人問這是哪一台車。那時我車子剛打完蠟，整台白色的 CUSTIN 在路上特別亮眼，真的會讓人覺得很有面子。<br><br>
+
+      如果你在找一台適合全家出遊、長輩也能舒服乘坐的七人座，我會推薦 CUSTIN，第二排尊榮座椅、電動滑門、第三排大空間，加上價格 CP 值都很高。<br><br>
+
+      <strong>一句話推薦 CUSTIN？</strong><br>
+      「值回票價，不用猶豫」，要不然我車借你開看看也行。<br>
+      <img src='/assets/img/story/i/4.webp' loading='lazy' class='story-img' alt='...'/>`
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/i/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            土城 莊先生｜滿足全家人的移動城堡
+                          </h5>
+                          <p class="story-content">
+                            我們是三代同堂的家庭，一台車要滿足長輩、小孩、我們夫妻的需求，空間夠大、後座要好坐...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
                   <div class="row">
                     <div
                       class="col-12 col-story"
