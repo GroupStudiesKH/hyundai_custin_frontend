@@ -1778,47 +1778,6 @@ export default {
                   </div>
                 </div>
 
-                <div class="carousel-item">
-                  <div class="row">
-                    <div
-                      class="col-12 col-story"
-                      data-bs-toggle="modal"
-                      data-bs-target="#storyModal"
-                      @click="
-                        storyModalSetData(
-                          '新豐 楊先生｜給全家人最高規格享受',
-                          `<img src='/assets/img/story/l/1.webp' loading='lazy' class='story-img' alt='...'/><br>雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座。挑車的時候最重視的，其實就是乘坐舒適度，畢竟爸媽年紀大了，坐起來要舒服、進出也不能太費力，CUSTIN 的中間走道可以直通第三排，不用翻折座椅，爸媽上下車就很方便，非常適合家庭用。<br><br>
-                          <img src='/assets/img/story/l/2.webp' loading='lazy' class='story-img' alt='...'/><br>  
-                          而除了舒適性，自動滑門和跟車巡航，也是我覺得非常加分的功能。像很多停車場位子都很小，以前每次開傳統車門都擔心會撞到別人，現在有滑門完全不怕。而跟車系統更是讓我們全家出遠門的時候，安全又省心，大大減輕疲勞，尤其遇到塞車時，有這個功能真的差很多，這台車的完整度非常高。當初也有去看三菱、KIA、Mazda CX-9，但不是空間不夠，就是價格偏高或稅金不理想，整體比較下來，CUSTIN 真的是同級車中最讓我放心的選擇。<br><br>
-                          爸媽對這台車的評價非常高。他們一坐上來就說：「這椅子比沙發還舒服。」以前長途開車常常坐到腰痠背痛，現在就算是連續幾小時的車程，也都能自在地聊天、欣賞風景，不再腰酸背痛。<br><br>
-                          <img src='/assets/img/story/l/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
-                          孩子也愛上這台車。自動滑門讓她可以輕鬆上下車，車子的高級感及滑門，讓女兒覺得自己像公主。她最喜歡的是大螢幕跟音響，每次出門都要點歌當DJ，享受音樂，讓我這個爸爸看了都忍不住微笑。<br><br>
-                          印象最深的一次，是剛牽車沒幾天，公司有重要客戶來訪，中午需要派車接送。因為剛好是七人，我就自告奮勇出動CUSTIN。沒想到客戶一上車就連連誇讚，坐起舒服，氣氛一下子就拉近了，也讓我感到很開心。<br><br>
-                          對我們家來說，CUSTIN 在駕駛的過程中擁有滿滿的幸福感，旁人也經常投以羨慕的眼光，絕對是台值得入手的好車！<br><br>
-                          <img src='/assets/img/story/l/4.webp' loading='lazy' class='story-img' alt='...'/>
-                          `
-                        )
-                      "
-                    >
-                      <div class="story">
-                        <img
-                          src="/assets/img/story/l/1.webp"
-                          class="story-img"
-                          loading="lazy"
-                          alt="..."
-                        />
-                        <div class="story-body">
-                          <h5 class="story-title">
-                            新豐 楊先生｜給全家人最高規格享受
-                          </h5>
-                          <p class="story-content">
-                            雖然我們家平常只有三口人，但因為常常要接送爸媽、全家出遊，換車時我就直接鎖定七人座。挑車的時候最重視的，其實就是乘坐舒適度，畢竟爸媽年紀大了，坐起來要舒服、進出也不能太費力...
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <div class="carousel-item">
                   <div class="row">
