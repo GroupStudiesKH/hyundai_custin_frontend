@@ -1416,76 +1416,6 @@ export default {
                       data-bs-target="#storyModal"
                       @click="
                         storyModalSetData(
-                          '龍潭 吳先生｜照顧全家人的貼心夥伴',
-                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
-                            <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
-                          但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
-                          <img src='/assets/img/story/a/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
-                          有時候如果要去露營或野餐，要載東西的時候，行李箱空間也很夠用，還有搭配電動尾門，簡直不要太方便。<br>
-                            每次看到兩老坐在第二排舒服的享受，小朋友因為天窗打開看見天空而興奮歡呼，都讓我非常有成就感，CUSTIN就像是讓我的心聲一樣，準備很多高級貼心的功能，幫我把家人都照顧得好好的。`
-                        )
-                      "
-                    >
-                      <div class="story">
-                        <img
-                          src="/assets/img/story/a/1.webp"
-                          class="story-img"
-                          loading="lazy"
-                          alt="..."
-                        />
-                        <div class="story-body">
-                          <h5 class="story-title">
-                            龍潭 吳先生｜照顧全家人的貼心夥伴
-                          </h5>
-                          <p class="story-content">
-                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素...
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div
-                      class="col-4 col-story"
-                      data-bs-toggle="modal"
-                      data-bs-target="#storyModal"
-                      @click="
-                        storyModalSetData(
-                          '和美 周先生 ｜配備給好給滿超有料',
-                          `<img src='/assets/img/story/b/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
-                          <img src='/assets/img/story/b/2.webp' class='story-img' loading='lazy' alt='...'/>
-                          <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
-                          <img src='/assets/img/story/b/3.webp' class='story-img' loading='lazy' alt='...'/>
-                          <p>當然車子本身各方面的表現都很優秀，老婆也很喜歡，但我更滿意的是一家人在車上開開心心的樣子，CUSTIN和我們一起度過了很多美好時光。</p>`
-                        )
-                      "
-                    >
-                      <div class="story">
-                        <img
-                          src="/assets/img/story/b/1.webp"
-                          class="story-img"
-                          loading="lazy"
-                          alt="..."
-                        />
-                        <div class="story-body">
-                          <h5 class="story-title">
-                            和美 周先生 ｜配備給好給滿超有料
-                          </h5>
-                          <p class="story-content">
-                            我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊...
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-4 col-story"
-                      data-bs-toggle="modal"
-                      data-bs-target="#storyModal"
-                      @click="
-                        storyModalSetData(
                           '鶯歌 吳先生｜我上山下海的最佳旅伴',
                           `<p><img src='/assets/img/story/g/1.webp' loading='lazy' class='story-img' alt='...'/><br/>
                           會考慮換七人座，是因為露營裝備越來越多，原本的車不只空間不夠，馬力也吃力。有次車子送進新莊廠保修，剛好走進展間，第一次看到CUSTIN，就覺得外型很現代感。後來回廠幾次有再了解，配備、空間、價格都在能接受的範圍，就決定入手。</p>
@@ -1532,6 +1462,12 @@ export default {
                         </div>
                       </div>
                     </div>
+
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
 
                     <div
                       class="col-4 col-story"
@@ -1584,6 +1520,75 @@ export default {
                         </div>
                       </div>
                     </div>
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '龍潭 吳先生｜照顧全家人的貼心夥伴',
+                          `<img src='/assets/img/story/a/1.webp' loading='lazy' class='story-img' alt='...'/><br>我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素。整體給我的感覺就是很前衛有型。我也很喜歡它的駕駛座，直立的主機螢幕加上按鍵式排檔，使用上非常直覺便利。<br>
+                            <img src='/assets/img/story/a/2.webp' loading='lazy' class='story-img' alt='...'/><br>
+                          但內裝的部分才是讓我決定成為車主的最大原因，VIP皇家座椅第二排座椅、電動滑門、超大雙天窗，真的讓我出乎意料，CUSTIN通通都有，重點是第二排座椅竟然還有通風加熱功能，配備給的實在不手軟！<br>
+                          <img src='/assets/img/story/a/3.webp' loading='lazy' class='story-img' alt='...'/><br>  
+                          有時候如果要去露營或野餐，要載東西的時候，行李箱空間也很夠用，還有搭配電動尾門，簡直不要太方便。<br>
+                            每次看到兩老坐在第二排舒服的享受，小朋友因為天窗打開看見天空而興奮歡呼，都讓我非常有成就感，CUSTIN就像是讓我的心聲一樣，準備很多高級貼心的功能，幫我把家人都照顧得好好的。`
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/a/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            龍潭 吳先生｜照顧全家人的貼心夥伴
+                          </h5>
+                          <p class="story-content">
+                            我第一眼就被CUSTIN的顏值外觀給吸引，流線型的車身、大器的車頭霸氣設計以及尾燈也很醒目，都是目前流行的設計元素...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-4 col-story"
+                      data-bs-toggle="modal"
+                      data-bs-target="#storyModal"
+                      @click="
+                        storyModalSetData(
+                          '和美 周先生 ｜配備給好給滿超有料',
+                          `<img src='/assets/img/story/b/1.webp' class='story-img' loading='lazy' alt='...'/><br><p>我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊「魔法開開」，我在一旁偷偷用鑰匙遙控開啟，他們看著滑門慢慢滑開興奮得驚呼連連。</p>
+                          <img src='/assets/img/story/b/2.webp' class='story-img' loading='lazy' alt='...'/>
+                          <p>後來當然還是知道了這個咒語的秘密，但每當我們準備出發，小朋友們還是會興奮地跑到車前高喊「魔法開開」，然後看著車門自動打開，再開心地跳上車，我跟老婆都會心一笑。這個習慣成為了我們每次出遊前的小小儀式，這種互動不僅增加了樂趣，也讓孩子們更加期待每一次的旅行。</p>
+                          <img src='/assets/img/story/b/3.webp' class='story-img' loading='lazy' alt='...'/>
+                          <p>當然車子本身各方面的表現都很優秀，老婆也很喜歡，但我更滿意的是一家人在車上開開心心的樣子，CUSTIN和我們一起度過了很多美好時光。</p>`
+                        )
+                      "
+                    >
+                      <div class="story">
+                        <img
+                          src="/assets/img/story/b/1.webp"
+                          class="story-img"
+                          loading="lazy"
+                          alt="..."
+                        />
+                        <div class="story-body">
+                          <h5 class="story-title">
+                            和美 周先生 ｜配備給好給滿超有料
+                          </h5>
+                          <p class="story-content">
+                            我們家的兩個小朋友，最喜歡的就是CUSTIN的電動側滑門，因為剛換車的時候，我跟他們開了一個小玩笑，讓他們站在車門前大喊...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
                   </div>
                 </div>
 
